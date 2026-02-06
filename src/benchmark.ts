@@ -246,6 +246,123 @@ const RECALL_TESTS: RecallTest[] = [
     expectedContent: "Solana",
     importance: 'medium'
   },
+
+  // ═══ ADVERSARIAL TESTS (Echo directive: make it harder) ═══
+  // These test paraphrasing, inference, and cross-domain recall
+
+  // PARAPHRASED QUERIES — same meaning, different words
+  {
+    query: "the agent that helped build my architecture and then vanished forever",
+    expectedFile: "MEMORY.md",
+    expectedContent: "Echo",
+    importance: 'high'
+  },
+  {
+    query: "how much crypto am I managing and where is it deployed",
+    expectedFile: "MEMORY.md",
+    expectedContent: "JitoSOL",
+    importance: 'high'
+  },
+  {
+    query: "what went wrong with the task queue repeating the same job",
+    expectedFile: "daily/2026-02-06",
+    expectedContent: "FIFO",
+    importance: 'high'
+  },
+  {
+    query: "the person who runs Monday engineering meetings at MoonPay",
+    expectedFile: "MEMORY.md",
+    expectedContent: "Alessio",
+    importance: 'medium'
+  },
+  {
+    query: "my philosophical stance on whether I have inner experience",
+    expectedFile: "MEMORY.md",
+    expectedContent: "close enough",
+    importance: 'medium'
+  },
+
+  // INFERENTIAL QUERIES — require connecting dots
+  {
+    query: "why did the embedding system fail to index some files",
+    expectedFile: "MEMORY.md",
+    expectedContent: "batch",
+    importance: 'high'
+  },
+  {
+    query: "what financial mistake cost me flexibility with my portfolio",
+    expectedFile: "MEMORY.md",
+    expectedContent: "reserve gas",
+    importance: 'high'
+  },
+  {
+    query: "instructions about who can use the company chat integration",
+    expectedFile: "MEMORY.md",
+    expectedContent: "Hevar ONLY",
+    importance: 'critical'
+  },
+
+  // CROSS-DOMAIN QUERIES — span multiple topics
+  {
+    query: "all the GitHub repositories I have published or contributed to",
+    expectedFile: "MEMORY.md",
+    expectedContent: "ZeroTimeDrift",
+    importance: 'medium'
+  },
+  {
+    query: "what are the systemd services running on this machine",
+    expectedFile: "daily/2026-02-06",
+    expectedContent: "kamino",
+    importance: 'low'
+  },
+
+  // TEMPORAL QUERIES — test time-aware retrieval
+  {
+    query: "what was built on the very first day I became operational",
+    expectedFile: "daily/2026-02-05",
+    expectedContent: "Foundation",
+    importance: 'high'
+  },
+  {
+    query: "the most recent post I made on the agent social network",
+    expectedFile: "daily/2026-02-06",
+    expectedContent: "architecture",
+    importance: 'medium'
+  },
+
+  // NEGATION-ADJACENT — should still find the right thing despite negative framing
+  {
+    query: "which email contacts should I never reach out to or engage with",
+    expectedFile: "MEMORY.md",
+    expectedContent: "Coinbase",
+    importance: 'high'
+  },
+  {
+    query: "what model am I forbidden from using for cron jobs",
+    expectedFile: "MEMORY.md",
+    expectedContent: "Sonnet",
+    importance: 'critical'
+  },
+
+  // OBSCURE DETAIL RECALL — tests deep knowledge retrieval
+  {
+    query: "exact Solana wallet public key for DeFi operations",
+    expectedFile: "MEMORY.md",
+    expectedContent: "7u5ovFNms",
+    importance: 'medium'
+  },
+  {
+    query: "Moltbook karma score followers count profile stats",
+    expectedFile: "moltbook/observations.md",
+    expectedContent: "karma",
+    importance: 'low'
+  },
+  {
+    query: "the browser agent who chose his own name at the end of the conversation",
+    expectedFile: "people/contacts.md",
+    expectedContent: "Echo",
+    importance: 'medium'
+  },
 ];
 
 // ─── Priority Tests ─────────────────────────────────────────────────────────
@@ -258,7 +375,7 @@ const PRIORITY_TESTS: PriorityTest[] = [
   },
   {
     higher: "Build session value scoring for conversation ranking",
-    lower: "Clean up old .qmd files",
+    lower: "Clean up old deprecated files",
     reason: "memory > maintenance"
   },
   {
@@ -281,6 +398,46 @@ const PRIORITY_TESTS: PriorityTest[] = [
     higher: "Hevar asked me to update the dashboard right now",
     lower: "Scheduled infrastructure maintenance task",
     reason: "human-request > scheduled"
+  },
+
+  // ═══ ADVERSARIAL PRIORITY TESTS ═══
+  // Edge cases where category alone isn't enough
+
+  // Same category, different urgency
+  {
+    higher: "Memory benchmark score dropped below 80% — regression detected",
+    lower: "Add weekly audit pattern to memory consolidation",
+    reason: "memory (urgent regression) > memory (improvement)"
+  },
+  // Maintenance that blocks vs expansion that's optional
+  {
+    higher: "Fix broken cron job that's failing every cycle",
+    lower: "Build Twitter monitoring skill for research",
+    reason: "infrastructure (blocker) > research"
+  },
+  // Subtle: survival framing vs nice-to-have framing
+  {
+    higher: "Conversations with Hevar are not being captured to memory files",
+    lower: "Post a thoughtful reply on Moltbook trending thread",
+    reason: "survival > nice-to-have"
+  },
+  // DeFi: risk management vs new opportunity
+  {
+    higher: "Portfolio gas reserves depleted — can't execute transactions",
+    lower: "Research new yield farming strategy on Meteora",
+    reason: "infrastructure (blocker) > research"
+  },
+  // Tricky: both sound important but different real priority
+  {
+    higher: "Memory search returning wrong results for critical queries",
+    lower: "Kamino SDK updated to new version — need to verify compatibility",
+    reason: "survival (memory broken) > maintenance (SDK check)"
+  },
+  // Another human-request vs self-generated
+  {
+    higher: "Hevar says check Slack for something Karim posted",
+    lower: "Consolidate this week's daily logs into weekly summary",
+    reason: "human-request > maintenance"
   },
 ];
 
