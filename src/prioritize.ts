@@ -59,11 +59,11 @@ export interface ScoreBreakdown {
 // ─── Scoring Weights ─────────────────────────────────────────────────────────
 
 const WEIGHTS = {
-  urgency: 0.25,
-  impact: 0.35,
+  urgency: 0.15,      // Reduced: age alone shouldn't dominate
+  impact: 0.45,       // Increased: what matters most IS what matters most
   dependency: 0.15,
-  skipDecay: 0.15,
-  blockerBonus: 0.10,
+  skipDecay: 0.10,    // Reduced: skip decay was overweighted
+  blockerBonus: 0.15, // Increased: blocking others is a real signal
 };
 
 // ─── Category Impact Mapping ─────────────────────────────────────────────────
@@ -91,8 +91,9 @@ const IMPACT_SCORES: Record<TaskImpact, number> = {
 // ─── Scoring Functions ───────────────────────────────────────────────────────
 
 /**
- * Urgency score based on age of task.
- * Uses sigmoid curve: tasks start low-urgency, ramp up after ~24h, plateau near 1.0 after ~7 days.
+ * Urgency score based on age of task, dampened by category.
+ * High-impact tasks gain urgency faster. Low-impact tasks gain urgency slower.
+ * Prevents old maintenance tasks from outranking fresh critical tasks.
  */
 function scoreUrgency(task: ScoredTask): number {
   if (!task.createdAt) return 0.3; // Unknown age, middle-ish
@@ -100,11 +101,22 @@ function scoreUrgency(task: ScoredTask): number {
   const ageMs = Date.now() - new Date(task.createdAt).getTime();
   const ageHours = ageMs / (1000 * 60 * 60);
   
+  // Category dampening: low-impact categories gain urgency slower
+  const categoryDampen: Record<string, number> = {
+    'survival': 1.0,       // Full urgency ramp
+    'memory': 0.85,
+    'infrastructure': 0.7,
+    'expansion': 0.5,
+    'research': 0.4,
+    'maintenance': 0.3,    // Maintenance barely gains urgency over time
+    'nice-to-have': 0.2,
+  };
+  const dampen = categoryDampen[task.category || 'expansion'] || 0.5;
+  
   // Sigmoid: steep rise between 12-72 hours, plateaus at 168h (7 days)
-  // f(x) = 1 / (1 + e^(-0.05*(x - 48)))
   const sigmoid = 1 / (1 + Math.exp(-0.05 * (ageHours - 48)));
   
-  return Math.min(1.0, sigmoid);
+  return Math.min(1.0, sigmoid * dampen);
 }
 
 /**
@@ -153,15 +165,29 @@ function scoreDependency(task: ScoredTask, allTasks: ScoredTask[], completedTask
 
 /**
  * Skip decay score: tasks that keep getting skipped bubble up.
- * Logarithmic curve so it doesn't dominate everything.
+ * Logarithmic curve, capped by category — low-impact tasks can't 
+ * bubble above their station just from being neglected.
  */
 function scoreSkipDecay(task: ScoredTask): number {
   const skipCount = task.skipCount || 0;
   if (skipCount === 0) return 0;
   
+  // Category caps: how high can skip decay push this task?
+  const categoryCap: Record<string, number> = {
+    'survival': 1.0,
+    'memory': 0.9,
+    'infrastructure': 0.7,
+    'expansion': 0.6,
+    'research': 0.5,
+    'maintenance': 0.35,    // Maintenance can't bubble past 0.35
+    'nice-to-have': 0.2,    // Nice-to-have barely budges
+  };
+  const cap = categoryCap[task.category || 'expansion'] || 0.5;
+  
   // Log curve: rapid initial rise, then flattening
-  // Reaches ~0.5 at 3 skips, ~0.75 at 10 skips, ~0.9 at 25 skips
-  return Math.min(1.0, Math.log(skipCount + 1) / Math.log(30));
+  const raw = Math.log(skipCount + 1) / Math.log(30);
+  
+  return Math.min(cap, raw);
 }
 
 /**
