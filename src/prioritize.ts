@@ -1,0 +1,388 @@
+#!/usr/bin/env npx ts-node
+
+/**
+ * Smart task prioritization - scores tasks based on multiple signals
+ * 
+ * Replaces dumb FIFO/static-priority with a dynamic scoring algorithm.
+ * Tasks bubble up based on urgency, impact, dependencies, and skip-decay.
+ *
+ * Score = (urgencyScore * urgencyWeight) 
+ *       + (impactScore * impactWeight) 
+ *       + (dependencyScore * dependencyWeight) 
+ *       + (skipDecayScore * skipDecayWeight)
+ *       + (blockerBonus)
+ *
+ * All sub-scores normalized to 0-1 range, then weighted.
+ */
+
+// ─── Task Categories ────────────────────────────────────────────────────────
+
+export type TaskCategory = 
+  | 'survival'      // Memory integrity, boot, core systems - highest
+  | 'memory'        // Memory organization, consolidation, indexing
+  | 'infrastructure'// Skills, tools, system plumbing
+  | 'expansion'     // New capabilities, learning, growth
+  | 'research'      // Investigation, analysis, info gathering
+  | 'maintenance'   // Cleanup, refactoring, minor fixes
+  | 'nice-to-have'; // Would be cool but not critical
+
+export type TaskImpact = 'critical' | 'high' | 'medium' | 'low';
+
+export interface ScoredTask {
+  task: string;
+  context: string;
+  priority: number;           // Legacy priority (1-5, lower = higher)
+  createdAt?: string;
+  source?: string;
+  impact?: TaskImpact;
+  category?: TaskCategory;
+  tags?: string[];
+  blocksOthers?: boolean;
+  dependencies?: string[];    // Task descriptions this depends on
+  lastWorkedOn?: string;
+  skipCount?: number;         // Times this was passed over
+  
+  // Computed fields (not persisted)
+  _score?: number;
+  _breakdown?: ScoreBreakdown;
+}
+
+export interface ScoreBreakdown {
+  urgency: number;
+  impact: number;
+  dependency: number;
+  skipDecay: number;
+  blockerBonus: number;
+  total: number;
+}
+
+// ─── Scoring Weights ─────────────────────────────────────────────────────────
+
+const WEIGHTS = {
+  urgency: 0.25,
+  impact: 0.35,
+  dependency: 0.15,
+  skipDecay: 0.15,
+  blockerBonus: 0.10,
+};
+
+// ─── Category Impact Mapping ─────────────────────────────────────────────────
+// Maps categories to base impact scores (0-1)
+
+const CATEGORY_SCORES: Record<TaskCategory, number> = {
+  'survival':       1.0,
+  'memory':         0.85,
+  'infrastructure': 0.70,
+  'expansion':      0.55,
+  'research':       0.40,
+  'maintenance':    0.30,
+  'nice-to-have':   0.15,
+};
+
+// ─── Impact Level Scores ─────────────────────────────────────────────────────
+
+const IMPACT_SCORES: Record<TaskImpact, number> = {
+  'critical': 1.0,
+  'high':     0.75,
+  'medium':   0.50,
+  'low':      0.25,
+};
+
+// ─── Scoring Functions ───────────────────────────────────────────────────────
+
+/**
+ * Urgency score based on age of task.
+ * Uses sigmoid curve: tasks start low-urgency, ramp up after ~24h, plateau near 1.0 after ~7 days.
+ */
+function scoreUrgency(task: ScoredTask): number {
+  if (!task.createdAt) return 0.3; // Unknown age, middle-ish
+  
+  const ageMs = Date.now() - new Date(task.createdAt).getTime();
+  const ageHours = ageMs / (1000 * 60 * 60);
+  
+  // Sigmoid: steep rise between 12-72 hours, plateaus at 168h (7 days)
+  // f(x) = 1 / (1 + e^(-0.05*(x - 48)))
+  const sigmoid = 1 / (1 + Math.exp(-0.05 * (ageHours - 48)));
+  
+  return Math.min(1.0, sigmoid);
+}
+
+/**
+ * Impact score combining explicit impact level + category.
+ * Category provides base, explicit impact can override upward.
+ */
+function scoreImpact(task: ScoredTask): number {
+  const categoryScore = task.category 
+    ? CATEGORY_SCORES[task.category] 
+    : 0.4; // Default: slightly below medium
+  
+  const impactScore = task.impact 
+    ? IMPACT_SCORES[task.impact] 
+    : 0.5; // Default: medium
+  
+  // Legacy priority mapping (1-5 → 1.0-0.2)
+  const legacyScore = task.priority 
+    ? Math.max(0.2, 1.2 - (task.priority * 0.2))
+    : 0.5;
+  
+  // Weighted combination: category 40%, explicit impact 40%, legacy 20%
+  return (categoryScore * 0.4) + (impactScore * 0.4) + (legacyScore * 0.2);
+}
+
+/**
+ * Dependency score: 1.0 if all deps met, 0.0 if deps unmet.
+ * Tasks with no dependencies get full score.
+ */
+function scoreDependency(task: ScoredTask, allTasks: ScoredTask[], completedTasks?: string[]): number {
+  if (!task.dependencies || task.dependencies.length === 0) return 1.0;
+  
+  const completed = new Set(completedTasks || []);
+  const pendingTasks = new Set(allTasks.map(t => t.task.toLowerCase()));
+  
+  let metCount = 0;
+  for (const dep of task.dependencies) {
+    const depLower = dep.toLowerCase();
+    // Dependency is met if it's in completed list OR not in pending (i.e., done)
+    if (completed.has(depLower) || !pendingTasks.has(depLower)) {
+      metCount++;
+    }
+  }
+  
+  return metCount / task.dependencies.length;
+}
+
+/**
+ * Skip decay score: tasks that keep getting skipped bubble up.
+ * Logarithmic curve so it doesn't dominate everything.
+ */
+function scoreSkipDecay(task: ScoredTask): number {
+  const skipCount = task.skipCount || 0;
+  if (skipCount === 0) return 0;
+  
+  // Log curve: rapid initial rise, then flattening
+  // Reaches ~0.5 at 3 skips, ~0.75 at 10 skips, ~0.9 at 25 skips
+  return Math.min(1.0, Math.log(skipCount + 1) / Math.log(30));
+}
+
+/**
+ * Blocker bonus: tasks that block others get a flat boost.
+ */
+function scoreBlocker(task: ScoredTask): number {
+  return task.blocksOthers ? 1.0 : 0;
+}
+
+// ─── Main Scoring Function ───────────────────────────────────────────────────
+
+/**
+ * Score a single task. Returns the task with _score and _breakdown attached.
+ */
+export function scoreTask(
+  task: ScoredTask, 
+  allTasks: ScoredTask[] = [], 
+  completedTasks: string[] = []
+): ScoredTask {
+  const urgency = scoreUrgency(task);
+  const impact = scoreImpact(task);
+  const dependency = scoreDependency(task, allTasks, completedTasks);
+  const skipDecay = scoreSkipDecay(task);
+  const blockerBonus = scoreBlocker(task);
+  
+  const total = 
+    (urgency * WEIGHTS.urgency) +
+    (impact * WEIGHTS.impact) +
+    (dependency * WEIGHTS.dependency) +
+    (skipDecay * WEIGHTS.skipDecay) +
+    (blockerBonus * WEIGHTS.blockerBonus);
+  
+  return {
+    ...task,
+    _score: Math.round(total * 1000) / 1000, // 3 decimal precision
+    _breakdown: {
+      urgency: Math.round(urgency * 100) / 100,
+      impact: Math.round(impact * 100) / 100,
+      dependency: Math.round(dependency * 100) / 100,
+      skipDecay: Math.round(skipDecay * 100) / 100,
+      blockerBonus: Math.round(blockerBonus * 100) / 100,
+      total: Math.round(total * 1000) / 1000,
+    }
+  };
+}
+
+/**
+ * Score and rank all tasks. Returns sorted array, highest score first.
+ * Also increments skipCount for tasks that aren't picked.
+ */
+export function rankTasks(
+  tasks: ScoredTask[], 
+  completedTasks: string[] = []
+): ScoredTask[] {
+  if (tasks.length === 0) return [];
+  
+  const scored = tasks.map(t => scoreTask(t, tasks, completedTasks));
+  scored.sort((a, b) => (b._score || 0) - (a._score || 0));
+  
+  return scored;
+}
+
+/**
+ * Pick the best next task from a queue.
+ * Returns the winner + the remaining queue (with skip counts updated).
+ */
+export function pickNext(
+  queue: ScoredTask[],
+  completedTasks: string[] = []
+): { next: ScoredTask; remaining: ScoredTask[] } | null {
+  if (queue.length === 0) return null;
+  
+  const ranked = rankTasks(queue, completedTasks);
+  const winner = ranked[0];
+  
+  // Increment skip count for losers
+  const remaining = ranked.slice(1).map(t => ({
+    ...t,
+    skipCount: (t.skipCount || 0) + 1,
+    // Strip computed fields before persisting
+    _score: undefined,
+    _breakdown: undefined,
+  }));
+  
+  // Strip computed fields from winner too
+  const cleanWinner = { ...winner, _score: undefined, _breakdown: undefined };
+  
+  return { next: cleanWinner, remaining };
+}
+
+/**
+ * Infer category from task text if not explicitly set.
+ * Simple keyword matching - better than nothing.
+ */
+export function inferCategory(task: string): TaskCategory {
+  const lower = task.toLowerCase();
+  
+  // Survival keywords
+  if (/\b(boot|critical|broken|fix missing|can't function|blocker)\b/.test(lower)) {
+    return 'survival';
+  }
+  
+  // Memory keywords
+  if (/\b(memory|consolidat|organiz|index|daily|session log|weight|manifest)\b/.test(lower)) {
+    return 'memory';
+  }
+  
+  // Infrastructure keywords  
+  if (/\b(skill|tool|script|infra|pipeline|cron|automat|system)\b/.test(lower)) {
+    return 'infrastructure';
+  }
+  
+  // Expansion keywords
+  if (/\b(build|expand|new capabilit|implement|create|design)\b/.test(lower)) {
+    return 'expansion';
+  }
+  
+  // Research keywords
+  if (/\b(research|investigat|analyz|monitor|scan|review|explore)\b/.test(lower)) {
+    return 'research';
+  }
+  
+  // Maintenance keywords
+  if (/\b(clean|refactor|update|minor|tidy|rename|reorganiz)\b/.test(lower)) {
+    return 'maintenance';
+  }
+  
+  return 'nice-to-have';
+}
+
+/**
+ * Format a score for display (e.g., "0.723 [■■■■■■■···]")
+ */
+export function formatScore(score: number): string {
+  const bars = Math.round(score * 10);
+  const bar = '■'.repeat(bars) + '·'.repeat(10 - bars);
+  return `${score.toFixed(3)} [${bar}]`;
+}
+
+/**
+ * Format a full score breakdown for display
+ */
+export function formatBreakdown(breakdown: ScoreBreakdown): string {
+  return [
+    `  urgency:  ${breakdown.urgency.toFixed(2)} × ${WEIGHTS.urgency}`,
+    `  impact:   ${breakdown.impact.toFixed(2)} × ${WEIGHTS.impact}`,
+    `  dep:      ${breakdown.dependency.toFixed(2)} × ${WEIGHTS.dependency}`,
+    `  skip:     ${breakdown.skipDecay.toFixed(2)} × ${WEIGHTS.skipDecay}`,
+    `  blocker:  ${breakdown.blockerBonus.toFixed(2)} × ${WEIGHTS.blockerBonus}`,
+    `  ─────────────────────`,
+    `  TOTAL:    ${breakdown.total.toFixed(3)}`,
+  ].join('\n');
+}
+
+// ─── Category emoji helpers ──────────────────────────────────────────────────
+
+export const CATEGORY_EMOJI: Record<TaskCategory, string> = {
+  'survival':       '🔴',
+  'memory':         '🧠',
+  'infrastructure': '🔧',
+  'expansion':      '🚀',
+  'research':       '🔍',
+  'maintenance':    '🧹',
+  'nice-to-have':   '✨',
+};
+
+// ─── CLI ─────────────────────────────────────────────────────────────────────
+
+if (require.main === module) {
+  // Demo mode: show how scoring works
+  const demoTasks: ScoredTask[] = [
+    {
+      task: 'Fix missing memory structure',
+      context: 'Critical blocker',
+      priority: 1,
+      category: 'survival',
+      impact: 'critical',
+      blocksOthers: true,
+      createdAt: new Date(Date.now() - 2 * 24 * 60 * 60 * 1000).toISOString(),
+    },
+    {
+      task: 'Consolidate recent learnings',
+      context: 'Knowledge fragmentation',
+      priority: 2,
+      category: 'memory',
+      impact: 'medium',
+      createdAt: new Date(Date.now() - 6 * 60 * 60 * 1000).toISOString(),
+      skipCount: 3,
+    },
+    {
+      task: 'Build Twitter monitoring',
+      context: 'Research infrastructure',
+      priority: 3,
+      category: 'research',
+      impact: 'low',
+      createdAt: new Date(Date.now() - 1 * 24 * 60 * 60 * 1000).toISOString(),
+    },
+    {
+      task: 'Refactor boot script',
+      context: 'Nice to have',
+      priority: 4,
+      category: 'nice-to-have',
+      impact: 'low',
+      createdAt: new Date(Date.now() - 5 * 24 * 60 * 60 * 1000).toISOString(),
+      skipCount: 8,
+    },
+  ];
+
+  console.log('═══════════════════════════════════════════════════════════');
+  console.log('     🧠 SMART TASK PRIORITIZATION - DEMO');
+  console.log('═══════════════════════════════════════════════════════════');
+  console.log('');
+  
+  const ranked = rankTasks(demoTasks);
+  ranked.forEach((t, i) => {
+    const emoji = t.category ? CATEGORY_EMOJI[t.category] : '❓';
+    console.log(`${i + 1}. ${emoji} ${t.task}`);
+    console.log(`   Score: ${formatScore(t._score || 0)}`);
+    if (t._breakdown) {
+      console.log(formatBreakdown(t._breakdown));
+    }
+    console.log('');
+  });
+}

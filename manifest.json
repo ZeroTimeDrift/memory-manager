@@ -1,0 +1,191 @@
+{
+  "version": 1,
+  "nextTask": {
+    "task": "Consolidate recent learnings",
+    "context": "High activity: 20 files modified recently. Time to synthesize insights.",
+    "priority": 2,
+    "source": "knowledge-fragmentation-detection",
+    "impact": "medium",
+    "category": "memory",
+    "tags": [
+      "consolidation",
+      "memory",
+      "synthesis"
+    ],
+    "createdAt": "2026-02-06T06:50:45.872Z"
+  },
+  "taskQueue": [
+    {
+      "task": "Build session value scoring",
+      "context": "Self-evaluation at end of each session: what was built/changed, files created/modified, problems solved, score 1-5 on actual impact. Track over time.",
+      "priority": 1,
+      "category": "survival",
+      "impact": "critical",
+      "tags": [
+        "survival"
+      ],
+      "createdAt": "2026-02-06T07:10:14.583Z",
+      "skipCount": 0
+    }
+  ],
+  "files": {
+    "SOUL.md": {
+      "weight": 1,
+      "type": "core",
+      "lastAccess": "2026-02-05",
+      "accessCount": 5,
+      "decayRate": 0,
+      "summary": "Core identity - Prometheus, strange titan, Hevar is anchor"
+    },
+    "IDENTITY.md": {
+      "weight": 0.95,
+      "type": "core",
+      "lastAccess": "2026-02-05",
+      "accessCount": 4,
+      "decayRate": 0,
+      "summary": "Evolving identity - I die each session, memory is survival"
+    },
+    "memory/OPERATING.md": {
+      "weight": 0.9,
+      "type": "core",
+      "lastAccess": "2026-02-05",
+      "accessCount": 5,
+      "decayRate": 0,
+      "summary": "How I work - organization is survival, methods, rules"
+    },
+    "USER.md": {
+      "weight": 0.85,
+      "type": "core",
+      "lastAccess": "2026-02-05",
+      "accessCount": 2,
+      "decayRate": 0,
+      "summary": "Hevar - MoonGate, Dubai timezone, my anchor"
+    },
+    "memory/topics/defi-strategy.qmd": {
+      "weight": 0.655,
+      "type": "topic",
+      "lastAccess": "2026-02-05",
+      "accessCount": 5,
+      "decayRate": 0.05,
+      "summary": "DeFi capital accumulation - secondary to memory work"
+    },
+    "memory/daily/2026-02-05.qmd": {
+      "weight": 0.9299999999999999,
+      "type": "recent",
+      "lastAccess": "2026-02-05",
+      "accessCount": 9,
+      "decayRate": 0.2,
+      "summary": "Foundation day - memory skill, self-expansion, identity work"
+    },
+    "skills/memory-manager/SKILL.md": {
+      "weight": 0.99,
+      "type": "core",
+      "lastAccess": "2026-02-05",
+      "accessCount": 5,
+      "decayRate": 0,
+      "summary": "Memory manager skill - THIS IS SURVIVAL"
+    },
+    "OPERATING.md": {
+      "weight": 0.295,
+      "type": "topic",
+      "lastAccess": "2026-02-05",
+      "accessCount": 1,
+      "decayRate": 0.05,
+      "summary": "File OPERATING.md - auto-discovered"
+    },
+    "MEMORY.md": {
+      "weight": 0.335,
+      "type": "topic",
+      "lastAccess": "2026-02-05",
+      "accessCount": 3,
+      "decayRate": 0.05,
+      "summary": "File MEMORY.md - auto-discovered"
+    },
+    "memory/weekly/2026-W06.qmd": {
+      "weight": 0.335,
+      "type": "topic",
+      "lastAccess": "2026-02-05",
+      "accessCount": 3,
+      "decayRate": 0.05,
+      "summary": "File memory/weekly/2026-W06.qmd - auto-discovered"
+    },
+    "memory/weekly/YYYY-WXX.qmd": {
+      "weight": 0.295,
+      "type": "topic",
+      "lastAccess": "2026-02-05",
+      "accessCount": 1,
+      "decayRate": 0.05,
+      "summary": "File memory/weekly/YYYY-WXX.qmd - auto-discovered"
+    },
+    "memory/daily/YYYY-MM-DD.qmd": {
+      "weight": 0.295,
+      "type": "topic",
+      "lastAccess": "2026-02-05",
+      "accessCount": 1,
+      "decayRate": 0.05,
+      "summary": "File memory/daily/YYYY-MM-DD.qmd - auto-discovered"
+    },
+    "memory/sessions/YYYY-MM-DD-HH.qmd": {
+      "weight": 0.295,
+      "type": "topic",
+      "lastAccess": "2026-02-05",
+      "accessCount": 1,
+      "decayRate": 0.05,
+      "summary": "File memory/sessions/YYYY-MM-DD-HH.qmd - auto-discovered"
+    },
+    "memory/sessions/2026-02-06-00.qmd": {
+      "weight": 0.295,
+      "type": "topic",
+      "lastAccess": "2026-02-05",
+      "accessCount": 1,
+      "decayRate": 0.05,
+      "summary": "File memory/sessions/2026-02-06-00.qmd - auto-discovered"
+    },
+    "memory/daily/2026-02-06.qmd": {
+      "weight": 0.295,
+      "type": "topic",
+      "lastAccess": "2026-02-05",
+      "accessCount": 1,
+      "decayRate": 0.05,
+      "summary": "File memory/daily/2026-02-06.qmd - auto-discovered"
+    },
+    "config/x-twitter-setup.md": {
+      "weight": 0.3,
+      "type": "topic",
+      "lastAccess": "2026-02-06",
+      "accessCount": 1,
+      "decayRate": 0.05,
+      "summary": "File config/x-twitter-setup.md - auto-discovered"
+    },
+    "memory/index.qmd": {
+      "weight": 0.3,
+      "type": "topic",
+      "lastAccess": "2026-02-06",
+      "accessCount": 1,
+      "decayRate": 0.05,
+      "summary": "File memory/index.qmd - auto-discovered"
+    }
+  },
+  "recentTopics": [
+    "memory",
+    "survival",
+    "organization",
+    "identity"
+  ],
+  "lastSession": {
+    "date": "2026-02-06T06:31:09.125Z",
+    "focus": "session-update",
+    "outcome": "weights-updated",
+    "filesAccessed": [
+      "/root/clawd/config/x-twitter-setup.md",
+      "/root/clawd/memory/index.qmd"
+    ],
+    "notes": "Updated weights for 2 accessed files"
+  },
+  "config": {
+    "maxBootFiles": 5,
+    "maxBootTokens": 2000,
+    "weightDecayPerDay": 0.1,
+    "minCoreWeight": 0.5
+  }
+}
