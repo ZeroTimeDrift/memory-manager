@@ -26,6 +26,19 @@
       ],
       "createdAt": "2026-02-06T07:10:14.583Z",
       "skipCount": 0
+    },
+    {
+      "task": "Build session value scoring",
+      "context": "self-evaluation of whether sessions produce real value",
+      "priority": 2,
+      "category": "infrastructure",
+      "impact": "medium",
+      "tags": [
+        "infrastructure"
+      ],
+      "createdAt": "2026-02-06T07:44:09.622Z",
+      "skipCount": 0,
+      "source": "conversation-capture"
     }
   ],
   "files": {
