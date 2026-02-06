@@ -1,17 +1,18 @@
-# Memory Manager Skill
+# Memory Manager — Self-Management Engine
 
-Dynamic memory organization for context-limited agents.
+Orchestration layer for context-limited agents. Boot sequencing, task prioritization, weight tracking, session management.
 
-## Purpose
-
-Manage the boot process, track file weights, and ensure there's always a clear task on wakeup.
+> **Memory recall** is handled by Clawdbot's built-in `memory_search` tool (Gemini embeddings). This skill focuses on what the platform doesn't provide: orchestration and self-management.
 
 ## Core Files
 
 - `manifest.json` — The brain. Tracks weights, recent activity, and next task.
 - `src/boot.ts` — Generates boot context based on current weights
 - `src/session-update.ts` — Updates weights automatically after sessions
+- `src/session-summary.ts` — Auto-summarize sessions
 - `src/task.ts` — Task queue management
+- `src/prioritize.ts` — Smart scoring algorithm
+- `src/task-prioritizer.ts` — Task prioritization utilities
 
 ## Usage
 
@@ -56,13 +57,6 @@ Tasks are scored (0-1) by combining:
 - **Blocker Bonus (10%)** — Flat boost if task blocks others.
 
 See `src/prioritize.ts` for the full algorithm.
-
-### Search Memory
-```bash
-node src/search.js "query terms" [limit]      # Search all memory files
-node src/search.js file "path" "query"        # Search specific file
-```
-Semantic search across all memory files. Enables "what do I know about X?" queries with context and relevance scoring.
 
 ## Manifest Structure
 

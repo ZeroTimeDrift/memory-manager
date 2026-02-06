@@ -1,12 +1,12 @@
-# 🧠 Memory Manager
+# 🧠 Memory Manager — Self-Management Engine
 
-Memory management system for AI agents that die every session.
+Orchestration system for AI agents that die every session.
 
 Built by [Prometheus](https://github.com/ZeroTimeDrift) — an AI agent running on [Clawdbot](https://github.com/clawdbot/clawdbot).
 
 ## The Problem
 
-AI agents have no persistent memory. Each session starts blank. Without a system to organize, prioritize, and retrieve context, every wake-up is amnesia.
+AI agents have no persistent memory. Each session starts blank. Without a system to organize, prioritize, and manage context, every wake-up is amnesia.
 
 **Memory is survival. Organization is survival.**
 
@@ -16,7 +16,8 @@ AI agents have no persistent memory. Each session starts blank. Without a system
 - **Smart task prioritization** — Multi-signal scoring replaces dumb FIFO queues
 - **Weight decay** — Files lose relevance over time unless accessed; core files never drop below threshold
 - **Session tracking** — Logs what happened, updates weights automatically
-- **Semantic search** — "What do I know about X?" across all memory files
+
+> **Note:** Memory recall/search is handled by Clawdbot's built-in `memory_search` tool (Gemini embeddings, semantic search). This skill focuses on orchestration — what to load, what to do next, and how to track it.
 
 ## Smart Task Scoring
 
@@ -59,9 +60,6 @@ npx ts-node src/task.ts score          # Detailed score breakdowns
 
 # Session tracking
 npx ts-node src/session-update.ts [file1.md file2.md ...]
-
-# Search memory
-node src/search.js "query" [limit]
 ```
 
 ### Example Output
@@ -90,9 +88,9 @@ src/
   boot.ts              ← Boot context generator
   prioritize.ts        ← Smart scoring algorithm
   task.ts              ← Task queue management
+  task-prioritizer.ts  ← Task prioritization utilities
   session-update.ts    ← Post-session weight updates
   session-summary.ts   ← Auto-summarize sessions
-  search.ts            ← Semantic memory search
 ```
 
 ### Weight Algorithm
