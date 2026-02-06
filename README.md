@@ -80,12 +80,53 @@ npx ts-node src/session-update.ts [file1.md file2.md ...]
    3. 0.203 [■■········] 🔍 Set up Twitter monitoring
 ```
 
+## Conversation Capture & Session Wrap
+
+The gap between "good memory" and "great memory" is capturing what happens in live conversations.
+
+### Mid-Session Capture
+```bash
+# The agent distills conversation into structured notes, then pipes them here
+echo "DECISION: Ship widget v2 on Friday
+FACT: New Gemini API key is AIza...
+TASK: Update deploy script | Fix staging env
+TOPIC:moongate: Widget v2 has 3 partner integrations
+PERSON:Chris: Now handling QA directly
+QUOTE: Once we see the game we act." | npx ts-node src/capture.ts
+```
+
+Each line is auto-filed to the right location:
+- `DECISION:` → daily log (timestamped)
+- `FACT:` → MEMORY.md Quick Reference (deduped — won't add what's already there)
+- `TASK:` → task queue (auto-categorized, scored)
+- `TOPIC:<name>:` → `memory/topics/<name>.md`
+- `PERSON:<name>:` → `memory/people/contacts.md`
+- `QUOTE:` → daily log (preserved with attribution)
+
+### End-of-Session Wrap
+```bash
+# Simple
+npx ts-node src/session-wrap.ts "Built capture system, discussed memory architecture"
+
+# Full pipeline with structured capture
+echo "DECISION: Use 4.6\nTASK: Benchmark recall" | \
+  npx ts-node src/session-wrap.ts "Major session with Hevar" --mood breakthrough --tags memory,capture
+```
+
+Session wrap runs the complete pipeline:
+1. 📝 Writes structured session entry to daily log
+2. 📥 Runs capture.ts on piped structured data
+3. 📊 Updates file weights via session-update.ts
+4. 🔄 Re-indexes memory via `clawdbot memory index`
+
 ## Architecture
 
 ```
 manifest.json          ← The brain: weights, tasks, state
 src/
   boot.ts              ← Boot context generator
+  capture.ts           ← Conversation capture: parse → dedup → file
+  session-wrap.ts      ← End-of-session pipeline: log → capture → weights → index
   prioritize.ts        ← Smart scoring algorithm
   task.ts              ← Task queue management
   task-prioritizer.ts  ← Task prioritization utilities
