@@ -388,8 +388,121 @@ switch (command) {
     break;
   }
 
+  case 'abandon': {
+    // Abandon a task with a reason — removes from queue, logs to graveyard
+    const targetArg = process.argv[3]; // task number (1-indexed) or "active"
+    const reason = process.argv.slice(4).join(' ') || 'no longer relevant';
+    
+    if (!targetArg) {
+      console.log('Usage: task.ts abandon <number|active> [reason]');
+      console.log('  abandon active "overtaken by session indexing"');
+      console.log('  abandon 1 "duplicate"');
+      console.log('  abandon all-stale    — auto-detect and abandon stale tasks');
+      process.exit(1);
+    }
+    
+    const manifest = loadManifest();
+    const graveyardPath = path.join(WORKSPACE, 'memory', 'task-graveyard.md');
+    const timestamp = new Date().toISOString();
+    const today = timestamp.split('T')[0];
+    
+    // Ensure graveyard file exists
+    if (!fs.existsSync(graveyardPath)) {
+      fs.writeFileSync(graveyardPath, `# Task Graveyard\n\nAbandoned tasks with reasons. Patterns here reveal planning failures.\n\n`);
+    }
+    
+    let abandoned: ScoredTask[] = [];
+    
+    if (targetArg === 'active') {
+      abandoned.push(manifest.nextTask);
+      // Promote next from queue
+      if (manifest.taskQueue.length > 0) {
+        const backfilled = manifest.taskQueue.map(backfillTask);
+        const result = pickNext(backfilled);
+        if (result) {
+          manifest.nextTask = result.next;
+          manifest.taskQueue = result.remaining;
+        } else {
+          manifest.nextTask = manifest.taskQueue.shift()!;
+        }
+      } else {
+        manifest.nextTask = generateIntelligentTask(manifest);
+      }
+    } else if (targetArg === 'all-stale') {
+      // Auto-detect stale tasks: duplicates, already-done, or old low-impact
+      const seen = new Set<string>();
+      const alive: ScoredTask[] = [];
+      
+      // Check active task too
+      const activeKey = manifest.nextTask.task.toLowerCase().trim();
+      seen.add(activeKey);
+      
+      for (const task of manifest.taskQueue) {
+        const key = task.task.toLowerCase().trim();
+        
+        // Duplicate detection
+        if (seen.has(key)) {
+          abandoned.push({ ...task, context: 'duplicate' });
+          continue;
+        }
+        seen.add(key);
+        
+        // Old + low impact + high skip count = stale
+        const ageHours = task.createdAt 
+          ? (Date.now() - new Date(task.createdAt).getTime()) / (1000 * 60 * 60)
+          : 999;
+        const isStale = ageHours > 168 && (task.skipCount || 0) > 5 && 
+          ['maintenance', 'nice-to-have', 'research'].includes(task.category || '');
+        
+        if (isStale) {
+          abandoned.push({ ...task, context: 'stale (old + skipped + low priority)' });
+          continue;
+        }
+        
+        alive.push(task);
+      }
+      
+      manifest.taskQueue = alive;
+    } else {
+      // Abandon by index
+      const idx = parseInt(targetArg, 10) - 1;
+      if (idx >= 0 && idx < manifest.taskQueue.length) {
+        abandoned.push(manifest.taskQueue[idx]);
+        manifest.taskQueue.splice(idx, 1);
+      } else {
+        console.log(`❌ Invalid task number: ${targetArg} (queue has ${manifest.taskQueue.length} tasks)`);
+        process.exit(1);
+      }
+    }
+    
+    // Log to graveyard
+    if (abandoned.length > 0) {
+      let entry = `\n## ${today}\n`;
+      for (const task of abandoned) {
+        const autoReason = task.context && ['duplicate', 'stale'].some(s => task.context?.includes(s)) 
+          ? task.context 
+          : reason;
+        entry += `- **Abandoned:** ${task.task}\n`;
+        entry += `  - Reason: ${autoReason}\n`;
+        entry += `  - Category: ${task.category || '?'} | Created: ${task.createdAt?.split('T')[0] || '?'} | Skips: ${task.skipCount || 0}\n`;
+      }
+      
+      fs.appendFileSync(graveyardPath, entry);
+      saveManifest(manifest);
+      
+      console.log(`🪦 Abandoned ${abandoned.length} task(s):`);
+      for (const task of abandoned) {
+        console.log(`   ☠️  ${task.task}`);
+      }
+      console.log(`\n📝 Logged to memory/task-graveyard.md`);
+    } else {
+      console.log('ℹ️  No tasks to abandon.');
+    }
+    break;
+  }
+
   default:
-    console.log('Usage: task.ts <next|complete|add|list|smart|score>');
+    console.log('Usage: task.ts <next|complete|add|list|smart|score|abandon>');
     console.log('');
     console.log('Commands:');
     console.log('  next              Show next task with score');
@@ -398,4 +511,5 @@ switch (command) {
     console.log('  list              List all tasks ranked by score');
     console.log('  score             Detailed score breakdown for all tasks');
     console.log('  smart             Generate intelligent task recommendation');
+    console.log('  abandon <n|active|all-stale> [reason]  Kill stale/dead tasks');
 }

@@ -53,17 +53,19 @@ export interface ScoreBreakdown {
   dependency: number;
   skipDecay: number;
   blockerBonus: number;
+  humanRequest: number;
   total: number;
 }
 
 // ─── Scoring Weights ─────────────────────────────────────────────────────────
 
 const WEIGHTS = {
-  urgency: 0.15,      // Reduced: age alone shouldn't dominate
-  impact: 0.45,       // Increased: what matters most IS what matters most
-  dependency: 0.15,
-  skipDecay: 0.10,    // Reduced: skip decay was overweighted
-  blockerBonus: 0.15, // Increased: blocking others is a real signal
+  urgency: 0.12,      // Reduced: age alone shouldn't dominate
+  impact: 0.40,       // What matters most IS what matters most
+  dependency: 0.13,
+  skipDecay: 0.08,    // Reduced: skip decay was overweighted
+  blockerBonus: 0.12, // Blocking others is a real signal
+  humanRequest: 0.15, // NEW: direct human requests get priority boost
 };
 
 // ─── Category Impact Mapping ─────────────────────────────────────────────────
@@ -191,10 +193,70 @@ function scoreSkipDecay(task: ScoredTask): number {
 }
 
 /**
- * Blocker bonus: tasks that block others get a flat boost.
+ * Blocker bonus: tasks that block others get a boost proportional to chain depth.
+ * A task that unblocks 1 task gets a small boost. A task that unblocks a chain of 3 gets a big boost.
+ * This ensures "Get API credentials" scores higher when it blocks "Fix staging" which blocks "Deploy widget".
  */
-function scoreBlocker(task: ScoredTask): number {
-  return task.blocksOthers ? 1.0 : 0;
+function scoreBlocker(task: ScoredTask, allTasks: ScoredTask[] = []): number {
+  // Explicit flag still works
+  if (task.blocksOthers) return 1.0;
+  
+  if (allTasks.length === 0) return 0;
+  
+  // Count how many tasks depend on this one (direct + transitive)
+  const taskLower = task.task.toLowerCase();
+  
+  function countDependents(targetTask: string, visited: Set<string> = new Set()): number {
+    if (visited.has(targetTask)) return 0;
+    visited.add(targetTask);
+    
+    let count = 0;
+    for (const t of allTasks) {
+      if (t.dependencies?.some(d => d.toLowerCase() === targetTask)) {
+        count += 1; // Direct dependent
+        count += countDependents(t.task.toLowerCase(), visited); // Transitive
+      }
+    }
+    return count;
+  }
+  
+  const dependentCount = countDependents(taskLower);
+  
+  if (dependentCount === 0) return 0;
+  
+  // Logarithmic: 1 dependent = 0.4, 2 = 0.6, 3+ = 0.8+, capped at 1.0
+  return Math.min(1.0, 0.2 + Math.log2(dependentCount + 1) * 0.3);
+}
+
+/**
+ * Human request score: direct requests from Hevar always take priority.
+ * Detects "Hevar asked", "human request", source=conversation-capture, etc.
+ * Fresh human requests (< 1h) get maximum score.
+ */
+function scoreHumanRequest(task: ScoredTask): number {
+  const text = (task.task + ' ' + (task.source || '')).toLowerCase();
+  const tags = (task.tags || []).join(' ').toLowerCase();
+  
+  // Detect human request signals
+  const isHumanRequest = 
+    /hevar|human.?request|asked.?me|told.?me|wants.?me/.test(text) ||
+    /urgent|asap|right.?now|immediately/.test(text) ||
+    tags.includes('hevar-request') ||
+    task.source === 'conversation-capture' ||
+    task.source === 'hevar-direct';
+  
+  if (!isHumanRequest) return 0;
+  
+  // Recency of request matters — fresh requests are highest priority
+  if (task.createdAt) {
+    const ageHours = (Date.now() - new Date(task.createdAt).getTime()) / (1000 * 60 * 60);
+    if (ageHours < 1) return 1.0;   // < 1h: maximum urgency
+    if (ageHours < 6) return 0.8;   // < 6h: high urgency
+    if (ageHours < 24) return 0.5;  // < 24h: medium urgency
+    return 0.3;                      // Older: still a boost but less
+  }
+  
+  return 0.7; // Unknown age, assume somewhat recent
 }
 
 // ─── Main Scoring Function ───────────────────────────────────────────────────
@@ -211,14 +273,16 @@ export function scoreTask(
   const impact = scoreImpact(task);
   const dependency = scoreDependency(task, allTasks, completedTasks);
   const skipDecay = scoreSkipDecay(task);
-  const blockerBonus = scoreBlocker(task);
+  const blockerBonus = scoreBlocker(task, allTasks);
+  const humanRequest = scoreHumanRequest(task);
   
   const total = 
     (urgency * WEIGHTS.urgency) +
     (impact * WEIGHTS.impact) +
     (dependency * WEIGHTS.dependency) +
     (skipDecay * WEIGHTS.skipDecay) +
-    (blockerBonus * WEIGHTS.blockerBonus);
+    (blockerBonus * WEIGHTS.blockerBonus) +
+    (humanRequest * WEIGHTS.humanRequest);
   
   return {
     ...task,
@@ -229,6 +293,7 @@ export function scoreTask(
       dependency: Math.round(dependency * 100) / 100,
       skipDecay: Math.round(skipDecay * 100) / 100,
       blockerBonus: Math.round(blockerBonus * 100) / 100,
+      humanRequest: Math.round(humanRequest * 100) / 100,
       total: Math.round(total * 1000) / 1000,
     }
   };

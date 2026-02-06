@@ -1,46 +1,21 @@
 {
   "version": 1,
   "nextTask": {
-    "task": "Consolidate recent learnings",
-    "context": "High activity: 20 files modified recently. Time to synthesize insights.",
-    "priority": 2,
-    "source": "knowledge-fragmentation-detection",
-    "impact": "medium",
-    "category": "memory",
+    "task": "Fix missing memory structure",
+    "context": "Critical: memory/index.qmd missing - agent can't function properly",
+    "priority": 1,
+    "source": "critical-blocker-detection",
+    "impact": "critical",
+    "category": "survival",
     "tags": [
-      "consolidation",
+      "blocker",
       "memory",
-      "synthesis"
+      "critical"
     ],
-    "createdAt": "2026-02-06T06:50:45.872Z"
+    "blocksOthers": true,
+    "createdAt": "2026-02-06T08:16:34.587Z"
   },
-  "taskQueue": [
-    {
-      "task": "Build session value scoring",
-      "context": "Self-evaluation at end of each session: what was built/changed, files created/modified, problems solved, score 1-5 on actual impact. Track over time.",
-      "priority": 1,
-      "category": "survival",
-      "impact": "critical",
-      "tags": [
-        "survival"
-      ],
-      "createdAt": "2026-02-06T07:10:14.583Z",
-      "skipCount": 0
-    },
-    {
-      "task": "Build session value scoring",
-      "context": "self-evaluation of whether sessions produce real value",
-      "priority": 2,
-      "category": "infrastructure",
-      "impact": "medium",
-      "tags": [
-        "infrastructure"
-      ],
-      "createdAt": "2026-02-06T07:44:09.622Z",
-      "skipCount": 0,
-      "source": "conversation-capture"
-    }
-  ],
+  "taskQueue": [],
   "files": {
     "SOUL.md": {
       "weight": 1,

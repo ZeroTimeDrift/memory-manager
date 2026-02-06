@@ -35,7 +35,7 @@ const MANIFEST_PATH = path.join(WORKSPACE, 'skills', 'memory-manager', 'manifest
 // ─── Types ──────────────────────────────────────────────────────────────────
 
 interface CapturedItem {
-  type: 'decision' | 'fact' | 'task' | 'topic' | 'person' | 'quote' | 'note';
+  type: 'decision' | 'fact' | 'task' | 'topic' | 'person' | 'quote' | 'note' | 'preference' | 'reaction';
   content: string;
   target?: string; // topic name or person name
 }
@@ -48,6 +48,8 @@ interface CaptureResult {
   people: Map<string, string[]>;
   quotes: string[];
   notes: string[];
+  preferences: string[];
+  reactions: string[];
   filed: string[];    // summary of where things were filed
   skipped: string[];  // items that were deduped
 }
@@ -66,6 +68,8 @@ function parseInput(input: string): CapturedItem[] {
     const topicMatch = line.match(/^TOPIC:(\w[\w-]*):\s*(.+)/i);
     const personMatch = line.match(/^PERSON:(\w[\w\s-]*):\s*(.+)/i);
     const quoteMatch = line.match(/^QUOTE:\s*(.+)/i);
+    const preferenceMatch = line.match(/^PREFERENCE:\s*(.+)/i);
+    const reactionMatch = line.match(/^REACTION:\s*(.+)/i);
 
     if (decisionMatch) {
       items.push({ type: 'decision', content: decisionMatch[1].trim() });
@@ -79,6 +83,10 @@ function parseInput(input: string): CapturedItem[] {
       items.push({ type: 'person', content: personMatch[2].trim(), target: personMatch[1].trim() });
     } else if (quoteMatch) {
       items.push({ type: 'quote', content: quoteMatch[1].trim() });
+    } else if (preferenceMatch) {
+      items.push({ type: 'preference', content: preferenceMatch[1].trim() });
+    } else if (reactionMatch) {
+      items.push({ type: 'reaction', content: reactionMatch[1].trim() });
     } else {
       // Unstructured — treat as general note
       items.push({ type: 'note', content: line });
@@ -253,6 +261,60 @@ function appendToContacts(personName: string, info: string): void {
   fs.writeFileSync(CONTACTS_FILE, updatedContent.replace(/^updated:.*$/m, `updated: ${getToday()}`));
 }
 
+function appendToHevarProfile(type: 'preference' | 'reaction', content: string): void {
+  const profilePath = path.join(WORKSPACE, 'memory', 'people', 'hevar-profile.md');
+  const timestamp = getTimestamp();
+  const today = getToday();
+  
+  if (!fs.existsSync(profilePath)) {
+    ensureDir(path.dirname(profilePath));
+    fs.writeFileSync(profilePath, `---
+title: Hevar — Personal Context
+updated: ${today}
+description: Preferences, reactions, emotional signals — who Hevar IS, not just what he wants done
+---
+
+# Hevar — Personal Context
+
+This file captures who Hevar is as a person: preferences, reactions, frustrations, excitement, opinions.
+Not operational rules — those go in MEMORY.md. This is about understanding the human.
+
+## Preferences
+
+## Reactions & Emotions
+
+## Communication Style
+
+## Opinions
+
+`);
+  }
+  
+  const existing = fs.readFileSync(profilePath, 'utf-8');
+  const sectionMap: Record<string, string> = {
+    'preference': '## Preferences',
+    'reaction': '## Reactions & Emotions',
+  };
+  
+  const sectionHeader = sectionMap[type];
+  const entry = `- [${today} ${timestamp}] ${content}`;
+  
+  if (existing.includes(sectionHeader)) {
+    const idx = existing.indexOf(sectionHeader);
+    const nextSection = existing.indexOf('\n## ', idx + sectionHeader.length);
+    const insertPoint = nextSection === -1 ? existing.length : nextSection;
+    const before = existing.substring(0, insertPoint).trimEnd();
+    const after = existing.substring(insertPoint);
+    fs.writeFileSync(profilePath, before + '\n' + entry + '\n' + after);
+  } else {
+    fs.writeFileSync(profilePath, existing.trimEnd() + '\n\n' + sectionHeader + '\n\n' + entry + '\n');
+  }
+  
+  // Update frontmatter date
+  const updated = fs.readFileSync(profilePath, 'utf-8');
+  fs.writeFileSync(profilePath, updated.replace(/^updated:.*$/m, `updated: ${today}`));
+}
+
 function addTask(taskText: string): void {
   // Parse task text — may include context after a pipe or dash
   const parts = taskText.split(/\s*[|—]\s*/);
@@ -299,7 +361,7 @@ function capture(input: string): CaptureResult {
   const result: CaptureResult = {
     decisions: [], facts: [], tasks: [],
     topics: new Map(), people: new Map(),
-    quotes: [], notes: [],
+    quotes: [], notes: [], preferences: [], reactions: [],
     filed: [], skipped: []
   };
 
@@ -361,6 +423,18 @@ function capture(input: string): CaptureResult {
         result.filed.push(`💬 Quote → daily/${today}.md`);
         break;
 
+      case 'preference':
+        result.preferences.push(item.content);
+        appendToHevarProfile('preference', item.content);
+        result.filed.push(`💡 Preference → memory/people/hevar-profile.md`);
+        break;
+
+      case 'reaction':
+        result.reactions.push(item.content);
+        appendToHevarProfile('reaction', item.content);
+        result.filed.push(`😊 Reaction → memory/people/hevar-profile.md`);
+        break;
+
       case 'note':
         result.notes.push(item.content);
         // Notes are batched and written together below
@@ -394,7 +468,7 @@ function printResult(result: CaptureResult): void {
   }
   
   const total = result.decisions.length + result.facts.length + result.tasks.length + 
-    result.quotes.length + result.notes.length + 
+    result.quotes.length + result.notes.length + result.preferences.length + result.reactions.length +
     Array.from(result.topics.values()).reduce((a, b) => a + b.length, 0) +
     Array.from(result.people.values()).reduce((a, b) => a + b.length, 0);
   
