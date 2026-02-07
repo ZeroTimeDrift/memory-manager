@@ -81,7 +81,7 @@ function updateFileWeight(entry: FileEntry): void {
 
 function scanForAccessedFiles(): string[] {
   const today = new Date().toISOString().split('T')[0];
-  const dailyFile = path.join(WORKSPACE, 'memory', 'daily', `${today}.qmd`);
+  const dailyFile = path.join(WORKSPACE, 'memory', 'daily', `${today}.md`);
   const sessionDir = path.join(WORKSPACE, 'memory', 'sessions');
   
   const accessedFiles: Set<string> = new Set();
@@ -110,7 +110,7 @@ function scanForAccessedFiles(): string[] {
   try {
     const sessions = fs.readdirSync(sessionDir);
     const recentSessions = sessions
-      .filter(file => file.endsWith('.qmd'))
+      .filter(file => file.endsWith('.md'))
       .filter(file => {
         const filePath = path.join(sessionDir, file);
         const stats = fs.statSync(filePath);

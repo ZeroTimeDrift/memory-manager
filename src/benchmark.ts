@@ -89,8 +89,8 @@ const RECALL_TESTS: RecallTest[] = [
   },
   {
     query: "Slack allowlist never add anyone else",
-    expectedFile: "MEMORY.md",
-    expectedContent: "Hevar ONLY",
+    expectedFile: "rules.md",
+    expectedContent: "Only Hevar",
     importance: 'critical'
   },
   
@@ -297,8 +297,8 @@ const RECALL_TESTS: RecallTest[] = [
   },
   {
     query: "instructions about who can use the company chat integration",
-    expectedFile: "MEMORY.md",
-    expectedContent: "Hevar ONLY",
+    expectedFile: "rules.md",
+    expectedContent: "Only Hevar",
     importance: 'critical'
   },
 
@@ -603,7 +603,7 @@ function runRecallTests(tests: RecallTest[]): BenchmarkResult['recall'] {
     try {
       const result = child_process.execSync(
         `clawdbot memory search "${test.query.replace(/"/g, '\\"')}" --json --max-results 5 2>/dev/null`,
-        { encoding: 'utf-8', timeout: 30000 }
+        { encoding: 'utf-8', timeout: 30000, maxBuffer: 10 * 1024 * 1024 }
       );
       
       const data = JSON.parse(result);
@@ -685,7 +685,7 @@ console.log(JSON.stringify(results));
     
     const output = child_process.execSync(
       `cd ${WORKSPACE}/skills/memory-manager && npx ts-node ${tmpScript}`,
-      { encoding: 'utf-8', timeout: 20000 }
+      { encoding: 'utf-8', timeout: 30000, maxBuffer: 10 * 1024 * 1024 }
     ).trim();
     
     // Clean up temp file

@@ -40,7 +40,7 @@ function generateIntelligentTask(manifest: Manifest): ScoredTask {
   
   // Check for missing critical structure
   const criticalPaths = [
-    'memory/index.qmd',
+    'memory/index.md',
     'memory/daily',
     'MEMORY.md'
   ];

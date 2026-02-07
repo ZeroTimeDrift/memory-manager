@@ -78,7 +78,7 @@ function analyzeMemoryState(): {
 
   // Check for missing structure
   const expectedPaths = [
-    'memory/index.qmd',
+    'memory/index.md',
     'memory/daily',
     'memory/sessions', 
     'memory/topics',
@@ -139,10 +139,10 @@ function detectProgressBlockers(): Array<{task: string, context: string, severit
   }
 
   // Check for memory system integrity
-  if (!fs.existsSync(path.join(WORKSPACE, 'memory/index.qmd'))) {
+  if (!fs.existsSync(path.join(WORKSPACE, 'memory/index.md'))) {
     blockers.push({
       task: 'Fix memory boot sequence',
-      context: 'Critical: memory/index.qmd missing - agent can\'t boot properly',
+      context: 'Critical: memory/index.md missing - agent can\'t boot properly',
       severity: 'critical' as const
     });
   }

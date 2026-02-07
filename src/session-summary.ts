@@ -173,7 +173,7 @@ function findMostRecentSession(): string | null {
   }
   
   const sessions = fs.readdirSync(SESSIONS_DIR)
-    .filter(file => file.endsWith('.qmd'))
+    .filter(file => file.endsWith('.md'))
     .map(file => {
       const fullPath = path.join(SESSIONS_DIR, file);
       const stats = fs.statSync(fullPath);
@@ -186,7 +186,7 @@ function findMostRecentSession(): string | null {
 
 function updateDailyNotes(sessionSummary: SessionSummary): void {
   const today = new Date().toISOString().split('T')[0];
-  const dailyFile = path.join(DAILY_DIR, `${today}.qmd`);
+  const dailyFile = path.join(DAILY_DIR, `${today}.md`);
   
   // Create daily file if it doesn't exist
   if (!fs.existsSync(dailyFile)) {
