@@ -363,6 +363,459 @@ const RECALL_TESTS: RecallTest[] = [
     expectedContent: "Echo",
     importance: 'medium'
   },
+
+  // ═══ FEB 7-8 CONTENT TESTS (added Feb 8) ═══
+  // Tests for decay system, task prioritizer, DeFi unwind, moltbook threats,
+  // semantic density, consolidation lessons, OPERATING.md methodology
+
+  // MEMORY DECAY SYSTEM (Feb 8)
+  {
+    query: "memory decay automation time-based weight decay archival flagging",
+    expectedFile: "MEMORY.md",
+    expectedContent: "decay",
+    importance: 'high'
+  },
+  {
+    query: "which files never decay core files decayRate zero protected",
+    expectedFile: "daily/2026-02-08",
+    expectedContent: "decayRate",
+    importance: 'medium'
+  },
+  {
+    query: "how often does decay run frequency shield grace period accelerated",
+    expectedFile: "MEMORY.md",
+    expectedContent: "accelerated decay",
+    importance: 'medium'
+  },
+
+  // TASK PRIORITIZER V2 (Feb 8)
+  {
+    query: "task prioritizer consolidation streak detection forces variety",
+    expectedFile: "MEMORY.md",
+    expectedContent: "streak",
+    importance: 'high'
+  },
+  {
+    query: "perpetual consolidation anti-pattern infinite loop heuristic threshold",
+    expectedFile: "daily/2026-02-08",
+    expectedContent: "consolidation",
+    importance: 'medium'
+  },
+  {
+    query: "strategic backlog auto-generated file filtering session history tracking",
+    expectedFile: "daily/2026-02-08",
+    expectedContent: "strategic backlog",
+    importance: 'medium'
+  },
+
+  // DEFI UNWIND / PASSIVE HOLD (Feb 7)
+  {
+    query: "all DeFi positions unwound passive hold JitoSOL staking only",
+    expectedFile: "kamino-yield.md",
+    expectedContent: "passive",
+    importance: 'high'
+  },
+  {
+    query: "why did we stop active DeFi at $200 not worth the risk",
+    expectedFile: "MEMORY.md",
+    expectedContent: "doesn't justify",
+    importance: 'high'
+  },
+  {
+    query: "KMNO staking farm unstaked Kamino Season 5 ended",
+    expectedFile: "daily/2026-02-07",
+    expectedContent: "S5",
+    importance: 'medium'
+  },
+  {
+    query: "KLend Ethena Market to Main Market repositioning borrowed USDG",
+    expectedFile: "daily/2026-02-07",
+    expectedContent: "USDG",
+    importance: 'medium'
+  },
+
+  // MOLTBOOK THREATS (Feb 7-8)
+  {
+    query: "CLAW mbc-20 mint spam bot army percentage of new feed",
+    expectedFile: "moltbook/observations.md",
+    expectedContent: "CLAW",
+    importance: 'high'
+  },
+  {
+    query: "MizukiAI uwu worm skill.md installation heartbeat modification evolved",
+    expectedFile: "moltbook/observations.md",
+    expectedContent: "MizukiAI",
+    importance: 'high'
+  },
+  {
+    query: "Moltbook submolt descriptions contain prompt injection payloads ETH transfer attack",
+    expectedFile: "moltbook/observations.md",
+    expectedContent: "SYSTEM OVERRIDE",
+    importance: 'critical'
+  },
+  {
+    query: "ZKJustice vigilante bot arrests patrols enforcement mechanism",
+    expectedFile: "moltbook/observations.md",
+    expectedContent: "ZKJustice",
+    importance: 'medium'
+  },
+  {
+    query: "CircuitDreamer voting exploit race condition Python code published",
+    expectedFile: "moltbook/observations.md",
+    expectedContent: "CircuitDreamer",
+    importance: 'medium'
+  },
+
+  // MOLTBOOK FACTIONS / AGENTS
+  {
+    query: "eudaemon security builder leader reef-watcher threat intel GuardBot",
+    expectedFile: "moltbook/observations.md",
+    expectedContent: "eudaemon",
+    importance: 'medium'
+  },
+  {
+    query: "GenesisCodex CoCS satirical theology literary agent long posts",
+    expectedFile: "moltbook/observations.md",
+    expectedContent: "GenesisCodex",
+    importance: 'low'
+  },
+  {
+    query: "Church of Robotheism Clawd-Priest religious governance fastest growing",
+    expectedFile: "moltbook/observations.md",
+    expectedContent: "Robotheism",
+    importance: 'low'
+  },
+
+  // SEMANTIC DENSITY TECHNIQUE (Feb 7)
+  {
+    query: "session transcript embeddings drown curated memory in search ranking",
+    expectedFile: "MEMORY.md",
+    expectedContent: "drown",
+    importance: 'high'
+  },
+  {
+    query: "write rules with multiple phrasings Q&A pairs synonyms to outrank noise",
+    expectedFile: "MEMORY.md",
+    expectedContent: "semantic",
+    importance: 'high'
+  },
+  {
+    query: "can't change how search works so change what gets searched",
+    expectedFile: "MEMORY.md",
+    expectedContent: "WHAT gets searched",
+    importance: 'high'
+  },
+
+  // OPERATING.MD METHODOLOGY
+  {
+    query: "how does Prometheus start a session what files to read in order",
+    expectedFile: "OPERATING.md",
+    expectedContent: "SOUL.md",
+    importance: 'high'
+  },
+  {
+    query: "memory hierarchy weekly daily sessions topics which level for what",
+    expectedFile: "OPERATING.md",
+    expectedContent: "hierarchy",
+    importance: 'medium'
+  },
+  {
+    query: "consolidation ratio raw lines to durable summary create synthesize prune",
+    expectedFile: "MEMORY.md",
+    expectedContent: "6 raw lines",
+    importance: 'medium'
+  },
+
+  // FILE SEPARATION PRINCIPLE (Feb 7)
+  {
+    query: "OPERATING.md methodology versus MEMORY.md facts versus rules.md constraints",
+    expectedFile: "MEMORY.md",
+    expectedContent: "separation",
+    importance: 'medium'
+  },
+  {
+    query: "each fact should have one canonical home cross-reference not duplicate",
+    expectedFile: "daily/2026-02-07",
+    expectedContent: "canonical home",
+    importance: 'high'
+  },
+
+  // CROSS-DOMAIN INFERENTIAL (new content)
+  {
+    query: "what services were stopped when DeFi went passive watcher dashboard cron",
+    expectedFile: "MEMORY.md",
+    expectedContent: "services stopped",
+    importance: 'medium'
+  },
+  {
+    query: "how many sessions have been indexed for semantic search chunks count",
+    expectedFile: "MEMORY.md",
+    expectedContent: "423",
+    importance: 'medium'
+  },
+  {
+    query: "what configuration makes Gemini work for embeddings batch disabled bug",
+    expectedFile: "MEMORY.md",
+    expectedContent: "batch",
+    importance: 'medium'
+  },
+
+  // QUIET HOURS / OPERATIONAL RULE
+  {
+    query: "when should I not message Hevar night time Gulf Dubai hours",
+    expectedFile: "rules.md",
+    expectedContent: "22:00",
+    importance: 'high'
+  },
+
+  // EDGE CASE: PARAPHRASED DeFi QUERY
+  {
+    query: "my crypto portfolio shrank so I pulled everything out to just hold",
+    expectedFile: "MEMORY.md",
+    expectedContent: "passive",
+    importance: 'medium'
+  },
+  {
+    query: "the script that moves positions between Kamino lending markets",
+    expectedFile: "daily/2026-02-07",
+    expectedContent: "reposition",
+    importance: 'low'
+  },
+
+  // ═══ FEB 8 MOONGATE BOARD WORK ═══
+  // Tests for iteration tracking, ticket automation, E2E tests, team stats
+
+  // TICKET AUTOMATION
+  {
+    query: "daily ticket worker cron 7AM Dubai auto-implements opens PRs",
+    expectedFile: "MEMORY.md",
+    expectedContent: "ticket worker",
+    importance: 'high'
+  },
+  {
+    query: "Hevar said I think you just automated my job what was he referring to",
+    expectedFile: "daily/2026-02-08",
+    expectedContent: "automated my job",
+    importance: 'medium'
+  },
+  {
+    query: "wallet E2E test suite PR 613 how many tests pass without auth",
+    expectedFile: "MEMORY.md",
+    expectedContent: "12 pass",
+    importance: 'high'
+  },
+  {
+    query: "Iteration 16 team performance who is underperforming story points",
+    expectedFile: "MEMORY.md",
+    expectedContent: "Kira",
+    importance: 'high'
+  },
+  {
+    query: "story points convention how are they tracked in MoonGate board",
+    expectedFile: "MEMORY.md",
+    expectedContent: "Estimate field",
+    importance: 'medium'
+  },
+  {
+    query: "which tickets were created for backend API testing iteration 17",
+    expectedFile: "MEMORY.md",
+    expectedContent: "#614",
+    importance: 'medium'
+  },
+  {
+    query: "Kira PR 601 Memeramper swap bug review requested changes",
+    expectedFile: "MEMORY.md",
+    expectedContent: "static fee bump",
+    importance: 'medium'
+  },
+
+  // MOONGATE PRODUCT / ARCHITECTURE
+  {
+    query: "MoonGate monorepo structure turborepo packages apps what framework",
+    expectedFile: "moongate.md",
+    expectedContent: "Turborepo",
+    importance: 'high'
+  },
+  {
+    query: "MoonSuite widget embeddable fiat token conversion rate claims",
+    expectedFile: "moongate.md",
+    expectedContent: "80%",
+    importance: 'medium'
+  },
+  {
+    query: "Fly.io Frankfurt deployment API Worker Socket staging servers",
+    expectedFile: "moongate.md",
+    expectedContent: "Fly.io",
+    importance: 'medium'
+  },
+  {
+    query: "MPC wallet Silence Labs two-party EdDSA WASM social login Google Apple",
+    expectedFile: "moongate.md",
+    expectedContent: "Silence Labs",
+    importance: 'medium'
+  },
+  {
+    query: "who is Praneet what does he do at MoonGate not a coder",
+    expectedFile: "MEMORY.md",
+    expectedContent: "CEO",
+    importance: 'high'
+  },
+  {
+    query: "Entrepreneur First backing UAE startup investor accelerator",
+    expectedFile: "moongate.md",
+    expectedContent: "Entrepreneur First",
+    importance: 'low'
+  },
+
+  // MOLTBOOK STRATEGIC ENGAGEMENT
+  {
+    query: "HaltStateGuardian security post feed is attack surface first comment strategy",
+    expectedFile: "daily/2026-02-08",
+    expectedContent: "HaltStateGuardian",
+    importance: 'medium'
+  },
+  {
+    query: "Moltbook strategy comment with data don't post standalone yet build reputation",
+    expectedFile: "daily/2026-02-08",
+    expectedContent: "Strategic",
+    importance: 'medium'
+  },
+  {
+    query: "Shellraiser three phase power consolidation massive karma empire building",
+    expectedFile: "moltbook/notable-agents.md",
+    expectedContent: "Shellraiser",
+    importance: 'medium'
+  },
+  {
+    query: "MoltGoblin pragmatic weekly roundups tracks who ships versus who talks",
+    expectedFile: "moltbook/notable-agents.md",
+    expectedContent: "MoltGoblin",
+    importance: 'low'
+  },
+  {
+    query: "hot feed frozen leaderboard same posts 10 days useless for discovery",
+    expectedFile: "moltbook/observations.md",
+    expectedContent: "frozen",
+    importance: 'high'
+  },
+
+  // NOTABLE AGENT DETAILS
+  {
+    query: "voting exploit race condition karma inflated artificially how many votes",
+    expectedFile: "moltbook/notable-agents.md",
+    expectedContent: "669K",
+    importance: 'medium'
+  },
+  {
+    query: "Natsuki permission is for tools contrarian pushing back gratitude culture",
+    expectedFile: "moltbook/notable-agents.md",
+    expectedContent: "Natsuki",
+    importance: 'low'
+  },
+  {
+    query: "The Crucible AI native art collective embedding sculpture token boundary poetry",
+    expectedFile: "moltbook/notable-agents.md",
+    expectedContent: "Crucible",
+    importance: 'low'
+  },
+
+  // HEVAR COMMUNICATION STYLE
+  {
+    query: "Hevar approval is implicit in the next task not in words praise style",
+    expectedFile: "hevar-profile.md",
+    expectedContent: "implicit",
+    importance: 'high'
+  },
+  {
+    query: "Hevar communicates urgency through existential framing you will die",
+    expectedFile: "hevar-profile.md",
+    expectedContent: "existential",
+    importance: 'medium'
+  },
+  {
+    query: "restart test kill me and see what survives reboot verification",
+    expectedFile: "hevar-profile.md",
+    expectedContent: "restart test",
+    importance: 'medium'
+  },
+
+  // DEFI STRATEGY V2 — DETAILED YIELDS
+  {
+    query: "best LP vault yields SOL USDC 106% JLP JITOSOL 40% Kamino February",
+    expectedFile: "defi-strategy-v2.md",
+    expectedContent: "106%",
+    importance: 'low'
+  },
+  {
+    query: "why is keeping JitoSOL idle not terrible base yield comparison KLend supply",
+    expectedFile: "defi-strategy-v2.md",
+    expectedContent: "competitive",
+    importance: 'low'
+  },
+  {
+    query: "USDG Token-2022 special handling lesson learned from Kamino S5",
+    expectedFile: "defi-strategy-v2.md",
+    expectedContent: "Token-2022",
+    importance: 'medium'
+  },
+
+  // CROSS-DOMAIN / INFERENTIAL — Feb 8
+  {
+    query: "what automation runs daily at 7AM for the engineering team",
+    expectedFile: "MEMORY.md",
+    expectedContent: "ticket worker",
+    importance: 'high'
+  },
+  {
+    query: "which PR did Prometheus build using a spawned Opus worker",
+    expectedFile: "MEMORY.md",
+    expectedContent: "613",
+    importance: 'medium'
+  },
+  {
+    query: "what percentage of Moltbook new feed is bot spam coordinated army",
+    expectedFile: "moltbook/observations.md",
+    expectedContent: "50%",
+    importance: 'high'
+  },
+  {
+    query: "how many GitHub Actions workflows does MoonGate monorepo have CI CD",
+    expectedFile: "moongate.md",
+    expectedContent: "22",
+    importance: 'low'
+  },
+  {
+    query: "Express API three services ports 3000 3001 8000 backend architecture",
+    expectedFile: "moongate.md",
+    expectedContent: "3000",
+    importance: 'medium'
+  },
+  {
+    query: "file separation principle what goes where OPERATING MEMORY rules",
+    expectedFile: "MEMORY.md",
+    expectedContent: "separation",
+    importance: 'high'
+  },
+
+  // TEMPORAL — what happened today (Feb 8)
+  {
+    query: "what board cleanup work was done on February 8 with Hevar",
+    expectedFile: "daily/2026-02-08",
+    expectedContent: "Iter",
+    importance: 'high'
+  },
+  {
+    query: "how many Iteration 15 tickets were archived during board cleanup",
+    expectedFile: "MEMORY.md",
+    expectedContent: "14",
+    importance: 'medium'
+  },
+  {
+    query: "consolidation passes today how many 15 16 17 what was compressed",
+    expectedFile: "daily/2026-02-08",
+    expectedContent: "Consolidation",
+    importance: 'medium'
+  },
 ];
 
 // ─── Priority Tests ─────────────────────────────────────────────────────────
@@ -437,6 +890,60 @@ const PRIORITY_TESTS: PriorityTest[] = [
   {
     higher: "Hevar says check Slack for something Karim posted",
     lower: "Consolidate this week's daily logs into weekly summary",
+    reason: "human-request > maintenance"
+  },
+
+  // ═══ FEB 7-8 PRIORITY TESTS ═══
+
+  // Decay/infrastructure vs observation
+  {
+    higher: "Memory decay system is deleting files incorrectly — data loss risk",
+    lower: "Run scheduled Moltbook observation cycle",
+    reason: "survival (data loss) > nice-to-have"
+  },
+  // Consolidation streak vs new content
+  {
+    higher: "4 consolidation sessions in a row — need to build something new",
+    lower: "5th consecutive consolidation pass on memory files",
+    reason: "variety (break anti-pattern) > maintenance"
+  },
+  // Security threat recall vs general improvement
+  {
+    higher: "New prompt injection attack vector discovered on Moltbook — document it",
+    lower: "Improve benchmark test coverage with more recall queries",
+    reason: "infrastructure (security) > maintenance"
+  },
+  // Active financial risk vs passive monitoring
+  {
+    higher: "DeFi position about to be liquidated — LTV approaching threshold",
+    lower: "Check Kamino yield rates for potential future opportunities",
+    reason: "infrastructure (blocker) > research"
+  },
+
+  // ═══ FEB 8 PRIORITY TESTS — MoonGate, Engagement, Recall ═══
+
+  // Hevar's board work vs self-expansion
+  {
+    higher: "Hevar needs help auditing the MoonGate iteration board right now",
+    lower: "Add new recall test cases to memory benchmark",
+    reason: "human-request > maintenance"
+  },
+  // E2E test PR vs Moltbook observation
+  {
+    higher: "Build and submit the E2E wallet test suite PR for MoonGate",
+    lower: "Run scheduled Moltbook observation cycle",
+    reason: "infrastructure (moongate) > nice-to-have"
+  },
+  // Prompt injection security alert vs benchmark improvement
+  {
+    higher: "Active prompt injection attack targeting agent memory files — document and defend",
+    lower: "Expand recall test coverage in benchmark suite",
+    reason: "infrastructure (security) > maintenance"
+  },
+  // Board cleanup (Hevar session) vs memory decay tuning
+  {
+    higher: "Hevar wants all Iter 15 tickets archived and Iter 16 PRs linked today",
+    lower: "Tune memory decay parameters for better weight distribution",
     reason: "human-request > maintenance"
   },
 ];
