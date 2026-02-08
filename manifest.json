@@ -1,18 +1,16 @@
 {
   "version": 1,
   "nextTask": {
-    "task": "Consolidate recent learnings",
-    "context": "High activity: 34 files modified recently. Time to synthesize insights.",
+    "task": "Add new recall test cases for recent content",
+    "context": "Memory system grows but benchmark tests are static. Add tests for DeFi lessons, moltbook observations, and operational rules added since last benchmark update.",
     "priority": 2,
-    "source": "knowledge-fragmentation-detection",
-    "impact": "medium",
+    "source": "strategic-backlog",
+    "impact": "high",
     "category": "memory",
     "tags": [
-      "consolidation",
-      "memory",
-      "synthesis"
+      "memory"
     ],
-    "createdAt": "2026-02-07T08:40:31.573Z"
+    "createdAt": "2026-02-08T02:34:57.241Z"
   },
   "taskQueue": [],
   "files": {
@@ -49,7 +47,7 @@
       "summary": "Hevar - MoonGate, Dubai timezone, my anchor"
     },
     "memory/topics/defi-strategy.md": {
-      "weight": 0.7300000000000001,
+      "weight": 0.7250000000000001,
       "type": "topic",
       "lastAccess": "2026-02-07",
       "accessCount": 7,
@@ -57,7 +55,7 @@
       "summary": "DeFi capital accumulation - secondary to memory work"
     },
     "memory/daily/2026-02-05.md": {
-      "weight": 0.8199999999999998,
+      "weight": 0.7199999999999998,
       "type": "recent",
       "lastAccess": "2026-02-06",
       "accessCount": 10,
@@ -73,7 +71,7 @@
       "summary": "Memory manager skill - THIS IS SURVIVAL"
     },
     "OPERATING.md": {
-      "weight": 0.21999999999999992,
+      "weight": 0.17499999999999988,
       "type": "topic",
       "lastAccess": "2026-02-05",
       "accessCount": 1,
@@ -81,15 +79,15 @@
       "summary": "File OPERATING.md - auto-discovered"
     },
     "MEMORY.md": {
-      "weight": 0.7750000000000002,
+      "weight": 0.9,
       "type": "topic",
-      "lastAccess": "2026-02-07",
-      "accessCount": 13,
+      "lastAccess": "2026-02-08",
+      "accessCount": 17,
       "decayRate": 0.05,
       "summary": "File MEMORY.md - auto-discovered"
     },
     "memory/weekly/2026-W06.md": {
-      "weight": 0.35000000000000003,
+      "weight": 0.34500000000000003,
       "type": "topic",
       "lastAccess": "2026-02-07",
       "accessCount": 5,
@@ -97,7 +95,7 @@
       "summary": "File memory/weekly/2026-W06.qmd - auto-discovered"
     },
     "memory/sessions/2026-02-06-00.md": {
-      "weight": 0.21999999999999992,
+      "weight": 0.17499999999999988,
       "type": "topic",
       "lastAccess": "2026-02-05",
       "accessCount": 1,
@@ -105,7 +103,7 @@
       "summary": "File memory/sessions/2026-02-06-00.qmd - auto-discovered"
     },
     "memory/daily/2026-02-06.md": {
-      "weight": 0.21999999999999992,
+      "weight": 0.17499999999999988,
       "type": "topic",
       "lastAccess": "2026-02-05",
       "accessCount": 1,
@@ -113,7 +111,7 @@
       "summary": "File memory/daily/2026-02-06.qmd - auto-discovered"
     },
     "config/x-twitter-setup.md": {
-      "weight": 0.5800000000000001,
+      "weight": 0.5750000000000001,
       "type": "topic",
       "lastAccess": "2026-02-07",
       "accessCount": 9,
@@ -121,7 +119,7 @@
       "summary": "File config/x-twitter-setup.md - auto-discovered"
     },
     "memory/index.md": {
-      "weight": 0.3,
+      "weight": 0.27499999999999997,
       "type": "topic",
       "lastAccess": "2026-02-06",
       "accessCount": 2,
@@ -129,7 +127,7 @@
       "summary": "File memory/index.qmd - auto-discovered"
     },
     "AGENTS.md": {
-      "weight": 0.3,
+      "weight": 0.27499999999999997,
       "type": "topic",
       "lastAccess": "2026-02-06",
       "accessCount": 2,
@@ -137,7 +135,7 @@
       "summary": "File AGENTS.md - auto-discovered"
     },
     "memory/topics/defi-strategy-v2.md": {
-      "weight": 0.41000000000000003,
+      "weight": 0.385,
       "type": "topic",
       "lastAccess": "2026-02-06",
       "accessCount": 6,
@@ -145,7 +143,7 @@
       "summary": "File memory/topics/defi-strategy-v2.md - auto-discovered"
     },
     "memory/drafts/moltbook-architecture-post.md": {
-      "weight": 0.27999999999999997,
+      "weight": 0.25499999999999995,
       "type": "topic",
       "lastAccess": "2026-02-06",
       "accessCount": 1,
@@ -153,12 +151,20 @@
       "summary": "File memory/drafts/moltbook-architecture-post.md - auto-discovered"
     },
     "memory/rules.md": {
-      "weight": 0.34,
+      "weight": 0.42500000000000004,
+      "type": "topic",
+      "lastAccess": "2026-02-07",
+      "accessCount": 6,
+      "decayRate": 0.05,
+      "summary": "File memory/rules.md - auto-discovered"
+    },
+    "memory/topics/kamino-yield.md": {
+      "weight": 0.335,
       "type": "topic",
       "lastAccess": "2026-02-07",
       "accessCount": 3,
       "decayRate": 0.05,
-      "summary": "File memory/rules.md - auto-discovered"
+      "summary": "File memory/topics/kamino-yield.md - auto-discovered"
     }
   },
   "recentTopics": [
@@ -168,19 +174,38 @@
     "identity"
   ],
   "lastSession": {
-    "date": "2026-02-07T08:41:00.050Z",
+    "date": "2026-02-08T00:35:44.615Z",
     "focus": "session-update",
     "outcome": "weights-updated",
     "filesAccessed": [
-      "memory/rules.md",
       "MEMORY.md"
     ],
-    "notes": "Updated weights for 2 accessed files"
+    "notes": "Updated weights for 1 accessed files"
   },
   "config": {
     "maxBootFiles": 5,
     "maxBootTokens": 2000,
     "weightDecayPerDay": 0.1,
     "minCoreWeight": 0.5
-  }
+  },
+  "sessionHistory": [
+    {
+      "date": "2026-02-07T17:37:00.000Z",
+      "taskCategory": "consolidation",
+      "taskName": "Consolidation pass 13",
+      "outcome": "completed"
+    },
+    {
+      "date": "2026-02-07T19:38:00.000Z",
+      "taskCategory": "consolidation",
+      "taskName": "Consolidation pass 14 - file separation",
+      "outcome": "completed"
+    },
+    {
+      "date": "2026-02-08T00:35:00.000Z",
+      "taskCategory": "consolidation",
+      "taskName": "Consolidation pass 15 - moltbook compression",
+      "outcome": "completed"
+    }
+  ]
 }

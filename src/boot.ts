@@ -119,6 +119,29 @@ function generateBoot(): void {
   });
   console.log('');
   
+  // Session history (if available)
+  const sessionHistory = (manifest as any).sessionHistory || [];
+  if (sessionHistory.length > 0) {
+    const consolidationStreak = (() => {
+      let streak = 0;
+      for (let i = sessionHistory.length - 1; i >= 0; i--) {
+        if (sessionHistory[i].taskCategory === 'consolidation' || sessionHistory[i].taskCategory === 'maintenance') {
+          streak++;
+        } else break;
+      }
+      return streak;
+    })();
+    
+    console.log('📊 SESSION HISTORY:');
+    console.log(`   Tracked: ${sessionHistory.length} | Consolidation streak: ${consolidationStreak}`);
+    const recent = sessionHistory.slice(-3);
+    recent.forEach((s: any) => {
+      const time = new Date(s.date).toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit', hour12: false, timeZone: 'Europe/Berlin' });
+      console.log(`   → [${s.taskCategory}] ${s.taskName} (${time} CET)`);
+    });
+    console.log('');
+  }
+  
   // Recent topics
   console.log('🏷️  RECENT TOPICS:', manifest.recentTopics.join(', '));
   console.log('');

@@ -28,6 +28,7 @@ import {
   formatBreakdown,
   CATEGORY_EMOJI,
 } from './prioritize';
+import { generateIntelligentTask as generateSmartTask, recordSession } from './task-prioritizer';
 
 const MANIFEST_PATH = '/root/clawd/skills/memory-manager/manifest.json';
 const WORKSPACE = '/root/clawd';
@@ -214,6 +215,14 @@ switch (command) {
     const manifest = loadManifest();
     const completed = manifest.nextTask;
     
+    // Record session in history for streak/cooldown tracking
+    const completedCategory = completed.category || inferCategory(completed.task);
+    recordSession(
+      completedCategory === 'memory' && /consolidat/i.test(completed.task) ? 'consolidation' : completedCategory,
+      completed.task,
+      'completed'
+    );
+    
     if (manifest.taskQueue.length > 0) {
       // Backfill all tasks then use smart scoring to pick next
       manifest.taskQueue = manifest.taskQueue.map(backfillTask);
@@ -227,9 +236,20 @@ switch (command) {
         manifest.nextTask = manifest.taskQueue.shift()!;
       }
     } else {
-      // No tasks in queue - generate intelligent next task
-      console.log('🧠 No tasks queued. Generating intelligent next task...');
-      manifest.nextTask = generateIntelligentTask(manifest);
+      // No tasks in queue - use smart prioritizer (v2 with streak detection)
+      console.log('🧠 No tasks queued. Generating intelligent next task (v2)...');
+      const smartTask = generateSmartTask(manifest);
+      manifest.nextTask = {
+        task: smartTask.task,
+        context: smartTask.context,
+        priority: smartTask.priority,
+        source: smartTask.source,
+        impact: smartTask.impact as TaskImpact,
+        category: (smartTask.category || 'memory') as TaskCategory,
+        tags: [smartTask.category || 'general'],
+        createdAt: new Date().toISOString(),
+        blocksOthers: smartTask.blocksOthers,
+      };
     }
     
     // Ensure nextTask has a createdAt
@@ -373,11 +393,21 @@ switch (command) {
 
   case 'smart': {
     const manifest = loadManifest();
-    console.log('🧠 GENERATING INTELLIGENT NEXT TASK...\n');
-    const smartTask = generateIntelligentTask(manifest);
-    const scored = scoreTask(smartTask);
+    console.log('🧠 GENERATING INTELLIGENT NEXT TASK (v2)...\n');
+    const smartTask = generateSmartTask(manifest);
+    const scoredTask: ScoredTask = {
+      task: smartTask.task,
+      context: smartTask.context,
+      priority: smartTask.priority,
+      source: smartTask.source,
+      impact: smartTask.impact as TaskImpact,
+      category: (smartTask.category || 'memory') as TaskCategory,
+      tags: [smartTask.category || 'general'],
+      createdAt: new Date().toISOString(),
+    };
+    const scored = scoreTask(scoredTask);
     
-    const emoji = smartTask.category ? CATEGORY_EMOJI[smartTask.category] : '🎯';
+    const emoji = smartTask.category ? CATEGORY_EMOJI[smartTask.category as TaskCategory] || '🎯' : '🎯';
     console.log(`${emoji} RECOMMENDED TASK:`);
     console.log(`   Task: ${smartTask.task}`);
     console.log(`   Context: ${smartTask.context}`);
