@@ -148,6 +148,7 @@ function generateIntelligentTask(manifest: Manifest): ScoredTask {
 interface Manifest {
   nextTask: ScoredTask;
   taskQueue: ScoredTask[];
+  sessionHistory?: any[];
   [key: string]: any;
 }
 
@@ -216,12 +217,18 @@ switch (command) {
     const completed = manifest.nextTask;
     
     // Record session in history for streak/cooldown tracking
+    // NOTE: recordSession writes directly to manifest.json, so we must
+    // reload the manifest after calling it to avoid clobbering the history.
     const completedCategory = completed.category || inferCategory(completed.task);
     recordSession(
       completedCategory === 'memory' && /consolidat/i.test(completed.task) ? 'consolidation' : completedCategory,
       completed.task,
       'completed'
     );
+    
+    // Reload manifest to pick up the recorded session history
+    const freshManifest = loadManifest();
+    manifest.sessionHistory = freshManifest.sessionHistory;
     
     if (manifest.taskQueue.length > 0) {
       // Backfill all tasks then use smart scoring to pick next
