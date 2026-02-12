@@ -17,6 +17,7 @@ Orchestration layer for context-limited agents. Boot sequencing, task prioritiza
 - `src/task-prioritizer.ts` — Task prioritization utilities
 - `src/temporal.ts` — Temporal query parsing and date-aware search enhancement
 - `src/decay.ts` — Time-based weight decay automation (recency boost, frequency shield, archival flagging)
+- `src/concept-index.ts` — Concept/entity inverted index for fast lookup and relationship discovery
 - `src/weekly-digest.ts` — Auto-generate weekly summaries from daily logs
 
 ## Usage
@@ -215,6 +216,26 @@ Results saved to `memory/search-quality-history.json` and `memory/search-quality
 Run after memory reorganization, chunk boundary changes, or new content to detect regressions.
 
 Pre-compile for faster execution: `npx tsc src/search-quality.ts --outDir dist --esModuleInterop --module commonjs --target es2022 --skipLibCheck && node dist/search-quality.js`
+
+## Concept Index
+
+```bash
+npx ts-node src/concept-index.ts build            # Rebuild full index from all memory files
+npx ts-node src/concept-index.ts lookup <term>     # Find files containing a concept
+npx ts-node src/concept-index.ts related <term>    # Find co-occurring concepts
+npx ts-node src/concept-index.ts gaps              # Concepts with many mentions but no topic file
+npx ts-node src/concept-index.ts tags "some text"  # Suggest tags for new content
+npx ts-node src/concept-index.ts stats             # Index statistics
+npx ts-node src/concept-index.ts graph             # Concept co-occurrence graph
+```
+
+Inverted index mapping concepts/entities/topics → files. Faster than semantic search for known concepts. Extracts from:
+- Known entities (people, tools, projects, protocols)
+- `**bold**` terms and `` `backtick` `` terms
+- Capitalized multi-word proper nouns
+
+Co-occurrence tracking enables relationship discovery (which concepts appear together).
+Auto-rebuilt during `session-wrap.ts`. Saved to `concept-index.json`.
 
 ## Boot Process
 

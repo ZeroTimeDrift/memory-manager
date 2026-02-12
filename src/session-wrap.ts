@@ -21,6 +21,7 @@
 import * as fs from 'fs';
 import * as path from 'path';
 import * as child_process from 'child_process';
+import { discover, applyDiscovery } from './auto-discover';
 
 const WORKSPACE = '/root/clawd';
 const DAILY_DIR = path.join(WORKSPACE, 'memory', 'daily');
@@ -202,6 +203,68 @@ function runSessionUpdate(files: string[]): void {
   }
 }
 
+function runDecay(): void {
+  console.log('\n⏳ Running memory decay...');
+  try {
+    const result = child_process.execSync(
+      `npx ts-node ${path.join(SKILL_DIR, 'src', 'decay.ts')}`,
+      {
+        cwd: SKILL_DIR,
+        encoding: 'utf-8',
+        timeout: 30000,
+      }
+    );
+    // Show summary line only
+    const lines = result.trim().split('\n');
+    const summaryLine = lines.find(l => l.includes('Summary:'));
+    if (summaryLine) console.log(`   ${summaryLine.trim()}`);
+    const archivalLines = lines.filter(l => l.includes('🗃️'));
+    archivalLines.forEach(l => console.log(`   ${l.trim()}`));
+  } catch (e) {
+    console.error(`⚠️  Decay failed: ${(e as Error).message}`);
+  }
+}
+
+function runAutoDiscovery(): void {
+  console.log('\n🔍 Running auto-discovery...');
+  try {
+    const result = discover();
+    const hasIssues = result.orphans.length > 0 || result.dangling.length > 0 || result.staleSummaries.length > 0;
+    
+    if (!hasIssues) {
+      console.log('   ✅ All files tracked, no issues.');
+      return;
+    }
+
+    const stats = applyDiscovery(result);
+    const parts: string[] = [];
+    if (stats.registered > 0) parts.push(`+${stats.registered} registered`);
+    if (stats.pruned > 0) parts.push(`-${stats.pruned} pruned`);
+    if (stats.fixed > 0) parts.push(`~${stats.fixed} summaries fixed`);
+    console.log(`   ✅ ${parts.join(', ')}`);
+  } catch (e) {
+    console.error(`⚠️  Auto-discovery failed: ${(e as Error).message}`);
+  }
+}
+
+function runConceptIndex(): void {
+  console.log('\n🗂️  Rebuilding concept index...');
+  try {
+    const result = child_process.execSync(
+      `npx ts-node ${path.join(SKILL_DIR, 'src', 'concept-index.ts')} build`,
+      {
+        cwd: SKILL_DIR,
+        encoding: 'utf-8',
+        timeout: 30000,
+      }
+    );
+    const indexedLine = result.split('\n').find(l => l.includes('Indexed'));
+    if (indexedLine) console.log(`   ${indexedLine.trim()}`);
+  } catch (e) {
+    console.error(`⚠️  Concept index failed: ${(e as Error).message}`);
+  }
+}
+
 function runMemoryIndex(): void {
   console.log('\n🔄 Re-indexing memory...');
   try {
@@ -272,7 +335,16 @@ async function main(): Promise<void> {
   // Step 3: Update file weights
   runSessionUpdate(files);
 
-  // Step 4: Re-index memory
+  // Step 4: Apply time-based decay
+  runDecay();
+
+  // Step 5: Auto-discover new files, prune dangling, fix stale summaries
+  runAutoDiscovery();
+
+  // Step 6: Rebuild concept index
+  runConceptIndex();
+
+  // Step 7: Re-index memory
   runMemoryIndex();
 
   // Done
