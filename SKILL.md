@@ -15,6 +15,9 @@ Orchestration layer for context-limited agents. Boot sequencing, task prioritiza
 - `src/task.ts` — Task queue management
 - `src/prioritize.ts` — Smart scoring algorithm
 - `src/task-prioritizer.ts` — Task prioritization utilities
+- `src/temporal.ts` — Temporal query parsing and date-aware search enhancement
+- `src/decay.ts` — Time-based weight decay automation (recency boost, frequency shield, archival flagging)
+- `src/weekly-digest.ts` — Auto-generate weekly summaries from daily logs
 
 ## Usage
 
@@ -130,6 +133,7 @@ See `src/prioritize.ts` for the full algorithm.
       "decayRate": 0.0
     }
   },
+  "completedStrategicTasks": ["build memory decay automation", "improve benchmark recall coverage"],
   "recentTopics": ["defi", "moltbook"],
   "lastSession": {
     "date": "2026-02-05",
@@ -150,6 +154,67 @@ importanceFlag = 2.0 if type == "core" else 1.0
 ```
 
 Files with `type: "core"` never decay below 0.5.
+
+## Memory Decay
+
+```bash
+npx ts-node src/decay.ts              # Run decay (once per day, idempotent)
+npx ts-node src/decay.ts --dry-run    # Preview without saving
+npx ts-node src/decay.ts --verbose    # Show all files, not just changed
+```
+
+Decay runs automatically as part of `session-wrap.ts`. Rules:
+- **Grace period:** 1 day — no decay for recently accessed files
+- **Recency boost:** Files accessed in last 2 days get +0.03 weight
+- **Base decay:** 0.02/day × file's decayRate after grace period
+- **Frequency shield:** Files with accessCount ≥ 10 decay at half rate
+- **Accelerated decay:** 2× after 7 days without access
+- **Core files (decayRate=0):** Never decay
+- **Archival flagging:** Files at weight ≤ 0.08 get flagged for review
+
+## Weekly Digest
+
+```bash
+npx ts-node src/weekly-digest.ts                # Current week
+npx ts-node src/weekly-digest.ts --week 2026-W06  # Specific week
+npx ts-node src/weekly-digest.ts --dry-run        # Preview
+npx ts-node src/weekly-digest.ts --force          # Overwrite existing
+```
+
+Auto-generates `memory/weekly/YYYY-WNN.md` from daily logs. Extracts:
+- Timeline (one line per active day)
+- Key decisions, events/milestones, insights
+- Topic distribution and focus areas
+- Open problems carried forward
+- Session metrics
+
+Won't overwrite manually-edited weekly files unless `--force` is used.
+Best run Sunday evening or Monday morning.
+
+## Search Quality Scoring
+
+```bash
+npx ts-node src/search-quality.ts              # Full run (50 queries, ~3 min)
+npx ts-node src/search-quality.ts --quick      # Critical tests only (~30s)
+npx ts-node src/search-quality.ts --verbose    # Show all results + debug info
+npx ts-node src/search-quality.ts --report     # Show latest report without running
+npx ts-node src/search-quality.ts --trend      # Show score trend over time
+```
+
+Measures precision@k for `clawdbot memory search` (hybrid vector+BM25):
+- **P@1** — Is the right answer the TOP result?
+- **P@3** — Is it in the top 3?
+- **P@5** — Is it in the top 5?
+- **MRR** — Mean Reciprocal Rank (higher = less scrolling)
+
+Breakdowns by importance level (critical/high/medium), category, and per-file.
+Identifies **weak spots** (correct answer exists but ranks poorly) and **failures** (not found at all).
+
+Results saved to `memory/search-quality-history.json` and `memory/search-quality-report.md`.
+
+Run after memory reorganization, chunk boundary changes, or new content to detect regressions.
+
+Pre-compile for faster execution: `npx tsc src/search-quality.ts --outDir dist --esModuleInterop --module commonjs --target es2022 --skipLibCheck && node dist/search-quality.js`
 
 ## Boot Process
 

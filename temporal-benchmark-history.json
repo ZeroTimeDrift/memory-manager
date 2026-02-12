@@ -1,0 +1,41 @@
+[
+  {
+    "timestamp": "2026-02-12T12:33:54.785Z",
+    "referenceDate": "2026-02-12",
+    "parser": {
+      "passed": 9,
+      "total": 9
+    },
+    "search": {
+      "passed": 4,
+      "total": 13
+    },
+    "score": 31
+  },
+  {
+    "timestamp": "2026-02-12T12:34:43.355Z",
+    "referenceDate": "2026-02-12",
+    "parser": {
+      "passed": 9,
+      "total": 9
+    },
+    "search": {
+      "passed": 11,
+      "total": 13
+    },
+    "score": 85
+  },
+  {
+    "timestamp": "2026-02-12T12:35:02.925Z",
+    "referenceDate": "2026-02-12",
+    "parser": {
+      "passed": 9,
+      "total": 9
+    },
+    "search": {
+      "passed": 13,
+      "total": 13
+    },
+    "score": 100
+  }
+]
