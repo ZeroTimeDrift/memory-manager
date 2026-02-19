@@ -20,10 +20,14 @@
  *   echo "FACT: Hevar timezone is Asia/Dubai" | npx ts-node src/capture.ts
  *   npx ts-node src/capture.ts "DECISION: Ship on Friday\nTASK: Update deploy script"
  *   npx ts-node src/capture.ts --raw "Just some general notes about the session"
+ *   npx ts-node src/capture.ts --score "Unstructured text scored for importance"
+ *   npx ts-node src/capture.ts --score --threshold 0.4 "Only capture if score >= 0.4"
  */
 
 import * as fs from 'fs';
 import * as path from 'path';
+import { scoreImportance, type ImportanceResult } from './importance';
+import { checkDuplicate } from './dedup';
 
 const WORKSPACE = '/root/clawd';
 const MEMORY_FILE = path.join(WORKSPACE, 'MEMORY.md');
@@ -96,30 +100,35 @@ function parseInput(input: string): CapturedItem[] {
   return items;
 }
 
-// ─── Dedup ──────────────────────────────────────────────────────────────────
+// ─── Dedup (Semantic) ───────────────────────────────────────────────────────
 
-function factExistsInMemory(fact: string): boolean {
-  if (!fs.existsSync(MEMORY_FILE)) return false;
+/**
+ * Check if content is a duplicate using multi-signal similarity.
+ * Checks MEMORY.md, recent daily files, and topic files.
+ * Returns { isDupe, isWarning, matchInfo }
+ */
+function semanticDedupCheck(content: string): { isDupe: boolean; isWarning: boolean; matchInfo: string } {
+  const result = checkDuplicate(content);
   
-  const memoryContent = fs.readFileSync(MEMORY_FILE, 'utf-8').toLowerCase();
-  const factLower = fact.toLowerCase();
+  if (result.isDuplicate) {
+    const m = result.bestMatch!;
+    return {
+      isDupe: true,
+      isWarning: false,
+      matchInfo: `${(m.similarity * 100).toFixed(0)}% match in ${m.source}: "${m.text.substring(0, 50)}..."`,
+    };
+  }
   
-  // Normalize: strip markdown formatting for comparison
-  const normalize = (s: string) => s.replace(/[\*\-_#>`]/g, '').replace(/\s+/g, ' ').trim();
-  const normalizedFact = normalize(factLower);
+  if (result.isWarning) {
+    const m = result.bestMatch!;
+    return {
+      isDupe: false,
+      isWarning: true,
+      matchInfo: `${(m.similarity * 100).toFixed(0)}% possible match in ${m.source}: "${m.text.substring(0, 50)}..."`,
+    };
+  }
   
-  // Check if the core content already exists (fuzzy match on key phrases)
-  // Split fact into significant words (4+ chars) and check if most appear together
-  const significantWords = normalizedFact.split(' ').filter(w => w.length >= 4);
-  if (significantWords.length === 0) return false;
-  
-  const normalizedMemory = normalize(memoryContent);
-  
-  // If 80%+ of significant words appear in memory, consider it a dupe
-  const matchCount = significantWords.filter(w => normalizedMemory.includes(w)).length;
-  const matchRatio = matchCount / significantWords.length;
-  
-  return matchRatio >= 0.8;
+  return { isDupe: false, isWarning: false, matchInfo: '' };
 }
 
 // ─── Filing Functions ───────────────────────────────────────────────────────
@@ -378,6 +387,20 @@ function capture(input: string): CaptureResult {
   console.log('');
 
   for (const item of items) {
+    // Run semantic dedup for all substantive types
+    const dedupTypes = new Set(['decision', 'fact', 'topic', 'note', 'preference', 'reaction']);
+    if (dedupTypes.has(item.type) && item.content.length >= 20) {
+      const dedup = semanticDedupCheck(item.content);
+      if (dedup.isDupe) {
+        result.skipped.push(`🔄 ${item.type.toUpperCase()} duplicate (${dedup.matchInfo})`);
+        continue; // Skip this item entirely
+      }
+      if (dedup.isWarning) {
+        // Log warning but still capture (moderate matches may be different enough)
+        result.filed.push(`⚠️  ${item.type}: possible dupe — ${dedup.matchInfo}`);
+      }
+    }
+
     switch (item.type) {
       case 'decision':
         result.decisions.push(item.content);
@@ -386,13 +409,9 @@ function capture(input: string): CaptureResult {
         break;
 
       case 'fact':
-        if (factExistsInMemory(item.content)) {
-          result.skipped.push(`🔄 Fact already in MEMORY.md: "${item.content.substring(0, 50)}..."`);
-        } else {
-          result.facts.push(item.content);
-          appendToMemory(item.content);
-          result.filed.push(`🧠 Fact → MEMORY.md`);
-        }
+        result.facts.push(item.content);
+        appendToMemory(item.content);
+        result.filed.push(`🧠 Fact → MEMORY.md`);
         break;
 
       case 'task':
@@ -518,6 +537,62 @@ async function main(): Promise<void> {
     console.log('  npx ts-node src/capture.ts "FACT: Key is AIza..."');
     console.log('  npx ts-node src/capture.ts --raw "General session notes"');
     process.exit(1);
+  }
+
+  // --score mode: run importance scoring on unstructured text
+  const isScore = process.argv.includes('--score');
+  const thresholdArg = process.argv.find(a => a.startsWith('--threshold'));
+  const threshold = thresholdArg ? parseFloat(thresholdArg.split('=')[1] || process.argv[process.argv.indexOf(thresholdArg) + 1] || '0.3') : 0.3;
+
+  if (isScore) {
+    // Score each line and auto-classify based on importance
+    const lines = input.split('\n').map(l => l.trim()).filter(l => l.length > 0);
+    const scored: string[] = [];
+    const dropped: string[] = [];
+
+    for (const line of lines) {
+      // Skip lines that already have structured prefixes — pass through as-is
+      if (/^(DECISION|FACT|TASK|TOPIC|PERSON|QUOTE|PREFERENCE|REACTION):/i.test(line)) {
+        scored.push(line);
+        continue;
+      }
+
+      const result = scoreImportance(line);
+      if (result.score < threshold) {
+        dropped.push(`   ⬛ ${result.score.toFixed(2)} "${line.substring(0, 50)}${line.length > 50 ? '...' : ''}"`);
+        continue;
+      }
+
+      // Auto-classify based on suggested type
+      const typeMap: Record<string, string> = {
+        'decision': 'DECISION',
+        'fact': 'FACT',
+        'preference': 'PREFERENCE',
+        'reaction': 'REACTION',
+        'task': 'TASK',
+        'quote': 'QUOTE',
+      };
+
+      const prefix = typeMap[result.suggestedType];
+      if (prefix && result.score >= 0.5) {
+        scored.push(`${prefix}: ${line}`);
+      } else {
+        scored.push(line); // Keep as general note
+      }
+    }
+
+    if (dropped.length > 0) {
+      console.log(`⏭️  Filtered out ${dropped.length} low-importance items (threshold ${threshold}):`);
+      dropped.forEach(d => console.log(d));
+      console.log('');
+    }
+
+    if (scored.length === 0) {
+      console.log('📊 All items below threshold — nothing to capture.');
+      process.exit(0);
+    }
+
+    input = scored.join('\n');
   }
 
   // If --raw flag, treat everything as notes

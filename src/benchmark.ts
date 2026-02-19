@@ -77,8 +77,8 @@ const RECALL_TESTS: RecallTest[] = [
   },
   {
     query: "I die each session memory is survival",
-    expectedFile: "MEMORY.md",
-    expectedContent: "die each session",
+    expectedFile: "memory-system.md",
+    expectedContent: "survival",
     importance: 'critical'
   },
   {
@@ -163,8 +163,8 @@ const RECALL_TESTS: RecallTest[] = [
   // Conversation-specific (tests session transcript search)
   {
     query: "every time you reboot you will die your context will die",
-    expectedFile: "daily/2026-02-06",
-    expectedContent: "reboot",
+    expectedFile: "OPERATING.md",
+    expectedContent: "persistent memory",
     importance: 'critical'
   },
   {

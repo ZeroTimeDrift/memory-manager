@@ -265,6 +265,26 @@ function runConceptIndex(): void {
   }
 }
 
+function runMemoryGraph(): void {
+  console.log('\n🕸️  Rebuilding memory graph...');
+  try {
+    const result = child_process.execSync(
+      `npx ts-node ${path.join(SKILL_DIR, 'src', 'memory-graph.ts')} build`,
+      {
+        cwd: SKILL_DIR,
+        encoding: 'utf-8',
+        timeout: 30000,
+      }
+    );
+    const statsLine = result.split('\n').find(l => l.includes('Merged edges'));
+    if (statsLine) console.log(`   ${statsLine.trim()}`);
+    const clusterLine = result.split('\n').find(l => l.includes('clusters found'));
+    if (clusterLine) console.log(`   ${clusterLine.trim()}`);
+  } catch (e) {
+    console.error(`⚠️  Memory graph failed: ${(e as Error).message}`);
+  }
+}
+
 function runMemoryIndex(): void {
   console.log('\n🔄 Re-indexing memory...');
   try {
@@ -343,6 +363,9 @@ async function main(): Promise<void> {
 
   // Step 6: Rebuild concept index
   runConceptIndex();
+
+  // Step 6.5: Rebuild memory graph
+  runMemoryGraph();
 
   // Step 7: Re-index memory
   runMemoryIndex();

@@ -226,9 +226,10 @@ switch (command) {
       'completed'
     );
     
-    // Reload manifest to pick up the recorded session history
+    // Reload manifest to pick up the recorded session history AND completed strategic tasks
     const freshManifest = loadManifest();
     manifest.sessionHistory = freshManifest.sessionHistory;
+    manifest.completedStrategicTasks = freshManifest.completedStrategicTasks;
     
     if (manifest.taskQueue.length > 0) {
       // Backfill all tasks then use smart scoring to pick next

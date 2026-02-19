@@ -1,0 +1,65 @@
+[
+  {
+    "timestamp": "2026-02-18T20:32:25.009Z",
+    "scope": "full",
+    "totalClaims": 486,
+    "conflicts": 115,
+    "high": 69,
+    "medium": 23,
+    "low": 23
+  },
+  {
+    "timestamp": "2026-02-18T20:33:22.967Z",
+    "scope": "full",
+    "totalClaims": 486,
+    "conflicts": 41,
+    "high": 35,
+    "medium": 6,
+    "low": 0
+  },
+  {
+    "timestamp": "2026-02-18T20:33:49.469Z",
+    "scope": "full",
+    "totalClaims": 463,
+    "conflicts": 8,
+    "high": 8,
+    "medium": 0,
+    "low": 0
+  },
+  {
+    "timestamp": "2026-02-18T22:30:37.944Z",
+    "scope": "full",
+    "totalClaims": 473,
+    "conflicts": 8,
+    "high": 8,
+    "medium": 0,
+    "low": 0
+  },
+  {
+    "timestamp": "2026-02-18T22:31:40.955Z",
+    "scope": "full",
+    "totalClaims": 473,
+    "conflicts": 2,
+    "high": 2,
+    "medium": 0,
+    "low": 0
+  },
+  {
+    "timestamp": "2026-02-18T22:32:11.089Z",
+    "scope": "full",
+    "totalClaims": 473,
+    "conflicts": 1,
+    "high": 1,
+    "medium": 0,
+    "low": 0
+  },
+  {
+    "timestamp": "2026-02-18T22:32:33.903Z",
+    "scope": "full",
+    "totalClaims": 473,
+    "conflicts": 1,
+    "high": 0,
+    "medium": 0,
+    "low": 1
+  }
+]

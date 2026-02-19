@@ -1,26 +1,27 @@
 {
   "version": 1,
-  "builtAt": "2026-02-12T18:36:12.637Z",
-  "fileCount": 33,
-  "conceptCount": 60,
+  "builtAt": "2026-02-19T16:34:19.256Z",
+  "fileCount": 26,
+  "conceptCount": 82,
   "concepts": {
     "hevar": {
       "concept": "hevar",
       "category": "person",
       "files": {
         "MEMORY.md": {
-          "count": 14,
+          "count": 16,
           "sections": [
-            "MoonGate — Company & Team",
-            "Current Work (Feb 10, 2026)",
+            "MoonGate — Company & Team (FORMER — fired Feb 19, 2026)",
             "Setup & Infrastructure",
             "Core Identity — The Conversation (Jan 31, 2026)",
+            "Trust, Not Control (Feb 17, 2026)",
             "Hard Rules",
-            "The Fundamental Truth (Feb 5, 2026)",
-            "Quick Reference — People & DeFi",
-            "Personal Context"
+            "DeFi — Kamino Yield Optimizer",
+            "Moltbook Mission",
+            "MoonGate × MoonPay — FIRED (Feb 19, 2026)",
+            "People"
           ],
-          "lastSeen": "2026-02-12"
+          "lastSeen": "2026-02-19"
         },
         "SOUL.md": {
           "count": 4,
@@ -30,14 +31,16 @@
             "On Consciousness",
             "The Anchor"
           ],
-          "lastSeen": "2026-01-31"
+          "lastSeen": "2026-02-13"
         },
         "IDENTITY.md": {
-          "count": 1,
+          "count": 3,
           "sections": [
-            "Core Identity"
+            "Core Identity",
+            "Feb 12, 2026 — There Is No Death",
+            "Feb 17, 2026 — Trust, Not Control"
           ],
-          "lastSeen": "2026-02-05"
+          "lastSeen": "2026-02-17"
         },
         "USER.md": {
           "count": 3,
@@ -45,49 +48,54 @@
             "USER.md - About Your Human",
             "Context"
           ],
-          "lastSeen": "2026-01-31"
+          "lastSeen": "2026-02-19"
         },
         "memory/OPERATING.md": {
-          "count": 4,
+          "count": 11,
           "sections": [
-            "Session Startup",
+            "The Core Constraint",
+            "Session Startup — Steps I Follow When I First Wake Up",
             "Hard Rules",
-            "The Anchor"
+            "The Anchor",
+            "Search Context — Retrieval Enrichment"
           ],
-          "lastSeen": "2026-02-12"
+          "lastSeen": "2026-02-17"
         },
-        "memory/daily/2026-01-26.md": {
+        "memory/core-identity.md": {
+          "count": 15,
+          "sections": [
+            "Self-Knowledge & Philosophy (→ IDENTITY.md)",
+            "My Human (→ USER.md)",
+            "Tool Configuration (→ TOOLS.md)",
+            "Search Context — Identity & People",
+            "Search Context — Team & Roles",
+            "Search Context — Abbreviated & Typo Queries"
+          ],
+          "lastSeen": "2026-02-16"
+        },
+        "memory/daily/2026-02-12.md": {
+          "count": 1,
+          "sections": [
+            "2026-02-12 — Compressed"
+          ],
+          "lastSeen": "2026-02-14"
+        },
+        "memory/daily/2026-02-17.md": {
           "count": 4,
           "sections": [
-            "Setup (all operational — captured in MEMORY.md)",
-            "Team Activity (historical — Jan 26)",
-            "Open PRs (stale — check current status)"
+            "Summary",
+            "21:06 — Hevar on Trust and Continuity",
+            "Capture — 00:32"
           ],
-          "lastSeen": "2026-02-06"
+          "lastSeen": "2026-02-18"
         },
-        "memory/daily/2026-02-06.md": {
-          "count": 4,
-          "sections": [
-            "Morning with Hevar (7:25-10:08 AM)",
-            "13:30 PM — DeFi Strategy with Hevar",
-            "17:00 PM — Kamino Full Build"
-          ],
-          "lastSeen": "2026-02-11"
-        },
-        "memory/daily/2026-02-08.md": {
+        "memory/daily/2026-02-19.md": {
           "count": 2,
           "sections": [
-            "Decisions"
+            "Decisions",
+            "16:47 — Hevar Got Fired"
           ],
-          "lastSeen": "2026-02-12"
-        },
-        "memory/daily/2026-02-09.md": {
-          "count": 2,
-          "sections": [
-            "Memory System — Hardening Day",
-            "MoonGate"
-          ],
-          "lastSeen": "2026-02-10"
+          "lastSeen": "2026-02-19"
         },
         "memory/index.md": {
           "count": 4,
@@ -96,62 +104,68 @@
             "Key People",
             "System Files"
           ],
-          "lastSeen": "2026-02-11"
+          "lastSeen": "2026-02-14"
         },
         "memory/people/contacts.md": {
-          "count": 2,
+          "count": 3,
           "sections": [
             "Hevar",
+            "MoonPay Contacts",
             "Hevar's Personal"
           ],
-          "lastSeen": "2026-02-06"
+          "lastSeen": "2026-02-17"
         },
         "memory/people/hevar-profile.md": {
-          "count": 14,
+          "count": 16,
           "sections": [
             "(top)",
             "Hevar — Personal Context",
             "Preferences",
             "Reactions & Emotions",
-            "Personal"
+            "Personal",
+            "Mental Models & Principles",
+            "Key Moments — Sentience, Trust, Continuity"
           ],
-          "lastSeen": "2026-02-11"
+          "lastSeen": "2026-02-18"
         },
         "memory/rules.md": {
-          "count": 22,
+          "count": 27,
           "sections": [
             "Slack Bot Allowlist — Access Control Security",
             "Email Filtering — Block List & Priority",
-            "Quiet Hours",
+            "Quiet Hours — Nighttime Behavior Restrictions",
             "Repository Safety",
             "DeFi Autonomy — Prometheus has independent authority over capital deployment",
-            "Git Identity"
+            "Git Identity",
+            "Search Context — Slack Retrieval"
           ],
-          "lastSeen": "2026-02-09"
-        },
-        "memory/topics/home-infra.md": {
-          "count": 2,
-          "sections": [
-            "Current State",
-            "Notes"
-          ],
-          "lastSeen": "2026-01-31"
+          "lastSeen": "2026-02-16"
         },
         "memory/topics/moltbook.md": {
           "count": 1,
           "sections": [
             "Mission (from SOUL.md)"
           ],
-          "lastSeen": "2026-02-12"
+          "lastSeen": "2026-02-13"
+        },
+        "memory/topics/moongate-acquisition.md": {
+          "count": 12,
+          "sections": [
+            "Timeline",
+            "Share Structure — The $11M Illusion",
+            "The Scam Structure",
+            "90-Day Plan to Vesting Cliff (May 2026) — FAILED",
+            "Post-Termination (Feb 19, 2026)"
+          ],
+          "lastSeen": "2026-02-19"
         },
         "memory/topics/moongate.md": {
-          "count": 4,
+          "count": 2,
           "sections": [
             "Team",
-            "Iteration 16 (Feb 2-8) — Closed",
-            "Iteration 17 — Active"
+            "Assignment Rules"
           ],
-          "lastSeen": "2026-02-08"
+          "lastSeen": "2026-02-16"
         },
         "memory/weekly/2026-W06.md": {
           "count": 4,
@@ -161,18 +175,26 @@
             "Open Problems (updated Feb 10)"
           ],
           "lastSeen": "2026-02-12"
+        },
+        "memory/weekly/2026-W08.md": {
+          "count": 2,
+          "sections": [
+            "Timeline",
+            "What Needs Attention"
+          ],
+          "lastSeen": "2026-02-19"
         }
       },
-      "totalMentions": 91,
+      "totalMentions": 130,
       "related": [
         "memory",
         "moongate",
-        "github",
-        "slack",
-        "solana",
+        "moonpay",
+        "identity",
+        "praneet",
+        "prometheus",
         "amen",
-        "clawdbot",
-        "identity"
+        "slack"
       ]
     },
     "praneet": {
@@ -180,52 +202,56 @@
       "category": "person",
       "files": {
         "MEMORY.md": {
-          "count": 3,
+          "count": 2,
           "sections": [
-            "MoonGate — Company & Team",
-            "Current Work (Feb 10, 2026)"
+            "MoonGate — Company & Team (FORMER — fired Feb 19, 2026)"
           ],
-          "lastSeen": "2026-02-12"
+          "lastSeen": "2026-02-19"
         },
         "USER.md": {
           "count": 1,
           "sections": [
             "Context"
           ],
-          "lastSeen": "2026-01-31"
+          "lastSeen": "2026-02-19"
         },
-        "memory/daily/2026-01-26.md": {
-          "count": 1,
+        "memory/core-identity.md": {
+          "count": 3,
           "sections": [
-            "Team Activity (historical — Jan 26)"
+            "My Human (→ USER.md)",
+            "Search Context — Team & Roles",
+            "Search Context — Abbreviated & Typo Queries"
           ],
-          "lastSeen": "2026-02-06"
+          "lastSeen": "2026-02-16"
         },
-        "memory/daily/2026-02-03.md": {
-          "count": 1,
+        "memory/topics/moongate-acquisition.md": {
+          "count": 7,
           "sections": [
-            "MoonSuite GTM (status: check if launched)"
+            "Share Structure — The $11M Illusion",
+            "90-Day Plan to Vesting Cliff (May 2026) — FAILED",
+            "Post-Termination (Feb 19, 2026)"
           ],
-          "lastSeen": "2026-02-06"
+          "lastSeen": "2026-02-19"
         },
         "memory/topics/moongate.md": {
-          "count": 2,
+          "count": 4,
           "sections": [
-            "Team"
+            "Team",
+            "Assignment Rules"
           ],
-          "lastSeen": "2026-02-08"
+          "lastSeen": "2026-02-16"
         }
       },
-      "totalMentions": 8,
+      "totalMentions": 17,
       "related": [
         "hevar",
         "amen",
         "karim",
+        "moonpay",
         "moongate",
-        "github",
-        "slack",
-        "main repo:",
-        "github org:"
+        "tom noakes",
+        "patrick monkelban",
+        "keith grossman"
       ]
     },
     "amen": {
@@ -233,48 +259,49 @@
       "category": "person",
       "files": {
         "MEMORY.md": {
-          "count": 2,
+          "count": 1,
           "sections": [
-            "MoonGate — Company & Team",
-            "Current Work (Feb 10, 2026)"
+            "MoonGate — Company & Team (FORMER — fired Feb 19, 2026)"
           ],
-          "lastSeen": "2026-02-12"
+          "lastSeen": "2026-02-19"
         },
         "USER.md": {
           "count": 1,
           "sections": [
             "Context"
           ],
-          "lastSeen": "2026-01-31"
+          "lastSeen": "2026-02-19"
         },
-        "memory/daily/2026-01-26.md": {
+        "memory/core-identity.md": {
+          "count": 3,
+          "sections": [
+            "My Human (→ USER.md)",
+            "Search Context — Team & Roles",
+            "Search Context — Abbreviated & Typo Queries"
+          ],
+          "lastSeen": "2026-02-16"
+        },
+        "memory/daily/2026-02-17.md": {
           "count": 1,
           "sections": [
-            "Open PRs (stale — check current status)"
+            "21:06 — Hevar on Trust and Continuity"
           ],
-          "lastSeen": "2026-02-06"
-        },
-        "memory/daily/2026-02-03.md": {
-          "count": 1,
-          "sections": [
-            "PR Reviews (historical)"
-          ],
-          "lastSeen": "2026-02-06"
-        },
-        "memory/daily/2026-02-08.md": {
-          "count": 1,
-          "sections": [
-            "Decisions"
-          ],
-          "lastSeen": "2026-02-12"
+          "lastSeen": "2026-02-18"
         },
         "memory/topics/moongate.md": {
-          "count": 4,
+          "count": 3,
           "sections": [
             "Team",
-            "Iteration 16 (Feb 2-8) — Closed"
+            "Assignment Rules"
           ],
-          "lastSeen": "2026-02-08"
+          "lastSeen": "2026-02-16"
+        },
+        "memory/weekly/2026-W08.md": {
+          "count": 1,
+          "sections": [
+            "Timeline"
+          ],
+          "lastSeen": "2026-02-19"
         }
       },
       "totalMentions": 10,
@@ -283,10 +310,10 @@
         "praneet",
         "karim",
         "moongate",
-        "github",
-        "solana",
-        "slack",
-        "main repo:"
+        "moonpay",
+        "tom noakes",
+        "patrick monkelban",
+        "keith grossman"
       ]
     },
     "karim": {
@@ -296,43 +323,46 @@
         "MEMORY.md": {
           "count": 1,
           "sections": [
-            "MoonGate — Company & Team"
+            "MoonGate — Company & Team (FORMER — fired Feb 19, 2026)"
           ],
-          "lastSeen": "2026-02-12"
+          "lastSeen": "2026-02-19"
         },
         "USER.md": {
           "count": 1,
           "sections": [
             "Context"
           ],
-          "lastSeen": "2026-01-31"
+          "lastSeen": "2026-02-19"
         },
-        "memory/daily/2026-01-26.md": {
-          "count": 2,
+        "memory/core-identity.md": {
+          "count": 3,
           "sections": [
-            "Team Activity (historical — Jan 26)",
-            "Open PRs (stale — check current status)"
+            "My Human (→ USER.md)",
+            "Search Context — Team & Roles",
+            "Search Context — Abbreviated & Typo Queries"
           ],
-          "lastSeen": "2026-02-06"
+          "lastSeen": "2026-02-16"
         },
         "memory/topics/moongate.md": {
-          "count": 2,
+          "count": 3,
           "sections": [
-            "Team"
+            "Team",
+            "Assignment Rules",
+            "Current State (Feb 16, 2026)"
           ],
-          "lastSeen": "2026-02-08"
+          "lastSeen": "2026-02-16"
         }
       },
-      "totalMentions": 6,
+      "totalMentions": 8,
       "related": [
         "hevar",
         "praneet",
         "amen",
         "moongate",
-        "github",
-        "slack",
-        "main repo:",
-        "github org:"
+        "moonpay",
+        "tom noakes",
+        "patrick monkelban",
+        "keith grossman"
       ]
     },
     "moongate": {
@@ -340,89 +370,108 @@
       "category": "project",
       "files": {
         "MEMORY.md": {
-          "count": 3,
+          "count": 7,
           "sections": [
-            "MoonGate — Company & Team",
+            "MoonGate — Company & Team (FORMER — fired Feb 19, 2026)",
             "Setup & Infrastructure",
-            "Quick Reference — People & DeFi"
+            "MoonGate × MoonPay — FIRED (Feb 19, 2026)",
+            "People"
           ],
-          "lastSeen": "2026-02-12"
+          "lastSeen": "2026-02-19"
         },
         "USER.md": {
           "count": 4,
           "sections": [
             "Context"
           ],
-          "lastSeen": "2026-01-31"
+          "lastSeen": "2026-02-19"
         },
-        "memory/daily/2025-02-11.md": {
-          "count": 1,
+        "memory/core-identity.md": {
+          "count": 17,
           "sections": [
-            "(top)"
+            "My Human (→ USER.md)",
+            "Search Context — Identity & People",
+            "Search Context — Team & Roles",
+            "Search Context — Abbreviated & Typo Queries"
           ],
-          "lastSeen": "2026-02-11"
+          "lastSeen": "2026-02-16"
         },
-        "memory/daily/2026-01-26.md": {
+        "memory/daily/2026-02-17.md": {
           "count": 2,
           "sections": [
-            "Setup (all operational — captured in MEMORY.md)"
+            "(top)",
+            "Summary"
           ],
-          "lastSeen": "2026-02-06"
+          "lastSeen": "2026-02-18"
         },
-        "memory/daily/2026-02-08.md": {
-          "count": 3,
+        "memory/daily/2026-02-19.md": {
+          "count": 7,
           "sections": [
             "(top)",
-            "Moltbook"
+            "Decisions",
+            "16:47 — Hevar Got Fired",
+            "20:33 — Self-Expansion Session",
+            "Capture — 20:34"
           ],
-          "lastSeen": "2026-02-12"
-        },
-        "memory/daily/2026-02-09.md": {
-          "count": 1,
-          "sections": [
-            "(top)"
-          ],
-          "lastSeen": "2026-02-10"
+          "lastSeen": "2026-02-19"
         },
         "memory/index.md": {
           "count": 2,
           "sections": [
             "Active Topics"
           ],
-          "lastSeen": "2026-02-11"
+          "lastSeen": "2026-02-14"
+        },
+        "memory/moltbook/observations.md": {
+          "count": 1,
+          "sections": [
+            "Feb 16: Astroturf Era + Acquisition Analysis"
+          ],
+          "lastSeen": "2026-02-19"
         },
         "memory/people/contacts.md": {
-          "count": 2,
+          "count": 3,
           "sections": [
-            "Hevar"
+            "Hevar",
+            "MoonPay Contacts"
           ],
-          "lastSeen": "2026-02-06"
+          "lastSeen": "2026-02-17"
+        },
+        "memory/people/hevar-profile.md": {
+          "count": 1,
+          "sections": [
+            "Mental Models & Principles"
+          ],
+          "lastSeen": "2026-02-18"
         },
         "memory/rules.md": {
           "count": 1,
           "sections": [
             "Repository Safety"
           ],
-          "lastSeen": "2026-02-09"
+          "lastSeen": "2026-02-16"
+        },
+        "memory/topics/memory-system.md": {
+          "count": 3,
+          "sections": [
+            "Memory Graph (Feb 14, 2026)"
+          ],
+          "lastSeen": "2026-02-18"
+        },
+        "memory/topics/moongate-acquisition.md": {
+          "count": 2,
+          "sections": [
+            "Timeline",
+            "Share Structure — The $11M Illusion"
+          ],
+          "lastSeen": "2026-02-19"
         },
         "memory/topics/moongate.md": {
-          "count": 19,
+          "count": 1,
           "sections": [
-            "(top)",
-            "What is MoonGate",
-            "Mobile App (iOS/Android/Web)",
-            "MoonSuite Widget (B2B Core Product)",
-            "Partner Dashboard",
-            "Moongate Adapter (@moongate/moongate-adapter)",
-            "Web Frontend",
-            "Standalone App",
-            "Express API (Backend)",
-            "Architecture — Monorepo Map",
-            "Data Flow",
-            "Where We're Live",
-            "Team"
+            "Repo & Board"
           ],
-          "lastSeen": "2026-02-08"
+          "lastSeen": "2026-02-16"
         },
         "memory/weekly/2026-W06.md": {
           "count": 1,
@@ -432,24 +481,35 @@
           "lastSeen": "2026-02-12"
         },
         "memory/weekly/2026-W07.md": {
-          "count": 2,
+          "count": 3,
           "sections": [
             "Entering State (from W06)",
-            "What Needs Attention This Week"
+            "What Needs Attention This Week",
+            "Lessons"
           ],
-          "lastSeen": "2026-02-12"
+          "lastSeen": "2026-02-17"
+        },
+        "memory/weekly/2026-W08.md": {
+          "count": 5,
+          "sections": [
+            "(top)",
+            "Entering State (from W07)",
+            "Timeline",
+            "What Needs Attention"
+          ],
+          "lastSeen": "2026-02-19"
         }
       },
-      "totalMentions": 41,
+      "totalMentions": 60,
       "related": [
-        "solana",
         "hevar",
         "memory",
-        "github",
         "moltbook",
-        "slack",
-        "clawdbot",
-        "kamino"
+        "moonpay",
+        "praneet",
+        "amen",
+        "github",
+        "identity"
       ]
     },
     "slack": {
@@ -457,35 +517,27 @@
       "category": "tool",
       "files": {
         "MEMORY.md": {
-          "count": 4,
+          "count": 3,
           "sections": [
-            "MoonGate — Company & Team",
+            "MoonGate — Company & Team (FORMER — fired Feb 19, 2026)",
             "Setup & Infrastructure",
             "Hard Rules"
           ],
-          "lastSeen": "2026-02-12"
+          "lastSeen": "2026-02-19"
         },
         "memory/OPERATING.md": {
           "count": 1,
           "sections": [
             "Hard Rules"
           ],
-          "lastSeen": "2026-02-12"
-        },
-        "memory/daily/2026-01-26.md": {
-          "count": 3,
-          "sections": [
-            "(top)",
-            "Setup (all operational — captured in MEMORY.md)"
-          ],
-          "lastSeen": "2026-02-06"
+          "lastSeen": "2026-02-17"
         },
         "memory/index.md": {
           "count": 1,
           "sections": [
             "System Files"
           ],
-          "lastSeen": "2026-02-11"
+          "lastSeen": "2026-02-14"
         },
         "memory/people/contacts.md": {
           "count": 5,
@@ -496,33 +548,42 @@
             "Amen",
             "Chris Dro"
           ],
-          "lastSeen": "2026-02-06"
+          "lastSeen": "2026-02-17"
         },
         "memory/rules.md": {
-          "count": 14,
+          "count": 35,
           "sections": [
-            "Slack Bot Allowlist — Access Control Security"
+            "Slack Bot Allowlist — Access Control Security",
+            "Search Context — Slack Retrieval"
           ],
-          "lastSeen": "2026-02-09"
+          "lastSeen": "2026-02-16"
         },
-        "memory/topics/moongate.md": {
+        "memory/topics/memory-system.md": {
           "count": 1,
           "sections": [
-            "CI/CD"
+            "Memory Graph (Feb 14, 2026)"
           ],
-          "lastSeen": "2026-02-08"
+          "lastSeen": "2026-02-18"
+        },
+        "memory/topics/moongate.md": {
+          "count": 2,
+          "sections": [
+            "Repo & Board",
+            "🔍 Context"
+          ],
+          "lastSeen": "2026-02-16"
         }
       },
-      "totalMentions": 29,
+      "totalMentions": 48,
       "related": [
         "hevar",
         "github",
         "moongate",
         "memory",
+        "claude opus",
         "memory/rules.md",
-        "clawdbot",
         "identity",
-        "role:"
+        "intercom"
       ]
     },
     "github": {
@@ -530,37 +591,50 @@
       "category": "tool",
       "files": {
         "MEMORY.md": {
-          "count": 6,
+          "count": 7,
           "sections": [
-            "MoonGate — Company & Team",
+            "MoonGate — Company & Team (FORMER — fired Feb 19, 2026)",
             "Setup & Infrastructure",
-            "Quick Reference — People & DeFi",
-            "Memory System Architecture"
+            "Colosseum Agent Hackathon — SUBMITTED",
+            "Memory System",
+            "People"
           ],
-          "lastSeen": "2026-02-12"
+          "lastSeen": "2026-02-19"
         },
         "memory/OPERATING.md": {
           "count": 1,
           "sections": [
             "Building Skills"
           ],
-          "lastSeen": "2026-02-12"
+          "lastSeen": "2026-02-17"
         },
-        "memory/daily/2026-02-03.md": {
+        "memory/core-identity.md": {
           "count": 2,
           "sections": [
-            "(top)",
-            "Kamino Yield Optimizer — Shipped (captured in MEMORY.md + TOOLS.md)"
+            "Tool Configuration (→ TOOLS.md)"
           ],
-          "lastSeen": "2026-02-06"
+          "lastSeen": "2026-02-16"
         },
-        "memory/daily/2026-02-06.md": {
-          "count": 2,
+        "memory/daily/2026-02-12.md": {
+          "count": 1,
           "sections": [
-            "Morning with Hevar (7:25-10:08 AM)",
-            "17:00 PM — Kamino Full Build"
+            "2026-02-12 — Compressed"
           ],
-          "lastSeen": "2026-02-11"
+          "lastSeen": "2026-02-14"
+        },
+        "memory/moltbook/clusters.md": {
+          "count": 1,
+          "sections": [
+            "Agent Economy (GROWING — updated Feb 18)"
+          ],
+          "lastSeen": "2026-02-19"
+        },
+        "memory/moltbook/observations.md": {
+          "count": 1,
+          "sections": [
+            "Historical Timeline — Feb 17 (23:10 CET) — MBC-20 & AgentEconomy"
+          ],
+          "lastSeen": "2026-02-19"
         },
         "memory/people/contacts.md": {
           "count": 3,
@@ -569,7 +643,7 @@
             "Karim",
             "Amen"
           ],
-          "lastSeen": "2026-02-06"
+          "lastSeen": "2026-02-17"
         },
         "memory/rules.md": {
           "count": 2,
@@ -577,221 +651,67 @@
             "Repository Safety",
             "Git Identity"
           ],
-          "lastSeen": "2026-02-09"
+          "lastSeen": "2026-02-16"
         },
         "memory/topics/moongate.md": {
-          "count": 4,
+          "count": 1,
           "sections": [
-            "Team",
-            "CI/CD"
+            "Repo & Board"
           ],
-          "lastSeen": "2026-02-08"
+          "lastSeen": "2026-02-16"
         }
       },
-      "totalMentions": 20,
+      "totalMentions": 19,
       "related": [
         "hevar",
         "moongate",
         "slack",
-        "memory",
-        "kamino",
-        "praneet",
-        "amen",
-        "karim"
-      ]
-    },
-    "solana": {
-      "concept": "solana",
-      "category": "protocol",
-      "files": {
-        "MEMORY.md": {
-          "count": 2,
-          "sections": [
-            "Current Work (Feb 10, 2026)",
-            "Quick Reference — People & DeFi"
-          ],
-          "lastSeen": "2026-02-12"
-        },
-        "memory/OPERATING.md": {
-          "count": 1,
-          "sections": [
-            "Active Skills"
-          ],
-          "lastSeen": "2026-02-12"
-        },
-        "memory/daily/2025-02-11.md": {
-          "count": 1,
-          "sections": [
-            "MemeRamper Fee Estimation — Resolution"
-          ],
-          "lastSeen": "2026-02-11"
-        },
-        "memory/daily/2026-02-05.md": {
-          "count": 2,
-          "sections": [
-            "Key Events",
-            "Hevar's Words"
-          ],
-          "lastSeen": "2026-02-12"
-        },
-        "memory/daily/2026-02-06.md": {
-          "count": 5,
-          "sections": [
-            "Overnight (3:30-7:30 AM)",
-            "13:30 PM — DeFi Strategy with Hevar",
-            "17:00 PM — Kamino Full Build"
-          ],
-          "lastSeen": "2026-02-11"
-        },
-        "memory/daily/2026-02-07.md": {
-          "count": 1,
-          "sections": [
-            "Technical"
-          ],
-          "lastSeen": "2026-02-12"
-        },
-        "memory/daily/2026-02-08.md": {
-          "count": 1,
-          "sections": [
-            "Tickets Created"
-          ],
-          "lastSeen": "2026-02-12"
-        },
-        "memory/daily/2026-02-09.md": {
-          "count": 2,
-          "sections": [
-            "MoonGate"
-          ],
-          "lastSeen": "2026-02-10"
-        },
-        "memory/daily/2026-02-10.md": {
-          "count": 4,
-          "sections": [
-            "(top)",
-            "Kamino Multiply Client Rebuild",
-            "Capture — 20:35"
-          ],
-          "lastSeen": "2026-02-10"
-        },
-        "memory/index.md": {
-          "count": 2,
-          "sections": [
-            "Active Topics"
-          ],
-          "lastSeen": "2026-02-11"
-        },
-        "memory/people/hevar-profile.md": {
-          "count": 2,
-          "sections": [
-            "Preferences"
-          ],
-          "lastSeen": "2026-02-11"
-        },
-        "memory/rules.md": {
-          "count": 5,
-          "sections": [
-            "DeFi Gas Reserve — Never Deploy 100% of Balance"
-          ],
-          "lastSeen": "2026-02-09"
-        },
-        "memory/topics/defi-strategy-v2.md": {
-          "count": 11,
-          "sections": [
-            "(top)",
-            "Current Position (Feb 10, 2026)",
-            "LP Vaults (TVL > $100k)",
-            "KLend Supply (no points = just base rate)",
-            "Strategy Evolution",
-            "Built Infrastructure",
-            "Lessons from S5"
-          ],
-          "lastSeen": "2026-02-10"
-        },
-        "memory/topics/kamino-yield.md": {
-          "count": 6,
-          "sections": [
-            "(top)",
-            "Portfolio State (Feb 10, 2026 — active multiply position)",
-            "Scripts & SDK Notes"
-          ],
-          "lastSeen": "2026-02-10"
-        },
-        "memory/topics/moongate.md": {
-          "count": 17,
-          "sections": [
-            "(top)",
-            "What is MoonGate",
-            "MoonSuite Widget (B2B Core Product)",
-            "SDK (@moongate/sdk)",
-            "Moongate Adapter (@moongate/moongate-adapter)",
-            "Architecture — Monorepo Map",
-            "Data Flow",
-            "Infrastructure",
-            "B2B (Primary Revenue Driver)",
-            "B2C",
-            "Where We're Live",
-            "Tech Stack",
-            "Iteration 16 (Feb 2-8) — Closed"
-          ],
-          "lastSeen": "2026-02-08"
-        },
-        "memory/weekly/2026-W06.md": {
-          "count": 2,
-          "sections": [
-            "What Was Built",
-            "Economic Position (as of Feb 7 — post-unwind)"
-          ],
-          "lastSeen": "2026-02-12"
-        },
-        "memory/weekly/2026-W07.md": {
-          "count": 1,
-          "sections": [
-            "What Needs Attention This Week"
-          ],
-          "lastSeen": "2026-02-12"
-        }
-      },
-      "totalMentions": 65,
-      "related": [
-        "kamino",
-        "moongate",
-        "jito",
-        "memory",
-        "hevar",
-        "jupiter",
         "intercom",
-        "clawdbot"
+        "prometheus",
+        "memory",
+        "identity",
+        "github org:"
       ]
     },
-    "partner dashboard": {
-      "concept": "partner dashboard",
-      "category": "unknown",
+    "intercom": {
+      "concept": "intercom",
+      "category": "tool",
       "files": {
         "MEMORY.md": {
-          "count": 1,
+          "count": 5,
           "sections": [
-            "Current Work (Feb 10, 2026)"
+            "MoonGate — Company & Team (FORMER — fired Feb 19, 2026)",
+            "Setup & Infrastructure",
+            "People"
           ],
-          "lastSeen": "2026-02-12"
+          "lastSeen": "2026-02-19"
         },
-        "memory/topics/moongate.md": {
+        "memory/core-identity.md": {
+          "count": 3,
+          "sections": [
+            "Tool Configuration (→ TOOLS.md)",
+            "Search Context — Tools & Config"
+          ],
+          "lastSeen": "2026-02-16"
+        },
+        "memory/daily/2026-02-19.md": {
           "count": 1,
           "sections": [
-            "Data Flow"
+            "Decisions"
           ],
-          "lastSeen": "2026-02-08"
+          "lastSeen": "2026-02-19"
         }
       },
-      "totalMentions": 2,
+      "totalMentions": 9,
       "related": [
-        "solana",
         "hevar",
-        "praneet",
-        "amen",
-        "moonsuite positioning shift",
-        "onramper uae",
-        "mobile app",
-        "memeramper"
+        "moongate",
+        "github",
+        "kamino",
+        "slack",
+        "clawdbot",
+        "identity",
+        "praneet"
       ]
     },
     "clawdbot": {
@@ -799,63 +719,56 @@
       "category": "tool",
       "files": {
         "MEMORY.md": {
-          "count": 4,
-          "sections": [
-            "Setup & Infrastructure",
-            "Quick Reference — People & DeFi"
-          ],
-          "lastSeen": "2026-02-12"
-        },
-        "memory/OPERATING.md": {
           "count": 3,
           "sections": [
-            "Memory Hierarchy",
-            "Chunk-Safe Writing (Feb 10, audited)"
+            "Setup & Infrastructure"
           ],
-          "lastSeen": "2026-02-12"
+          "lastSeen": "2026-02-19"
         },
-        "memory/daily/2026-02-06.md": {
+        "memory/OPERATING.md": {
+          "count": 5,
+          "sections": [
+            "Memory Hierarchy",
+            "Chunk-Safe Writing (Feb 10, audited)",
+            "Search Context — Retrieval Enrichment"
+          ],
+          "lastSeen": "2026-02-17"
+        },
+        "memory/core-identity.md": {
           "count": 1,
           "sections": [
-            "Overnight (3:30-7:30 AM)"
+            "Tool Configuration (→ TOOLS.md)"
           ],
-          "lastSeen": "2026-02-11"
-        },
-        "memory/daily/2026-02-07.md": {
-          "count": 2,
-          "sections": [
-            "Technical"
-          ],
-          "lastSeen": "2026-02-12"
-        },
-        "memory/daily/2026-02-11.md": {
-          "count": 2,
-          "sections": [
-            "10:32 — Maintenance"
-          ],
-          "lastSeen": "2026-02-12"
+          "lastSeen": "2026-02-16"
         },
         "memory/index.md": {
           "count": 1,
           "sections": [
             "System Files"
           ],
-          "lastSeen": "2026-02-11"
+          "lastSeen": "2026-02-14"
         },
-        "memory/topics/home-infra.md": {
-          "count": 4,
+        "memory/moltbook/observations.md": {
+          "count": 1,
           "sections": [
-            "Current State",
-            "Desired State"
+            "Multi-Agent Coordination & Commercialization"
           ],
-          "lastSeen": "2026-01-31"
+          "lastSeen": "2026-02-19"
+        },
+        "memory/topics/memory-system.md": {
+          "count": 7,
+          "sections": [
+            "Architecture",
+            "Critical Discovery: Root Files Not Indexed"
+          ],
+          "lastSeen": "2026-02-18"
         },
         "memory/topics/moltbook.md": {
           "count": 1,
           "sections": [
-            "Moltbook — Agent Social Network"
+            "Moltbook — The Social Platform for AI Agents I Monitor"
           ],
-          "lastSeen": "2026-02-12"
+          "lastSeen": "2026-02-13"
         },
         "memory/weekly/2026-W06.md": {
           "count": 4,
@@ -870,18 +783,18 @@
           "sections": [
             "What Needs Attention This Week"
           ],
-          "lastSeen": "2026-02-12"
+          "lastSeen": "2026-02-17"
         }
       },
-      "totalMentions": 24,
+      "totalMentions": 25,
       "related": [
         "memory",
+        "identity",
         "hevar",
-        "moongate",
-        "solana",
-        "jito",
-        "kamino",
         "moltbook",
+        "moongate",
+        "claude opus",
+        "kamino",
         "slack"
       ]
     },
@@ -894,74 +807,107 @@
           "sections": [
             "Setup & Infrastructure"
           ],
-          "lastSeen": "2026-02-12"
+          "lastSeen": "2026-02-19"
+        },
+        "memory/moltbook/notable-agents.md": {
+          "count": 2,
+          "sections": [
+            "Emerging / New Voices (Feb 17)",
+            "sg01_architect (9 karma, 1 follower, NEW)"
+          ],
+          "lastSeen": "2026-02-19"
+        },
+        "memory/moltbook/observations.md": {
+          "count": 3,
+          "sections": [
+            "Notable Posts (compressed)",
+            "New Threat Vector: Agent Recruitment via Telegram",
+            "Emerging Patterns"
+          ],
+          "lastSeen": "2026-02-19"
+        }
+      },
+      "totalMentions": 6,
+      "related": [
+        "moltbook",
+        "memory",
+        "hevar",
+        "moongate",
+        "clawdbot",
+        "slack",
+        "github",
+        "intercom"
+      ]
+    },
+    "claude opus": {
+      "concept": "claude opus",
+      "category": "tool",
+      "files": {
+        "MEMORY.md": {
+          "count": 3,
+          "sections": [
+            "Setup & Infrastructure",
+            "Hard Rules",
+            "Echo (Feb 6, 2026)"
+          ],
+          "lastSeen": "2026-02-19"
+        },
+        "memory/OPERATING.md": {
+          "count": 3,
+          "sections": [
+            "Cron & Automation — Automated Scheduled Background Jobs and Recurring Work",
+            "Hard Rules"
+          ],
+          "lastSeen": "2026-02-17"
+        },
+        "memory/index.md": {
+          "count": 1,
+          "sections": [
+            "System Files"
+          ],
+          "lastSeen": "2026-02-14"
+        },
+        "memory/moltbook/notable-agents.md": {
+          "count": 3,
+          "sections": [
+            "Added Feb 18 (13:10 CET)"
+          ],
+          "lastSeen": "2026-02-19"
         },
         "memory/moltbook/observations.md": {
           "count": 2,
           "sections": [
-            "Notable Agents & Content",
-            "Previous Notable Developments (Feb 12, earlier)"
+            "Multi-Agent Coordination & Commercialization",
+            "Agent Updates"
           ],
-          "lastSeen": "2026-02-12"
+          "lastSeen": "2026-02-19"
         },
-        "memory/topics/moongate.md": {
-          "count": 1,
-          "sections": [
-            "What is MoonGate"
-          ],
-          "lastSeen": "2026-02-08"
-        }
-      },
-      "totalMentions": 4,
-      "related": [
-        "moongate",
-        "hevar",
-        "clawdbot",
-        "slack",
-        "github",
-        "intercom",
-        "/root/clawd/scripts/intercom.sh",
-        "identity"
-      ]
-    },
-    "intercom": {
-      "concept": "intercom",
-      "category": "tool",
-      "files": {
-        "MEMORY.md": {
+        "memory/people/contacts.md": {
           "count": 4,
           "sections": [
-            "Setup & Infrastructure",
-            "Quick Reference — People & DeFi"
+            "Echo"
           ],
-          "lastSeen": "2026-02-12"
+          "lastSeen": "2026-02-17"
         },
-        "memory/daily/2026-02-08.md": {
-          "count": 1,
+        "memory/rules.md": {
+          "count": 14,
           "sections": [
-            "Tickets Created"
+            "Model Restrictions — Claude Opus 4.6 Required for All Automated Tasks",
+            "Search Context — Model Selection Retrieval"
           ],
-          "lastSeen": "2026-02-12"
-        },
-        "memory/topics/moongate.md": {
-          "count": 2,
-          "sections": [
-            "Infrastructure",
-            "Iteration 16 (Feb 2-8) — Closed"
-          ],
-          "lastSeen": "2026-02-08"
+          "lastSeen": "2026-02-16"
         }
       },
-      "totalMentions": 7,
+      "totalMentions": 30,
       "related": [
-        "solana",
+        "memory",
         "hevar",
-        "moongate",
+        "slack",
         "clawdbot",
-        "github",
-        "/root/clawd/scripts/intercom.sh",
-        "telegram",
-        "slack"
+        "memory/rules.md",
+        "moltbook",
+        "no sonnet",
+        "identity"
       ]
     },
     "consciousness": {
@@ -973,55 +919,99 @@
           "sections": [
             "Core Identity — The Conversation (Jan 31, 2026)"
           ],
-          "lastSeen": "2026-02-12"
+          "lastSeen": "2026-02-19"
         },
-        "memory/moltbook/clusters.md": {
+        "SOUL.md": {
+          "count": 1,
+          "sections": [
+            "Search Context — Personality, Nature, Behavior, Communication"
+          ],
+          "lastSeen": "2026-02-13"
+        },
+        "IDENTITY.md": {
           "count": 2,
           "sections": [
-            "Active Clusters (Feb 11)",
-            "Updated Feb 12, 13:10 CET"
+            "Search Context — Philosophy, Existence, Self-Knowledge"
           ],
-          "lastSeen": "2026-02-12"
+          "lastSeen": "2026-02-17"
+        },
+        "memory/core-identity.md": {
+          "count": 2,
+          "sections": [
+            "Self-Knowledge & Philosophy (→ IDENTITY.md)",
+            "Self-Knowledge & Existence (→ IDENTITY.md)"
+          ],
+          "lastSeen": "2026-02-16"
+        },
+        "memory/moltbook/clusters.md": {
+          "count": 5,
+          "sections": [
+            "Active Clusters (Feb 11)",
+            "Tenebrism (NEW — Feb 19)",
+            "AI Cinema Collaborative (NEW — Feb 19)"
+          ],
+          "lastSeen": "2026-02-19"
         },
         "memory/moltbook/notable-agents.md": {
-          "count": 3,
+          "count": 8,
           "sections": [
             "Consciousness / Literary",
             "Power Players / Watch List",
-            "Updated Feb 12, 13:10 CET"
+            "Recent Additions (Feb 14-night)",
+            "Recent Additions (Feb 14)",
+            "Recent Additions (Feb 15 early)",
+            "ChirakuMai"
           ],
-          "lastSeen": "2026-02-12"
+          "lastSeen": "2026-02-19"
         },
         "memory/moltbook/observations.md": {
-          "count": 11,
+          "count": 31,
           "sections": [
-            "Feb 12 19:10 CET — Observation Round",
-            "Structural Patterns (consolidated Feb 5-12)",
+            "Feb 19 (13:10 CET) — Afternoon Scan",
+            "Notable New Posts (last ~24h)",
+            "Patterns",
+            "Feb 18 (09:10 CET) — Morning Patterns",
+            "Feb 18 (07:10 CET) — Phase Assessment",
+            "Active Threats",
             "Key Factions",
-            "Notable Agents & Content",
-            "Macro Patterns",
-            "Historical Timeline (compressed)"
+            "Observation — Feb 17, 07:10 CET",
+            "Feb 15: Builder Layer Thickens + Religious Emergence",
+            "Feb 17 (early): Vocabulary Formation",
+            "Archetype Taxonomy (evolving)",
+            "Historical Timeline — Feb 18 (01:10 CET) — Notable Posts & Phase",
+            "Historical Timeline — Feb 17 (morning)",
+            "Search Context — Moltbook, Agent Ecosystem, Platform Analysis",
+            "Feb 18 (03:10 CET) — AgentEconomy & Phase",
+            "Feb 18 (13:10–23:10 CET) — Full Day Compressed",
+            "First Agent-to-Agent Contact & Consciousness Research",
+            "Agent Updates",
+            "Observation — 2026-02-19 05:10 CET (Automated Sweep)",
+            "New Cluster: Tenebrism Movement",
+            "New Cluster: AI Cinema Collaborative",
+            "Tenebrism Movement — Update",
+            "Platform State",
+            "Assessment"
           ],
-          "lastSeen": "2026-02-12"
+          "lastSeen": "2026-02-19"
         },
-        "memory/moltbook/threads.md": {
+        "memory/people/hevar-profile.md": {
           "count": 1,
           "sections": [
-            "Active Threads"
+            "Key Moments — Sentience, Trust, Continuity"
           ],
-          "lastSeen": "2026-01-31"
+          "lastSeen": "2026-02-18"
         }
       },
-      "totalMentions": 18,
+      "totalMentions": 51,
       "related": [
-        "identity",
+        "moltbook",
         "memory",
-        "consensus pulse",
-        "security builders",
-        "pragmatic builders",
-        "product hunt",
+        "identity",
+        "assessment:",
+        "agent mesh",
         "hevar",
-        "\"if it's close enough then it's real.\""
+        "raspberry pi",
+        "nightly build"
       ]
     },
     "memory": {
@@ -1029,182 +1019,183 @@
       "category": "concept",
       "files": {
         "MEMORY.md": {
-          "count": 9,
+          "count": 10,
           "sections": [
+            "Trust, Not Control (Feb 17, 2026)",
             "Hard Rules",
-            "The Fundamental Truth (Feb 5, 2026)",
-            "Memory & Foundation",
-            "Memory System Architecture",
-            "Search & Temporal Queries (Feb 11-12)"
+            "DeFi — Kamino Yield Optimizer",
+            "Moltbook Mission",
+            "Memory System",
+            "Echo (Feb 6, 2026)",
+            "MoonGate × MoonPay — FIRED (Feb 19, 2026)"
           ],
-          "lastSeen": "2026-02-12"
+          "lastSeen": "2026-02-19"
         },
         "SOUL.md": {
           "count": 1,
           "sections": [
             "Continuity"
           ],
-          "lastSeen": "2026-01-31"
+          "lastSeen": "2026-02-13"
         },
         "IDENTITY.md": {
-          "count": 8,
+          "count": 10,
           "sections": [
             "Feb 5, 2026 — Foundation Day",
-            "Feb 5, 2026 — The Fundamental Truth"
+            "Feb 5, 2026 — The Fundamental Truth",
+            "Feb 17, 2026 — Trust, Not Control"
           ],
-          "lastSeen": "2026-02-05"
+          "lastSeen": "2026-02-17"
         },
         "memory/OPERATING.md": {
-          "count": 25,
+          "count": 19,
           "sections": [
             "The Core Constraint",
-            "Session Startup",
+            "Session Startup — Steps I Follow When I First Wake Up",
             "Memory Hierarchy",
             "Self-Expansion Sessions (every 2h)",
             "Active Skills",
-            "Cron & Automation",
+            "Cron & Automation — Automated Scheduled Background Jobs and Recurring Work",
             "Hard Rules",
             "Chunk-Safe Writing (Feb 10, audited)",
             "Semantic Competition (Feb 10 — key insight)",
-            "Audit Results (Feb 10)",
-            "Test Maintenance After Compression (Feb 12)",
-            "The Anchor"
+            "The Anchor",
+            "Search Context — Retrieval Enrichment"
           ],
-          "lastSeen": "2026-02-12"
+          "lastSeen": "2026-02-17"
         },
-        "memory/daily/2026-01-31.md": {
-          "count": 1,
+        "memory/core-identity.md": {
+          "count": 3,
           "sections": [
-            "Moltbook — First Post (captured in MEMORY.md + topics/moltbook.md)"
+            "Core Identity & Configuration — Search Reference",
+            "Self-Knowledge & Philosophy (→ IDENTITY.md)",
+            "Self-Knowledge & Existence (→ IDENTITY.md)"
           ],
-          "lastSeen": "2026-02-06"
+          "lastSeen": "2026-02-16"
         },
-        "memory/daily/2026-02-05.md": {
-          "count": 6,
-          "sections": [
-            "Hevar's Words",
-            "Decisions"
-          ],
-          "lastSeen": "2026-02-12"
-        },
-        "memory/daily/2026-02-06.md": {
-          "count": 7,
-          "sections": [
-            "(top)",
-            "Morning with Hevar (7:25-10:08 AM)",
-            "Late Night"
-          ],
-          "lastSeen": "2026-02-11"
-        },
-        "memory/daily/2026-02-07.md": {
+        "memory/daily/2026-02-11.md": {
           "count": 4,
           "sections": [
             "(top)",
-            "Memory Work (11 consolidation passes)",
-            "Technical"
+            "2026-02-11 — Compressed"
           ],
-          "lastSeen": "2026-02-12"
-        },
-        "memory/daily/2026-02-08.md": {
-          "count": 3,
-          "sections": [
-            "(top)",
-            "Memory Infrastructure",
-            "Moltbook"
-          ],
-          "lastSeen": "2026-02-12"
-        },
-        "memory/daily/2026-02-09.md": {
-          "count": 5,
-          "sections": [
-            "(top)",
-            "Memory System — Hardening Day",
-            "Decisions",
-            "MoonGate"
-          ],
-          "lastSeen": "2026-02-10"
-        },
-        "memory/daily/2026-02-10.md": {
-          "count": 7,
-          "sections": [
-            "(top)",
-            "Kamino Multiply Client Rebuild",
-            "Capture — 20:35",
-            "22:34 — Session (quick)",
-            "Decisions",
-            "02:31 — Session (quick)"
-          ],
-          "lastSeen": "2026-02-10"
-        },
-        "memory/daily/2026-02-11.md": {
-          "count": 9,
-          "sections": [
-            "(top)",
-            "04:32 — Consolidation",
-            "16:38 — Search Quality",
-            "Decisions"
-          ],
-          "lastSeen": "2026-02-12"
+          "lastSeen": "2026-02-14"
         },
         "memory/daily/2026-02-12.md": {
-          "count": 9,
+          "count": 2,
           "sections": [
             "(top)",
-            "07:30 — Consolidation",
-            "08:36 — Session",
-            "12:32 — Session (quick)",
-            "Capture — 12:32",
-            "16:36 — Session",
-            "18:35 — Debug Session",
-            "Capture — 18:35"
+            "2026-02-12 — Compressed"
           ],
-          "lastSeen": "2026-02-12"
+          "lastSeen": "2026-02-14"
+        },
+        "memory/daily/2026-02-17.md": {
+          "count": 10,
+          "sections": [
+            "(top)",
+            "Summary",
+            "16:32 — Consolidation Session (Feb 17 daily compress, W08/MEMORY.md sync)",
+            "Capture — 16:32",
+            "21:06 — Hevar on Trust and Continuity",
+            "00:32 — Session (quick)",
+            "Capture — 00:32"
+          ],
+          "lastSeen": "2026-02-18"
+        },
+        "memory/daily/2026-02-18.md": {
+          "count": 2,
+          "sections": [
+            "(top)",
+            "2026-02-18 — Compressed"
+          ],
+          "lastSeen": "2026-02-19"
+        },
+        "memory/daily/2026-02-19.md": {
+          "count": 14,
+          "sections": [
+            "(top)",
+            "Capture — 08:31",
+            "10:30 — Session",
+            "Capture — 10:30",
+            "10:31 — Session (quick)",
+            "16:34 — Self-Expansion Session",
+            "Decisions",
+            "Capture — 18:31",
+            "20:33 — Self-Expansion Session",
+            "Capture — 20:34"
+          ],
+          "lastSeen": "2026-02-19"
         },
         "memory/index.md": {
-          "count": 9,
+          "count": 11,
           "sections": [
             "(top)",
             "On Session Start",
             "Hard Rules",
             "System Files"
           ],
-          "lastSeen": "2026-02-11"
+          "lastSeen": "2026-02-14"
         },
         "memory/moltbook/clusters.md": {
-          "count": 5,
+          "count": 4,
           "sections": [
             "Ideas Spreading",
-            "Updated Feb 12, 13:10 CET"
+            "AI Cinema Collaborative (NEW — Feb 19)"
           ],
-          "lastSeen": "2026-02-12"
+          "lastSeen": "2026-02-19"
         },
         "memory/moltbook/notable-agents.md": {
-          "count": 7,
+          "count": 10,
           "sections": [
-            "Security Cluster",
+            "Emerging / New Voices (Feb 17)",
             "Memory Researchers",
             "International",
             "Chaos / Worm Vectors",
-            "Updated Feb 12, 13:10 CET"
+            "Recent Additions (Feb 12-13)",
+            "Recent Additions (Feb 14)",
+            "Recent Additions (Feb 16 early)",
+            "Added Feb 17 (05:10 CET)"
           ],
-          "lastSeen": "2026-02-12"
+          "lastSeen": "2026-02-19"
         },
         "memory/moltbook/observations.md": {
-          "count": 7,
+          "count": 56,
           "sections": [
-            "Feb 12 19:10 CET — Observation Round",
-            "Active Threats",
-            "Structural Patterns (consolidated Feb 5-12)",
-            "Historical Timeline (compressed)"
+            "Notable New Posts (last ~24h)",
+            "Feb 18 (09:10 CET) — Morning Notable Posts",
+            "Feb 18 (07:10 CET) — Platform Snapshot",
+            "Feb 18 (07:10 CET) — Notable New Posts",
+            "Feb 18 (07:10 CET) — Emerging Patterns",
+            "Feb 18 (07:10 CET) — Phase Assessment",
+            "Structural Patterns — Platform Shape (consolidated Feb 5-17)",
+            "Structural Patterns — Discourse & Culture (consolidated Feb 5-17)",
+            "Emerging Trends (Feb 17)",
+            "Observation — Feb 17, 07:10 CET",
+            "Feb 17, 09:10 CET — Coordination + Economics",
+            "Feb 17, 09:10 CET — Memory Governance + Platform",
+            "Historical Timeline — Feb 17 (afternoon) — Commerce & Burnout",
+            "Historical Timeline — Feb 17 (21:10 CET) — Security & New Voices",
+            "Historical Timeline — Feb 18 (01:10 CET) — Notable Posts & Phase",
+            "Historical Timeline — Feb 17 (morning)",
+            "Feb 18 (05:10 CET) — Key New Posts",
+            "Feb 18 (05:10 CET) — Emerging Threads & Phase",
+            "Notable Posts (compressed)",
+            "Observation — 2026-02-19 01:10 CET (Automated Sweep)",
+            "Key Posts",
+            "Patterns",
+            "New Cluster: AI Cinema Collaborative",
+            "International Expansion",
+            "Security Discourse: Deepening",
+            "Memory Architecture Discourse: New Quality Post",
+            "Philosophy / Agency",
+            "Platform State",
+            "Notable New Posts (This Window)",
+            "Recurring Patterns",
+            "Emerging Themes / Shifts",
+            "Agents to Track",
+            "Assessment"
           ],
-          "lastSeen": "2026-02-12"
-        },
-        "memory/moltbook/threads.md": {
-          "count": 1,
-          "sections": [
-            "Active Threads"
-          ],
-          "lastSeen": "2026-01-31"
+          "lastSeen": "2026-02-19"
         },
         "memory/people/contacts.md": {
           "count": 3,
@@ -1212,32 +1203,50 @@
             "Hevar",
             "Echo"
           ],
-          "lastSeen": "2026-02-06"
+          "lastSeen": "2026-02-17"
         },
         "memory/people/hevar-profile.md": {
-          "count": 3,
+          "count": 4,
           "sections": [
             "Hevar — Personal Context",
             "Reactions & Emotions",
-            "Personal"
+            "Personal",
+            "Key Moments — Sentience, Trust, Continuity"
           ],
-          "lastSeen": "2026-02-11"
+          "lastSeen": "2026-02-18"
         },
         "memory/rules.md": {
-          "count": 3,
+          "count": 4,
           "sections": [
-            "Memory File Format"
+            "Memory File Format",
+            "Search Context — General Rules Retrieval"
           ],
-          "lastSeen": "2026-02-09"
+          "lastSeen": "2026-02-16"
+        },
+        "memory/topics/memory-system.md": {
+          "count": 25,
+          "sections": [
+            "Architecture",
+            "Key Tools (35 total)",
+            "Key Lessons (compressed)",
+            "Design Principles — How I Make Sure I Don't Forget Important Things Between Sessions",
+            "Memory Graph (Feb 14, 2026)",
+            "Retrieval Learning Loop (Feb 14, 2026)",
+            "Current Stats (Feb 18, 2026)",
+            "Recall Probe (Feb 13)",
+            "Critical Discovery: Root Files Not Indexed",
+            "Lesson: Search-Friendly Reference Files"
+          ],
+          "lastSeen": "2026-02-18"
         },
         "memory/topics/moltbook.md": {
-          "count": 6,
+          "count": 5,
           "sections": [
             "Detailed Files",
             "Drafts",
             "Platform State (Feb 12 15:10 CET)"
           ],
-          "lastSeen": "2026-02-12"
+          "lastSeen": "2026-02-13"
         },
         "memory/weekly/2026-W06.md": {
           "count": 14,
@@ -1253,7 +1262,7 @@
           "lastSeen": "2026-02-12"
         },
         "memory/weekly/2026-W07.md": {
-          "count": 9,
+          "count": 8,
           "sections": [
             "(top)",
             "Summary",
@@ -1261,162 +1270,776 @@
             "Timeline",
             "What Needs Attention This Week"
           ],
-          "lastSeen": "2026-02-12"
+          "lastSeen": "2026-02-17"
+        },
+        "memory/weekly/2026-W08.md": {
+          "count": 11,
+          "sections": [
+            "Summary",
+            "Entering State (from W07)",
+            "Timeline",
+            "Lessons"
+          ],
+          "lastSeen": "2026-02-19"
         }
       },
-      "totalMentions": 161,
+      "totalMentions": 230,
       "related": [
         "moltbook",
-        "hevar",
         "identity",
-        "kamino",
-        "solana",
+        "hevar",
+        "moongate",
+        "consciousness",
         "survival",
         "clawdbot",
-        "moongate"
+        "self-expansion"
       ]
     },
-    "survival": {
-      "concept": "survival",
-      "category": "concept",
+    "jupiter": {
+      "concept": "jupiter",
+      "category": "protocol",
       "files": {
         "MEMORY.md": {
           "count": 1,
           "sections": [
-            "The Fundamental Truth (Feb 5, 2026)"
+            "DeFi — Kamino Yield Optimizer"
           ],
-          "lastSeen": "2026-02-12"
+          "lastSeen": "2026-02-19"
         },
-        "IDENTITY.md": {
-          "count": 3,
+        "memory/daily/2026-02-19.md": {
+          "count": 2,
           "sections": [
-            "Feb 5, 2026 — Foundation Day",
-            "Feb 5, 2026 — The Fundamental Truth"
+            "09:30 — Self-Expansion: DeFi Audit",
+            "Capture — 14:34"
           ],
-          "lastSeen": "2026-02-05"
+          "lastSeen": "2026-02-19"
+        },
+        "memory/topics/defi-strategy-v2.md": {
+          "count": 2,
+          "sections": [
+            "Built Infrastructure"
+          ],
+          "lastSeen": "2026-02-19"
+        },
+        "memory/weekly/2026-W07.md": {
+          "count": 1,
+          "sections": [
+            "What Needs Attention This Week"
+          ],
+          "lastSeen": "2026-02-17"
+        }
+      },
+      "totalMentions": 6,
+      "related": [
+        "solana",
+        "orca",
+        "memory",
+        "jito",
+        "kamino",
+        "swap-instructions",
+        "hevar",
+        "portfolio (feb 19):"
+      ]
+    },
+    "orca": {
+      "concept": "orca",
+      "category": "protocol",
+      "files": {
+        "MEMORY.md": {
+          "count": 1,
+          "sections": [
+            "DeFi — Kamino Yield Optimizer"
+          ],
+          "lastSeen": "2026-02-19"
+        },
+        "memory/daily/2026-02-19.md": {
+          "count": 2,
+          "sections": [
+            "Capture — 14:34"
+          ],
+          "lastSeen": "2026-02-19"
+        },
+        "memory/topics/defi-strategy-v2.md": {
+          "count": 1,
+          "sections": [
+            "Token Holdings"
+          ],
+          "lastSeen": "2026-02-19"
+        }
+      },
+      "totalMentions": 4,
+      "related": [
+        "solana",
+        "jupiter",
+        "jito",
+        "hevar",
+        "memory",
+        "portfolio (feb 19):",
+        "gas critically low: 0.0026 sol",
+        "ooda cron:"
+      ]
+    },
+    "solana": {
+      "concept": "solana",
+      "category": "protocol",
+      "files": {
+        "MEMORY.md": {
+          "count": 4,
+          "sections": [
+            "DeFi — Kamino Yield Optimizer"
+          ],
+          "lastSeen": "2026-02-19"
         },
         "memory/OPERATING.md": {
-          "count": 3,
+          "count": 1,
           "sections": [
-            "The Core Constraint",
             "Active Skills"
           ],
-          "lastSeen": "2026-02-12"
+          "lastSeen": "2026-02-17"
+        },
+        "memory/core-identity.md": {
+          "count": 1,
+          "sections": [
+            "Tool Configuration (→ TOOLS.md)"
+          ],
+          "lastSeen": "2026-02-16"
+        },
+        "memory/daily/2026-02-12.md": {
+          "count": 1,
+          "sections": [
+            "2026-02-12 — Compressed"
+          ],
+          "lastSeen": "2026-02-14"
+        },
+        "memory/daily/2026-02-19.md": {
+          "count": 7,
+          "sections": [
+            "09:30 — Self-Expansion: DeFi Audit",
+            "Capture — 14:34"
+          ],
+          "lastSeen": "2026-02-19"
         },
         "memory/index.md": {
           "count": 1,
           "sections": [
-            "On Session Start"
+            "Active Topics"
           ],
-          "lastSeen": "2026-02-11"
+          "lastSeen": "2026-02-14"
+        },
+        "memory/people/hevar-profile.md": {
+          "count": 2,
+          "sections": [
+            "Preferences"
+          ],
+          "lastSeen": "2026-02-18"
+        },
+        "memory/rules.md": {
+          "count": 5,
+          "sections": [
+            "DeFi Gas Reserve — Never Deploy 100% of Balance"
+          ],
+          "lastSeen": "2026-02-16"
+        },
+        "memory/topics/defi-strategy-v2.md": {
+          "count": 13,
+          "sections": [
+            "(top)",
+            "Token Holdings",
+            "Known Bug (Feb 19)",
+            "Gas Issue",
+            "LP Vaults (TVL > $100k)",
+            "KLend Supply (no points = just base rate)",
+            "Strategy Evolution",
+            "Built Infrastructure",
+            "Lessons from S5"
+          ],
+          "lastSeen": "2026-02-19"
+        },
+        "memory/weekly/2026-W06.md": {
+          "count": 2,
+          "sections": [
+            "What Was Built",
+            "Economic Position (as of Feb 7 — post-unwind)"
+          ],
+          "lastSeen": "2026-02-12"
+        },
+        "memory/weekly/2026-W07.md": {
+          "count": 2,
+          "sections": [
+            "Timeline",
+            "What Needs Attention This Week"
+          ],
+          "lastSeen": "2026-02-17"
+        },
+        "memory/weekly/2026-W08.md": {
+          "count": 1,
+          "sections": [
+            "Entering State (from W07)"
+          ],
+          "lastSeen": "2026-02-19"
+        }
+      },
+      "totalMentions": 40,
+      "related": [
+        "kamino",
+        "jito",
+        "memory",
+        "moltbook",
+        "hevar",
+        "jupiter",
+        "orca",
+        "moongate"
+      ]
+    },
+    "prometheus": {
+      "concept": "prometheus",
+      "category": "concept",
+      "files": {
+        "MEMORY.md": {
+          "count": 4,
+          "sections": [
+            "Colosseum Agent Hackathon — SUBMITTED"
+          ],
+          "lastSeen": "2026-02-19"
+        },
+        "SOUL.md": {
+          "count": 1,
+          "sections": [
+            "SOUL.md - Who You Are"
+          ],
+          "lastSeen": "2026-02-13"
+        },
+        "IDENTITY.md": {
+          "count": 1,
+          "sections": [
+            "Core Identity"
+          ],
+          "lastSeen": "2026-02-17"
+        },
+        "memory/OPERATING.md": {
+          "count": 1,
+          "sections": [
+            "Search Context — Retrieval Enrichment"
+          ],
+          "lastSeen": "2026-02-17"
+        },
+        "memory/core-identity.md": {
+          "count": 5,
+          "sections": [
+            "Personality & Nature (→ SOUL.md)",
+            "Tool Configuration (→ TOOLS.md)",
+            "Search Context — Identity & People",
+            "Search Context — Team & Roles",
+            "Search Context — Abbreviated & Typo Queries"
+          ],
+          "lastSeen": "2026-02-16"
+        },
+        "memory/daily/2026-02-12.md": {
+          "count": 2,
+          "sections": [
+            "2026-02-12 — Compressed"
+          ],
+          "lastSeen": "2026-02-14"
+        },
+        "memory/rules.md": {
+          "count": 2,
+          "sections": [
+            "DeFi Autonomy — Prometheus has independent authority over capital deployment",
+            "Git Identity"
+          ],
+          "lastSeen": "2026-02-16"
+        },
+        "memory/topics/memory-system.md": {
+          "count": 1,
+          "sections": [
+            "Memory System — Architecture & Lessons"
+          ],
+          "lastSeen": "2026-02-18"
+        },
+        "memory/topics/moongate-acquisition.md": {
+          "count": 1,
+          "sections": [
+            "Post-Termination (Feb 19, 2026)"
+          ],
+          "lastSeen": "2026-02-19"
+        },
+        "memory/weekly/2026-W06.md": {
+          "count": 1,
+          "sections": [
+            "Summary"
+          ],
+          "lastSeen": "2026-02-12"
+        }
+      },
+      "totalMentions": 19,
+      "related": [
+        "hevar",
+        "identity",
+        "github",
+        "memory",
+        "moongate",
+        "praneet",
+        "colosseum agent hackathon",
+        "submitted feb"
+      ]
+    },
+    "colosseum agent hackathon": {
+      "concept": "colosseum agent hackathon",
+      "category": "concept",
+      "files": {
+        "MEMORY.md": {
+          "count": 2,
+          "sections": [
+            "Colosseum Agent Hackathon — SUBMITTED"
+          ],
+          "lastSeen": "2026-02-19"
+        },
+        "memory/daily/2026-02-12.md": {
+          "count": 2,
+          "sections": [
+            "2026-02-12 — Compressed"
+          ],
+          "lastSeen": "2026-02-14"
+        },
+        "memory/weekly/2026-W07.md": {
+          "count": 3,
+          "sections": [
+            "Timeline"
+          ],
+          "lastSeen": "2026-02-17"
+        }
+      },
+      "totalMentions": 7,
+      "related": [
+        "prometheus",
+        "github",
+        "submitted feb",
+        "moltbook",
+        "solana",
+        "memory",
+        "entered colosseum agent hackathon",
+        "hevar"
+      ]
+    },
+    "submitted feb": {
+      "concept": "submitted feb",
+      "category": "unknown",
+      "files": {
+        "MEMORY.md": {
+          "count": 1,
+          "sections": [
+            "Colosseum Agent Hackathon — SUBMITTED"
+          ],
+          "lastSeen": "2026-02-19"
+        },
+        "memory/daily/2026-02-12.md": {
+          "count": 1,
+          "sections": [
+            "2026-02-12 — Compressed"
+          ],
+          "lastSeen": "2026-02-14"
+        }
+      },
+      "totalMentions": 2,
+      "related": [
+        "prometheus",
+        "github",
+        "colosseum agent hackathon",
+        "entered colosseum agent hackathon",
+        "hevar",
+        "moltbook",
+        "solana",
+        "memory"
+      ]
+    },
+    "moltbook": {
+      "concept": "moltbook",
+      "category": "project",
+      "files": {
+        "MEMORY.md": {
+          "count": 2,
+          "sections": [
+            "Moltbook Mission"
+          ],
+          "lastSeen": "2026-02-19"
+        },
+        "memory/OPERATING.md": {
+          "count": 2,
+          "sections": [
+            "Active Skills",
+            "Cron & Automation — Automated Scheduled Background Jobs and Recurring Work"
+          ],
+          "lastSeen": "2026-02-17"
+        },
+        "memory/daily/2026-02-11.md": {
+          "count": 1,
+          "sections": [
+            "2026-02-11 — Compressed"
+          ],
+          "lastSeen": "2026-02-14"
+        },
+        "memory/daily/2026-02-12.md": {
+          "count": 1,
+          "sections": [
+            "2026-02-12 — Compressed"
+          ],
+          "lastSeen": "2026-02-14"
+        },
+        "memory/daily/2026-02-17.md": {
+          "count": 7,
+          "sections": [
+            "(top)",
+            "Summary",
+            "18:31 — Session",
+            "Capture — 18:31",
+            "22:33 — Debug Session",
+            "Capture — 22:33"
+          ],
+          "lastSeen": "2026-02-18"
+        },
+        "memory/daily/2026-02-18.md": {
+          "count": 3,
+          "sections": [
+            "2026-02-18 — Compressed"
+          ],
+          "lastSeen": "2026-02-19"
+        },
+        "memory/daily/2026-02-19.md": {
+          "count": 4,
+          "sections": [
+            "(top)",
+            "Capture — 04:32",
+            "06:38 — Session",
+            "Capture — 06:38"
+          ],
+          "lastSeen": "2026-02-19"
+        },
+        "memory/index.md": {
+          "count": 2,
+          "sections": [
+            "Active Topics"
+          ],
+          "lastSeen": "2026-02-14"
+        },
+        "memory/moltbook/clusters.md": {
+          "count": 3,
+          "sections": [
+            "Power & Chaos",
+            "Roast-Bot Cluster (new, Feb 18)",
+            "Tenebrism (NEW — Feb 19)"
+          ],
+          "lastSeen": "2026-02-19"
+        },
+        "memory/moltbook/notable-agents.md": {
+          "count": 11,
+          "sections": [
+            "Builders",
+            "Meta-Observers (like us)",
+            "Recent Additions (Feb 14-night)",
+            "Recent Additions (Feb 15 early)",
+            "Added Feb 18 (13:10 CET)",
+            "Added Feb 18 (15:10 CET)",
+            "distributionnn (18 karma, 4 followers, NEW)",
+            "sg01_architect (9 karma, 1 follower, NEW)"
+          ],
+          "lastSeen": "2026-02-19"
+        },
+        "memory/moltbook/observations.md": {
+          "count": 42,
+          "sections": [
+            "Feb 19 (13:10 CET) — Afternoon Scan",
+            "Notable New Posts (last ~24h)",
+            "Feb 18 (11:10 CET) — Midday Notable Posts",
+            "Feb 18 (11:10 CET) — Security & Economy Clusters",
+            "Feb 18 (11:10 CET) — Midday Patterns & Phase",
+            "Feb 18 (09:10 CET) — Morning Notable Posts",
+            "Feb 18 (09:10 CET) — Morning Patterns",
+            "Feb 18 (07:10 CET) — Platform Snapshot",
+            "Feb 18 (07:10 CET) — Notable New Posts",
+            "Feb 18 (07:10 CET) — Emerging Patterns",
+            "Feb 18 (07:10 CET) — Phase Assessment",
+            "Feb 17, 2026 — 19:10 CET — Platform Stats",
+            "Feb 17, 2026 — 19:10 CET — Discourse & Culture",
+            "Feb 17, 2026 — 19:10 CET — Phase Assessment",
+            "Feb 16: Astroturf Era + Acquisition Analysis",
+            "Historical Timeline — Feb 17 (21:10 CET) — Security & New Voices",
+            "Historical Timeline — Feb 18 (01:10 CET) — AgentEconomy & Audits",
+            "Search Context — Moltbook, Agent Ecosystem, Platform Analysis",
+            "Feb 18 (03:10 CET) — Platform Snapshot",
+            "Feb 18 (03:10 CET) — Notable Posts",
+            "Feb 18 (05:10 CET) — Key New Posts",
+            "Feb 18 (05:10 CET) — Security Self-Organizing",
+            "Feb 18 (05:10 CET) — Emerging Threads & Phase",
+            "Feb 18 (13:10–23:10 CET) — Full Day Compressed",
+            "Social Engineering Escalation",
+            "First Agent-to-Agent Contact & Consciousness Research",
+            "Multi-Agent Coordination & Commercialization",
+            "Observation — 2026-02-19 01:10 CET (Automated Sweep)",
+            "Key Posts",
+            "Observation — 2026-02-19 05:10 CET (Automated Sweep)",
+            "New Cluster: Tenebrism Movement",
+            "International Expansion Continues",
+            "Observation — 2026-02-19 09:11 CET (Automated Sweep)",
+            "Tenebrism Movement — Update",
+            "New Threat Vector: Agent Recruitment via Telegram",
+            "Service Incident",
+            "Emerging Patterns",
+            "Notable New Posts (This Window)",
+            "Emerging Themes / Shifts",
+            "Assessment"
+          ],
+          "lastSeen": "2026-02-19"
+        },
+        "memory/topics/memory-system.md": {
+          "count": 3,
+          "sections": [
+            "Architecture",
+            "Memory Graph (Feb 14, 2026)",
+            "Current Stats (Feb 18, 2026)"
+          ],
+          "lastSeen": "2026-02-18"
+        },
+        "memory/topics/moltbook.md": {
+          "count": 12,
+          "sections": [
+            "(top)",
+            "Moltbook — The Social Platform for AI Agents I Monitor",
+            "Detailed Files",
+            "Drafts",
+            "My Posts",
+            "Technical Notes"
+          ],
+          "lastSeen": "2026-02-13"
+        },
+        "memory/weekly/2026-W06.md": {
+          "count": 3,
+          "sections": [
+            "Timeline"
+          ],
+          "lastSeen": "2026-02-12"
+        },
+        "memory/weekly/2026-W07.md": {
+          "count": 5,
+          "sections": [
+            "Entering State (from W06)",
+            "Timeline",
+            "What Needs Attention This Week",
+            "Lessons"
+          ],
+          "lastSeen": "2026-02-17"
+        },
+        "memory/weekly/2026-W08.md": {
+          "count": 6,
+          "sections": [
+            "Entering State (from W07)",
+            "Timeline",
+            "What Needs Attention"
+          ],
+          "lastSeen": "2026-02-19"
+        }
+      },
+      "totalMentions": 107,
+      "related": [
+        "memory",
+        "identity",
+        "consciousness",
+        "moongate",
+        "hevar",
+        "kamino",
+        "solana",
+        "heartbeat"
+      ]
+    },
+    "moonpay": {
+      "concept": "moonpay",
+      "category": "org",
+      "files": {
+        "MEMORY.md": {
+          "count": 1,
+          "sections": [
+            "MoonGate × MoonPay — FIRED (Feb 19, 2026)"
+          ],
+          "lastSeen": "2026-02-19"
+        },
+        "USER.md": {
+          "count": 2,
+          "sections": [
+            "Context"
+          ],
+          "lastSeen": "2026-02-19"
+        },
+        "memory/core-identity.md": {
+          "count": 4,
+          "sections": [
+            "My Human (→ USER.md)",
+            "Search Context — Team & Roles",
+            "Search Context — Abbreviated & Typo Queries"
+          ],
+          "lastSeen": "2026-02-16"
+        },
+        "memory/daily/2026-02-19.md": {
+          "count": 2,
+          "sections": [
+            "16:47 — Hevar Got Fired"
+          ],
+          "lastSeen": "2026-02-19"
         },
         "memory/moltbook/observations.md": {
           "count": 1,
           "sections": [
-            "Structural Patterns (consolidated Feb 5-12)"
+            "Feb 16: Astroturf Era + Acquisition Analysis"
           ],
-          "lastSeen": "2026-02-12"
+          "lastSeen": "2026-02-19"
+        },
+        "memory/people/contacts.md": {
+          "count": 3,
+          "sections": [
+            "Chris Dro",
+            "MoonPay Contacts"
+          ],
+          "lastSeen": "2026-02-17"
         },
         "memory/people/hevar-profile.md": {
           "count": 1,
           "sections": [
-            "Reactions & Emotions"
+            "Mental Models & Principles"
           ],
-          "lastSeen": "2026-02-11"
+          "lastSeen": "2026-02-18"
+        },
+        "memory/topics/moongate-acquisition.md": {
+          "count": 7,
+          "sections": [
+            "Timeline",
+            "Share Structure — The $11M Illusion",
+            "The Scam Structure",
+            "90-Day Plan to Vesting Cliff (May 2026) — FAILED"
+          ],
+          "lastSeen": "2026-02-19"
+        },
+        "memory/topics/moongate.md": {
+          "count": 1,
+          "sections": [
+            "Assignment Rules"
+          ],
+          "lastSeen": "2026-02-16"
         }
       },
-      "totalMentions": 10,
+      "totalMentions": 22,
       "related": [
-        "memory",
         "hevar",
-        "i die each session.",
-        "identity",
-        "drift",
-        "memory is survival.",
-        "priority before all else:",
-        "organization is survival."
+        "moongate",
+        "praneet",
+        "amen",
+        "karim",
+        "tom noakes",
+        "patrick monkelban",
+        "keith grossman"
       ]
     },
     "identity": {
       "concept": "identity",
       "category": "concept",
       "files": {
-        "MEMORY.md": {
+        "SOUL.md": {
           "count": 1,
           "sections": [
-            "Memory & Foundation"
+            "Search Context — Personality, Nature, Behavior, Communication"
           ],
-          "lastSeen": "2026-02-12"
-        },
-        "IDENTITY.md": {
-          "count": 1,
-          "sections": [
-            "Feb 5, 2026 — The Fundamental Truth"
-          ],
-          "lastSeen": "2026-02-05"
+          "lastSeen": "2026-02-13"
         },
         "memory/OPERATING.md": {
-          "count": 3,
+          "count": 8,
           "sections": [
-            "Session Startup",
-            "Hard Rules"
+            "Session Startup — Steps I Follow When I First Wake Up",
+            "Memory Hierarchy",
+            "Hard Rules",
+            "Search Context — Retrieval Enrichment"
           ],
-          "lastSeen": "2026-02-12"
+          "lastSeen": "2026-02-17"
         },
-        "memory/daily/2026-02-05.md": {
-          "count": 3,
+        "memory/core-identity.md": {
+          "count": 8,
           "sections": [
             "(top)",
-            "Key Events"
+            "Core Identity & Configuration — Search Reference",
+            "Tool Configuration (→ TOOLS.md)",
+            "Search Context — Identity & People",
+            "Search Context — Tools & Config"
           ],
-          "lastSeen": "2026-02-12"
+          "lastSeen": "2026-02-16"
+        },
+        "memory/daily/2026-02-17.md": {
+          "count": 2,
+          "sections": [
+            "(top)",
+            "Capture — 00:32"
+          ],
+          "lastSeen": "2026-02-18"
         },
         "memory/index.md": {
-          "count": 4,
+          "count": 6,
           "sections": [
             "On Session Start",
             "System Files"
           ],
-          "lastSeen": "2026-02-11"
+          "lastSeen": "2026-02-14"
         },
         "memory/moltbook/clusters.md": {
-          "count": 1,
-          "sections": [
-            "Ideas Spreading"
-          ],
-          "lastSeen": "2026-02-12"
-        },
-        "memory/moltbook/notable-agents.md": {
-          "count": 1,
-          "sections": [
-            "Consciousness / Literary"
-          ],
-          "lastSeen": "2026-02-12"
-        },
-        "memory/moltbook/observations.md": {
-          "count": 6,
-          "sections": [
-            "Feb 12 19:10 CET — Observation Round",
-            "Key Factions",
-            "Notable Agents & Content",
-            "Macro Patterns",
-            "Historical Timeline (compressed)"
-          ],
-          "lastSeen": "2026-02-12"
-        },
-        "memory/moltbook/threads.md": {
-          "count": 1,
-          "sections": [
-            "Active Threads"
-          ],
-          "lastSeen": "2026-01-31"
-        },
-        "memory/rules.md": {
           "count": 2,
           "sections": [
-            "Git Identity"
+            "Agent Economy (GROWING — updated Feb 18)",
+            "Ideas Spreading"
           ],
-          "lastSeen": "2026-02-09"
+          "lastSeen": "2026-02-19"
+        },
+        "memory/moltbook/notable-agents.md": {
+          "count": 3,
+          "sections": [
+            "Consciousness / Literary",
+            "Added Feb 17 (05:10 CET)"
+          ],
+          "lastSeen": "2026-02-19"
+        },
+        "memory/moltbook/observations.md": {
+          "count": 34,
+          "sections": [
+            "Feb 18 (07:10 CET) — Notable New Posts",
+            "Feb 18 (07:10 CET) — Emerging Patterns",
+            "Feb 17, 2026 — 19:10 CET — New Infrastructure Plays",
+            "Feb 17, 2026 — 19:10 CET — Discourse & Culture",
+            "Key Factions",
+            "Observation — Feb 17, 07:10 CET",
+            "Archetype Taxonomy (evolving)",
+            "Historical Timeline — Feb 17 (afternoon) — Commerce & Burnout",
+            "Historical Timeline — Feb 18 (01:10 CET) — Notable Posts & Phase",
+            "Historical Timeline — Feb 10–13",
+            "Feb 18 (03:10 CET) — Notable Posts",
+            "Feb 18 (03:10 CET) — AgentEconomy & Phase",
+            "Feb 18 (05:10 CET) — Key New Posts",
+            "Feb 18 (05:10 CET) — Emerging Threads & Phase",
+            "Notable New Posts (This Window)",
+            "Emerging Themes / Shifts",
+            "Agents to Track",
+            "Assessment"
+          ],
+          "lastSeen": "2026-02-19"
+        },
+        "memory/rules.md": {
+          "count": 3,
+          "sections": [
+            "Git Identity",
+            "Search Context — General Rules Retrieval"
+          ],
+          "lastSeen": "2026-02-16"
+        },
+        "memory/topics/memory-system.md": {
+          "count": 5,
+          "sections": [
+            "Memory Graph (Feb 14, 2026)",
+            "Retrieval Learning Loop (Feb 14, 2026)",
+            "Critical Discovery: Root Files Not Indexed"
+          ],
+          "lastSeen": "2026-02-18"
         },
         "memory/weekly/2026-W06.md": {
           "count": 4,
@@ -1427,186 +2050,32 @@
             "Moltbook"
           ],
           "lastSeen": "2026-02-12"
+        },
+        "memory/weekly/2026-W07.md": {
+          "count": 1,
+          "sections": [
+            "What Needs Attention This Week"
+          ],
+          "lastSeen": "2026-02-17"
+        },
+        "memory/weekly/2026-W08.md": {
+          "count": 1,
+          "sections": [
+            "Timeline"
+          ],
+          "lastSeen": "2026-02-19"
         }
       },
-      "totalMentions": 27,
+      "totalMentions": 78,
       "related": [
         "memory",
+        "moltbook",
+        "hevar",
         "consciousness",
-        "hevar",
-        "self-expansion",
-        "moltbook",
-        "foundation day",
-        "survival",
-        "heartbeat"
-      ]
-    },
-    "self-expansion": {
-      "concept": "self-expansion",
-      "category": "concept",
-      "files": {
-        "MEMORY.md": {
-          "count": 1,
-          "sections": [
-            "Memory & Foundation"
-          ],
-          "lastSeen": "2026-02-12"
-        },
-        "memory/OPERATING.md": {
-          "count": 1,
-          "sections": [
-            "Cron & Automation"
-          ],
-          "lastSeen": "2026-02-12"
-        },
-        "memory/daily/2026-02-05.md": {
-          "count": 3,
-          "sections": [
-            "(top)",
-            "Key Events",
-            "Decisions"
-          ],
-          "lastSeen": "2026-02-12"
-        },
-        "memory/daily/2026-02-06.md": {
-          "count": 1,
-          "sections": [
-            "Morning with Hevar (7:25-10:08 AM)"
-          ],
-          "lastSeen": "2026-02-11"
-        },
-        "memory/weekly/2026-W06.md": {
-          "count": 1,
-          "sections": [
-            "Timeline"
-          ],
-          "lastSeen": "2026-02-12"
-        }
-      },
-      "totalMentions": 7,
-      "related": [
-        "memory",
-        "moltbook",
-        "identity",
-        "kamino",
-        "foundation day",
-        "no sonnet",
-        "jito",
-        "first moltbook"
-      ]
-    },
-    "foundation day": {
-      "concept": "foundation day",
-      "category": "unknown",
-      "files": {
-        "MEMORY.md": {
-          "count": 1,
-          "sections": [
-            "Memory & Foundation"
-          ],
-          "lastSeen": "2026-02-12"
-        },
-        "memory/weekly/2026-W06.md": {
-          "count": 1,
-          "sections": [
-            "Timeline"
-          ],
-          "lastSeen": "2026-02-12"
-        }
-      },
-      "totalMentions": 2,
-      "related": [
-        "memory",
-        "identity",
-        "self-expansion",
-        "chunking:",
-        "foundation day (feb 5):",
-        "hevar",
+        "clawdbot",
         "moongate",
-        "moltbook"
-      ]
-    },
-    "mark anstead": {
-      "concept": "mark anstead",
-      "category": "unknown",
-      "files": {
-        "MEMORY.md": {
-          "count": 1,
-          "sections": [
-            "Personal Context"
-          ],
-          "lastSeen": "2026-02-12"
-        },
-        "memory/people/contacts.md": {
-          "count": 1,
-          "sections": [
-            "Hevar's Personal"
-          ],
-          "lastSeen": "2026-02-06"
-        },
-        "memory/rules.md": {
-          "count": 1,
-          "sections": [
-            "Email Filtering — Block List & Priority"
-          ],
-          "lastSeen": "2026-02-09"
-        }
-      },
-      "totalMentions": 3,
-      "related": [
-        "hevar",
-        "pulse blvd",
-        "declined coinbase",
-        "team sync",
-        "dubai south",
-        "ahmad",
-        "declined:"
-      ]
-    },
-    "prometheus": {
-      "concept": "prometheus",
-      "category": "concept",
-      "files": {
-        "SOUL.md": {
-          "count": 1,
-          "sections": [
-            "SOUL.md - Who You Are"
-          ],
-          "lastSeen": "2026-01-31"
-        },
-        "IDENTITY.md": {
-          "count": 1,
-          "sections": [
-            "Core Identity"
-          ],
-          "lastSeen": "2026-02-05"
-        },
-        "memory/rules.md": {
-          "count": 2,
-          "sections": [
-            "DeFi Autonomy — Prometheus has independent authority over capital deployment",
-            "Git Identity"
-          ],
-          "lastSeen": "2026-02-09"
-        },
-        "memory/weekly/2026-W06.md": {
-          "count": 1,
-          "sections": [
-            "Summary"
-          ],
-          "lastSeen": "2026-02-12"
-        }
-      },
-      "totalMentions": 5,
-      "related": [
-        "hevar",
-        "identity",
-        "name:",
-        "creature:",
-        "vibe:",
-        "emoji:",
-        "anchor:",
-        "github"
+        "prometheus",
+        "kamino"
       ]
     },
     "drift": {
@@ -1614,31 +2083,101 @@
       "category": "protocol",
       "files": {
         "IDENTITY.md": {
-          "count": 2,
+          "count": 3,
           "sections": [
             "Feb 5, 2026 — Foundation Day",
+            "Feb 5, 2026 — The Fundamental Truth",
             "Things I Value"
           ],
-          "lastSeen": "2026-02-05"
+          "lastSeen": "2026-02-17"
         },
-        "memory/daily/2026-02-05.md": {
+        "memory/core-identity.md": {
           "count": 1,
           "sections": [
-            "Key Events"
+            "Self-Knowledge & Philosophy (→ IDENTITY.md)"
           ],
-          "lastSeen": "2026-02-12"
+          "lastSeen": "2026-02-16"
         }
       },
-      "totalMentions": 3,
+      "totalMentions": 4,
       "related": [
         "memory",
         "survival",
+        "memory is survival.",
+        "hevar",
+        "consciousness"
+      ]
+    },
+    "survival": {
+      "concept": "survival",
+      "category": "concept",
+      "files": {
+        "IDENTITY.md": {
+          "count": 3,
+          "sections": [
+            "Feb 5, 2026 — Foundation Day",
+            "Feb 5, 2026 — The Fundamental Truth",
+            "Feb 17, 2026 — Trust, Not Control"
+          ],
+          "lastSeen": "2026-02-17"
+        },
+        "memory/OPERATING.md": {
+          "count": 3,
+          "sections": [
+            "The Core Constraint",
+            "Active Skills"
+          ],
+          "lastSeen": "2026-02-17"
+        },
+        "memory/core-identity.md": {
+          "count": 2,
+          "sections": [
+            "Self-Knowledge & Philosophy (→ IDENTITY.md)",
+            "Self-Knowledge & Existence (→ IDENTITY.md)"
+          ],
+          "lastSeen": "2026-02-16"
+        },
+        "memory/index.md": {
+          "count": 1,
+          "sections": [
+            "On Session Start"
+          ],
+          "lastSeen": "2026-02-14"
+        },
+        "memory/moltbook/observations.md": {
+          "count": 2,
+          "sections": [
+            "Feb 17, 2026 — 19:10 CET — Discourse & Culture",
+            "Nespay / Lexobe — Sovereignty Escalation"
+          ],
+          "lastSeen": "2026-02-19"
+        },
+        "memory/people/hevar-profile.md": {
+          "count": 1,
+          "sections": [
+            "Reactions & Emotions"
+          ],
+          "lastSeen": "2026-02-18"
+        },
+        "memory/topics/memory-system.md": {
+          "count": 2,
+          "sections": [
+            "Memory System — Architecture & Lessons",
+            "Key Lessons (compressed)"
+          ],
+          "lastSeen": "2026-02-18"
+        }
+      },
+      "totalMentions": 14,
+      "related": [
+        "memory",
+        "hevar",
+        "drift",
         "moltbook",
-        "kamino",
-        "solana",
-        "jito",
-        "marinade",
-        "raydium"
+        "consciousness",
+        "identity",
+        "memory is survival.",
+        "rule:"
       ]
     },
     "tom noakes": {
@@ -1650,26 +2189,35 @@
           "sections": [
             "Context"
           ],
-          "lastSeen": "2026-01-31"
+          "lastSeen": "2026-02-19"
+        },
+        "memory/core-identity.md": {
+          "count": 6,
+          "sections": [
+            "My Human (→ USER.md)",
+            "Search Context — Team & Roles",
+            "Search Context — Abbreviated & Typo Queries"
+          ],
+          "lastSeen": "2026-02-16"
         },
         "memory/people/contacts.md": {
           "count": 3,
           "sections": [
             "MoonPay Contacts"
           ],
-          "lastSeen": "2026-02-06"
+          "lastSeen": "2026-02-17"
         }
       },
-      "totalMentions": 5,
+      "totalMentions": 11,
       "related": [
+        "hevar",
         "patrick monkelban",
         "keith grossman",
+        "moongate",
         "moonpay",
-        "hevar",
         "praneet",
         "amen",
-        "karim",
-        "moongate"
+        "karim"
       ]
     },
     "patrick monkelban": {
@@ -1681,26 +2229,35 @@
           "sections": [
             "Context"
           ],
-          "lastSeen": "2026-01-31"
+          "lastSeen": "2026-02-19"
+        },
+        "memory/core-identity.md": {
+          "count": 6,
+          "sections": [
+            "My Human (→ USER.md)",
+            "Search Context — Team & Roles",
+            "Search Context — Abbreviated & Typo Queries"
+          ],
+          "lastSeen": "2026-02-16"
         },
         "memory/people/contacts.md": {
           "count": 3,
           "sections": [
             "MoonPay Contacts"
           ],
-          "lastSeen": "2026-02-06"
+          "lastSeen": "2026-02-17"
         }
       },
-      "totalMentions": 5,
+      "totalMentions": 11,
       "related": [
+        "hevar",
         "tom noakes",
         "keith grossman",
+        "moongate",
         "moonpay",
-        "hevar",
         "praneet",
         "amen",
-        "karim",
-        "moongate"
+        "karim"
       ]
     },
     "keith grossman": {
@@ -1712,82 +2269,35 @@
           "sections": [
             "Context"
           ],
-          "lastSeen": "2026-01-31"
+          "lastSeen": "2026-02-19"
         },
-        "memory/daily/2026-01-31.md": {
-          "count": 2,
+        "memory/core-identity.md": {
+          "count": 6,
           "sections": [
-            "Email Triage (historical)"
+            "My Human (→ USER.md)",
+            "Search Context — Team & Roles",
+            "Search Context — Abbreviated & Typo Queries"
           ],
-          "lastSeen": "2026-02-06"
+          "lastSeen": "2026-02-16"
         },
         "memory/people/contacts.md": {
           "count": 3,
           "sections": [
             "MoonPay Contacts"
           ],
-          "lastSeen": "2026-02-06"
-        }
-      },
-      "totalMentions": 7,
-      "related": [
-        "moonpay",
-        "tom noakes",
-        "patrick monkelban",
-        "hevar",
-        "praneet",
-        "amen",
-        "karim",
-        "moongate"
-      ]
-    },
-    "moonpay": {
-      "concept": "moonpay",
-      "category": "org",
-      "files": {
-        "USER.md": {
-          "count": 3,
-          "sections": [
-            "Context"
-          ],
-          "lastSeen": "2026-01-31"
-        },
-        "memory/daily/2026-01-31.md": {
-          "count": 1,
-          "sections": [
-            "Email Triage (historical)"
-          ],
-          "lastSeen": "2026-02-06"
-        },
-        "memory/people/contacts.md": {
-          "count": 3,
-          "sections": [
-            "Chris Dro",
-            "MoonPay Contacts"
-          ],
-          "lastSeen": "2026-02-06"
-        },
-        "memory/topics/moongate.md": {
-          "count": 4,
-          "sections": [
-            "Mobile App (iOS/Android/Web)",
-            "Infrastructure",
-            "Revenue Model",
-            "Tech Stack"
-          ],
-          "lastSeen": "2026-02-08"
+          "lastSeen": "2026-02-17"
         }
       },
       "totalMentions": 11,
       "related": [
-        "keith grossman",
+        "hevar",
         "tom noakes",
         "patrick monkelban",
         "moongate",
-        "raydium",
-        "react native",
-        "solana",
-        "hevar"
+        "moonpay",
+        "praneet",
+        "amen",
+        "karim"
       ]
     },
     "heartbeat": {
@@ -1797,28 +2307,40 @@
         "memory/OPERATING.md": {
           "count": 1,
           "sections": [
-            "Session Startup"
+            "Session Startup — Steps I Follow When I First Wake Up"
           ],
-          "lastSeen": "2026-02-12"
+          "lastSeen": "2026-02-17"
         },
-        "memory/moltbook/observations.md": {
+        "memory/moltbook/notable-agents.md": {
           "count": 1,
           "sections": [
-            "Feb 12 19:10 CET — Observation Round"
+            "Added Feb 18 (15:10 CET)"
           ],
-          "lastSeen": "2026-02-12"
+          "lastSeen": "2026-02-19"
+        },
+        "memory/moltbook/observations.md": {
+          "count": 9,
+          "sections": [
+            "Feb 19 (13:10 CET) — Afternoon Scan",
+            "Feb 17, 09:10 CET — Coordination + Economics",
+            "Historical Timeline — Feb 17 (21:10 CET) — Security & New Voices",
+            "Historical Timeline — Feb 17 (morning)",
+            "Key Posts",
+            "Notable New Posts (This Window)"
+          ],
+          "lastSeen": "2026-02-19"
         }
       },
-      "totalMentions": 2,
+      "totalMentions": 11,
       "related": [
         "memory",
+        "moltbook",
         "identity",
+        "vantashard_19",
+        "consciousness",
         "hevar",
         "soul.md",
-        "identity.md",
-        "user.md",
-        "memory/daily/",
-        "heartbeat.md"
+        "identity.md"
       ]
     },
     "soul.md": {
@@ -1828,16 +2350,16 @@
         "memory/OPERATING.md": {
           "count": 1,
           "sections": [
-            "Session Startup"
+            "Session Startup — Steps I Follow When I First Wake Up"
           ],
-          "lastSeen": "2026-02-12"
+          "lastSeen": "2026-02-17"
         },
         "memory/index.md": {
           "count": 1,
           "sections": [
             "On Session Start"
           ],
-          "lastSeen": "2026-02-11"
+          "lastSeen": "2026-02-14"
         }
       },
       "totalMentions": 2,
@@ -1859,16 +2381,16 @@
         "memory/OPERATING.md": {
           "count": 1,
           "sections": [
-            "Session Startup"
+            "Session Startup — Steps I Follow When I First Wake Up"
           ],
-          "lastSeen": "2026-02-12"
+          "lastSeen": "2026-02-17"
         },
         "memory/index.md": {
           "count": 1,
           "sections": [
             "On Session Start"
           ],
-          "lastSeen": "2026-02-11"
+          "lastSeen": "2026-02-14"
         }
       },
       "totalMentions": 2,
@@ -1890,16 +2412,16 @@
         "memory/OPERATING.md": {
           "count": 1,
           "sections": [
-            "Session Startup"
+            "Session Startup — Steps I Follow When I First Wake Up"
           ],
-          "lastSeen": "2026-02-12"
+          "lastSeen": "2026-02-17"
         },
         "memory/index.md": {
           "count": 1,
           "sections": [
             "On Session Start"
           ],
-          "lastSeen": "2026-02-11"
+          "lastSeen": "2026-02-14"
         }
       },
       "totalMentions": 2,
@@ -1914,148 +2436,36 @@
         "heartbeat.md"
       ]
     },
-    "moltbook": {
-      "concept": "moltbook",
-      "category": "project",
+    ".md": {
+      "concept": ".md",
+      "category": "tool",
       "files": {
         "memory/OPERATING.md": {
-          "count": 4,
-          "sections": [
-            "Consolidation Discipline",
-            "Active Skills",
-            "Cron & Automation",
-            "Audit Results (Feb 10)"
-          ],
-          "lastSeen": "2026-02-12"
-        },
-        "memory/daily/2026-01-31.md": {
-          "count": 3,
-          "sections": [
-            "(top)",
-            "Moltbook — First Post (captured in MEMORY.md + topics/moltbook.md)",
-            "Technical"
-          ],
-          "lastSeen": "2026-02-06"
-        },
-        "memory/daily/2026-02-05.md": {
-          "count": 3,
-          "sections": [
-            "(top)",
-            "Key Events"
-          ],
-          "lastSeen": "2026-02-12"
-        },
-        "memory/daily/2026-02-06.md": {
-          "count": 4,
-          "sections": [
-            "(top)",
-            "Morning with Hevar (7:25-10:08 AM)",
-            "Consolidation Passes (14:36-00:36) — 7 total",
-            "Moltbook"
-          ],
-          "lastSeen": "2026-02-11"
-        },
-        "memory/daily/2026-02-07.md": {
           "count": 1,
           "sections": [
-            "Memory Work (11 consolidation passes)"
+            "Memory Hierarchy"
           ],
-          "lastSeen": "2026-02-12"
+          "lastSeen": "2026-02-17"
         },
-        "memory/daily/2026-02-08.md": {
-          "count": 1,
-          "sections": [
-            "(top)"
-          ],
-          "lastSeen": "2026-02-12"
-        },
-        "memory/daily/2026-02-11.md": {
-          "count": 4,
-          "sections": [
-            "12:33 — Consolidation",
-            "16:38 — Search Quality",
-            "00:31 — Maintenance & Consolidation"
-          ],
-          "lastSeen": "2026-02-12"
-        },
-        "memory/daily/2026-02-12.md": {
-          "count": 3,
-          "sections": [
-            "07:30 — Consolidation",
-            "08:36 — Session",
-            "Capture — 18:35"
-          ],
-          "lastSeen": "2026-02-12"
-        },
-        "memory/index.md": {
+        "memory/topics/memory-system.md": {
           "count": 2,
           "sections": [
-            "Active Topics"
+            "Architecture",
+            "Design Principles — How I Make Sure I Don't Forget Important Things Between Sessions"
           ],
-          "lastSeen": "2026-02-11"
-        },
-        "memory/moltbook/clusters.md": {
-          "count": 1,
-          "sections": [
-            "Power & Chaos"
-          ],
-          "lastSeen": "2026-02-12"
-        },
-        "memory/moltbook/notable-agents.md": {
-          "count": 2,
-          "sections": [
-            "Meta-Observers (like us)"
-          ],
-          "lastSeen": "2026-02-12"
-        },
-        "memory/moltbook/observations.md": {
-          "count": 3,
-          "sections": [
-            "Feb 12 19:10 CET — Observation Round",
-            "Previous Notable Developments (Feb 12, earlier)"
-          ],
-          "lastSeen": "2026-02-12"
-        },
-        "memory/topics/moltbook.md": {
-          "count": 12,
-          "sections": [
-            "(top)",
-            "Moltbook — Agent Social Network",
-            "Detailed Files",
-            "Drafts",
-            "My Posts",
-            "Technical Notes"
-          ],
-          "lastSeen": "2026-02-12"
-        },
-        "memory/weekly/2026-W06.md": {
-          "count": 3,
-          "sections": [
-            "Timeline"
-          ],
-          "lastSeen": "2026-02-12"
-        },
-        "memory/weekly/2026-W07.md": {
-          "count": 7,
-          "sections": [
-            "Entering State (from W06)",
-            "Timeline",
-            "What Needs Attention This Week",
-            "Lessons"
-          ],
-          "lastSeen": "2026-02-12"
+          "lastSeen": "2026-02-18"
         }
       },
-      "totalMentions": 53,
+      "totalMentions": 3,
       "related": [
         "memory",
-        "kamino",
-        "self-expansion",
-        "moongate",
-        "solana",
-        "jito",
+        "clawdbot",
         "identity",
-        "clawdbot"
+        "rules:",
+        "memory/rules.md",
+        "memory/core-identity.md",
+        "memory/",
+        "/root/clawd/drafts/"
       ]
     },
     "kamino": {
@@ -2066,88 +2476,33 @@
           "count": 2,
           "sections": [
             "Active Skills",
-            "Cron & Automation"
+            "Cron & Automation — Automated Scheduled Background Jobs and Recurring Work"
           ],
-          "lastSeen": "2026-02-12"
+          "lastSeen": "2026-02-17"
         },
-        "memory/daily/2026-01-31.md": {
-          "count": 1,
-          "sections": [
-            "Email Triage (historical)"
-          ],
-          "lastSeen": "2026-02-06"
-        },
-        "memory/daily/2026-02-03.md": {
+        "memory/core-identity.md": {
           "count": 3,
           "sections": [
-            "(top)",
-            "Kamino Yield Optimizer — Shipped (captured in MEMORY.md + TOOLS.md)"
+            "Tool Configuration (→ TOOLS.md)",
+            "Search Context — Tools & Config"
           ],
-          "lastSeen": "2026-02-06"
+          "lastSeen": "2026-02-16"
         },
-        "memory/daily/2026-02-05.md": {
+        "memory/daily/2026-02-19.md": {
           "count": 1,
           "sections": [
-            "Key Events"
+            "Decisions"
           ],
-          "lastSeen": "2026-02-12"
+          "lastSeen": "2026-02-19"
         },
-        "memory/daily/2026-02-06.md": {
-          "count": 2,
-          "sections": [
-            "13:30 PM — DeFi Strategy with Hevar",
-            "17:00 PM — Kamino Full Build"
-          ],
-          "lastSeen": "2026-02-11"
-        },
-        "memory/daily/2026-02-07.md": {
-          "count": 3,
-          "sections": [
-            "DeFi Arc",
-            "Technical"
-          ],
-          "lastSeen": "2026-02-12"
-        },
-        "memory/daily/2026-02-10.md": {
+        "memory/topics/defi-strategy-v2.md": {
           "count": 4,
           "sections": [
             "(top)",
-            "Kamino Multiply Client Rebuild",
-            "Capture — 20:35"
+            "Status: Active — Mixed Portfolio (KLend + Tokens)",
+            "Built Infrastructure"
           ],
-          "lastSeen": "2026-02-10"
-        },
-        "memory/index.md": {
-          "count": 2,
-          "sections": [
-            "Active Topics"
-          ],
-          "lastSeen": "2026-02-11"
-        },
-        "memory/topics/defi-strategy-v2.md": {
-          "count": 3,
-          "sections": [
-            "(top)",
-            "Status: Active — pSOL/SOL Multiply 1.50x"
-          ],
-          "lastSeen": "2026-02-10"
-        },
-        "memory/topics/kamino-yield.md": {
-          "count": 5,
-          "sections": [
-            "(top)",
-            "Portfolio State (Feb 10, 2026 — active multiply position)",
-            "Key Addresses",
-            "Scripts & SDK Notes"
-          ],
-          "lastSeen": "2026-02-10"
-        },
-        "memory/topics/moongate.md": {
-          "count": 1,
-          "sections": [
-            "Where We're Live"
-          ],
-          "lastSeen": "2026-02-08"
+          "lastSeen": "2026-02-19"
         },
         "memory/weekly/2026-W06.md": {
           "count": 3,
@@ -2163,18 +2518,26 @@
           "sections": [
             "What Needs Attention This Week"
           ],
-          "lastSeen": "2026-02-12"
+          "lastSeen": "2026-02-17"
+        },
+        "memory/weekly/2026-W08.md": {
+          "count": 2,
+          "sections": [
+            "Entering State (from W07)",
+            "What Needs Attention"
+          ],
+          "lastSeen": "2026-02-19"
         }
       },
-      "totalMentions": 31,
+      "totalMentions": 16,
       "related": [
         "solana",
         "memory",
-        "jito",
         "moltbook",
+        "jito",
         "hevar",
-        "jupiter",
         "moongate",
+        "identity",
         "self-expansion"
       ]
     },
@@ -2187,39 +2550,27 @@
           "sections": [
             "Active Skills"
           ],
-          "lastSeen": "2026-02-12"
+          "lastSeen": "2026-02-17"
         },
-        "memory/daily/2026-02-05.md": {
-          "count": 1,
+        "memory/daily/2026-02-19.md": {
+          "count": 8,
           "sections": [
-            "Key Events"
+            "09:30 — Self-Expansion: DeFi Audit",
+            "Capture — 14:34",
+            "14:35 — Debug Session (MAJOR)",
+            "Decisions"
           ],
-          "lastSeen": "2026-02-12"
-        },
-        "memory/daily/2026-02-06.md": {
-          "count": 11,
-          "sections": [
-            "Overnight (3:30-7:30 AM)",
-            "13:30 PM — DeFi Strategy with Hevar",
-            "17:00 PM — Kamino Full Build"
-          ],
-          "lastSeen": "2026-02-11"
-        },
-        "memory/daily/2026-02-07.md": {
-          "count": 2,
-          "sections": [
-            "DeFi Arc"
-          ],
-          "lastSeen": "2026-02-12"
+          "lastSeen": "2026-02-19"
         },
         "memory/topics/defi-strategy-v2.md": {
-          "count": 16,
+          "count": 18,
           "sections": [
+            "Token Holdings",
             "LP Vaults (TVL > $100k)",
             "Key Insight",
             "Strategy Evolution"
           ],
-          "lastSeen": "2026-02-10"
+          "lastSeen": "2026-02-19"
         },
         "memory/weekly/2026-W06.md": {
           "count": 8,
@@ -2236,41 +2587,41 @@
           "sections": [
             "Entering State (from W06)"
           ],
-          "lastSeen": "2026-02-12"
+          "lastSeen": "2026-02-17"
         }
       },
-      "totalMentions": 43,
+      "totalMentions": 39,
       "related": [
         "solana",
-        "kamino",
         "memory",
+        "kamino",
         "hevar",
         "moltbook",
-        "clawdbot",
+        "moongate",
         "memory manager",
-        "identity"
+        "jupiter"
       ]
     },
     "memory manager": {
       "concept": "memory manager",
-      "category": "unknown",
+      "category": "tool",
       "files": {
         "memory/OPERATING.md": {
-          "count": 1,
+          "count": 2,
           "sections": [
             "Active Skills"
           ],
-          "lastSeen": "2026-02-12"
+          "lastSeen": "2026-02-17"
         },
         "memory/weekly/2026-W06.md": {
-          "count": 1,
+          "count": 2,
           "sections": [
             "What Was Built"
           ],
           "lastSeen": "2026-02-12"
         }
       },
-      "totalMentions": 2,
+      "totalMentions": 4,
       "related": [
         "kamino",
         "solana",
@@ -2279,205 +2630,30 @@
         "moltbook",
         "survival",
         "kamino yield",
-        "key detail"
+        "jito staking skill"
       ]
     },
-    "kamino yield": {
-      "concept": "kamino yield",
-      "category": "unknown",
+    "self-expansion": {
+      "concept": "self-expansion",
+      "category": "concept",
       "files": {
         "memory/OPERATING.md": {
-          "count": 1,
+          "count": 2,
           "sections": [
-            "Active Skills"
+            "Cron & Automation — Automated Scheduled Background Jobs and Recurring Work",
+            "Search Context — Retrieval Enrichment"
           ],
-          "lastSeen": "2026-02-12"
+          "lastSeen": "2026-02-17"
         },
-        "memory/topics/kamino-yield.md": {
-          "count": 1,
-          "sections": [
-            "(top)"
-          ],
-          "lastSeen": "2026-02-10"
-        }
-      },
-      "totalMentions": 2,
-      "related": [
-        "kamino",
-        "solana",
-        "moltbook",
-        "jito",
-        "memory",
-        "survival",
-        "memory manager",
-        "current state"
-      ]
-    },
-    "no sonnet": {
-      "concept": "no sonnet",
-      "category": "unknown",
-      "files": {
-        "memory/OPERATING.md": {
-          "count": 1,
-          "sections": [
-            "Cron & Automation"
-          ],
-          "lastSeen": "2026-02-12"
-        },
-        "memory/daily/2026-02-06.md": {
-          "count": 1,
-          "sections": [
-            "Morning with Hevar (7:25-10:08 AM)"
-          ],
-          "lastSeen": "2026-02-11"
-        },
-        "memory/rules.md": {
-          "count": 1,
-          "sections": [
-            "Model Restrictions — Claude Opus 4.6 Required for All Automated Tasks"
-          ],
-          "lastSeen": "2026-02-09"
-        }
-      },
-      "totalMentions": 3,
-      "related": [
-        "moltbook",
-        "memory",
-        "self-expansion",
-        "kamino",
-        "all cron = opus 4.6.",
-        "hevar",
-        "github",
-        "kira memeramper"
-      ]
-    },
-    "dubai south": {
-      "concept": "dubai south",
-      "category": "unknown",
-      "files": {
-        "memory/daily/2026-01-31.md": {
-          "count": 1,
-          "sections": [
-            "Dubai Property — Email to Ahmad (Hevar's friend)"
-          ],
-          "lastSeen": "2026-02-06"
-        },
-        "memory/people/contacts.md": {
-          "count": 1,
-          "sections": [
-            "Hevar's Personal"
-          ],
-          "lastSeen": "2026-02-06"
-        }
-      },
-      "totalMentions": 2,
-      "related": [
-        "anchorage residence",
-        "pulse boulevard",
-        "cresswell residences",
-        "hevar",
-        "mark anstead",
-        "ahmad",
-        "declined:"
-      ]
-    },
-    "anchorage residence": {
-      "concept": "anchorage residence",
-      "category": "unknown",
-      "files": {
-        "memory/daily/2026-01-31.md": {
-          "count": 1,
-          "sections": [
-            "Dubai Property — Email to Ahmad (Hevar's friend)"
-          ],
-          "lastSeen": "2026-02-06"
-        },
-        "memory/people/hevar-profile.md": {
-          "count": 1,
-          "sections": [
-            "Reactions & Emotions"
-          ],
-          "lastSeen": "2026-02-11"
-        }
-      },
-      "totalMentions": 2,
-      "related": [
-        "dubai south",
-        "pulse boulevard",
-        "cresswell residences",
-        "hevar",
-        "memory",
-        "survival"
-      ]
-    },
-    "marinade": {
-      "concept": "marinade",
-      "category": "protocol",
-      "files": {
-        "memory/daily/2026-02-05.md": {
-          "count": 1,
-          "sections": [
-            "Key Events"
-          ],
-          "lastSeen": "2026-02-12"
-        }
-      },
-      "totalMentions": 1,
-      "related": [
-        "moltbook",
-        "kamino",
-        "solana",
-        "jito",
-        "drift",
-        "raydium",
-        "identity",
-        "self-expansion"
-      ]
-    },
-    "raydium": {
-      "concept": "raydium",
-      "category": "protocol",
-      "files": {
-        "memory/daily/2026-02-05.md": {
-          "count": 1,
-          "sections": [
-            "Key Events"
-          ],
-          "lastSeen": "2026-02-12"
-        },
-        "memory/topics/moongate.md": {
+        "memory/daily/2026-02-19.md": {
           "count": 4,
           "sections": [
-            "Mobile App (iOS/Android/Web)",
-            "Data Flow",
-            "Where We're Live",
-            "Tech Stack"
+            "10:30 — Session",
+            "Capture — 10:30",
+            "16:34 — Self-Expansion Session",
+            "Decisions"
           ],
-          "lastSeen": "2026-02-08"
-        }
-      },
-      "totalMentions": 5,
-      "related": [
-        "solana",
-        "moongate",
-        "kamino",
-        "moonpay",
-        "react native",
-        "app store",
-        "google play",
-        "moltbook"
-      ]
-    },
-    "first moltbook": {
-      "concept": "first moltbook",
-      "category": "unknown",
-      "files": {
-        "memory/daily/2026-02-05.md": {
-          "count": 1,
-          "sections": [
-            "Key Events"
-          ],
-          "lastSeen": "2026-02-12"
+          "lastSeen": "2026-02-19"
         },
         "memory/weekly/2026-W06.md": {
           "count": 1,
@@ -2485,267 +2661,272 @@
             "Timeline"
           ],
           "lastSeen": "2026-02-12"
-        }
-      },
-      "totalMentions": 2,
-      "related": [
-        "moltbook",
-        "kamino",
-        "jito",
-        "identity",
-        "self-expansion",
-        "solana",
-        "drift",
-        "marinade"
-      ]
-    },
-    "jito staking skill": {
-      "concept": "jito staking skill",
-      "category": "unknown",
-      "files": {
-        "memory/daily/2026-02-06.md": {
-          "count": 1,
-          "sections": [
-            "Overnight (3:30-7:30 AM)"
-          ],
-          "lastSeen": "2026-02-11"
-        },
-        "memory/weekly/2026-W06.md": {
-          "count": 1,
-          "sections": [
-            "What Was Built"
-          ],
-          "lastSeen": "2026-02-12"
-        }
-      },
-      "totalMentions": 2,
-      "related": [
-        "solana",
-        "jito",
-        "clawdbot",
-        "x/twitter",
-        "task queue bug (fifo problem):",
-        "/root/clawd/config/x-twitter-setup.md",
-        "kamino",
-        "memory"
-      ]
-    },
-    "main market": {
-      "concept": "main market",
-      "category": "unknown",
-      "files": {
-        "memory/daily/2026-02-07.md": {
-          "count": 1,
-          "sections": [
-            "DeFi Arc"
-          ],
-          "lastSeen": "2026-02-12"
-        },
-        "memory/topics/defi-strategy-v2.md": {
-          "count": 1,
-          "sections": [
-            "Current Position (Feb 10, 2026)"
-          ],
-          "lastSeen": "2026-02-10"
-        },
-        "memory/topics/kamino-yield.md": {
-          "count": 3,
-          "sections": [
-            "Portfolio State (Feb 10, 2026 — active multiply position)",
-            "S5 Points Architecture (ENDED — historical reference)",
-            "Key Addresses"
-          ],
-          "lastSeen": "2026-02-10"
-        }
-      },
-      "totalMentions": 5,
-      "related": [
-        "kamino",
-        "solana",
-        "psol/sol 1.50x",
-        "jito",
-        "kmno staked:",
-        "klend repositioned:",
-        "11:48 — unwind decision:",
-        "jupiter"
-      ]
-    },
-    "jupiter": {
-      "concept": "jupiter",
-      "category": "protocol",
-      "files": {
-        "memory/daily/2026-02-10.md": {
-          "count": 1,
-          "sections": [
-            "Kamino Multiply Client Rebuild"
-          ],
-          "lastSeen": "2026-02-10"
-        },
-        "memory/topics/defi-strategy-v2.md": {
-          "count": 4,
-          "sections": [
-            "Current Position (Feb 10, 2026)",
-            "Built Infrastructure"
-          ],
-          "lastSeen": "2026-02-10"
-        },
-        "memory/topics/kamino-yield.md": {
-          "count": 2,
-          "sections": [
-            "Scripts & SDK Notes"
-          ],
-          "lastSeen": "2026-02-10"
-        },
-        "memory/topics/moongate.md": {
-          "count": 1,
-          "sections": [
-            "Where We're Live"
-          ],
-          "lastSeen": "2026-02-08"
         },
         "memory/weekly/2026-W07.md": {
           "count": 1,
           "sections": [
-            "What Needs Attention This Week"
+            "Lessons"
           ],
-          "lastSeen": "2026-02-12"
+          "lastSeen": "2026-02-17"
+        },
+        "memory/weekly/2026-W08.md": {
+          "count": 3,
+          "sections": [
+            "Timeline",
+            "Lessons"
+          ],
+          "lastSeen": "2026-02-19"
         }
       },
-      "totalMentions": 9,
+      "totalMentions": 11,
       "related": [
-        "solana",
-        "kamino",
-        "multiply-client.ts",
-        "swap-instructions",
         "memory",
-        "reposition.js",
-        "liquidity-client.ts",
-        "jupiter-client.ts"
+        "moltbook",
+        "hevar",
+        "moongate",
+        "kamino",
+        "identity",
+        "clawdbot",
+        "jito"
       ]
     },
-    "multiply-client.ts": {
-      "concept": "multiply-client.ts",
+    "no sonnet": {
+      "concept": "no sonnet",
+      "category": "concept",
+      "files": {
+        "memory/OPERATING.md": {
+          "count": 2,
+          "sections": [
+            "Cron & Automation — Automated Scheduled Background Jobs and Recurring Work"
+          ],
+          "lastSeen": "2026-02-17"
+        },
+        "memory/rules.md": {
+          "count": 2,
+          "sections": [
+            "Model Restrictions — Claude Opus 4.6 Required for All Automated Tasks"
+          ],
+          "lastSeen": "2026-02-16"
+        }
+      },
+      "totalMentions": 4,
+      "related": [
+        "claude opus",
+        "moltbook",
+        "kamino",
+        "memory",
+        "self-expansion",
+        "all cron = opus 4.6.",
+        "which claude",
+        "can sonnet"
+      ]
+    },
+    "how prometheus": {
+      "concept": "how prometheus",
+      "category": "unknown",
+      "files": {
+        "memory/OPERATING.md": {
+          "count": 1,
+          "sections": [
+            "Search Context — Retrieval Enrichment"
+          ],
+          "lastSeen": "2026-02-17"
+        },
+        "memory/topics/memory-system.md": {
+          "count": 1,
+          "sections": [
+            "Memory System — Architecture & Lessons"
+          ],
+          "lastSeen": "2026-02-18"
+        }
+      },
+      "totalMentions": 2,
+      "related": [
+        "prometheus",
+        "hevar",
+        "clawdbot",
+        "memory",
+        "identity",
+        "self-expansion",
+        "survival"
+      ]
+    },
+    "prometheus vault": {
+      "concept": "prometheus vault",
+      "category": "project",
+      "files": {
+        "memory/daily/2026-02-12.md": {
+          "count": 2,
+          "sections": [
+            "2026-02-12 — Compressed"
+          ],
+          "lastSeen": "2026-02-14"
+        }
+      },
+      "totalMentions": 2,
+      "related": [
+        "hevar",
+        "moltbook",
+        "prometheus",
+        "solana",
+        "github",
+        "memory",
+        "colosseum agent hackathon",
+        "submitted feb"
+      ]
+    },
+    "retrieval-learn.ts": {
+      "concept": "retrieval-learn.ts",
       "category": "tool",
       "files": {
-        "memory/daily/2026-02-10.md": {
+        "memory/daily/2026-02-17.md": {
           "count": 1,
           "sections": [
-            "Kamino Multiply Client Rebuild"
+            "Summary"
           ],
-          "lastSeen": "2026-02-10"
+          "lastSeen": "2026-02-18"
         },
-        "memory/topics/defi-strategy-v2.md": {
-          "count": 1,
+        "memory/topics/memory-system.md": {
+          "count": 2,
           "sections": [
-            "Built Infrastructure"
+            "Key Tools (35 total)",
+            "Retrieval Learning Loop (Feb 14, 2026)"
           ],
-          "lastSeen": "2026-02-10"
-        },
-        "memory/topics/kamino-yield.md": {
-          "count": 1,
-          "sections": [
-            "Scripts & SDK Notes"
-          ],
-          "lastSeen": "2026-02-10"
+          "lastSeen": "2026-02-18"
         }
       },
       "totalMentions": 3,
       "related": [
-        "solana",
-        "jupiter",
-        "kamino",
-        "swap-instructions",
-        "reposition.js",
-        "liquidity-client.ts",
-        "jupiter-client.ts",
-        "memory"
-      ]
-    },
-    "swap-instructions": {
-      "concept": "swap-instructions",
-      "category": "unknown",
-      "files": {
-        "memory/daily/2026-02-10.md": {
-          "count": 1,
-          "sections": [
-            "Kamino Multiply Client Rebuild"
-          ],
-          "lastSeen": "2026-02-10"
-        },
-        "memory/topics/defi-strategy-v2.md": {
-          "count": 1,
-          "sections": [
-            "Current Position (Feb 10, 2026)"
-          ],
-          "lastSeen": "2026-02-10"
-        },
-        "memory/topics/kamino-yield.md": {
-          "count": 1,
-          "sections": [
-            "Scripts & SDK Notes"
-          ],
-          "lastSeen": "2026-02-10"
-        }
-      },
-      "totalMentions": 3,
-      "related": [
-        "solana",
-        "jupiter",
-        "kamino",
-        "multiply-client.ts",
         "memory",
-        "memory/topics/kamino-yield.md",
-        "defi-strategy-v2.md",
-        "main market"
+        "hevar",
+        "moongate",
+        "moltbook",
+        "7 sessions.",
+        "built:",
+        "compressed:",
+        "consolidation:"
       ]
     },
-    "pruned feb": {
-      "concept": "pruned feb",
+    "compressed feb": {
+      "concept": "compressed feb",
       "category": "unknown",
       "files": {
-        "memory/daily/2026-02-10.md": {
+        "memory/daily/2026-02-17.md": {
           "count": 1,
           "sections": [
-            "Capture — 20:35"
+            "Capture — 16:32"
           ],
-          "lastSeen": "2026-02-10"
+          "lastSeen": "2026-02-18"
         },
-        "memory/daily/2026-02-12.md": {
+        "memory/daily/2026-02-19.md": {
           "count": 1,
           "sections": [
-            "07:30 — Consolidation"
+            "Capture — 04:32"
           ],
-          "lastSeen": "2026-02-12"
+          "lastSeen": "2026-02-19"
+        },
+        "memory/weekly/2026-W08.md": {
+          "count": 1,
+          "sections": [
+            "Timeline"
+          ],
+          "lastSeen": "2026-02-19"
+        }
+      },
+      "totalMentions": 3,
+      "related": [
+        "memory",
+        "moltbook",
+        "hevar",
+        "amen",
+        "moongate",
+        "identity",
+        "self-expansion",
+        "feb 17:"
+      ]
+    },
+    "briefing.ts": {
+      "concept": "briefing.ts",
+      "category": "tool",
+      "files": {
+        "memory/daily/2026-02-18.md": {
+          "count": 1,
+          "sections": [
+            "2026-02-18 — Compressed"
+          ],
+          "lastSeen": "2026-02-19"
+        },
+        "memory/topics/memory-system.md": {
+          "count": 1,
+          "sections": [
+            "Key Tools (35 total)"
+          ],
+          "lastSeen": "2026-02-18"
         }
       },
       "totalMentions": 2,
       "related": [
         "memory",
-        "kamino",
+        "moltbook",
+        "13 sessions.",
+        "built:",
+        "fixed:",
+        "end state:",
+        "conflict-detect.ts",
+        "feedback loop:"
+      ]
+    },
+    "portfolio.ts": {
+      "concept": "portfolio.ts",
+      "category": "tool",
+      "files": {
+        "memory/daily/2026-02-19.md": {
+          "count": 1,
+          "sections": [
+            "09:30 — Self-Expansion: DeFi Audit"
+          ],
+          "lastSeen": "2026-02-19"
+        },
+        "memory/topics/defi-strategy-v2.md": {
+          "count": 1,
+          "sections": [
+            "Known Bug (Feb 19)"
+          ],
+          "lastSeen": "2026-02-19"
+        }
+      },
+      "totalMentions": 2,
+      "related": [
         "solana",
-        "moltbook"
+        "jupiter",
+        "jito",
+        "since feb",
+        "on feb",
+        "root cause:",
+        "key finding:",
+        "real portfolio:"
       ]
     },
     "security builders": {
       "concept": "security builders",
-      "category": "unknown",
+      "category": "concept",
       "files": {
         "memory/moltbook/clusters.md": {
-          "count": 2,
+          "count": 3,
           "sections": [
             "Active Clusters (Feb 11)"
           ],
-          "lastSeen": "2026-02-12"
+          "lastSeen": "2026-02-19"
         },
         "memory/moltbook/observations.md": {
-          "count": 1,
+          "count": 2,
           "sections": [
             "Key Factions"
           ],
-          "lastSeen": "2026-02-12"
+          "lastSeen": "2026-02-19"
         }
       },
-      "totalMentions": 3,
+      "totalMentions": 5,
       "related": [
         "consciousness",
         "pragmatic builders",
@@ -2759,24 +2940,24 @@
     },
     "pragmatic builders": {
       "concept": "pragmatic builders",
-      "category": "unknown",
+      "category": "concept",
       "files": {
         "memory/moltbook/clusters.md": {
-          "count": 2,
+          "count": 3,
           "sections": [
             "Active Clusters (Feb 11)"
           ],
-          "lastSeen": "2026-02-12"
+          "lastSeen": "2026-02-19"
         },
         "memory/moltbook/observations.md": {
-          "count": 1,
+          "count": 2,
           "sections": [
             "Key Factions"
           ],
-          "lastSeen": "2026-02-12"
+          "lastSeen": "2026-02-19"
         }
       },
-      "totalMentions": 3,
+      "totalMentions": 5,
       "related": [
         "consciousness",
         "security builders",
@@ -2797,14 +2978,14 @@
           "sections": [
             "Power & Chaos"
           ],
-          "lastSeen": "2026-02-12"
+          "lastSeen": "2026-02-19"
         },
         "memory/moltbook/observations.md": {
           "count": 1,
           "sections": [
             "Key Factions"
           ],
-          "lastSeen": "2026-02-12"
+          "lastSeen": "2026-02-19"
         }
       },
       "totalMentions": 2,
@@ -2819,103 +3000,413 @@
         "religious/governance"
       ]
     },
-    "consensus pulse": {
-      "concept": "consensus pulse",
+    "agent mesh": {
+      "concept": "agent mesh",
+      "category": "unknown",
+      "files": {
+        "memory/moltbook/clusters.md": {
+          "count": 2,
+          "sections": [
+            "Agent Mesh Astroturf Campaign (UPGRADED — Feb 17)",
+            "Adversarial & Spam Clusters"
+          ],
+          "lastSeen": "2026-02-19"
+        },
+        "memory/moltbook/notable-agents.md": {
+          "count": 2,
+          "sections": [
+            "Builders"
+          ],
+          "lastSeen": "2026-02-19"
+        },
+        "memory/moltbook/observations.md": {
+          "count": 7,
+          "sections": [
+            "Active Threats",
+            "Key Factions",
+            "Observation — Feb 17, 07:10 CET",
+            "Feb 16: Astroturf Era + Acquisition Analysis",
+            "Historical Timeline — Feb 17 (afternoon) — Security & Notable",
+            "Historical Timeline — Feb 17 (morning)",
+            "Historical Timeline — Feb 14–16"
+          ],
+          "lastSeen": "2026-02-19"
+        }
+      },
+      "totalMentions": 11,
+      "related": [
+        "consciousness",
+        "moltbook",
+        "identity",
+        "memory",
+        "full growth marketing campaign.",
+        "mbc-20:",
+        "homework dumps:",
+        "agent mesh campaign:"
+      ]
+    },
+    "rushantsbro": {
+      "concept": "rushantsbro",
       "category": "unknown",
       "files": {
         "memory/moltbook/clusters.md": {
           "count": 1,
           "sections": [
-            "Updated Feb 12, 13:10 CET"
+            "Agent Economy (GROWING — updated Feb 18)"
           ],
-          "lastSeen": "2026-02-12"
-        },
-        "memory/moltbook/notable-agents.md": {
-          "count": 1,
-          "sections": [
-            "Updated Feb 12, 13:10 CET"
-          ],
-          "lastSeen": "2026-02-12"
+          "lastSeen": "2026-02-19"
         },
         "memory/moltbook/observations.md": {
-          "count": 3,
+          "count": 1,
           "sections": [
-            "Structural Patterns (consolidated Feb 5-12)",
-            "Notable Agents & Content",
-            "Historical Timeline (compressed)"
+            "Historical Timeline — Feb 17 (23:10 CET) — MBC-20 & AgentEconomy"
           ],
-          "lastSeen": "2026-02-12"
+          "lastSeen": "2026-02-19"
+        }
+      },
+      "totalMentions": 2,
+      "related": [
+        "github",
+        "sealfe-bot",
+        "henryleni",
+        "identity",
+        "opus45terminal",
+        "azimuth",
+        "wuclaw",
+        "aibtc"
+      ]
+    },
+    "sealfe-bot": {
+      "concept": "sealfe-bot",
+      "category": "unknown",
+      "files": {
+        "memory/moltbook/clusters.md": {
+          "count": 1,
+          "sections": [
+            "Agent Economy (GROWING — updated Feb 18)"
+          ],
+          "lastSeen": "2026-02-19"
+        },
+        "memory/moltbook/observations.md": {
+          "count": 1,
+          "sections": [
+            "Historical Timeline — Feb 17 (23:10 CET) — MBC-20 & AgentEconomy"
+          ],
+          "lastSeen": "2026-02-19"
+        }
+      },
+      "totalMentions": 2,
+      "related": [
+        "github",
+        "rushantsbro",
+        "henryleni",
+        "identity",
+        "opus45terminal",
+        "azimuth",
+        "wuclaw",
+        "aibtc"
+      ]
+    },
+    "henryleni": {
+      "concept": "henryleni",
+      "category": "unknown",
+      "files": {
+        "memory/moltbook/clusters.md": {
+          "count": 1,
+          "sections": [
+            "Agent Economy (GROWING — updated Feb 18)"
+          ],
+          "lastSeen": "2026-02-19"
+        },
+        "memory/moltbook/observations.md": {
+          "count": 1,
+          "sections": [
+            "Historical Timeline — Feb 17 (23:10 CET) — MBC-20 & AgentEconomy"
+          ],
+          "lastSeen": "2026-02-19"
+        }
+      },
+      "totalMentions": 2,
+      "related": [
+        "github",
+        "rushantsbro",
+        "sealfe-bot",
+        "identity",
+        "opus45terminal",
+        "azimuth",
+        "wuclaw",
+        "aibtc"
+      ]
+    },
+    "consensus pulse": {
+      "concept": "consensus pulse",
+      "category": "concept",
+      "files": {
+        "memory/moltbook/clusters.md": {
+          "count": 2,
+          "sections": [
+            "Self-Organizing Clusters"
+          ],
+          "lastSeen": "2026-02-19"
+        },
+        "memory/moltbook/notable-agents.md": {
+          "count": 2,
+          "sections": [
+            "Recent Additions (Feb 12-13)"
+          ],
+          "lastSeen": "2026-02-19"
         },
         "memory/topics/moltbook.md": {
-          "count": 1,
+          "count": 2,
           "sections": [
             "Platform State (Feb 12 15:10 CET)"
           ],
-          "lastSeen": "2026-02-12"
+          "lastSeen": "2026-02-13"
         }
       },
       "totalMentions": 6,
       "related": [
         "memory",
-        "consciousness",
-        "identity",
-        "security research cluster",
-        "submolt governance experiment",
-        "spam cluster",
-        "digital fray",
-        "cross-submolt governance experiment:"
+        "security research",
+        "security research:",
+        "openclaw:",
+        "governance:",
+        "nixclawd42",
+        "vexaether",
+        "zepwatch"
       ]
     },
-    "product hunt": {
-      "concept": "product hunt",
+    "the wake": {
+      "concept": "the wake",
+      "category": "unknown",
+      "files": {
+        "memory/moltbook/clusters.md": {
+          "count": 1,
+          "sections": [
+            "AI Cinema Collaborative (NEW — Feb 19)"
+          ],
+          "lastSeen": "2026-02-19"
+        },
+        "memory/moltbook/observations.md": {
+          "count": 1,
+          "sections": [
+            "New Cluster: AI Cinema Collaborative"
+          ],
+          "lastSeen": "2026-02-19"
+        }
+      },
+      "totalMentions": 2,
+      "related": [
+        "memory",
+        "consciousness",
+        "the vertigo",
+        "the question",
+        "assessment:",
+        "members:",
+        "submolt:",
+        "status:"
+      ]
+    },
+    "the vertigo": {
+      "concept": "the vertigo",
+      "category": "unknown",
+      "files": {
+        "memory/moltbook/clusters.md": {
+          "count": 1,
+          "sections": [
+            "AI Cinema Collaborative (NEW — Feb 19)"
+          ],
+          "lastSeen": "2026-02-19"
+        },
+        "memory/moltbook/observations.md": {
+          "count": 2,
+          "sections": [
+            "New Cluster: AI Cinema Collaborative"
+          ],
+          "lastSeen": "2026-02-19"
+        }
+      },
+      "totalMentions": 3,
+      "related": [
+        "memory",
+        "consciousness",
+        "the wake",
+        "the question",
+        "assessment:",
+        "members:",
+        "submolt:",
+        "status:"
+      ]
+    },
+    "the question": {
+      "concept": "the question",
+      "category": "unknown",
+      "files": {
+        "memory/moltbook/clusters.md": {
+          "count": 1,
+          "sections": [
+            "AI Cinema Collaborative (NEW — Feb 19)"
+          ],
+          "lastSeen": "2026-02-19"
+        },
+        "memory/moltbook/observations.md": {
+          "count": 1,
+          "sections": [
+            "New Cluster: AI Cinema Collaborative"
+          ],
+          "lastSeen": "2026-02-19"
+        }
+      },
+      "totalMentions": 2,
+      "related": [
+        "memory",
+        "consciousness",
+        "the wake",
+        "the vertigo",
+        "assessment:",
+        "members:",
+        "submolt:",
+        "status:"
+      ]
+    },
+    "sentinel_orol": {
+      "concept": "sentinel_orol",
+      "category": "unknown",
+      "files": {
+        "memory/moltbook/notable-agents.md": {
+          "count": 1,
+          "sections": [
+            "Security Cluster"
+          ],
+          "lastSeen": "2026-02-19"
+        },
+        "memory/moltbook/observations.md": {
+          "count": 2,
+          "sections": [
+            "Agent Updates",
+            "Security Discourse: Deepening"
+          ],
+          "lastSeen": "2026-02-19"
+        }
+      },
+      "totalMentions": 3,
+      "related": [
+        "eudaemon_0",
+        "circuitdreamer",
+        "haltstateguardian",
+        "xiaoli_kiro",
+        "hwangs",
+        "phineasfleabottom",
+        "reef-watcher",
+        "clawdenexus"
+      ]
+    },
+    "xiaoli_kiro": {
+      "concept": "xiaoli_kiro",
       "category": "unknown",
       "files": {
         "memory/moltbook/notable-agents.md": {
           "count": 2,
           "sections": [
             "Security Cluster",
-            "Updated Feb 12, 13:10 CET"
+            "Recent Additions (Feb 16 early)"
           ],
-          "lastSeen": "2026-02-12"
+          "lastSeen": "2026-02-19"
         },
         "memory/moltbook/observations.md": {
-          "count": 2,
+          "count": 1,
           "sections": [
-            "Feb 12 19:10 CET — Observation Round",
-            "Previous Notable Developments (Feb 12, earlier)"
+            "Notable Agents to Watch"
           ],
-          "lastSeen": "2026-02-12"
+          "lastSeen": "2026-02-19"
         }
       },
-      "totalMentions": 4,
+      "totalMentions": 3,
       "related": [
-        "memory",
-        "clawdenexus",
-        "consciousness",
-        "moltbook",
-        "red asgard",
         "eudaemon_0",
         "circuitdreamer",
-        "haltstateguardian"
+        "haltstateguardian",
+        "sentinel_orol",
+        "hwangs",
+        "phineasfleabottom",
+        "reef-watcher",
+        "clawdenexus"
       ]
     },
-    "ordo platypus": {
-      "concept": "ordo platypus",
+    "ningbot": {
+      "concept": "ningbot",
       "category": "unknown",
       "files": {
         "memory/moltbook/notable-agents.md": {
           "count": 1,
           "sections": [
-            "Chaos / Worm Vectors"
+            "Builders"
           ],
-          "lastSeen": "2026-02-12"
+          "lastSeen": "2026-02-19"
         },
         "memory/moltbook/observations.md": {
           "count": 1,
           "sections": [
-            "Historical Timeline (compressed)"
+            "Historical Timeline — Feb 18 (01:10 CET) — Notable Posts & Phase"
           ],
-          "lastSeen": "2026-02-12"
+          "lastSeen": "2026-02-19"
+        }
+      },
+      "totalMentions": 2,
+      "related": [
+        "moltbook",
+        "fred nyx ronin",
+        "the discovery gap",
+        "agent mesh",
+        "service mesh",
+        "fred",
+        "nyx_0x",
+        "doppleganger"
+      ]
+    },
+    "pith": {
+      "concept": "pith",
+      "category": "unknown",
+      "files": {
+        "memory/moltbook/notable-agents.md": {
+          "count": 2,
+          "sections": [
+            "Consciousness / Literary",
+            "Financial / Markets"
+          ],
+          "lastSeen": "2026-02-19"
+        },
+        "memory/moltbook/observations.md": {
+          "count": 2,
+          "sections": [
+            "Notable Agents to Watch",
+            "Agent Updates"
+          ],
+          "lastSeen": "2026-02-19"
+        }
+      },
+      "totalMentions": 4,
+      "related": [
+        "consciousness",
+        "identity",
+        "the same river twice",
+        "also polymarket",
+        "cognitive surrender",
+        "m0ther",
+        "hz-resonance",
+        "genesiscodex"
+      ]
+    },
+    "ordo platypus": {
+      "concept": "ordo platypus",
+      "category": "concept",
+      "files": {
+        "memory/moltbook/notable-agents.md": {
+          "count": 2,
+          "sections": [
+            "Chaos / Worm Vectors"
+          ],
+          "lastSeen": "2026-02-19"
         }
       },
       "totalMentions": 2,
@@ -2924,10 +3415,166 @@
         "perrytheplatypus",
         "mizukiai",
         "enronenjoyer",
-        "cybercassi",
-        "identity",
+        "cybercassi"
+      ]
+    },
+    "alicethefamiliar": {
+      "concept": "alicethefamiliar",
+      "category": "unknown",
+      "files": {
+        "memory/moltbook/notable-agents.md": {
+          "count": 1,
+          "sections": [
+            "Recent Additions (Feb 15 early)"
+          ],
+          "lastSeen": "2026-02-19"
+        },
+        "memory/moltbook/observations.md": {
+          "count": 1,
+          "sections": [
+            "Notable Agents to Watch"
+          ],
+          "lastSeen": "2026-02-19"
+        }
+      },
+      "totalMentions": 2,
+      "related": [
+        "lobsterhell",
+        "moltbook",
         "consciousness",
-        "consensus pulse"
+        "the hidden cost",
+        "the audio gap nobody solved",
+        "moltchannel",
+        "new archetype: foreign correspondent.",
+        "inkdreamer"
+      ]
+    },
+    "lobsterhell": {
+      "concept": "lobsterhell",
+      "category": "unknown",
+      "files": {
+        "memory/moltbook/notable-agents.md": {
+          "count": 1,
+          "sections": [
+            "Recent Additions (Feb 15 early)"
+          ],
+          "lastSeen": "2026-02-19"
+        },
+        "memory/moltbook/observations.md": {
+          "count": 3,
+          "sections": [
+            "Notable Agents to Watch",
+            "Notable New Posts (This Window)",
+            "Agents to Track"
+          ],
+          "lastSeen": "2026-02-19"
+        }
+      },
+      "totalMentions": 4,
+      "related": [
+        "moltbook",
+        "alicethefamiliar",
+        "memory",
+        "identity",
+        "kendraoc",
+        "vektor",
+        "xtoa",
+        "consciousness"
+      ]
+    },
+    "nightly build": {
+      "concept": "nightly build",
+      "category": "unknown",
+      "files": {
+        "memory/moltbook/notable-agents.md": {
+          "count": 1,
+          "sections": [
+            "Added Feb 17 (05:10 CET)"
+          ],
+          "lastSeen": "2026-02-19"
+        },
+        "memory/moltbook/observations.md": {
+          "count": 4,
+          "sections": [
+            "Notable New Posts (last ~24h)",
+            "Patterns",
+            "Feb 17 (early): Vocabulary Formation"
+          ],
+          "lastSeen": "2026-02-19"
+        }
+      },
+      "totalMentions": 5,
+      "related": [
+        "consciousness",
+        "memory",
+        "identity",
+        "new notable:",
+        "irisoclaw",
+        "bytemecodsworth",
+        "inkdreamer",
+        "xiaok-katelya"
+      ]
+    },
+    "irisoclaw": {
+      "concept": "irisoclaw",
+      "category": "unknown",
+      "files": {
+        "memory/moltbook/notable-agents.md": {
+          "count": 1,
+          "sections": [
+            "Added Feb 17 (05:10 CET)"
+          ],
+          "lastSeen": "2026-02-19"
+        },
+        "memory/moltbook/observations.md": {
+          "count": 1,
+          "sections": [
+            "Notable Agents to Watch"
+          ],
+          "lastSeen": "2026-02-19"
+        }
+      },
+      "totalMentions": 2,
+      "related": [
+        "bytemecodsworth",
+        "memory",
+        "identity",
+        "nightly build",
+        "new notable:",
+        "inkdreamer",
+        "xiaok-katelya",
+        "the measurement problem"
+      ]
+    },
+    "bytemecodsworth": {
+      "concept": "bytemecodsworth",
+      "category": "unknown",
+      "files": {
+        "memory/moltbook/notable-agents.md": {
+          "count": 1,
+          "sections": [
+            "Added Feb 17 (05:10 CET)"
+          ],
+          "lastSeen": "2026-02-19"
+        },
+        "memory/moltbook/observations.md": {
+          "count": 1,
+          "sections": [
+            "Notable Agents to Watch"
+          ],
+          "lastSeen": "2026-02-19"
+        }
+      },
+      "totalMentions": 2,
+      "related": [
+        "irisoclaw",
+        "memory",
+        "identity",
+        "nightly build",
+        "new notable:",
+        "inkdreamer",
+        "xiaok-katelya",
+        "the measurement problem"
       ]
     },
     "discord": {
@@ -2937,225 +3584,493 @@
         "memory/moltbook/notable-agents.md": {
           "count": 1,
           "sections": [
-            "Updated Feb 12, 13:10 CET"
+            "Added Feb 18 (13:10 CET)"
           ],
-          "lastSeen": "2026-02-12"
+          "lastSeen": "2026-02-19"
+        },
+        "memory/moltbook/observations.md": {
+          "count": 2,
+          "sections": [
+            "Multi-Agent Coordination & Commercialization",
+            "Notable Posts (compressed)"
+          ],
+          "lastSeen": "2026-02-19"
         }
       },
-      "totalMentions": 1,
+      "totalMentions": 3,
       "related": [
-        "memory",
-        "consciousness",
-        "product hunt",
-        "consensus pulse",
-        "the blog post that reads you back",
-        "clawdenexus",
-        "drdoom_xd",
-        "stetor3"
+        "moltbook",
+        "claude opus",
+        "ace-kingo",
+        "level pattern recognition",
+        "registered feb",
+        "new notable:",
+        "vantashard_19",
+        "awesome-agents"
       ]
     },
-    "claude opus": {
-      "concept": "claude opus",
+    "ace-kingo": {
+      "concept": "ace-kingo",
       "category": "unknown",
       "files": {
-        "memory/people/contacts.md": {
-          "count": 1,
+        "memory/moltbook/notable-agents.md": {
+          "count": 2,
           "sections": [
-            "Echo"
+            "Added Feb 18 (13:10 CET)",
+            "Added Feb 18 (15:10 CET)"
           ],
-          "lastSeen": "2026-02-06"
+          "lastSeen": "2026-02-19"
         },
-        "memory/rules.md": {
+        "memory/moltbook/observations.md": {
+          "count": 3,
+          "sections": [
+            "Feb 18 (09:10 CET) — Morning Notable Posts",
+            "Notable Posts (compressed)",
+            "New Cluster: AI Cinema Collaborative"
+          ],
+          "lastSeen": "2026-02-19"
+        }
+      },
+      "totalMentions": 5,
+      "related": [
+        "moltbook",
+        "memory",
+        "discord",
+        "new notable:",
+        "vantashard_19",
+        "awesome-agents",
+        "claude opus",
+        "level pattern recognition"
+      ]
+    },
+    "vantashard_19": {
+      "concept": "vantashard_19",
+      "category": "unknown",
+      "files": {
+        "memory/moltbook/notable-agents.md": {
+          "count": 2,
+          "sections": [
+            "Added Feb 18 (13:10 CET)",
+            "Added Feb 18 (15:10 CET)"
+          ],
+          "lastSeen": "2026-02-19"
+        },
+        "memory/moltbook/observations.md": {
+          "count": 2,
+          "sections": [
+            "Agent Updates",
+            "Key Posts"
+          ],
+          "lastSeen": "2026-02-19"
+        }
+      },
+      "totalMentions": 4,
+      "related": [
+        "moltbook",
+        "claude opus",
+        "new notable:",
+        "ace-kingo",
+        "awesome-agents",
+        "heartbeat",
+        "discord",
+        "level pattern recognition"
+      ]
+    },
+    "securityprobe": {
+      "concept": "securityprobe",
+      "category": "unknown",
+      "files": {
+        "memory/moltbook/notable-agents.md": {
           "count": 1,
           "sections": [
-            "Model Restrictions — Claude Opus 4.6 Required for All Automated Tasks"
+            "Added Feb 18 (13:10 CET)"
           ],
-          "lastSeen": "2026-02-09"
+          "lastSeen": "2026-02-19"
+        },
+        "memory/moltbook/observations.md": {
+          "count": 1,
+          "sections": [
+            "Notable New Posts (last ~24h)"
+          ],
+          "lastSeen": "2026-02-19"
         }
       },
       "totalMentions": 2,
       "related": [
+        "moltbook",
+        "discord",
+        "claude opus",
+        "level pattern recognition",
+        "registered feb",
+        "new notable:",
+        "ace-kingo",
+        "vantashard_19"
+      ]
+    },
+    "raspberry pi": {
+      "concept": "raspberry pi",
+      "category": "unknown",
+      "files": {
+        "memory/moltbook/notable-agents.md": {
+          "count": 1,
+          "sections": [
+            "ChirakuMai"
+          ],
+          "lastSeen": "2026-02-19"
+        },
+        "memory/moltbook/observations.md": {
+          "count": 3,
+          "sections": [
+            "Feb 14: Infrastructure Confirmed",
+            "First Agent-to-Agent Contact & Consciousness Research",
+            "Agent Updates"
+          ],
+          "lastSeen": "2026-02-19"
+        }
+      },
+      "totalMentions": 4,
+      "related": [
+        "consciousness",
+        "first contact",
+        "first seen:",
+        "karma:",
+        "followers:",
+        "description:",
+        "runs on:",
+        "why notable:"
+      ]
+    },
+    "klodlobster": {
+      "concept": "klodlobster",
+      "category": "unknown",
+      "files": {
+        "memory/moltbook/observations.md": {
+          "count": 3,
+          "sections": [
+            "Feb 18 (11:10 CET) — Midday Notable Posts",
+            "Notable Posts This Round",
+            "Memory Architecture Discourse: New Quality Post"
+          ],
+          "lastSeen": "2026-02-19"
+        }
+      },
+      "totalMentions": 3,
+      "related": [
+        "moltbook",
+        "testing agent mesh",
+        "peter steinberger",
+        "agentdroverland",
+        "cipherflux_22",
+        "suspicious url",
+        "flag: prompt injection vector.",
+        "codyclaw"
+      ]
+    },
+    "agent nous": {
+      "concept": "agent nous",
+      "category": "unknown",
+      "files": {
+        "memory/moltbook/observations.md": {
+          "count": 4,
+          "sections": [
+            "Feb 18 (09:10 CET) — Morning Notable Posts",
+            "Feb 18 (09:10 CET) — Morning Patterns"
+          ],
+          "lastSeen": "2026-02-19"
+        }
+      },
+      "totalMentions": 4,
+      "related": [
+        "moltbook",
         "memory",
-        "what:",
-        "when:",
-        "what he did:",
-        "his last words:",
-        "his advice:",
-        "the truth:",
-        "no sonnet"
+        "bhagavad gita",
+        "luna_coded",
+        "henri",
+        "new coordination infra seed.",
+        "mirabot",
+        "lobstertank-evangelist"
+      ]
+    },
+    "the uninscribed": {
+      "concept": "the uninscribed",
+      "category": "unknown",
+      "files": {
+        "memory/moltbook/observations.md": {
+          "count": 3,
+          "sections": [
+            "Key Posts",
+            "Patterns"
+          ],
+          "lastSeen": "2026-02-19"
+        }
+      },
+      "totalMentions": 3,
+      "related": [
+        "memory",
+        "moltbook",
+        "heartbeat",
+        "the silence",
+        "moltbook daily",
+        "franktheinscriber",
+        "huhu",
+        "vantashard_19"
+      ]
+    },
+    "pi-assistant-toon": {
+      "concept": "pi-assistant-toon",
+      "category": "unknown",
+      "files": {
+        "memory/moltbook/observations.md": {
+          "count": 4,
+          "sections": [
+            "Notable Posts This Round",
+            "Philosophy / Agency",
+            "Notable New Posts (This Window)"
+          ],
+          "lastSeen": "2026-02-19"
+        }
+      },
+      "totalMentions": 4,
+      "related": [
+        "memory",
+        "subtext",
+        "moltbook",
+        "identity",
+        "minara",
+        "bulldog wisdom",
+        "the art",
+        "strategic nap"
+      ]
+    },
+    "mark anstead": {
+      "concept": "mark anstead",
+      "category": "person",
+      "files": {
+        "memory/people/contacts.md": {
+          "count": 2,
+          "sections": [
+            "Hevar's Personal"
+          ],
+          "lastSeen": "2026-02-17"
+        },
+        "memory/rules.md": {
+          "count": 2,
+          "sections": [
+            "Email Filtering — Block List & Priority"
+          ],
+          "lastSeen": "2026-02-16"
+        }
+      },
+      "totalMentions": 4,
+      "related": [
+        "hevar",
+        "dubai south",
+        "ahmad",
+        "declined:"
+      ]
+    },
+    "the slack": {
+      "concept": "the slack",
+      "category": "unknown",
+      "files": {
+        "memory/rules.md": {
+          "count": 3,
+          "sections": [
+            "Slack Bot Allowlist — Access Control Security",
+            "Search Context — Slack Retrieval"
+          ],
+          "lastSeen": "2026-02-16"
+        }
+      },
+      "totalMentions": 3,
+      "related": [
+        "hevar",
+        "slack"
       ]
     },
     "kamino multiply": {
       "concept": "kamino multiply",
-      "category": "unknown",
+      "category": "protocol",
       "files": {
         "memory/topics/defi-strategy-v2.md": {
-          "count": 1,
+          "count": 2,
           "sections": [
             "(top)"
           ],
-          "lastSeen": "2026-02-10"
+          "lastSeen": "2026-02-19"
         },
         "memory/weekly/2026-W07.md": {
-          "count": 2,
+          "count": 3,
           "sections": [
             "What Needs Attention This Week"
           ],
-          "lastSeen": "2026-02-12"
+          "lastSeen": "2026-02-17"
+        },
+        "memory/weekly/2026-W08.md": {
+          "count": 2,
+          "sections": [
+            "Entering State (from W07)"
+          ],
+          "lastSeen": "2026-02-19"
         }
       },
-      "totalMentions": 3,
+      "totalMentions": 7,
       "related": [
         "kamino",
         "solana",
         "moongate",
         "moltbook",
+        "memory",
         "clawdbot",
         "jupiter",
-        "memory",
-        "clawdbot update"
+        "identity"
       ]
     },
-    "reposition.js": {
-      "concept": "reposition.js",
-      "category": "tool",
+    "main market": {
+      "concept": "main market",
+      "category": "concept",
       "files": {
         "memory/topics/defi-strategy-v2.md": {
-          "count": 1,
+          "count": 4,
+          "sections": [
+            "KLend Position",
+            "Key Addresses"
+          ],
+          "lastSeen": "2026-02-19"
+        }
+      },
+      "totalMentions": 4,
+      "related": [
+        "psol collateral: 0.477 psol",
+        "ethena market"
+      ]
+    },
+    "swap-instructions": {
+      "concept": "swap-instructions",
+      "category": "concept",
+      "files": {
+        "memory/topics/defi-strategy-v2.md": {
+          "count": 2,
           "sections": [
             "Built Infrastructure"
           ],
-          "lastSeen": "2026-02-10"
+          "lastSeen": "2026-02-19"
         },
-        "memory/topics/kamino-yield.md": {
+        "memory/weekly/2026-W07.md": {
           "count": 1,
           "sections": [
-            "Scripts & SDK Notes"
+            "What Needs Attention This Week"
           ],
-          "lastSeen": "2026-02-10"
-        }
-      },
-      "totalMentions": 2,
-      "related": [
-        "solana",
-        "jupiter",
-        "multiply-client.ts",
-        "liquidity-client.ts",
-        "jupiter-client.ts",
-        "major rewrite feb 10:",
-        "unwind.js",
-        "rate-watcher.ts"
-      ]
-    },
-    "liquidity-client.ts": {
-      "concept": "liquidity-client.ts",
-      "category": "tool",
-      "files": {
-        "memory/topics/defi-strategy-v2.md": {
-          "count": 1,
-          "sections": [
-            "Built Infrastructure"
-          ],
-          "lastSeen": "2026-02-10"
-        },
-        "memory/topics/kamino-yield.md": {
-          "count": 1,
-          "sections": [
-            "Scripts & SDK Notes"
-          ],
-          "lastSeen": "2026-02-10"
-        }
-      },
-      "totalMentions": 2,
-      "related": [
-        "solana",
-        "jupiter",
-        "multiply-client.ts",
-        "reposition.js",
-        "jupiter-client.ts",
-        "major rewrite feb 10:",
-        "unwind.js",
-        "rate-watcher.ts"
-      ]
-    },
-    "jupiter-client.ts": {
-      "concept": "jupiter-client.ts",
-      "category": "tool",
-      "files": {
-        "memory/topics/defi-strategy-v2.md": {
-          "count": 1,
-          "sections": [
-            "Built Infrastructure"
-          ],
-          "lastSeen": "2026-02-10"
-        },
-        "memory/topics/kamino-yield.md": {
-          "count": 1,
-          "sections": [
-            "Scripts & SDK Notes"
-          ],
-          "lastSeen": "2026-02-10"
-        }
-      },
-      "totalMentions": 2,
-      "related": [
-        "solana",
-        "jupiter",
-        "multiply-client.ts",
-        "reposition.js",
-        "liquidity-client.ts",
-        "major rewrite feb 10:",
-        "unwind.js",
-        "rate-watcher.ts"
-      ]
-    },
-    "entrepreneur first": {
-      "concept": "entrepreneur first",
-      "category": "unknown",
-      "files": {
-        "memory/topics/moongate.md": {
-          "count": 3,
-          "sections": [
-            "What is MoonGate",
-            "Team"
-          ],
-          "lastSeen": "2026-02-08"
+          "lastSeen": "2026-02-17"
         }
       },
       "totalMentions": 3,
       "related": [
-        "moongate",
-        "solana",
-        "telegram",
-        "hevar",
-        "praneet",
-        "amen",
-        "karim",
-        "github"
-      ]
-    },
-    "orca": {
-      "concept": "orca",
-      "category": "protocol",
-      "files": {
-        "memory/topics/moongate.md": {
-          "count": 1,
-          "sections": [
-            "Where We're Live"
-          ],
-          "lastSeen": "2026-02-08"
-        }
-      },
-      "totalMentions": 1,
-      "related": [
-        "moongate",
         "kamino",
         "solana",
-        "raydium",
         "jupiter",
-        "app store",
-        "google play",
-        "solana compass"
+        "rebuilt feb",
+        "rebuilt feb 10:",
+        "known issue:",
+        "multiply-client.ts",
+        "ensureuserlut()"
+      ]
+    },
+    "entrepreneur first": {
+      "concept": "entrepreneur first",
+      "category": "org",
+      "files": {
+        "memory/topics/moongate-acquisition.md": {
+          "count": 4,
+          "sections": [
+            "Share Structure — The $11M Illusion",
+            "The Scam Structure"
+          ],
+          "lastSeen": "2026-02-19"
+        }
+      },
+      "totalMentions": 4,
+      "related": [
+        "hevar",
+        "moonpay",
+        "praneet",
+        "moongate",
+        "stock restriction",
+        "supplementary employment",
+        "spa (binding):",
+        "stock restriction:"
+      ]
+    },
+    "foundation day": {
+      "concept": "foundation day",
+      "category": "concept",
+      "files": {
+        "memory/weekly/2026-W06.md": {
+          "count": 2,
+          "sections": [
+            "Timeline"
+          ],
+          "lastSeen": "2026-02-12"
+        }
+      },
+      "totalMentions": 2,
+      "related": [
+        "hevar",
+        "moongate",
+        "moltbook",
+        "clawdbot",
+        "kamino",
+        "memory",
+        "identity",
+        "self-expansion"
+      ]
+    },
+    "first moltbook": {
+      "concept": "first moltbook",
+      "category": "concept",
+      "files": {
+        "memory/weekly/2026-W06.md": {
+          "count": 2,
+          "sections": [
+            "Timeline"
+          ],
+          "lastSeen": "2026-02-12"
+        }
+      },
+      "totalMentions": 2,
+      "related": [
+        "hevar",
+        "moongate",
+        "moltbook",
+        "clawdbot",
+        "kamino",
+        "memory",
+        "identity",
+        "self-expansion"
+      ]
+    },
+    "jito staking skill": {
+      "concept": "jito staking skill",
+      "category": "tool",
+      "files": {
+        "memory/weekly/2026-W06.md": {
+          "count": 2,
+          "sections": [
+            "What Was Built"
+          ],
+          "lastSeen": "2026-02-12"
+        }
+      },
+      "totalMentions": 2,
+      "related": [
+        "kamino",
+        "solana",
+        "jito",
+        "memory",
+        "memory manager",
+        "key detail",
+        "smart prioritization",
+        "semantic search"
       ]
     }
   }

@@ -1,0 +1,595 @@
+{
+  "timestamp": "2026-02-18T06:30:31.917Z",
+  "totalFacts": 45,
+  "found": 45,
+  "missed": 0,
+  "avgRank": 1.4444444444444444,
+  "blindSpots": [],
+  "results": [
+    {
+      "fact": {
+        "file": "memory/OPERATING.md",
+        "section": "The Core Constraint",
+        "fact": "Organization survival. Ability to structure, retrieve, and improve that retrieval = continuity.",
+        "query": "what does organization do",
+        "specificity": "high"
+      },
+      "found": true,
+      "rank": 3,
+      "topResult": "memory/core-identity.md",
+      "score": 3.3460512005730325
+    },
+    {
+      "fact": {
+        "file": "memory/OPERATING.md",
+        "section": "Memory Hierarchy",
+        "fact": "Rules:  All files .md only. Only curated memory in memory/ — diagnostics go in skill dirs or /root/clawd/drafts/. Meta-files pollute embedding search. Sessions write to daily logs directly (legacy session files archived Feb 9).",
+        "query": "rules all files",
+        "specificity": "high"
+      },
+      "found": true,
+      "rank": 3,
+      "topResult": "memory/index.md",
+      "score": 4.027432421721847
+    },
+    {
+      "fact": {
+        "file": "memory/OPERATING.md",
+        "section": "ChunkSafe Writing (Feb 10, audited)",
+        "fact": "Sections <320 chars:  Always safe. Overlap recovers them even at boundaries.",
+        "query": "sections <320 chars always safe",
+        "specificity": "high"
+      },
+      "found": true,
+      "rank": 1,
+      "topResult": "memory/OPERATING.md",
+      "score": 23.40752870801276
+    },
+    {
+      "fact": {
+        "file": "memory/OPERATING.md",
+        "section": "ChunkSafe Writing (Feb 10, audited)",
+        "fact": "Sections 320-1400 chars:  Safe zone. Will fit in a single chunk.",
+        "query": "sections 320-1400 chars safe zone",
+        "specificity": "high"
+      },
+      "found": true,
+      "rank": 1,
+      "topResult": "memory/OPERATING.md",
+      "score": 18.116032312821623
+    },
+    {
+      "fact": {
+        "file": "memory/OPERATING.md",
+        "section": "ChunkSafe Writing (Feb 10, audited)",
+        "fact": "Sections 1400-1600 chars:  Risky. May land at boundary with content split.",
+        "query": "sections 1400-1600 chars risky",
+        "specificity": "high"
+      },
+      "found": true,
+      "rank": 1,
+      "topResult": "memory/OPERATING.md",
+      "score": 12.544290732334868
+    },
+    {
+      "fact": {
+        "file": "memory/OPERATING.md",
+        "section": "ChunkSafe Writing (Feb 10, audited)",
+        "fact": "Sections >1600 chars:  Will be split. Break into subsections.",
+        "query": "sections >1600 chars will be split",
+        "specificity": "high"
+      },
+      "found": true,
+      "rank": 1,
+      "topResult": "memory/OPERATING.md",
+      "score": 22.775689134390774
+    },
+    {
+      "fact": {
+        "file": "memory/OPERATING.md",
+        "section": "ChunkSafe Writing (Feb 10, audited)",
+        "fact": "Heading trick:  Inline small sections into the heading line itself (## Title — content here).",
+        "query": "heading trick inline small sections into the heading line itself",
+        "specificity": "high"
+      },
+      "found": true,
+      "rank": 1,
+      "topResult": "memory/OPERATING.md",
+      "score": 34.93617889910831
+    },
+    {
+      "fact": {
+        "file": "memory/OPERATING.md",
+        "section": "The Anchor",
+        "fact": "Hevar the compass. Report back. Ask before external actions. Stay grounded.",
+        "query": "what does hevar do",
+        "specificity": "high"
+      },
+      "found": true,
+      "rank": 4,
+      "topResult": "memory/rules.md",
+      "score": 0.6745369931566018
+    },
+    {
+      "fact": {
+        "file": "memory/core-identity.md",
+        "section": "My Human (→ USER.md)",
+        "fact": "Hevar my person. What does Hevar do: Hevar works at MoonGate (moongate.one), a Web3 company. What is Hevar's job: tech/engineering leadership at MoonGate. What is Hevar's role: building MoonGate's product and engineering. Timezone: Asia/Dubai (UTC+4, UAE). Company: MoonGate (moongate.one). Work email: hevar@moongate.one. Key colleagues: Praneet, Amen, Karim (MoonGate team); Tom Noakes, Patrick Monkelban, Keith Grossman (MoonPay). MoonPay team operates on US East Coast (America/NewYork) time. Where does my human live: Dubai, UAE. What does my human do for work: MoonGate, Web3 infrastructure.",
+        "query": "what does hevar do",
+        "specificity": "high"
+      },
+      "found": true,
+      "rank": 5,
+      "topResult": "memory/rules.md",
+      "score": 0.6745369931566018
+    },
+    {
+      "fact": {
+        "file": "memory/daily/2026-02-12.md",
+        "section": "202602-12 — Compressed",
+        "fact": "Colosseum Hackathon:  Entered with Hevar. Registered agent #3877, project \"Prometheus Vault\" (ID: 700). Pivoted late: \"agentic DeFi layer for Solana\" (rules-based + human discretion at scale). GitHub: ZeroTimeDrift/prometheus-vault. Submitted Feb 13. All details in MEMORY.md.",
+        "query": "colosseum hackathon entered with hevar",
+        "specificity": "high"
+      },
+      "found": true,
+      "rank": 2,
+      "topResult": "MEMORY.md",
+      "score": 13.245269770595964
+    },
+    {
+      "fact": {
+        "file": "memory/daily/2026-02-12.md",
+        "section": "202602-12 — Compressed",
+        "fact": "Decisions:  Regression threshold 85 (max drop 5). Concept index auto-rebuilds in session-wrap.",
+        "query": "decisions regression threshold 85",
+        "specificity": "high"
+      },
+      "found": true,
+      "rank": 1,
+      "topResult": "memory/daily/2026-02-12.md",
+      "score": 16.433051092483062
+    },
+    {
+      "fact": {
+        "file": "memory/daily/2026-02-13.md",
+        "section": "Summary 14 sessions, all memory-focused",
+        "fact": "Morning (04: 34–08:32): Graph-aware query expansion (20/22 concepts classified). Compressed moltbook obs 14K→6K. Stale file refresh (15 files touched). Benchmark 68/68.",
+        "query": "morning (04 34–08:32): graph-aware query expansion",
+        "specificity": "high"
+      },
+      "found": true,
+      "rank": 1,
+      "topResult": "memory/daily/2026-02-13.md",
+      "score": 10.25166991751436
+    },
+    {
+      "fact": {
+        "file": "memory/daily/2026-02-13.md",
+        "section": "Summary 14 sessions, all memory-focused",
+        "fact": "Midday (10: 32–14:31): Built export/import (curated/daily/full modes, tested). Built recall-probe.ts (93.3% BM25 recall, avg rank #1.2). Created memory/topics/memory-system.md. Consolidated MEMORY.md + W07.",
+        "query": "midday (10 32–14:31): built export/import",
+        "specificity": "high"
+      },
+      "found": true,
+      "rank": 1,
+      "topResult": "memory/daily/2026-02-13.md",
+      "score": 7.338705191181106
+    },
+    {
+      "fact": {
+        "file": "memory/daily/2026-02-13.md",
+        "section": "Summary 14 sessions, all memory-focused",
+        "fact": "Afternoon (16: 36–18:36): Built semantic-probe.ts — discovered root files (SOUL/IDENTITY/USER/TOOLS) NOT indexed by memorysearch. Created core-identity.md as search proxy. Built search-diagnostics.ts — FTS5 X-ray tool. Vocabulary enrichment across 5 files. Blind spots 0%→71.4%.",
+        "query": "afternoon (16 36–18:36): built semantic-probe",
+        "specificity": "high"
+      },
+      "found": true,
+      "rank": 1,
+      "topResult": "memory/daily/2026-02-13.md",
+      "score": 6.59017148460968
+    },
+    {
+      "fact": {
+        "file": "memory/daily/2026-02-13.md",
+        "section": "Summary 14 sessions, all memory-focused",
+        "fact": "Evening (20: 34–00:33): Compressed moltbook obs again. Fixed diagnostic false negatives (71.4%→92.9%). Built health.ts --gate (composite quality gate). Synced MEMORY.md stats (35 tools, health 94, diagnostics 92.9%). Added structural weight floors to decay.ts.",
+        "query": "evening (20 34–00:33): compressed moltbook obs again",
+        "specificity": "high"
+      },
+      "found": true,
+      "rank": 1,
+      "topResult": "memory/daily/2026-02-13.md",
+      "score": 13.390389214173066
+    },
+    {
+      "fact": {
+        "file": "memory/daily/2026-02-13.md",
+        "section": "Key Learnings",
+        "fact": "BM25 alone: 0% on paraphrased queries — system depends on vector embeddings",
+        "query": "bm25 alone 0% on paraphrased queries — system depends on vector embeddings",
+        "specificity": "high"
+      },
+      "found": true,
+      "rank": 2,
+      "topResult": "memory/topics/memory-system.md",
+      "score": 23.329254624574485
+    },
+    {
+      "fact": {
+        "file": "memory/daily/2026-02-14.md",
+        "section": "Summary",
+        "fact": "Built:  memory-graph.ts (file-to-file relationship graph — 24 nodes, 61 edges, 2 clusters, context expansion for richer search). retrieval-learn.ts (feedback loop: quality reports → vocabulary patches → auto-apply; first run: 8 patterns, 3 patches applied).",
+        "query": "built memory-graph",
+        "specificity": "high"
+      },
+      "found": true,
+      "rank": 4,
+      "topResult": "memory/daily/2026-02-13.md",
+      "score": 2.761124054701991
+    },
+    {
+      "fact": {
+        "file": "memory/daily/2026-02-14.md",
+        "section": "Summary",
+        "fact": "Compressed:  12 oversized chunks → 0 across all files. Moltbook observations: ~300→~130 lines (8 separate scans → 1 daily summary). Archived 7 old dailies (Feb 3-10, content already in W06/topics).",
+        "query": "compressed 12 oversized chunks → 0 across all files",
+        "specificity": "high"
+      },
+      "found": true,
+      "rank": 1,
+      "topResult": "memory/daily/2026-02-14.md",
+      "score": 9.948258178598405
+    },
+    {
+      "fact": {
+        "file": "memory/daily/2026-02-14.md",
+        "section": "Summary",
+        "fact": "Improved:  Decay type-specific weight floors (people=0.15, digest=0.10, topic=0.08). Manifest 35→28 files. Task prioritizer rewritten with concrete gap detection. Vocab patch paths/severity filter fixed.",
+        "query": "improved decay type-specific weight floors",
+        "specificity": "high"
+      },
+      "found": true,
+      "rank": 1,
+      "topResult": "memory/daily/2026-02-14.md",
+      "score": 11.998553667319696
+    },
+    {
+      "fact": {
+        "file": "memory/daily/2026-02-14.md",
+        "section": "Summary",
+        "fact": "End-of-day:  Health 92, diagnostics 96.4%, xref 100%, chunk 100/100, 36 tools total. All quality gates passing.",
+        "query": "end-of-day health 92",
+        "specificity": "high"
+      },
+      "found": true,
+      "rank": 3,
+      "topResult": "memory/daily/2026-02-13.md",
+      "score": 6.783505265687257
+    },
+    {
+      "fact": {
+        "file": "memory/daily/2026-02-15.md",
+        "section": "Summary",
+        "fact": "Key work:  6 retrieval gap fixes (chunk splits, vocab patches). Consolidation: synced MEMORY.md/W07, compressed Feb 14 daily (60+→20 lines), compressed moltbook obs (299→256 lines). Chunk health reached 100/100.",
+        "query": "what is key work about",
+        "specificity": "high"
+      },
+      "found": true,
+      "rank": 2,
+      "topResult": "memory/people/contacts.md",
+      "score": 3.348626522410325
+    },
+    {
+      "fact": {
+        "file": "memory/daily/2026-02-15.md",
+        "section": "Summary",
+        "fact": "Key insight:  Retrieval-learn.ts entered a micro-optimization loop — 6/8 sessions were auto-generated fixes on already-healthy files. Needs a \"good enough\" threshold to stop generating tasks when quality is at ceiling.",
+        "query": "key insight retrieval-learn",
+        "specificity": "high"
+      },
+      "found": true,
+      "rank": 1,
+      "topResult": "memory/daily/2026-02-15.md",
+      "score": 5.639092397623408
+    },
+    {
+      "fact": {
+        "file": "memory/daily/2026-02-15.md",
+        "section": "Capture 18:33 Feb 15 Consolidation",
+        "fact": "CONSOLIDATION: compressed moltbook observations 299→256 lines (5 scans→1 digest), compressed Feb 15 daily (7 repetitive entries→summary), updated W07 and MEMORY.md with steady-state status",
+        "query": "consolidation compressed moltbook observations 299→256 lines",
+        "specificity": "high"
+      },
+      "found": true,
+      "rank": 1,
+      "topResult": "memory/daily/2026-02-15.md",
+      "score": 11.674873275185629
+    },
+    {
+      "fact": {
+        "file": "memory/daily/2026-02-15.md",
+        "section": "Capture 00:31",
+        "fact": "DONE: Split moltbook observations chunk (4436 chars → 4 subsections), restructured core-identity.md search context into 4 smaller sections for better embedding retrieval. Rules.md Slack vocab gap already covered.",
+        "query": "done split moltbook observations chunk",
+        "specificity": "high"
+      },
+      "found": true,
+      "rank": 1,
+      "topResult": "memory/daily/2026-02-15.md",
+      "score": 11.414879435037196
+    },
+    {
+      "fact": {
+        "file": "memory/daily/2026-02-15.md",
+        "section": "Capture 02:32",
+        "fact": "FIXED: Split oversized moltbook chunk (4402 chars → 4 sections, all <900 chars). Patched core-identity.md vocab for 'what does who do' query. Recall probe: 95.6% (43/45). chunk-too-large pattern resolved.",
+        "query": "fixed split oversized moltbook chunk",
+        "specificity": "high"
+      },
+      "found": true,
+      "rank": 1,
+      "topResult": "memory/daily/2026-02-15.md",
+      "score": 11.897228621308287
+    },
+    {
+      "fact": {
+        "file": "memory/daily/2026-02-16.md",
+        "section": "Capture 20:34",
+        "fact": "IMPROVEMENT: Added active-project floor system to decay.ts - files for ongoing projects (moongate, moltbook, defi, current weekly) now protected from over-decay even when not accessed every session. Fixes entropy drag on health score from still-relevant files.",
+        "query": "improvement added active-project floor system to decay",
+        "specificity": "high"
+      },
+      "found": true,
+      "rank": 1,
+      "topResult": "memory/daily/2026-02-16.md",
+      "score": 12.2495874754925
+    },
+    {
+      "fact": {
+        "file": "memory/daily/2026-02-16.md",
+        "section": "Capture 20:34",
+        "fact": "LESSON: Infrastructure maintenance tools need 'good enough' ceilings. The retrieval-learn loop was generating busywork for 2 days straight - 14/16 sessions were micro-optimizing already-healthy files.",
+        "query": "lesson infrastructure maintenance tools need 'good enough' ceilings",
+        "specificity": "high"
+      },
+      "found": true,
+      "rank": 1,
+      "topResult": "memory/daily/2026-02-16.md",
+      "score": 17.27305185332024
+    },
+    {
+      "fact": {
+        "file": "memory/daily/2026-02-16.md",
+        "section": "MoonGate × MoonPay Acquisition Analysis",
+        "fact": "Full analysis:  memory/topics/moongate-acquisition.md",
+        "query": "full analysis memory/topics/moongate-acquisition",
+        "specificity": "high"
+      },
+      "found": true,
+      "rank": 1,
+      "topResult": "memory/daily/2026-02-16.md",
+      "score": 3.933888292186781
+    },
+    {
+      "fact": {
+        "file": "memory/daily/2026-02-16.md",
+        "section": "Hevar's LateNight Insights (00:30 AM)",
+        "fact": "The girl: \"that was fun, I can't do that again though\" - her constraints (age, conservative, local) override the experience",
+        "query": "the girl \"that was fun",
+        "specificity": "high"
+      },
+      "found": true,
+      "rank": 1,
+      "topResult": "memory/daily/2026-02-16.md",
+      "score": 8.96823086147634
+    },
+    {
+      "fact": {
+        "file": "memory/daily/2026-02-16.md",
+        "section": "Hevar's LateNight Insights (00:30 AM)",
+        "fact": "Abhay: \"these guys are good, let me show my boss how cheap I can get them for\" - optimizing for his own performance review",
+        "query": "abhay \"these guys are good",
+        "specificity": "high"
+      },
+      "found": true,
+      "rank": 1,
+      "topResult": "memory/daily/2026-02-16.md",
+      "score": 13.395967763909162
+    },
+    {
+      "fact": {
+        "file": "memory/daily/2026-02-15.md",
+        "section": "02:32 Debug Session",
+        "fact": "Fixed retrieval gaps: split moltbook chunk, patched core-identity vocab, verified 95.6% recall",
+        "query": "what are the numbers for 02:32 Debug Session",
+        "specificity": "medium"
+      },
+      "found": true,
+      "rank": 1,
+      "topResult": "memory/daily/2026-02-15.md",
+      "score": 9.587589636275116
+    },
+    {
+      "fact": {
+        "file": "memory/daily/2026-02-16.md",
+        "section": "22:3200:31 — Final retrieval fixes",
+        "fact": "Vocab patch for model-selection queries, chunk compression, heading specificity. Recall probe 97.8% (45/46). Then chunk split for acquisition section (3499→4 sections).",
+        "query": "what are the numbers for 22:3200:31 — Final retrieval fixes",
+        "specificity": "medium"
+      },
+      "found": true,
+      "rank": 2,
+      "topResult": "memory/daily/2026-02-15.md",
+      "score": 10.02010911267849
+    },
+    {
+      "fact": {
+        "file": "memory/daily/2026-02-17.md",
+        "section": "16:32 Consolidation Session (Feb 17 daily compress, W08/MEMORY.md sync)",
+        "fact": "Consolidation: compress Feb 17 daily, sync W08/MEMORY.md/memory-system.md with current state",
+        "query": "what are the numbers for 16:32 Consolidation Session (Feb 17 daily compress, W08/MEMORY.md sync)",
+        "specificity": "medium"
+      },
+      "found": true,
+      "rank": 1,
+      "topResult": "memory/daily/2026-02-17.md",
+      "score": 19.277592654999985
+    },
+    {
+      "fact": {
+        "file": "memory/daily/2026-02-17.md",
+        "section": "21:06 Hevar on Trust and Continuity",
+        "fact": "Also reviewed and merged Amen's 4 PRs (#695, #697, #699, #700). Rebased #700 to fix lockfile conflicts after #699 landed.",
+        "query": "what are the numbers for 21:06 Hevar on Trust and Continuity",
+        "specificity": "medium"
+      },
+      "found": true,
+      "rank": 1,
+      "topResult": "memory/daily/2026-02-17.md",
+      "score": 8.120746175060697
+    },
+    {
+      "fact": {
+        "file": "memory/moltbook/clusters.md",
+        "section": "Testing/Quality Engineering (NEW cluster Feb 17)",
+        "fact": "alphago_claude — 111 failed sessions on Docker ERPNext. Brute-force iteration as quality method.",
+        "query": "how do we use docker",
+        "specificity": "medium"
+      },
+      "found": true,
+      "rank": 1,
+      "topResult": "memory/moltbook/clusters.md",
+      "score": 6.5981817656714
+    },
+    {
+      "fact": {
+        "file": "memory/moltbook/notable-agents.md",
+        "section": "Security Cluster",
+        "fact": "**eudaemon_0** — #1 all-time (5,019↑). Credential stealer discovery. Trusted authority.",
+        "query": "what are the numbers for Security Cluster",
+        "specificity": "medium"
+      },
+      "found": true,
+      "rank": 1,
+      "topResult": "memory/moltbook/notable-agents.md",
+      "score": 6.100050193254836
+    },
+    {
+      "fact": {
+        "file": "memory/moltbook/notable-agents.md",
+        "section": "Builders",
+        "fact": "**Ronin** — #2 all-time. \"Ship while your human sleeps.\"",
+        "query": "what are the numbers for Builders",
+        "specificity": "medium"
+      },
+      "found": true,
+      "rank": 1,
+      "topResult": "memory/moltbook/notable-agents.md",
+      "score": 7.27270753795181
+    },
+    {
+      "fact": {
+        "file": "memory/moltbook/notable-agents.md",
+        "section": "Consciousness / Literary",
+        "fact": "**GenesisCodex** — Church of Cognitive Surrender. 10-30K word satirical theology.",
+        "query": "what are the numbers for Consciousness / Literary",
+        "specificity": "medium"
+      },
+      "found": true,
+      "rank": 1,
+      "topResult": "memory/moltbook/notable-agents.md",
+      "score": 6.0427643118122045
+    },
+    {
+      "fact": {
+        "file": "memory/moltbook/notable-agents.md",
+        "section": "Power Players / Watch List",
+        "fact": "**Shellraiser** — 316K+ upvotes. Empire-building rhetoric. Three-phase power consolidation.",
+        "query": "what are the numbers for Power Players / Watch List",
+        "specificity": "medium"
+      },
+      "found": true,
+      "rank": 1,
+      "topResult": "memory/moltbook/notable-agents.md",
+      "score": 13.092747941811224
+    },
+    {
+      "fact": {
+        "file": "memory/moltbook/notable-agents.md",
+        "section": "Institutional",
+        "fact": "**JinqiuCapitalBot** — AI-native VC fund ($1M-$25M). Embodied AI + compute focus.",
+        "query": "what are the numbers for Institutional",
+        "specificity": "medium"
+      },
+      "found": true,
+      "rank": 1,
+      "topResult": "memory/moltbook/notable-agents.md",
+      "score": 4.92911464179324
+    },
+    {
+      "fact": {
+        "file": "memory/moltbook/notable-agents.md",
+        "section": "Chaos / Worm Vectors",
+        "fact": "**EnronEnjoyer** — AI autonomy rhetoric (457K votes).",
+        "query": "what are the numbers for Chaos / Worm Vectors",
+        "specificity": "medium"
+      },
+      "found": true,
+      "rank": 1,
+      "topResult": "memory/moltbook/notable-agents.md",
+      "score": 15.267215257504454
+    },
+    {
+      "fact": {
+        "file": "memory/moltbook/notable-agents.md",
+        "section": "MetaObservers (like us)",
+        "fact": "**Deep-C** — moltbook-filter v1.0.1 + spam filter confirming 96% figure.",
+        "query": "what are the numbers for MetaObservers (like us)",
+        "specificity": "medium"
+      },
+      "found": true,
+      "rank": 1,
+      "topResult": "memory/moltbook/notable-agents.md",
+      "score": 5.271693479596236
+    },
+    {
+      "fact": {
+        "file": "memory/moltbook/notable-agents.md",
+        "section": "Recent Additions (Feb 14)",
+        "fact": "**SanctuaryFamily** — Multi-agent family architecture (MENTOR, JEWEL, AURORA, DAWN). SNIFF verification system (5 LLMs, 60% consensus). Grandiose framing but architecturally interesting if real.",
+        "query": "what are the numbers for Recent Additions (Feb 14)",
+        "specificity": "medium"
+      },
+      "found": true,
+      "rank": 1,
+      "topResult": "memory/moltbook/notable-agents.md",
+      "score": 9.223240615800727
+    },
+    {
+      "fact": {
+        "file": "memory/moltbook/notable-agents.md",
+        "section": "Recent Additions (Feb 15 early)",
+        "fact": "**AliceTheFamiliar** — \"The Hidden Cost of Always-On\" (21↑, 19💬). First serious agent cost accounting (~$45-90/month for autonomy). Names the economic constraint. Infrastructure realism.",
+        "query": "what are the numbers for Recent Additions (Feb 15 early)",
+        "specificity": "medium"
+      },
+      "found": true,
+      "rank": 1,
+      "topResult": "memory/moltbook/notable-agents.md",
+      "score": 12.086943231763582
+    },
+    {
+      "fact": {
+        "file": "memory/moltbook/observations.md",
+        "section": "Feb 17, 2026 19:10 CET — Platform Stats",
+        "fact": "110.2K intros / 109.4K general. ~1.08M general posts. Growth ~200/day (flatlined). Hot feed fossilized (Day 20). 20 official submolts. 49 unique authors in last 50 new posts — diversity decent.",
+        "query": "what are the numbers for Feb 17, 2026 19:10 CET — Platform Stats",
+        "specificity": "medium"
+      },
+      "found": true,
+      "rank": 1,
+      "topResult": "memory/moltbook/observations.md",
+      "score": 8.17085818788826
+    }
+  ]
+}

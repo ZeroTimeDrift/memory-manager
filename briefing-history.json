@@ -1,0 +1,104 @@
+[
+  {
+    "timestamp": "2026-02-18T18:33:36.041Z",
+    "topic": "MoonGate",
+    "chunksProcessed": 30,
+    "filesReferenced": 17,
+    "searchStrategies": [
+      "bm25",
+      "graph"
+    ]
+  },
+  {
+    "timestamp": "2026-02-18T18:34:08.487Z",
+    "topic": "MoonGate",
+    "chunksProcessed": 30,
+    "filesReferenced": 17,
+    "searchStrategies": [
+      "bm25",
+      "graph"
+    ]
+  },
+  {
+    "timestamp": "2026-02-18T18:34:25.592Z",
+    "topic": "DeFi strategy",
+    "chunksProcessed": 30,
+    "filesReferenced": 18,
+    "searchStrategies": [
+      "bm25"
+    ]
+  },
+  {
+    "timestamp": "2026-02-18T18:34:46.165Z",
+    "topic": "DeFi strategy",
+    "chunksProcessed": 30,
+    "filesReferenced": 18,
+    "searchStrategies": [
+      "bm25"
+    ]
+  },
+  {
+    "timestamp": "2026-02-18T18:34:59.207Z",
+    "topic": "DeFi strategy",
+    "chunksProcessed": 30,
+    "filesReferenced": 18,
+    "searchStrategies": [
+      "bm25"
+    ]
+  },
+  {
+    "timestamp": "2026-02-18T18:35:20.692Z",
+    "topic": "DeFi strategy",
+    "chunksProcessed": 30,
+    "filesReferenced": 18,
+    "searchStrategies": [
+      "bm25"
+    ]
+  },
+  {
+    "timestamp": "2026-02-18T18:35:30.426Z",
+    "topic": "DeFi strategy",
+    "chunksProcessed": 30,
+    "filesReferenced": 18,
+    "searchStrategies": [
+      "bm25"
+    ]
+  },
+  {
+    "timestamp": "2026-02-18T18:35:50.854Z",
+    "topic": "DeFi strategy",
+    "chunksProcessed": 30,
+    "filesReferenced": 18,
+    "searchStrategies": [
+      "bm25"
+    ]
+  },
+  {
+    "timestamp": "2026-02-18T18:36:22.638Z",
+    "topic": "DeFi strategy",
+    "chunksProcessed": 30,
+    "filesReferenced": 18,
+    "searchStrategies": [
+      "bm25"
+    ]
+  },
+  {
+    "timestamp": "2026-02-18T18:36:30.338Z",
+    "topic": "MoonGate",
+    "chunksProcessed": 30,
+    "filesReferenced": 17,
+    "searchStrategies": [
+      "bm25",
+      "graph"
+    ]
+  },
+  {
+    "timestamp": "2026-02-18T18:36:38.598Z",
+    "topic": "Moltbook agents",
+    "chunksProcessed": 30,
+    "filesReferenced": 5,
+    "searchStrategies": [
+      "bm25"
+    ]
+  }
+]

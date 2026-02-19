@@ -112,6 +112,40 @@ const KNOWN_ENTITIES: Record<string, ConceptCategory> = {
   'survival': 'concept',
   'self-expansion': 'concept',
   'heartbeat': 'concept',
+  'foundation day': 'concept',
+  'no sonnet': 'concept',
+  
+  // Projects (cont'd)
+  'prometheus vault': 'project',
+  'partner dashboard': 'project',
+  'memory manager': 'tool',
+  'jito staking skill': 'tool',
+  
+  // Events / Competitions
+  'colosseum agent hackathon': 'concept',
+  'most agentic': 'concept',
+  'product hunt': 'concept',
+  
+  // Moltbook entities
+  'consensus pulse': 'concept',
+  'security builders': 'concept',
+  'pragmatic builders': 'concept',
+  'first moltbook': 'concept',
+  'ordo platypus': 'concept',
+  
+  // People (cont'd)
+  'mark anstead': 'person',
+  
+  // Orgs (cont'd)
+  'entrepreneur first': 'org',
+  
+  // DeFi (cont'd)
+  'kamino multiply': 'protocol',
+  'main market': 'concept',
+  'swap-instructions': 'concept',
+  
+  // Tools (cont'd)
+  'claude opus': 'tool',
 };
 
 // Concept aliases (map variants to canonical form)
@@ -127,6 +161,11 @@ const ALIASES: Record<string, string> = {
   'jito staking': 'jito',
   'jitoSOL': 'jito',
   'jitosol': 'jito',
+  'colosseum hackathon': 'colosseum agent hackathon',
+  'agent hackathon': 'colosseum agent hackathon',
+  'ef': 'entrepreneur first',
+  'opus': 'claude opus',
+  'claude opus 4': 'claude opus',
 };
 
 // Words to skip (too common to be useful)

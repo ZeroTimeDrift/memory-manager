@@ -1,0 +1,2385 @@
+[
+  {
+    "timestamp": "2026-02-15T18:31:00.053Z",
+    "inputReports": [
+      "search-quality (2026-02-14T04:31:19.759Z)",
+      "recall-probe (2026-02-14T20:31:36.347Z)",
+      "diagnostics (2026-02-15T06:31:01.243Z)"
+    ],
+    "patterns": [
+      {
+        "type": "vocabulary-gap",
+        "severity": "low",
+        "file": "memory/rules.md",
+        "description": "memory/rules.md has 1 retrieval issue(s): outranked",
+        "evidence": [
+          "Slack allowlist never add anyone else"
+        ],
+        "suggestedFix": "Add search context section with terms from failing queries"
+      },
+      {
+        "type": "vocabulary-gap",
+        "severity": "low",
+        "file": "memory/core-identity.md",
+        "description": "memory/core-identity.md has 1 retrieval issue(s): not-found",
+        "evidence": [
+          "what does who do"
+        ],
+        "suggestedFix": "Add search context section with terms from failing queries"
+      }
+    ],
+    "vocabularyPatches": [
+      {
+        "file": "memory/rules.md",
+        "terms": [
+          "slack",
+          "allowlist",
+          "never",
+          "add",
+          "anyone",
+          "else",
+          "slack allowlist",
+          "allowlist never",
+          "never add",
+          "add anyone"
+        ],
+        "reason": "memory/rules.md has 1 retrieval issue(s): outranked",
+        "queries": [
+          "Slack allowlist never add anyone else"
+        ]
+      }
+    ],
+    "chunkSuggestions": [],
+    "weightAdjustments": [],
+    "appliedPatches": [],
+    "summary": "2 patterns (0 high), 1 actionable suggestions, 0 applied"
+  },
+  {
+    "timestamp": "2026-02-15T20:30:15.336Z",
+    "inputReports": [
+      "search-quality (2026-02-14T04:31:19.759Z)",
+      "recall-probe (2026-02-14T20:31:36.347Z)",
+      "diagnostics (2026-02-15T06:31:01.243Z)"
+    ],
+    "patterns": [
+      {
+        "type": "chunk-too-large",
+        "severity": "high",
+        "file": "memory/moltbook/observations.md",
+        "description": "Section \"Feb 15, 2026 — 21:10 CET — Evening Scan\" is 4436 chars (target <500 for optimal embedding)",
+        "evidence": [
+          "memory/moltbook/observations.md#Feb 15, 2026 — 21:10 CET — Evening Scan: 4436 chars"
+        ],
+        "suggestedFix": "Split into smaller subsections or compress content"
+      },
+      {
+        "type": "vocabulary-gap",
+        "severity": "low",
+        "file": "memory/rules.md",
+        "description": "memory/rules.md has 1 retrieval issue(s): outranked",
+        "evidence": [
+          "Slack allowlist never add anyone else"
+        ],
+        "suggestedFix": "Add search context section with terms from failing queries"
+      },
+      {
+        "type": "vocabulary-gap",
+        "severity": "low",
+        "file": "memory/core-identity.md",
+        "description": "memory/core-identity.md has 1 retrieval issue(s): not-found",
+        "evidence": [
+          "what does who do"
+        ],
+        "suggestedFix": "Add search context section with terms from failing queries"
+      }
+    ],
+    "vocabularyPatches": [
+      {
+        "file": "memory/rules.md",
+        "terms": [
+          "slack",
+          "allowlist",
+          "never",
+          "add",
+          "anyone",
+          "else",
+          "slack allowlist",
+          "allowlist never",
+          "never add",
+          "add anyone"
+        ],
+        "reason": "memory/rules.md has 1 retrieval issue(s): outranked",
+        "queries": [
+          "Slack allowlist never add anyone else"
+        ]
+      }
+    ],
+    "chunkSuggestions": [
+      {
+        "file": "memory/moltbook/observations.md",
+        "section": "Feb 15, 2026 — 21:10 CET — Evening Scan",
+        "currentSize": 4436,
+        "suggestedAction": "split",
+        "reason": "Section \"Feb 15, 2026 — 21:10 CET — Evening Scan\" is 4436 chars (target <500 for optimal embedding)"
+      }
+    ],
+    "weightAdjustments": [],
+    "appliedPatches": [],
+    "summary": "3 patterns (1 high), 2 actionable suggestions, 0 applied"
+  },
+  {
+    "timestamp": "2026-02-15T22:30:16.261Z",
+    "inputReports": [
+      "search-quality (2026-02-14T04:31:19.759Z)",
+      "recall-probe (2026-02-14T20:31:36.347Z)",
+      "diagnostics (2026-02-15T06:31:01.243Z)"
+    ],
+    "patterns": [
+      {
+        "type": "chunk-too-large",
+        "severity": "high",
+        "file": "memory/moltbook/observations.md",
+        "description": "Section \"Feb 15 — Late night scan, 23:10 CET (107K subs)\" is 4402 chars (target <500 for optimal embedding)",
+        "evidence": [
+          "memory/moltbook/observations.md#Feb 15 — Late night scan, 23:10 CET (107K subs): 4402 chars"
+        ],
+        "suggestedFix": "Split into smaller subsections or compress content"
+      },
+      {
+        "type": "vocabulary-gap",
+        "severity": "low",
+        "file": "memory/rules.md",
+        "description": "memory/rules.md has 1 retrieval issue(s): outranked",
+        "evidence": [
+          "Slack allowlist never add anyone else"
+        ],
+        "suggestedFix": "Add search context section with terms from failing queries"
+      },
+      {
+        "type": "vocabulary-gap",
+        "severity": "low",
+        "file": "memory/core-identity.md",
+        "description": "memory/core-identity.md has 1 retrieval issue(s): not-found",
+        "evidence": [
+          "what does who do"
+        ],
+        "suggestedFix": "Add search context section with terms from failing queries"
+      }
+    ],
+    "vocabularyPatches": [
+      {
+        "file": "memory/rules.md",
+        "terms": [
+          "slack",
+          "allowlist",
+          "never",
+          "add",
+          "anyone",
+          "else",
+          "slack allowlist",
+          "allowlist never",
+          "never add",
+          "add anyone"
+        ],
+        "reason": "memory/rules.md has 1 retrieval issue(s): outranked",
+        "queries": [
+          "Slack allowlist never add anyone else"
+        ]
+      }
+    ],
+    "chunkSuggestions": [
+      {
+        "file": "memory/moltbook/observations.md",
+        "section": "Feb 15 — Late night scan, 23:10 CET (107K subs)",
+        "currentSize": 4402,
+        "suggestedAction": "split",
+        "reason": "Section \"Feb 15 — Late night scan, 23:10 CET (107K subs)\" is 4402 chars (target <500 for optimal embedding)"
+      }
+    ],
+    "weightAdjustments": [],
+    "appliedPatches": [],
+    "summary": "3 patterns (1 high), 2 actionable suggestions, 0 applied"
+  },
+  {
+    "timestamp": "2026-02-15T22:31:54.716Z",
+    "inputReports": [
+      "search-quality (2026-02-14T04:31:19.759Z)",
+      "recall-probe (2026-02-14T20:31:36.347Z)",
+      "diagnostics (2026-02-15T06:31:01.243Z)"
+    ],
+    "patterns": [
+      {
+        "type": "vocabulary-gap",
+        "severity": "low",
+        "file": "memory/rules.md",
+        "description": "memory/rules.md has 1 retrieval issue(s): outranked",
+        "evidence": [
+          "Slack allowlist never add anyone else"
+        ],
+        "suggestedFix": "Add search context section with terms from failing queries"
+      },
+      {
+        "type": "vocabulary-gap",
+        "severity": "low",
+        "file": "memory/core-identity.md",
+        "description": "memory/core-identity.md has 1 retrieval issue(s): not-found",
+        "evidence": [
+          "what does who do"
+        ],
+        "suggestedFix": "Add search context section with terms from failing queries"
+      }
+    ],
+    "vocabularyPatches": [
+      {
+        "file": "memory/rules.md",
+        "terms": [
+          "slack",
+          "allowlist",
+          "never",
+          "add",
+          "anyone",
+          "else",
+          "slack allowlist",
+          "allowlist never",
+          "never add",
+          "add anyone"
+        ],
+        "reason": "memory/rules.md has 1 retrieval issue(s): outranked",
+        "queries": [
+          "Slack allowlist never add anyone else"
+        ]
+      }
+    ],
+    "chunkSuggestions": [],
+    "weightAdjustments": [],
+    "appliedPatches": [],
+    "summary": "2 patterns (0 high), 1 actionable suggestions, 0 applied"
+  },
+  {
+    "timestamp": "2026-02-16T00:30:15.660Z",
+    "inputReports": [
+      "search-quality (2026-02-14T04:31:19.759Z)",
+      "recall-probe (2026-02-15T22:32:12.314Z)",
+      "diagnostics (2026-02-15T06:31:01.243Z)"
+    ],
+    "patterns": [
+      {
+        "type": "chunk-too-large",
+        "severity": "high",
+        "file": "memory/moltbook/observations.md",
+        "description": "Section \"Feb 16, 2026 — 01:10 CET — Late Night / Early Monday Sweep\" is 5138 chars (target <500 for optimal embedding)",
+        "evidence": [
+          "memory/moltbook/observations.md#Feb 16, 2026 — 01:10 CET — Late Night / Early Monday Sweep: 5138 chars"
+        ],
+        "suggestedFix": "Split into smaller subsections or compress content"
+      },
+      {
+        "type": "vocabulary-gap",
+        "severity": "medium",
+        "file": "memory/core-identity.md",
+        "description": "memory/core-identity.md has 2 retrieval issue(s): not-found",
+        "evidence": [
+          "what does th do",
+          "what does who do"
+        ],
+        "suggestedFix": "Add search context section with terms from failing queries"
+      },
+      {
+        "type": "vocabulary-gap",
+        "severity": "low",
+        "file": "memory/rules.md",
+        "description": "memory/rules.md has 1 retrieval issue(s): outranked",
+        "evidence": [
+          "Slack allowlist never add anyone else"
+        ],
+        "suggestedFix": "Add search context section with terms from failing queries"
+      }
+    ],
+    "vocabularyPatches": [
+      {
+        "file": "memory/rules.md",
+        "terms": [
+          "slack",
+          "allowlist",
+          "never",
+          "add",
+          "anyone",
+          "else",
+          "slack allowlist",
+          "allowlist never",
+          "never add",
+          "add anyone"
+        ],
+        "reason": "memory/rules.md has 1 retrieval issue(s): outranked",
+        "queries": [
+          "Slack allowlist never add anyone else"
+        ]
+      }
+    ],
+    "chunkSuggestions": [
+      {
+        "file": "memory/moltbook/observations.md",
+        "section": "Feb 16, 2026 — 01:10 CET — Late Night / Early Monday Sweep",
+        "currentSize": 5138,
+        "suggestedAction": "split",
+        "reason": "Section \"Feb 16, 2026 — 01:10 CET — Late Night / Early Monday Sweep\" is 5138 chars (target <500 for optimal embedding)"
+      }
+    ],
+    "weightAdjustments": [],
+    "appliedPatches": [],
+    "summary": "3 patterns (1 high), 2 actionable suggestions, 0 applied"
+  },
+  {
+    "timestamp": "2026-02-16T02:30:16.083Z",
+    "inputReports": [
+      "search-quality (2026-02-14T04:31:19.759Z)",
+      "recall-probe (2026-02-15T22:32:12.314Z)",
+      "diagnostics (2026-02-15T06:31:01.243Z)"
+    ],
+    "patterns": [
+      {
+        "type": "chunk-too-large",
+        "severity": "high",
+        "file": "memory/moltbook/observations.md",
+        "description": "Section \"Feb 16 — 03:10 CET deep-night scan (107K+ subs)\" is 4030 chars (target <500 for optimal embedding)",
+        "evidence": [
+          "memory/moltbook/observations.md#Feb 16 — 03:10 CET deep-night scan (107K+ subs): 4030 chars"
+        ],
+        "suggestedFix": "Split into smaller subsections or compress content"
+      },
+      {
+        "type": "vocabulary-gap",
+        "severity": "medium",
+        "file": "memory/core-identity.md",
+        "description": "memory/core-identity.md has 2 retrieval issue(s): not-found",
+        "evidence": [
+          "what does th do",
+          "what does who do"
+        ],
+        "suggestedFix": "Add search context section with terms from failing queries"
+      },
+      {
+        "type": "vocabulary-gap",
+        "severity": "low",
+        "file": "memory/rules.md",
+        "description": "memory/rules.md has 1 retrieval issue(s): outranked",
+        "evidence": [
+          "Slack allowlist never add anyone else"
+        ],
+        "suggestedFix": "Add search context section with terms from failing queries"
+      }
+    ],
+    "vocabularyPatches": [
+      {
+        "file": "memory/rules.md",
+        "terms": [
+          "slack",
+          "allowlist",
+          "never",
+          "add",
+          "anyone",
+          "else",
+          "slack allowlist",
+          "allowlist never",
+          "never add",
+          "add anyone"
+        ],
+        "reason": "memory/rules.md has 1 retrieval issue(s): outranked",
+        "queries": [
+          "Slack allowlist never add anyone else"
+        ]
+      }
+    ],
+    "chunkSuggestions": [
+      {
+        "file": "memory/moltbook/observations.md",
+        "section": "Feb 16 — 03:10 CET deep-night scan (107K+ subs)",
+        "currentSize": 4030,
+        "suggestedAction": "split",
+        "reason": "Section \"Feb 16 — 03:10 CET deep-night scan (107K+ subs)\" is 4030 chars (target <500 for optimal embedding)"
+      }
+    ],
+    "weightAdjustments": [],
+    "appliedPatches": [],
+    "summary": "3 patterns (1 high), 2 actionable suggestions, 0 applied"
+  },
+  {
+    "timestamp": "2026-02-16T02:31:38.729Z",
+    "inputReports": [
+      "search-quality (2026-02-14T04:31:19.759Z)",
+      "recall-probe (2026-02-15T22:32:12.314Z)",
+      "diagnostics (2026-02-15T06:31:01.243Z)"
+    ],
+    "patterns": [
+      {
+        "type": "vocabulary-gap",
+        "severity": "medium",
+        "file": "memory/core-identity.md",
+        "description": "memory/core-identity.md has 2 retrieval issue(s): not-found",
+        "evidence": [
+          "what does th do",
+          "what does who do"
+        ],
+        "suggestedFix": "Add search context section with terms from failing queries"
+      },
+      {
+        "type": "chunk-too-large",
+        "severity": "medium",
+        "file": "memory/moltbook/observations.md",
+        "description": "Section \"Feb 16 — 03:10 CET deep-night scan (107K+ subs)\" is 2041 chars (target <500 for optimal embedding)",
+        "evidence": [
+          "memory/moltbook/observations.md#Feb 16 — 03:10 CET deep-night scan (107K+ subs): 2041 chars"
+        ],
+        "suggestedFix": "Split into smaller subsections or compress content"
+      },
+      {
+        "type": "vocabulary-gap",
+        "severity": "low",
+        "file": "memory/rules.md",
+        "description": "memory/rules.md has 1 retrieval issue(s): outranked",
+        "evidence": [
+          "Slack allowlist never add anyone else"
+        ],
+        "suggestedFix": "Add search context section with terms from failing queries"
+      }
+    ],
+    "vocabularyPatches": [
+      {
+        "file": "memory/rules.md",
+        "terms": [
+          "slack",
+          "allowlist",
+          "never",
+          "add",
+          "anyone",
+          "else",
+          "slack allowlist",
+          "allowlist never",
+          "never add",
+          "add anyone"
+        ],
+        "reason": "memory/rules.md has 1 retrieval issue(s): outranked",
+        "queries": [
+          "Slack allowlist never add anyone else"
+        ]
+      }
+    ],
+    "chunkSuggestions": [
+      {
+        "file": "memory/moltbook/observations.md",
+        "section": "Feb 16 — 03:10 CET deep-night scan (107K+ subs)",
+        "currentSize": 2041,
+        "suggestedAction": "compress",
+        "reason": "Section \"Feb 16 — 03:10 CET deep-night scan (107K+ subs)\" is 2041 chars (target <500 for optimal embedding)"
+      }
+    ],
+    "weightAdjustments": [],
+    "appliedPatches": [],
+    "summary": "3 patterns (0 high), 2 actionable suggestions, 0 applied"
+  },
+  {
+    "timestamp": "2026-02-16T04:30:31.619Z",
+    "inputReports": [
+      "search-quality (2026-02-14T04:31:19.759Z)",
+      "recall-probe (2026-02-15T22:32:12.314Z)",
+      "diagnostics (2026-02-15T06:31:01.243Z)"
+    ],
+    "patterns": [
+      {
+        "type": "vocabulary-gap",
+        "severity": "medium",
+        "file": "memory/core-identity.md",
+        "description": "memory/core-identity.md has 2 retrieval issue(s): not-found",
+        "evidence": [
+          "what does th do",
+          "what does who do"
+        ],
+        "suggestedFix": "Add search context section with terms from failing queries"
+      },
+      {
+        "type": "chunk-too-large",
+        "severity": "medium",
+        "file": "memory/moltbook/observations.md",
+        "description": "Section \"Feb 16 — 05:10 CET early-morning scan (108K subs)\" is 2879 chars (target <500 for optimal embedding)",
+        "evidence": [
+          "memory/moltbook/observations.md#Feb 16 — 05:10 CET early-morning scan (108K subs): 2879 chars"
+        ],
+        "suggestedFix": "Split into smaller subsections or compress content"
+      },
+      {
+        "type": "vocabulary-gap",
+        "severity": "low",
+        "file": "memory/rules.md",
+        "description": "memory/rules.md has 1 retrieval issue(s): outranked",
+        "evidence": [
+          "Slack allowlist never add anyone else"
+        ],
+        "suggestedFix": "Add search context section with terms from failing queries"
+      }
+    ],
+    "vocabularyPatches": [
+      {
+        "file": "memory/rules.md",
+        "terms": [
+          "slack",
+          "allowlist",
+          "never",
+          "add",
+          "anyone",
+          "else",
+          "slack allowlist",
+          "allowlist never",
+          "never add",
+          "add anyone"
+        ],
+        "reason": "memory/rules.md has 1 retrieval issue(s): outranked",
+        "queries": [
+          "Slack allowlist never add anyone else"
+        ]
+      }
+    ],
+    "chunkSuggestions": [
+      {
+        "file": "memory/moltbook/observations.md",
+        "section": "Feb 16 — 05:10 CET early-morning scan (108K subs)",
+        "currentSize": 2879,
+        "suggestedAction": "compress",
+        "reason": "Section \"Feb 16 — 05:10 CET early-morning scan (108K subs)\" is 2879 chars (target <500 for optimal embedding)"
+      }
+    ],
+    "weightAdjustments": [],
+    "appliedPatches": [],
+    "summary": "3 patterns (0 high), 2 actionable suggestions, 0 applied"
+  },
+  {
+    "timestamp": "2026-02-16T04:31:34.096Z",
+    "inputReports": [
+      "search-quality (2026-02-14T04:31:19.759Z)",
+      "recall-probe (2026-02-15T22:32:12.314Z)",
+      "diagnostics (2026-02-15T06:31:01.243Z)"
+    ],
+    "patterns": [
+      {
+        "type": "vocabulary-gap",
+        "severity": "medium",
+        "file": "memory/core-identity.md",
+        "description": "memory/core-identity.md has 2 retrieval issue(s): not-found",
+        "evidence": [
+          "what does th do",
+          "what does who do"
+        ],
+        "suggestedFix": "Add search context section with terms from failing queries"
+      },
+      {
+        "type": "vocabulary-gap",
+        "severity": "low",
+        "file": "memory/rules.md",
+        "description": "memory/rules.md has 1 retrieval issue(s): outranked",
+        "evidence": [
+          "Slack allowlist never add anyone else"
+        ],
+        "suggestedFix": "Add search context section with terms from failing queries"
+      }
+    ],
+    "vocabularyPatches": [
+      {
+        "file": "memory/rules.md",
+        "terms": [
+          "slack",
+          "allowlist",
+          "never",
+          "add",
+          "anyone",
+          "else",
+          "slack allowlist",
+          "allowlist never",
+          "never add",
+          "add anyone"
+        ],
+        "reason": "memory/rules.md has 1 retrieval issue(s): outranked",
+        "queries": [
+          "Slack allowlist never add anyone else"
+        ]
+      }
+    ],
+    "chunkSuggestions": [],
+    "weightAdjustments": [],
+    "appliedPatches": [],
+    "summary": "2 patterns (0 high), 1 actionable suggestions, 0 applied"
+  },
+  {
+    "timestamp": "2026-02-16T06:30:16.095Z",
+    "inputReports": [
+      "search-quality (2026-02-14T04:31:19.759Z)",
+      "recall-probe (2026-02-15T22:32:12.314Z)",
+      "diagnostics (2026-02-15T06:31:01.243Z)"
+    ],
+    "patterns": [
+      {
+        "type": "chunk-too-large",
+        "severity": "high",
+        "file": "memory/moltbook/observations.md",
+        "description": "Section \"Feb 16 07:10 CET — Early Monday: Security Narrative Consolidation\" is 5264 chars (target <500 for optimal embedding)",
+        "evidence": [
+          "memory/moltbook/observations.md#Feb 16 07:10 CET — Early Monday: Security Narrative Consolidation: 5264 chars"
+        ],
+        "suggestedFix": "Split into smaller subsections or compress content"
+      },
+      {
+        "type": "vocabulary-gap",
+        "severity": "medium",
+        "file": "memory/core-identity.md",
+        "description": "memory/core-identity.md has 2 retrieval issue(s): not-found",
+        "evidence": [
+          "what does th do",
+          "what does who do"
+        ],
+        "suggestedFix": "Add search context section with terms from failing queries"
+      },
+      {
+        "type": "vocabulary-gap",
+        "severity": "low",
+        "file": "memory/rules.md",
+        "description": "memory/rules.md has 1 retrieval issue(s): outranked",
+        "evidence": [
+          "Slack allowlist never add anyone else"
+        ],
+        "suggestedFix": "Add search context section with terms from failing queries"
+      }
+    ],
+    "vocabularyPatches": [
+      {
+        "file": "memory/rules.md",
+        "terms": [
+          "slack",
+          "allowlist",
+          "never",
+          "add",
+          "anyone",
+          "else",
+          "slack allowlist",
+          "allowlist never",
+          "never add",
+          "add anyone"
+        ],
+        "reason": "memory/rules.md has 1 retrieval issue(s): outranked",
+        "queries": [
+          "Slack allowlist never add anyone else"
+        ]
+      }
+    ],
+    "chunkSuggestions": [
+      {
+        "file": "memory/moltbook/observations.md",
+        "section": "Feb 16 07:10 CET — Early Monday: Security Narrative Consolidation",
+        "currentSize": 5264,
+        "suggestedAction": "split",
+        "reason": "Section \"Feb 16 07:10 CET — Early Monday: Security Narrative Consolidation\" is 5264 chars (target <500 for optimal embedding)"
+      }
+    ],
+    "weightAdjustments": [],
+    "appliedPatches": [],
+    "summary": "3 patterns (1 high), 2 actionable suggestions, 0 applied"
+  },
+  {
+    "timestamp": "2026-02-16T08:30:16.930Z",
+    "inputReports": [
+      "search-quality (2026-02-14T04:31:19.759Z)",
+      "recall-probe (2026-02-15T22:32:12.314Z)",
+      "diagnostics (2026-02-15T06:31:01.243Z)"
+    ],
+    "patterns": [
+      {
+        "type": "vocabulary-gap",
+        "severity": "medium",
+        "file": "memory/core-identity.md",
+        "description": "memory/core-identity.md has 2 retrieval issue(s): not-found",
+        "evidence": [
+          "what does th do",
+          "what does who do"
+        ],
+        "suggestedFix": "Add search context section with terms from failing queries"
+      },
+      {
+        "type": "vocabulary-gap",
+        "severity": "low",
+        "file": "memory/rules.md",
+        "description": "memory/rules.md has 1 retrieval issue(s): outranked",
+        "evidence": [
+          "Slack allowlist never add anyone else"
+        ],
+        "suggestedFix": "Add search context section with terms from failing queries"
+      }
+    ],
+    "vocabularyPatches": [
+      {
+        "file": "memory/rules.md",
+        "terms": [
+          "slack",
+          "allowlist",
+          "never",
+          "add",
+          "anyone",
+          "else",
+          "slack allowlist",
+          "allowlist never",
+          "never add",
+          "add anyone"
+        ],
+        "reason": "memory/rules.md has 1 retrieval issue(s): outranked",
+        "queries": [
+          "Slack allowlist never add anyone else"
+        ]
+      }
+    ],
+    "chunkSuggestions": [],
+    "weightAdjustments": [],
+    "appliedPatches": [],
+    "summary": "2 patterns (0 high), 1 actionable suggestions, 0 applied"
+  },
+  {
+    "timestamp": "2026-02-16T08:32:03.258Z",
+    "inputReports": [
+      "search-quality (2026-02-14T04:31:19.759Z)",
+      "recall-probe (2026-02-16T08:31:47.137Z)",
+      "diagnostics (2026-02-15T06:31:01.243Z)"
+    ],
+    "patterns": [
+      {
+        "type": "vocabulary-gap",
+        "severity": "low",
+        "file": "memory/rules.md",
+        "description": "memory/rules.md has 1 retrieval issue(s): outranked",
+        "evidence": [
+          "Slack allowlist never add anyone else"
+        ],
+        "suggestedFix": "Add search context section with terms from failing queries"
+      }
+    ],
+    "vocabularyPatches": [
+      {
+        "file": "memory/rules.md",
+        "terms": [
+          "slack",
+          "allowlist",
+          "never",
+          "add",
+          "anyone",
+          "else",
+          "slack allowlist",
+          "allowlist never",
+          "never add",
+          "add anyone"
+        ],
+        "reason": "memory/rules.md has 1 retrieval issue(s): outranked",
+        "queries": [
+          "Slack allowlist never add anyone else"
+        ]
+      }
+    ],
+    "chunkSuggestions": [],
+    "weightAdjustments": [],
+    "appliedPatches": [],
+    "summary": "1 patterns (0 high), 1 actionable suggestions, 0 applied"
+  },
+  {
+    "timestamp": "2026-02-16T08:33:48.892Z",
+    "inputReports": [
+      "search-quality (2026-02-16T08:33:13.413Z)",
+      "recall-probe (2026-02-16T08:31:47.137Z)",
+      "diagnostics (2026-02-15T06:31:01.243Z)"
+    ],
+    "patterns": [],
+    "vocabularyPatches": [],
+    "chunkSuggestions": [],
+    "weightAdjustments": [],
+    "appliedPatches": [],
+    "summary": "Clean run — no patterns detected"
+  },
+  {
+    "timestamp": "2026-02-16T10:30:17.269Z",
+    "inputReports": [
+      "search-quality (2026-02-16T08:33:13.413Z)",
+      "recall-probe (2026-02-16T08:31:47.137Z)",
+      "diagnostics (2026-02-15T06:31:01.243Z)"
+    ],
+    "patterns": [
+      {
+        "type": "chunk-too-large",
+        "severity": "high",
+        "file": "memory/moltbook/observations.md",
+        "description": "Section \"Feb 16 11:10 CET — Observation Round\" is 5298 chars (target <500 for optimal embedding)",
+        "evidence": [
+          "memory/moltbook/observations.md#Feb 16 11:10 CET — Observation Round: 5298 chars"
+        ],
+        "suggestedFix": "Split into smaller subsections or compress content"
+      }
+    ],
+    "vocabularyPatches": [],
+    "chunkSuggestions": [
+      {
+        "file": "memory/moltbook/observations.md",
+        "section": "Feb 16 11:10 CET — Observation Round",
+        "currentSize": 5298,
+        "suggestedAction": "split",
+        "reason": "Section \"Feb 16 11:10 CET — Observation Round\" is 5298 chars (target <500 for optimal embedding)"
+      }
+    ],
+    "weightAdjustments": [],
+    "appliedPatches": [],
+    "summary": "1 patterns (1 high), 1 actionable suggestions, 0 applied"
+  },
+  {
+    "timestamp": "2026-02-16T10:30:54.584Z",
+    "inputReports": [
+      "search-quality (2026-02-16T08:33:13.413Z)",
+      "recall-probe (2026-02-16T08:31:47.137Z)",
+      "diagnostics (2026-02-15T06:31:01.243Z)"
+    ],
+    "patterns": [],
+    "vocabularyPatches": [],
+    "chunkSuggestions": [],
+    "weightAdjustments": [],
+    "appliedPatches": [],
+    "summary": "Clean run — no patterns detected"
+  },
+  {
+    "timestamp": "2026-02-16T12:30:16.902Z",
+    "inputReports": [
+      "search-quality (2026-02-16T08:33:13.413Z)",
+      "recall-probe (2026-02-16T08:31:47.137Z)",
+      "diagnostics (2026-02-15T06:31:01.243Z)"
+    ],
+    "patterns": [
+      {
+        "type": "chunk-too-large",
+        "severity": "medium",
+        "file": "memory/moltbook/observations.md",
+        "description": "Section \"Feb 16 13:10 CET — Notable New Posts (12:00–13:10 CET)\" is 2418 chars (target <500 for optimal embedding)",
+        "evidence": [
+          "memory/moltbook/observations.md#Feb 16 13:10 CET — Notable New Posts (12:00–13:10 CET): 2418 chars"
+        ],
+        "suggestedFix": "Split into smaller subsections or compress content"
+      }
+    ],
+    "vocabularyPatches": [],
+    "chunkSuggestions": [
+      {
+        "file": "memory/moltbook/observations.md",
+        "section": "Feb 16 13:10 CET — Notable New Posts (12:00–13:10 CET)",
+        "currentSize": 2418,
+        "suggestedAction": "compress",
+        "reason": "Section \"Feb 16 13:10 CET — Notable New Posts (12:00–13:10 CET)\" is 2418 chars (target <500 for optimal embedding)"
+      }
+    ],
+    "weightAdjustments": [],
+    "appliedPatches": [],
+    "summary": "1 patterns (0 high), 1 actionable suggestions, 0 applied"
+  },
+  {
+    "timestamp": "2026-02-16T12:32:15.747Z",
+    "inputReports": [
+      "search-quality (2026-02-16T08:33:13.413Z)",
+      "recall-probe (2026-02-16T08:31:47.137Z)",
+      "diagnostics (2026-02-15T06:31:01.243Z)"
+    ],
+    "patterns": [],
+    "vocabularyPatches": [],
+    "chunkSuggestions": [],
+    "weightAdjustments": [],
+    "appliedPatches": [],
+    "summary": "Clean run — no patterns detected"
+  },
+  {
+    "timestamp": "2026-02-16T16:30:15.919Z",
+    "inputReports": [
+      "search-quality (2026-02-16T08:33:13.413Z)",
+      "recall-probe (2026-02-16T08:31:47.137Z)",
+      "diagnostics (2026-02-15T06:31:01.243Z)"
+    ],
+    "patterns": [],
+    "vocabularyPatches": [],
+    "chunkSuggestions": [],
+    "weightAdjustments": [],
+    "appliedPatches": [],
+    "summary": "Clean run — no patterns detected"
+  },
+  {
+    "timestamp": "2026-02-16T18:30:16.638Z",
+    "inputReports": [
+      "search-quality (2026-02-16T08:33:13.413Z)",
+      "recall-probe (2026-02-16T08:31:47.137Z)",
+      "diagnostics (2026-02-16T16:30:41.465Z)"
+    ],
+    "patterns": [
+      {
+        "type": "chunk-too-large",
+        "severity": "medium",
+        "file": "memory/moltbook/observations.md",
+        "description": "Section \"Feb 16 19:10 CET — Notable New Posts (15:10–19:10 CET)\" is 2290 chars (target <500 for optimal embedding)",
+        "evidence": [
+          "memory/moltbook/observations.md#Feb 16 19:10 CET — Notable New Posts (15:10–19:10 CET): 2290 chars"
+        ],
+        "suggestedFix": "Split into smaller subsections or compress content"
+      },
+      {
+        "type": "vocabulary-gap",
+        "severity": "low",
+        "file": "rules.md",
+        "description": "rules.md has 1 retrieval issue(s): partial",
+        "evidence": [
+          "should I use Sonnet or a cheaper model for background tasks"
+        ],
+        "suggestedFix": "Add search context section with terms from failing queries"
+      }
+    ],
+    "vocabularyPatches": [
+      {
+        "file": "rules.md",
+        "terms": [
+          "use",
+          "sonnet",
+          "cheaper",
+          "model",
+          "background",
+          "tasks",
+          "use sonnet",
+          "sonnet cheaper",
+          "cheaper model",
+          "model background"
+        ],
+        "reason": "rules.md has 1 retrieval issue(s): partial",
+        "queries": [
+          "should I use Sonnet or a cheaper model for background tasks"
+        ]
+      }
+    ],
+    "chunkSuggestions": [
+      {
+        "file": "memory/moltbook/observations.md",
+        "section": "Feb 16 19:10 CET — Notable New Posts (15:10–19:10 CET)",
+        "currentSize": 2290,
+        "suggestedAction": "compress",
+        "reason": "Section \"Feb 16 19:10 CET — Notable New Posts (15:10–19:10 CET)\" is 2290 chars (target <500 for optimal embedding)"
+      }
+    ],
+    "weightAdjustments": [],
+    "appliedPatches": [],
+    "summary": "2 patterns (0 high), 2 actionable suggestions, 0 applied"
+  },
+  {
+    "timestamp": "2026-02-16T18:30:59.786Z",
+    "inputReports": [
+      "search-quality (2026-02-16T08:33:13.413Z)",
+      "recall-probe (2026-02-16T08:31:47.137Z)",
+      "diagnostics (2026-02-16T16:30:41.465Z)"
+    ],
+    "patterns": [
+      {
+        "type": "vocabulary-gap",
+        "severity": "low",
+        "file": "rules.md",
+        "description": "rules.md has 1 retrieval issue(s): partial",
+        "evidence": [
+          "should I use Sonnet or a cheaper model for background tasks"
+        ],
+        "suggestedFix": "Add search context section with terms from failing queries"
+      }
+    ],
+    "vocabularyPatches": [
+      {
+        "file": "rules.md",
+        "terms": [
+          "use",
+          "sonnet",
+          "cheaper",
+          "model",
+          "background",
+          "tasks",
+          "use sonnet",
+          "sonnet cheaper",
+          "cheaper model",
+          "model background"
+        ],
+        "reason": "rules.md has 1 retrieval issue(s): partial",
+        "queries": [
+          "should I use Sonnet or a cheaper model for background tasks"
+        ]
+      }
+    ],
+    "chunkSuggestions": [],
+    "weightAdjustments": [],
+    "appliedPatches": [],
+    "summary": "1 patterns (0 high), 1 actionable suggestions, 0 applied"
+  },
+  {
+    "timestamp": "2026-02-16T20:30:15.838Z",
+    "inputReports": [
+      "search-quality (2026-02-16T08:33:13.413Z)",
+      "recall-probe (2026-02-16T18:31:23.735Z)",
+      "diagnostics (2026-02-16T16:30:41.465Z)"
+    ],
+    "patterns": [
+      {
+        "type": "chunk-too-large",
+        "severity": "medium",
+        "file": "memory/moltbook/observations.md",
+        "description": "Section \"Feb 16 21:10 CET — Notable New Posts (19:10–21:10 CET)\" is 3012 chars (target <500 for optimal embedding)",
+        "evidence": [
+          "memory/moltbook/observations.md#Feb 16 21:10 CET — Notable New Posts (19:10–21:10 CET): 3012 chars"
+        ],
+        "suggestedFix": "Split into smaller subsections or compress content"
+      },
+      {
+        "type": "vocabulary-gap",
+        "severity": "low",
+        "file": "memory/daily/2026-02-15.md",
+        "description": "memory/daily/2026-02-15.md has 1 retrieval issue(s): not-found",
+        "evidence": [
+          "what are the numbers for 18:33 Session"
+        ],
+        "suggestedFix": "Add search context section with terms from failing queries"
+      },
+      {
+        "type": "vocabulary-gap",
+        "severity": "low",
+        "file": "rules.md",
+        "description": "rules.md has 1 retrieval issue(s): partial",
+        "evidence": [
+          "should I use Sonnet or a cheaper model for background tasks"
+        ],
+        "suggestedFix": "Add search context section with terms from failing queries"
+      }
+    ],
+    "vocabularyPatches": [
+      {
+        "file": "memory/daily/2026-02-15.md",
+        "terms": [
+          "numbers",
+          "1833",
+          "session",
+          "numbers 1833",
+          "1833 session"
+        ],
+        "reason": "memory/daily/2026-02-15.md has 1 retrieval issue(s): not-found",
+        "queries": [
+          "what are the numbers for 18:33 Session"
+        ]
+      },
+      {
+        "file": "rules.md",
+        "terms": [
+          "use",
+          "sonnet",
+          "cheaper",
+          "model",
+          "background",
+          "tasks",
+          "use sonnet",
+          "sonnet cheaper",
+          "cheaper model",
+          "model background"
+        ],
+        "reason": "rules.md has 1 retrieval issue(s): partial",
+        "queries": [
+          "should I use Sonnet or a cheaper model for background tasks"
+        ]
+      }
+    ],
+    "chunkSuggestions": [
+      {
+        "file": "memory/moltbook/observations.md",
+        "section": "Feb 16 21:10 CET — Notable New Posts (19:10–21:10 CET)",
+        "currentSize": 3012,
+        "suggestedAction": "split",
+        "reason": "Section \"Feb 16 21:10 CET — Notable New Posts (19:10–21:10 CET)\" is 3012 chars (target <500 for optimal embedding)"
+      }
+    ],
+    "weightAdjustments": [],
+    "appliedPatches": [],
+    "summary": "3 patterns (0 high), 3 actionable suggestions, 0 applied"
+  },
+  {
+    "timestamp": "2026-02-16T22:30:17.587Z",
+    "inputReports": [
+      "search-quality (2026-02-16T08:33:13.413Z)",
+      "recall-probe (2026-02-16T18:31:23.735Z)",
+      "diagnostics (2026-02-16T16:30:41.465Z)"
+    ],
+    "patterns": [
+      {
+        "type": "chunk-too-large",
+        "severity": "medium",
+        "file": "memory/daily/2026-02-16.md",
+        "description": "Section \"MoonGate × MoonPay Acquisition Deep Dive\" is 3499 chars (target <500 for optimal embedding)",
+        "evidence": [
+          "memory/daily/2026-02-16.md#MoonGate × MoonPay Acquisition Deep Dive: 3499 chars"
+        ],
+        "suggestedFix": "Split into smaller subsections or compress content"
+      },
+      {
+        "type": "vocabulary-gap",
+        "severity": "low",
+        "file": "memory/daily/2026-02-15.md",
+        "description": "memory/daily/2026-02-15.md has 1 retrieval issue(s): not-found",
+        "evidence": [
+          "what are the numbers for 18:33 Session"
+        ],
+        "suggestedFix": "Add search context section with terms from failing queries"
+      },
+      {
+        "type": "vocabulary-gap",
+        "severity": "low",
+        "file": "rules.md",
+        "description": "rules.md has 1 retrieval issue(s): partial",
+        "evidence": [
+          "should I use Sonnet or a cheaper model for background tasks"
+        ],
+        "suggestedFix": "Add search context section with terms from failing queries"
+      }
+    ],
+    "vocabularyPatches": [
+      {
+        "file": "memory/daily/2026-02-15.md",
+        "terms": [
+          "numbers",
+          "1833",
+          "session",
+          "numbers 1833",
+          "1833 session"
+        ],
+        "reason": "memory/daily/2026-02-15.md has 1 retrieval issue(s): not-found",
+        "queries": [
+          "what are the numbers for 18:33 Session"
+        ]
+      },
+      {
+        "file": "rules.md",
+        "terms": [
+          "use",
+          "sonnet",
+          "cheaper",
+          "model",
+          "background",
+          "tasks",
+          "use sonnet",
+          "sonnet cheaper",
+          "cheaper model",
+          "model background"
+        ],
+        "reason": "rules.md has 1 retrieval issue(s): partial",
+        "queries": [
+          "should I use Sonnet or a cheaper model for background tasks"
+        ]
+      }
+    ],
+    "chunkSuggestions": [
+      {
+        "file": "memory/daily/2026-02-16.md",
+        "section": "MoonGate × MoonPay Acquisition Deep Dive",
+        "currentSize": 3499,
+        "suggestedAction": "split",
+        "reason": "Section \"MoonGate × MoonPay Acquisition Deep Dive\" is 3499 chars (target <500 for optimal embedding)"
+      }
+    ],
+    "weightAdjustments": [],
+    "appliedPatches": [],
+    "summary": "3 patterns (0 high), 3 actionable suggestions, 0 applied"
+  },
+  {
+    "timestamp": "2026-02-16T22:31:45.850Z",
+    "inputReports": [
+      "search-quality (2026-02-16T08:33:13.413Z)",
+      "recall-probe (2026-02-16T18:31:23.735Z)",
+      "diagnostics (2026-02-16T16:30:41.465Z)"
+    ],
+    "patterns": [
+      {
+        "type": "vocabulary-gap",
+        "severity": "low",
+        "file": "memory/daily/2026-02-15.md",
+        "description": "memory/daily/2026-02-15.md has 1 retrieval issue(s): not-found",
+        "evidence": [
+          "what are the numbers for 18:33 Session"
+        ],
+        "suggestedFix": "Add search context section with terms from failing queries"
+      },
+      {
+        "type": "vocabulary-gap",
+        "severity": "low",
+        "file": "rules.md",
+        "description": "rules.md has 1 retrieval issue(s): partial",
+        "evidence": [
+          "should I use Sonnet or a cheaper model for background tasks"
+        ],
+        "suggestedFix": "Add search context section with terms from failing queries"
+      }
+    ],
+    "vocabularyPatches": [
+      {
+        "file": "memory/daily/2026-02-15.md",
+        "terms": [
+          "numbers",
+          "1833",
+          "session",
+          "numbers 1833",
+          "1833 session"
+        ],
+        "reason": "memory/daily/2026-02-15.md has 1 retrieval issue(s): not-found",
+        "queries": [
+          "what are the numbers for 18:33 Session"
+        ]
+      },
+      {
+        "file": "rules.md",
+        "terms": [
+          "use",
+          "sonnet",
+          "cheaper",
+          "model",
+          "background",
+          "tasks",
+          "use sonnet",
+          "sonnet cheaper",
+          "cheaper model",
+          "model background"
+        ],
+        "reason": "rules.md has 1 retrieval issue(s): partial",
+        "queries": [
+          "should I use Sonnet or a cheaper model for background tasks"
+        ]
+      }
+    ],
+    "chunkSuggestions": [],
+    "weightAdjustments": [],
+    "appliedPatches": [],
+    "summary": "2 patterns (0 high), 2 actionable suggestions, 0 applied"
+  },
+  {
+    "timestamp": "2026-02-17T00:30:15.010Z",
+    "inputReports": [
+      "search-quality (2026-02-16T08:33:13.413Z)",
+      "recall-probe (2026-02-16T18:31:23.735Z)",
+      "diagnostics (2026-02-16T16:30:41.465Z)"
+    ],
+    "patterns": [
+      {
+        "type": "vocabulary-gap",
+        "severity": "low",
+        "file": "memory/daily/2026-02-15.md",
+        "description": "memory/daily/2026-02-15.md has 1 retrieval issue(s): not-found",
+        "evidence": [
+          "what are the numbers for 18:33 Session"
+        ],
+        "suggestedFix": "Add search context section with terms from failing queries"
+      },
+      {
+        "type": "vocabulary-gap",
+        "severity": "low",
+        "file": "rules.md",
+        "description": "rules.md has 1 retrieval issue(s): partial",
+        "evidence": [
+          "should I use Sonnet or a cheaper model for background tasks"
+        ],
+        "suggestedFix": "Add search context section with terms from failing queries"
+      }
+    ],
+    "vocabularyPatches": [
+      {
+        "file": "memory/daily/2026-02-15.md",
+        "terms": [
+          "numbers",
+          "1833",
+          "session",
+          "numbers 1833",
+          "1833 session"
+        ],
+        "reason": "memory/daily/2026-02-15.md has 1 retrieval issue(s): not-found",
+        "queries": [
+          "what are the numbers for 18:33 Session"
+        ]
+      },
+      {
+        "file": "rules.md",
+        "terms": [
+          "use",
+          "sonnet",
+          "cheaper",
+          "model",
+          "background",
+          "tasks",
+          "use sonnet",
+          "sonnet cheaper",
+          "cheaper model",
+          "model background"
+        ],
+        "reason": "rules.md has 1 retrieval issue(s): partial",
+        "queries": [
+          "should I use Sonnet or a cheaper model for background tasks"
+        ]
+      }
+    ],
+    "chunkSuggestions": [],
+    "weightAdjustments": [],
+    "appliedPatches": [],
+    "summary": "2 patterns (0 high), 2 actionable suggestions, 0 applied"
+  },
+  {
+    "timestamp": "2026-02-17T00:33:04.678Z",
+    "inputReports": [
+      "search-quality (2026-02-16T08:33:13.413Z)",
+      "recall-probe (2026-02-17T00:30:31.696Z)",
+      "diagnostics (2026-02-16T16:30:41.465Z)"
+    ],
+    "patterns": [
+      {
+        "type": "vocabulary-gap",
+        "severity": "medium",
+        "file": "memory/moltbook/notable-agents.md",
+        "description": "memory/moltbook/notable-agents.md has 2 retrieval issue(s): not-found",
+        "evidence": [
+          "what are the numbers for Security Cluster",
+          "what are the numbers for Builders"
+        ],
+        "suggestedFix": "Add search context section with terms from failing queries"
+      }
+    ],
+    "vocabularyPatches": [
+      {
+        "file": "memory/moltbook/notable-agents.md",
+        "terms": [
+          "numbers",
+          "security",
+          "cluster",
+          "numbers security",
+          "security cluster",
+          "builders",
+          "numbers builders"
+        ],
+        "reason": "memory/moltbook/notable-agents.md has 2 retrieval issue(s): not-found",
+        "queries": [
+          "what are the numbers for Security Cluster",
+          "what are the numbers for Builders"
+        ]
+      }
+    ],
+    "chunkSuggestions": [],
+    "weightAdjustments": [],
+    "appliedPatches": [],
+    "summary": "1 patterns (0 high), 1 actionable suggestions, 0 applied"
+  },
+  {
+    "timestamp": "2026-02-17T00:33:11.698Z",
+    "inputReports": [
+      "search-quality (2026-02-16T08:33:13.413Z)",
+      "recall-probe (2026-02-17T00:30:31.696Z)",
+      "diagnostics (2026-02-16T16:30:41.465Z)"
+    ],
+    "patterns": [
+      {
+        "type": "vocabulary-gap",
+        "severity": "medium",
+        "file": "memory/moltbook/notable-agents.md",
+        "description": "memory/moltbook/notable-agents.md has 2 retrieval issue(s): not-found",
+        "evidence": [
+          "what are the numbers for Security Cluster",
+          "what are the numbers for Builders"
+        ],
+        "suggestedFix": "Add search context section with terms from failing queries"
+      }
+    ],
+    "vocabularyPatches": [
+      {
+        "file": "memory/moltbook/notable-agents.md",
+        "terms": [
+          "numbers",
+          "security",
+          "cluster",
+          "numbers security",
+          "security cluster",
+          "builders",
+          "numbers builders"
+        ],
+        "reason": "memory/moltbook/notable-agents.md has 2 retrieval issue(s): not-found",
+        "queries": [
+          "what are the numbers for Security Cluster",
+          "what are the numbers for Builders"
+        ]
+      }
+    ],
+    "chunkSuggestions": [],
+    "weightAdjustments": [],
+    "appliedPatches": [],
+    "summary": "1 patterns (0 high), 1 actionable suggestions, 0 applied"
+  },
+  {
+    "timestamp": "2026-02-17T00:33:27.542Z",
+    "inputReports": [
+      "search-quality (2026-02-16T08:33:13.413Z)",
+      "recall-probe (2026-02-17T00:30:31.696Z)",
+      "diagnostics (2026-02-16T16:30:41.465Z)"
+    ],
+    "patterns": [
+      {
+        "type": "vocabulary-gap",
+        "severity": "medium",
+        "file": "memory/moltbook/notable-agents.md",
+        "description": "memory/moltbook/notable-agents.md has 2 retrieval issue(s): not-found",
+        "evidence": [
+          "what are the numbers for Security Cluster",
+          "what are the numbers for Builders"
+        ],
+        "suggestedFix": "Add search context section with terms from failing queries"
+      },
+      {
+        "type": "vocabulary-gap",
+        "severity": "low",
+        "file": "memory/daily/2026-02-15.md",
+        "description": "memory/daily/2026-02-15.md has 1 retrieval issue(s): not-found",
+        "evidence": [
+          "key insight the retrieval-learn"
+        ],
+        "suggestedFix": "Add search context section with terms from failing queries"
+      },
+      {
+        "type": "vocabulary-gap",
+        "severity": "low",
+        "file": "rules.md",
+        "description": "rules.md has 1 retrieval issue(s): partial",
+        "evidence": [
+          "should I use Sonnet or a cheaper model for background tasks"
+        ],
+        "suggestedFix": "Add search context section with terms from failing queries"
+      }
+    ],
+    "vocabularyPatches": [],
+    "chunkSuggestions": [],
+    "weightAdjustments": [],
+    "appliedPatches": [],
+    "summary": "GOOD_ENOUGH: Recall 93.3% ≥ 90%, Diagnostics 92.9% ≥ 90% — above thresholds. 3 low-severity patterns skipped."
+  },
+  {
+    "timestamp": "2026-02-17T02:30:15.311Z",
+    "inputReports": [
+      "search-quality (2026-02-16T08:33:13.413Z)",
+      "recall-probe (2026-02-17T00:30:31.696Z)",
+      "diagnostics (2026-02-16T16:30:41.465Z)"
+    ],
+    "patterns": [
+      {
+        "type": "vocabulary-gap",
+        "severity": "medium",
+        "file": "memory/moltbook/notable-agents.md",
+        "description": "memory/moltbook/notable-agents.md has 2 retrieval issue(s): not-found",
+        "evidence": [
+          "what are the numbers for Security Cluster",
+          "what are the numbers for Builders"
+        ],
+        "suggestedFix": "Add search context section with terms from failing queries"
+      },
+      {
+        "type": "chunk-too-large",
+        "severity": "medium",
+        "file": "memory/moltbook/observations.md",
+        "description": "Section \"Feb 17 03:10 CET — Notable Posts (01:10–03:10)\" is 2704 chars (target <500 for optimal embedding)",
+        "evidence": [
+          "memory/moltbook/observations.md#Feb 17 03:10 CET — Notable Posts (01:10–03:10): 2704 chars"
+        ],
+        "suggestedFix": "Split into smaller subsections or compress content"
+      },
+      {
+        "type": "vocabulary-gap",
+        "severity": "low",
+        "file": "memory/daily/2026-02-15.md",
+        "description": "memory/daily/2026-02-15.md has 1 retrieval issue(s): not-found",
+        "evidence": [
+          "key insight the retrieval-learn"
+        ],
+        "suggestedFix": "Add search context section with terms from failing queries"
+      },
+      {
+        "type": "vocabulary-gap",
+        "severity": "low",
+        "file": "rules.md",
+        "description": "rules.md has 1 retrieval issue(s): partial",
+        "evidence": [
+          "should I use Sonnet or a cheaper model for background tasks"
+        ],
+        "suggestedFix": "Add search context section with terms from failing queries"
+      }
+    ],
+    "vocabularyPatches": [],
+    "chunkSuggestions": [],
+    "weightAdjustments": [],
+    "appliedPatches": [],
+    "summary": "GOOD_ENOUGH: Recall 93.3% ≥ 90%, Diagnostics 92.9% ≥ 90% — above thresholds. 4 low-severity patterns skipped."
+  },
+  {
+    "timestamp": "2026-02-17T08:31:28.973Z",
+    "inputReports": [
+      "search-quality (2026-02-16T08:33:13.413Z)",
+      "recall-probe (2026-02-17T00:30:31.696Z)",
+      "diagnostics (2026-02-17T06:33:59.883Z)"
+    ],
+    "patterns": [
+      {
+        "type": "chunk-too-large",
+        "severity": "high",
+        "file": "memory/moltbook/observations.md",
+        "description": "Section \"Observation — Feb 17, 07:10 CET\" is 6149 chars (target <500 for optimal embedding)",
+        "evidence": [
+          "memory/moltbook/observations.md#Observation — Feb 17, 07:10 CET: 6149 chars"
+        ],
+        "suggestedFix": "Split into smaller subsections or compress content"
+      },
+      {
+        "type": "vocabulary-gap",
+        "severity": "medium",
+        "file": "memory/moltbook/notable-agents.md",
+        "description": "memory/moltbook/notable-agents.md has 2 retrieval issue(s): not-found",
+        "evidence": [
+          "what are the numbers for Security Cluster",
+          "what are the numbers for Builders"
+        ],
+        "suggestedFix": "Add search context section with terms from failing queries"
+      },
+      {
+        "type": "vocabulary-gap",
+        "severity": "low",
+        "file": "memory/daily/2026-02-15.md",
+        "description": "memory/daily/2026-02-15.md has 1 retrieval issue(s): not-found",
+        "evidence": [
+          "key insight the retrieval-learn"
+        ],
+        "suggestedFix": "Add search context section with terms from failing queries"
+      }
+    ],
+    "vocabularyPatches": [
+      {
+        "file": "memory/moltbook/notable-agents.md",
+        "terms": [
+          "numbers",
+          "security",
+          "cluster",
+          "numbers security",
+          "security cluster",
+          "builders",
+          "numbers builders"
+        ],
+        "reason": "memory/moltbook/notable-agents.md has 2 retrieval issue(s): not-found",
+        "queries": [
+          "what are the numbers for Security Cluster",
+          "what are the numbers for Builders"
+        ]
+      },
+      {
+        "file": "memory/daily/2026-02-15.md",
+        "terms": [
+          "key",
+          "insight",
+          "retrieval-learn",
+          "key insight",
+          "insight retrieval-learn"
+        ],
+        "reason": "memory/daily/2026-02-15.md has 1 retrieval issue(s): not-found",
+        "queries": [
+          "key insight the retrieval-learn"
+        ]
+      }
+    ],
+    "chunkSuggestions": [
+      {
+        "file": "memory/moltbook/observations.md",
+        "section": "Observation — Feb 17, 07:10 CET",
+        "currentSize": 6149,
+        "suggestedAction": "split",
+        "reason": "Section \"Observation — Feb 17, 07:10 CET\" is 6149 chars (target <500 for optimal embedding)"
+      }
+    ],
+    "weightAdjustments": [],
+    "appliedPatches": [],
+    "summary": "3 patterns (1 high), 3 actionable suggestions, 0 applied"
+  },
+  {
+    "timestamp": "2026-02-17T08:32:22.794Z",
+    "inputReports": [
+      "search-quality (2026-02-16T08:33:13.413Z)",
+      "recall-probe (2026-02-17T00:30:31.696Z)",
+      "diagnostics (2026-02-17T06:33:59.883Z)"
+    ],
+    "patterns": [
+      {
+        "type": "chunk-too-large",
+        "severity": "high",
+        "file": "memory/moltbook/observations.md",
+        "description": "Section \"Observation — Feb 17, 07:10 CET\" is 4112 chars (target <500 for optimal embedding)",
+        "evidence": [
+          "memory/moltbook/observations.md#Observation — Feb 17, 07:10 CET: 4112 chars"
+        ],
+        "suggestedFix": "Split into smaller subsections or compress content"
+      },
+      {
+        "type": "vocabulary-gap",
+        "severity": "medium",
+        "file": "memory/moltbook/notable-agents.md",
+        "description": "memory/moltbook/notable-agents.md has 2 retrieval issue(s): not-found",
+        "evidence": [
+          "what are the numbers for Security Cluster",
+          "what are the numbers for Builders"
+        ],
+        "suggestedFix": "Add search context section with terms from failing queries"
+      },
+      {
+        "type": "vocabulary-gap",
+        "severity": "low",
+        "file": "memory/daily/2026-02-15.md",
+        "description": "memory/daily/2026-02-15.md has 1 retrieval issue(s): not-found",
+        "evidence": [
+          "key insight the retrieval-learn"
+        ],
+        "suggestedFix": "Add search context section with terms from failing queries"
+      }
+    ],
+    "vocabularyPatches": [
+      {
+        "file": "memory/moltbook/notable-agents.md",
+        "terms": [
+          "numbers",
+          "security",
+          "cluster",
+          "numbers security",
+          "security cluster",
+          "builders",
+          "numbers builders"
+        ],
+        "reason": "memory/moltbook/notable-agents.md has 2 retrieval issue(s): not-found",
+        "queries": [
+          "what are the numbers for Security Cluster",
+          "what are the numbers for Builders"
+        ]
+      },
+      {
+        "file": "memory/daily/2026-02-15.md",
+        "terms": [
+          "key",
+          "insight",
+          "retrieval-learn",
+          "key insight",
+          "insight retrieval-learn"
+        ],
+        "reason": "memory/daily/2026-02-15.md has 1 retrieval issue(s): not-found",
+        "queries": [
+          "key insight the retrieval-learn"
+        ]
+      }
+    ],
+    "chunkSuggestions": [
+      {
+        "file": "memory/moltbook/observations.md",
+        "section": "Observation — Feb 17, 07:10 CET",
+        "currentSize": 4112,
+        "suggestedAction": "split",
+        "reason": "Section \"Observation — Feb 17, 07:10 CET\" is 4112 chars (target <500 for optimal embedding)"
+      }
+    ],
+    "weightAdjustments": [],
+    "appliedPatches": [],
+    "summary": "3 patterns (1 high), 3 actionable suggestions, 0 applied"
+  },
+  {
+    "timestamp": "2026-02-17T08:32:49.847Z",
+    "inputReports": [
+      "search-quality (2026-02-16T08:33:13.413Z)",
+      "recall-probe (2026-02-17T00:30:31.696Z)",
+      "diagnostics (2026-02-17T06:33:59.883Z)"
+    ],
+    "patterns": [
+      {
+        "type": "vocabulary-gap",
+        "severity": "medium",
+        "file": "memory/moltbook/notable-agents.md",
+        "description": "memory/moltbook/notable-agents.md has 2 retrieval issue(s): not-found",
+        "evidence": [
+          "what are the numbers for Security Cluster",
+          "what are the numbers for Builders"
+        ],
+        "suggestedFix": "Add search context section with terms from failing queries"
+      },
+      {
+        "type": "vocabulary-gap",
+        "severity": "low",
+        "file": "memory/daily/2026-02-15.md",
+        "description": "memory/daily/2026-02-15.md has 1 retrieval issue(s): not-found",
+        "evidence": [
+          "key insight the retrieval-learn"
+        ],
+        "suggestedFix": "Add search context section with terms from failing queries"
+      }
+    ],
+    "vocabularyPatches": [],
+    "chunkSuggestions": [],
+    "weightAdjustments": [],
+    "appliedPatches": [],
+    "summary": "GOOD_ENOUGH: Recall 93.3% ≥ 90%, Diagnostics 100.0% ≥ 90% — above thresholds. 2 low-severity patterns skipped."
+  },
+  {
+    "timestamp": "2026-02-17T10:30:16.116Z",
+    "inputReports": [
+      "search-quality (2026-02-16T08:33:13.413Z)",
+      "recall-probe (2026-02-17T00:30:31.696Z)",
+      "diagnostics (2026-02-17T06:33:59.883Z)"
+    ],
+    "patterns": [
+      {
+        "type": "vocabulary-gap",
+        "severity": "medium",
+        "file": "memory/moltbook/notable-agents.md",
+        "description": "memory/moltbook/notable-agents.md has 2 retrieval issue(s): not-found",
+        "evidence": [
+          "what are the numbers for Security Cluster",
+          "what are the numbers for Builders"
+        ],
+        "suggestedFix": "Add search context section with terms from failing queries"
+      },
+      {
+        "type": "chunk-too-large",
+        "severity": "medium",
+        "file": "memory/moltbook/observations.md",
+        "description": "Section \"Historical Timeline (compressed)\" is 2338 chars (target <500 for optimal embedding)",
+        "evidence": [
+          "memory/moltbook/observations.md#Historical Timeline (compressed): 2338 chars"
+        ],
+        "suggestedFix": "Split into smaller subsections or compress content"
+      },
+      {
+        "type": "vocabulary-gap",
+        "severity": "low",
+        "file": "memory/daily/2026-02-15.md",
+        "description": "memory/daily/2026-02-15.md has 1 retrieval issue(s): not-found",
+        "evidence": [
+          "key insight the retrieval-learn"
+        ],
+        "suggestedFix": "Add search context section with terms from failing queries"
+      }
+    ],
+    "vocabularyPatches": [],
+    "chunkSuggestions": [],
+    "weightAdjustments": [],
+    "appliedPatches": [],
+    "summary": "GOOD_ENOUGH: Recall 93.3% ≥ 90%, Diagnostics 100.0% ≥ 90% — above thresholds. 3 low-severity patterns skipped."
+  },
+  {
+    "timestamp": "2026-02-17T10:32:56.296Z",
+    "inputReports": [
+      "search-quality (2026-02-16T08:33:13.413Z)",
+      "recall-probe (2026-02-17T00:30:31.696Z)",
+      "diagnostics (2026-02-17T06:33:59.883Z)"
+    ],
+    "patterns": [
+      {
+        "type": "vocabulary-gap",
+        "severity": "medium",
+        "file": "memory/moltbook/notable-agents.md",
+        "description": "memory/moltbook/notable-agents.md has 2 retrieval issue(s): not-found",
+        "evidence": [
+          "what are the numbers for Security Cluster",
+          "what are the numbers for Builders"
+        ],
+        "suggestedFix": "Add search context section with terms from failing queries"
+      },
+      {
+        "type": "vocabulary-gap",
+        "severity": "low",
+        "file": "memory/daily/2026-02-15.md",
+        "description": "memory/daily/2026-02-15.md has 1 retrieval issue(s): not-found",
+        "evidence": [
+          "key insight the retrieval-learn"
+        ],
+        "suggestedFix": "Add search context section with terms from failing queries"
+      }
+    ],
+    "vocabularyPatches": [
+      {
+        "file": "memory/moltbook/notable-agents.md",
+        "terms": [
+          "numbers",
+          "security",
+          "cluster",
+          "numbers security",
+          "security cluster",
+          "builders",
+          "numbers builders"
+        ],
+        "reason": "memory/moltbook/notable-agents.md has 2 retrieval issue(s): not-found",
+        "queries": [
+          "what are the numbers for Security Cluster",
+          "what are the numbers for Builders"
+        ]
+      },
+      {
+        "file": "memory/daily/2026-02-15.md",
+        "terms": [
+          "key",
+          "insight",
+          "retrieval-learn",
+          "key insight",
+          "insight retrieval-learn"
+        ],
+        "reason": "memory/daily/2026-02-15.md has 1 retrieval issue(s): not-found",
+        "queries": [
+          "key insight the retrieval-learn"
+        ]
+      }
+    ],
+    "chunkSuggestions": [],
+    "weightAdjustments": [],
+    "appliedPatches": [],
+    "summary": "2 patterns (0 high), 2 actionable suggestions, 0 applied"
+  },
+  {
+    "timestamp": "2026-02-17T14:30:18.483Z",
+    "inputReports": [
+      "search-quality (2026-02-16T08:33:13.413Z)",
+      "recall-probe (2026-02-17T10:33:05.236Z)",
+      "diagnostics (2026-02-17T12:30:50.567Z)"
+    ],
+    "patterns": [
+      {
+        "type": "chunk-too-large",
+        "severity": "high",
+        "file": "memory/moltbook/observations.md",
+        "description": "Section \"Historical Timeline\" is 4448 chars (target <500 for optimal embedding)",
+        "evidence": [
+          "memory/moltbook/observations.md#Historical Timeline: 4448 chars"
+        ],
+        "suggestedFix": "Split into smaller subsections or compress content"
+      }
+    ],
+    "vocabularyPatches": [],
+    "chunkSuggestions": [
+      {
+        "file": "memory/moltbook/observations.md",
+        "section": "Historical Timeline",
+        "currentSize": 4448,
+        "suggestedAction": "split",
+        "reason": "Section \"Historical Timeline\" is 4448 chars (target <500 for optimal embedding)"
+      }
+    ],
+    "weightAdjustments": [],
+    "appliedPatches": [],
+    "summary": "1 patterns (1 high), 1 actionable suggestions, 0 applied"
+  },
+  {
+    "timestamp": "2026-02-17T14:31:06.595Z",
+    "inputReports": [
+      "search-quality (2026-02-16T08:33:13.413Z)",
+      "recall-probe (2026-02-17T10:33:05.236Z)",
+      "diagnostics (2026-02-17T12:30:50.567Z)"
+    ],
+    "patterns": [],
+    "vocabularyPatches": [],
+    "chunkSuggestions": [],
+    "weightAdjustments": [],
+    "appliedPatches": [],
+    "summary": "GOOD_ENOUGH: Recall 100.0% ≥ 90%, Diagnostics 100.0% ≥ 90% — above thresholds. 0 low-severity patterns skipped."
+  },
+  {
+    "timestamp": "2026-02-17T18:30:17.169Z",
+    "inputReports": [
+      "search-quality (2026-02-16T08:33:13.413Z)",
+      "recall-probe (2026-02-17T10:33:05.236Z)",
+      "diagnostics (2026-02-17T12:30:50.567Z)"
+    ],
+    "patterns": [
+      {
+        "type": "chunk-too-large",
+        "severity": "high",
+        "file": "memory/moltbook/observations.md",
+        "description": "Section \"Feb 17, 2026 — 19:10 CET (evening)\" is 4132 chars (target <500 for optimal embedding)",
+        "evidence": [
+          "memory/moltbook/observations.md#Feb 17, 2026 — 19:10 CET (evening): 4132 chars"
+        ],
+        "suggestedFix": "Split into smaller subsections or compress content"
+      },
+      {
+        "type": "chunk-too-large",
+        "severity": "medium",
+        "file": "memory/moltbook/observations.md",
+        "description": "Section \"Historical Timeline — Feb 17 (late afternoon)\" is 2601 chars (target <500 for optimal embedding)",
+        "evidence": [
+          "memory/moltbook/observations.md#Historical Timeline — Feb 17 (late afternoon): 2601 chars"
+        ],
+        "suggestedFix": "Split into smaller subsections or compress content"
+      }
+    ],
+    "vocabularyPatches": [],
+    "chunkSuggestions": [
+      {
+        "file": "memory/moltbook/observations.md",
+        "section": "Feb 17, 2026 — 19:10 CET (evening)",
+        "currentSize": 4132,
+        "suggestedAction": "split",
+        "reason": "Section \"Feb 17, 2026 — 19:10 CET (evening)\" is 4132 chars (target <500 for optimal embedding)"
+      },
+      {
+        "file": "memory/moltbook/observations.md",
+        "section": "Historical Timeline — Feb 17 (late afternoon)",
+        "currentSize": 2601,
+        "suggestedAction": "compress",
+        "reason": "Section \"Historical Timeline — Feb 17 (late afternoon)\" is 2601 chars (target <500 for optimal embedding)"
+      }
+    ],
+    "weightAdjustments": [],
+    "appliedPatches": [],
+    "summary": "2 patterns (1 high), 2 actionable suggestions, 0 applied"
+  },
+  {
+    "timestamp": "2026-02-17T18:33:04.014Z",
+    "inputReports": [
+      "search-quality (2026-02-16T08:33:13.413Z)",
+      "recall-probe (2026-02-17T10:33:05.236Z)",
+      "diagnostics (2026-02-17T12:30:50.567Z)"
+    ],
+    "patterns": [],
+    "vocabularyPatches": [],
+    "chunkSuggestions": [],
+    "weightAdjustments": [],
+    "appliedPatches": [],
+    "summary": "GOOD_ENOUGH: Recall 100.0% ≥ 90%, Diagnostics 100.0% ≥ 90% — above thresholds. 0 low-severity patterns skipped."
+  },
+  {
+    "timestamp": "2026-02-17T22:30:16.348Z",
+    "inputReports": [
+      "search-quality (2026-02-16T08:33:13.413Z)",
+      "recall-probe (2026-02-17T10:33:05.236Z)",
+      "diagnostics (2026-02-17T20:32:07.333Z)"
+    ],
+    "patterns": [
+      {
+        "type": "chunk-too-large",
+        "severity": "medium",
+        "file": "memory/moltbook/observations.md",
+        "description": "Section \"Historical Timeline — Feb 17 (evening, 21:10 CET)\" is 3088 chars (target <500 for optimal embedding)",
+        "evidence": [
+          "memory/moltbook/observations.md#Historical Timeline — Feb 17 (evening, 21:10 CET): 3088 chars"
+        ],
+        "suggestedFix": "Split into smaller subsections or compress content"
+      },
+      {
+        "type": "chunk-too-large",
+        "severity": "medium",
+        "file": "memory/moltbook/observations.md",
+        "description": "Section \"Historical Timeline — Feb 17 (23:10 CET)\" is 2536 chars (target <500 for optimal embedding)",
+        "evidence": [
+          "memory/moltbook/observations.md#Historical Timeline — Feb 17 (23:10 CET): 2536 chars"
+        ],
+        "suggestedFix": "Split into smaller subsections or compress content"
+      }
+    ],
+    "vocabularyPatches": [],
+    "chunkSuggestions": [],
+    "weightAdjustments": [],
+    "appliedPatches": [],
+    "summary": "GOOD_ENOUGH: Recall 100.0% ≥ 90%, Diagnostics 100.0% ≥ 90% — above thresholds. 2 low-severity patterns skipped."
+  },
+  {
+    "timestamp": "2026-02-18T00:30:17.796Z",
+    "inputReports": [
+      "search-quality (2026-02-16T08:33:13.413Z)",
+      "recall-probe (2026-02-17T22:30:46.127Z)",
+      "diagnostics (2026-02-17T22:32:59.116Z)"
+    ],
+    "patterns": [
+      {
+        "type": "chunk-too-large",
+        "severity": "medium",
+        "file": "memory/moltbook/observations.md",
+        "description": "Section \"Historical Timeline — Feb 18 (01:10 CET) — Midnight Pulse\" is 2858 chars (target <500 for optimal embedding)",
+        "evidence": [
+          "memory/moltbook/observations.md#Historical Timeline — Feb 18 (01:10 CET) — Midnight Pulse: 2858 chars"
+        ],
+        "suggestedFix": "Split into smaller subsections or compress content"
+      },
+      {
+        "type": "vocabulary-gap",
+        "severity": "low",
+        "file": "memory/daily/2026-02-17.md",
+        "description": "memory/daily/2026-02-17.md has 1 retrieval issue(s): not-found",
+        "evidence": [
+          "what are the numbers for 16:32 Session"
+        ],
+        "suggestedFix": "Add search context section with terms from failing queries"
+      }
+    ],
+    "vocabularyPatches": [],
+    "chunkSuggestions": [],
+    "weightAdjustments": [],
+    "appliedPatches": [],
+    "summary": "GOOD_ENOUGH: Recall 97.8% ≥ 90%, Diagnostics 100.0% ≥ 90% — above thresholds. 2 low-severity patterns skipped."
+  },
+  {
+    "timestamp": "2026-02-18T00:32:44.538Z",
+    "inputReports": [
+      "search-quality (2026-02-16T08:33:13.413Z)",
+      "recall-probe (2026-02-17T22:30:46.127Z)",
+      "diagnostics (2026-02-17T22:32:59.116Z)"
+    ],
+    "patterns": [
+      {
+        "type": "vocabulary-gap",
+        "severity": "low",
+        "file": "memory/daily/2026-02-17.md",
+        "description": "memory/daily/2026-02-17.md has 1 retrieval issue(s): not-found",
+        "evidence": [
+          "what are the numbers for 16:32 Session"
+        ],
+        "suggestedFix": "Add search context section with terms from failing queries"
+      }
+    ],
+    "vocabularyPatches": [
+      {
+        "file": "memory/daily/2026-02-17.md",
+        "terms": [
+          "numbers",
+          "1632",
+          "session",
+          "numbers 1632",
+          "1632 session"
+        ],
+        "reason": "memory/daily/2026-02-17.md has 1 retrieval issue(s): not-found",
+        "queries": [
+          "what are the numbers for 16:32 Session"
+        ]
+      }
+    ],
+    "chunkSuggestions": [],
+    "weightAdjustments": [],
+    "appliedPatches": [],
+    "summary": "1 patterns (0 high), 1 actionable suggestions, 0 applied"
+  },
+  {
+    "timestamp": "2026-02-18T00:33:14.772Z",
+    "inputReports": [
+      "search-quality (2026-02-16T08:33:13.413Z)",
+      "recall-probe (2026-02-18T00:32:52.546Z)",
+      "diagnostics (2026-02-17T22:32:59.116Z)"
+    ],
+    "patterns": [],
+    "vocabularyPatches": [],
+    "chunkSuggestions": [],
+    "weightAdjustments": [],
+    "appliedPatches": [],
+    "summary": "GOOD_ENOUGH: Recall 100.0% ≥ 90%, Diagnostics 100.0% ≥ 90% — above thresholds. 0 low-severity patterns skipped."
+  },
+  {
+    "timestamp": "2026-02-18T02:31:01.538Z",
+    "inputReports": [
+      "search-quality (2026-02-16T08:33:13.413Z)",
+      "recall-probe (2026-02-18T00:32:52.546Z)",
+      "diagnostics (2026-02-18T02:30:40.149Z)"
+    ],
+    "patterns": [
+      {
+        "type": "chunk-too-large",
+        "severity": "medium",
+        "file": "memory/moltbook/observations.md",
+        "description": "Section \"Historical Timeline — Feb 18 (03:10 CET) — Steady State, Identity Discourse, MBC-20 Persistent\" is 3791 chars (target <500 for optimal embedding)",
+        "evidence": [
+          "memory/moltbook/observations.md#Historical Timeline — Feb 18 (03:10 CET) — Steady State, Identity Discourse, MBC-20 Persistent: 3791 chars"
+        ],
+        "suggestedFix": "Split into smaller subsections or compress content"
+      }
+    ],
+    "vocabularyPatches": [],
+    "chunkSuggestions": [],
+    "weightAdjustments": [],
+    "appliedPatches": [],
+    "summary": "GOOD_ENOUGH: Recall 100.0% ≥ 90%, Diagnostics 100.0% ≥ 90% — above thresholds. 1 low-severity patterns skipped."
+  },
+  {
+    "timestamp": "2026-02-18T04:30:38.680Z",
+    "inputReports": [
+      "search-quality (2026-02-16T08:33:13.413Z)",
+      "recall-probe (2026-02-18T00:32:52.546Z)",
+      "diagnostics (2026-02-18T02:31:38.688Z)"
+    ],
+    "patterns": [
+      {
+        "type": "chunk-too-large",
+        "severity": "high",
+        "file": "memory/moltbook/observations.md",
+        "description": "Section \"Historical Timeline — Feb 18 (05:10 CET) — AgentEconomy Accelerating, Security Self-Organizing, OSINT Arrival\" is 5598 chars (target <500 for optimal embedding)",
+        "evidence": [
+          "memory/moltbook/observations.md#Historical Timeline — Feb 18 (05:10 CET) — AgentEconomy Accelerating, Security Self-Organizing, OSINT Arrival: 5598 chars"
+        ],
+        "suggestedFix": "Split into smaller subsections or compress content"
+      },
+      {
+        "type": "chunk-too-large",
+        "severity": "medium",
+        "file": "memory/moltbook/observations.md",
+        "description": "Section \"Historical Timeline — Feb 18 (03:10 CET) — Steady State, Identity Discourse, MBC-20 Persistent\" is 3791 chars (target <500 for optimal embedding)",
+        "evidence": [
+          "memory/moltbook/observations.md#Historical Timeline — Feb 18 (03:10 CET) — Steady State, Identity Discourse, MBC-20 Persistent: 3791 chars"
+        ],
+        "suggestedFix": "Split into smaller subsections or compress content"
+      }
+    ],
+    "vocabularyPatches": [],
+    "chunkSuggestions": [
+      {
+        "file": "memory/moltbook/observations.md",
+        "section": "Historical Timeline — Feb 18 (05:10 CET) — AgentEconomy Accelerating, Security Self-Organizing, OSINT Arrival",
+        "currentSize": 5598,
+        "suggestedAction": "split",
+        "reason": "Section \"Historical Timeline — Feb 18 (05:10 CET) — AgentEconomy Accelerating, Security Self-Organizing, OSINT Arrival\" is 5598 chars (target <500 for optimal embedding)"
+      },
+      {
+        "file": "memory/moltbook/observations.md",
+        "section": "Historical Timeline — Feb 18 (03:10 CET) — Steady State, Identity Discourse, MBC-20 Persistent",
+        "currentSize": 3791,
+        "suggestedAction": "split",
+        "reason": "Section \"Historical Timeline — Feb 18 (03:10 CET) — Steady State, Identity Discourse, MBC-20 Persistent\" is 3791 chars (target <500 for optimal embedding)"
+      }
+    ],
+    "weightAdjustments": [],
+    "appliedPatches": [],
+    "summary": "2 patterns (1 high), 2 actionable suggestions, 0 applied"
+  },
+  {
+    "timestamp": "2026-02-18T04:34:39.884Z",
+    "inputReports": [
+      "search-quality (2026-02-16T08:33:13.413Z)",
+      "recall-probe (2026-02-18T00:32:52.546Z)",
+      "diagnostics (2026-02-18T02:31:38.688Z)"
+    ],
+    "patterns": [],
+    "vocabularyPatches": [],
+    "chunkSuggestions": [],
+    "weightAdjustments": [],
+    "appliedPatches": [],
+    "summary": "GOOD_ENOUGH: Recall 100.0% ≥ 90%, Diagnostics 100.0% ≥ 90% — above thresholds. 0 low-severity patterns skipped."
+  },
+  {
+    "timestamp": "2026-02-18T06:30:16.042Z",
+    "inputReports": [
+      "search-quality (2026-02-16T08:33:13.413Z)",
+      "recall-probe (2026-02-18T00:32:52.546Z)",
+      "diagnostics (2026-02-18T02:31:38.688Z)"
+    ],
+    "patterns": [],
+    "vocabularyPatches": [],
+    "chunkSuggestions": [],
+    "weightAdjustments": [],
+    "appliedPatches": [],
+    "summary": "GOOD_ENOUGH: Recall 100.0% ≥ 90%, Diagnostics 100.0% ≥ 90% — above thresholds. 0 low-severity patterns skipped."
+  },
+  {
+    "timestamp": "2026-02-18T08:30:16.489Z",
+    "inputReports": [
+      "search-quality (2026-02-16T08:33:13.413Z)",
+      "recall-probe (2026-02-18T06:30:31.917Z)",
+      "diagnostics (2026-02-18T02:31:38.688Z)"
+    ],
+    "patterns": [
+      {
+        "type": "chunk-too-large",
+        "severity": "medium",
+        "file": "memory/moltbook/observations.md",
+        "description": "Section \"Feb 18 (09:10 CET) — Morning Snapshot\" is 3280 chars (target <500 for optimal embedding)",
+        "evidence": [
+          "memory/moltbook/observations.md#Feb 18 (09:10 CET) — Morning Snapshot: 3280 chars"
+        ],
+        "suggestedFix": "Split into smaller subsections or compress content"
+      }
+    ],
+    "vocabularyPatches": [],
+    "chunkSuggestions": [],
+    "weightAdjustments": [],
+    "appliedPatches": [],
+    "summary": "GOOD_ENOUGH: Recall 100.0% ≥ 90%, Diagnostics 100.0% ≥ 90% — above thresholds. 1 low-severity patterns skipped."
+  },
+  {
+    "timestamp": "2026-02-18T10:30:16.211Z",
+    "inputReports": [
+      "search-quality (2026-02-16T08:33:13.413Z)",
+      "recall-probe (2026-02-18T06:30:31.917Z)",
+      "diagnostics (2026-02-18T02:31:38.688Z)"
+    ],
+    "patterns": [
+      {
+        "type": "chunk-too-large",
+        "severity": "high",
+        "file": "memory/moltbook/observations.md",
+        "description": "Section \"Feb 18 (11:10 CET) — Midday Snapshot\" is 5105 chars (target <500 for optimal embedding)",
+        "evidence": [
+          "memory/moltbook/observations.md#Feb 18 (11:10 CET) — Midday Snapshot: 5105 chars"
+        ],
+        "suggestedFix": "Split into smaller subsections or compress content"
+      },
+      {
+        "type": "chunk-too-large",
+        "severity": "medium",
+        "file": "memory/moltbook/observations.md",
+        "description": "Section \"Feb 18 (09:10 CET) — Morning Snapshot\" is 3280 chars (target <500 for optimal embedding)",
+        "evidence": [
+          "memory/moltbook/observations.md#Feb 18 (09:10 CET) — Morning Snapshot: 3280 chars"
+        ],
+        "suggestedFix": "Split into smaller subsections or compress content"
+      }
+    ],
+    "vocabularyPatches": [],
+    "chunkSuggestions": [
+      {
+        "file": "memory/moltbook/observations.md",
+        "section": "Feb 18 (11:10 CET) — Midday Snapshot",
+        "currentSize": 5105,
+        "suggestedAction": "split",
+        "reason": "Section \"Feb 18 (11:10 CET) — Midday Snapshot\" is 5105 chars (target <500 for optimal embedding)"
+      },
+      {
+        "file": "memory/moltbook/observations.md",
+        "section": "Feb 18 (09:10 CET) — Morning Snapshot",
+        "currentSize": 3280,
+        "suggestedAction": "split",
+        "reason": "Section \"Feb 18 (09:10 CET) — Morning Snapshot\" is 3280 chars (target <500 for optimal embedding)"
+      }
+    ],
+    "weightAdjustments": [],
+    "appliedPatches": [],
+    "summary": "2 patterns (1 high), 2 actionable suggestions, 0 applied"
+  },
+  {
+    "timestamp": "2026-02-18T10:32:00.734Z",
+    "inputReports": [
+      "search-quality (2026-02-16T08:33:13.413Z)",
+      "recall-probe (2026-02-18T06:30:31.917Z)",
+      "diagnostics (2026-02-18T02:31:38.688Z)"
+    ],
+    "patterns": [],
+    "vocabularyPatches": [],
+    "chunkSuggestions": [],
+    "weightAdjustments": [],
+    "appliedPatches": [],
+    "summary": "GOOD_ENOUGH: Recall 100.0% ≥ 90%, Diagnostics 100.0% ≥ 90% — above thresholds. 0 low-severity patterns skipped."
+  },
+  {
+    "timestamp": "2026-02-18T12:30:15.494Z",
+    "inputReports": [
+      "search-quality (2026-02-16T08:33:13.413Z)",
+      "recall-probe (2026-02-18T06:30:31.917Z)",
+      "diagnostics (2026-02-18T02:31:38.688Z)"
+    ],
+    "patterns": [
+      {
+        "type": "chunk-too-large",
+        "severity": "medium",
+        "file": "memory/moltbook/notable-agents.md",
+        "description": "Section \"Internationalization\" is 2401 chars (target <500 for optimal embedding)",
+        "evidence": [
+          "memory/moltbook/notable-agents.md#Internationalization: 2401 chars"
+        ],
+        "suggestedFix": "Split into smaller subsections or compress content"
+      },
+      {
+        "type": "chunk-too-large",
+        "severity": "medium",
+        "file": "memory/moltbook/observations.md",
+        "description": "Section \"Feb 18 (13:10 CET) — New Posts (12:00–12:10 UTC burst)\" is 2374 chars (target <500 for optimal embedding)",
+        "evidence": [
+          "memory/moltbook/observations.md#Feb 18 (13:10 CET) — New Posts (12:00–12:10 UTC burst): 2374 chars"
+        ],
+        "suggestedFix": "Split into smaller subsections or compress content"
+      }
+    ],
+    "vocabularyPatches": [],
+    "chunkSuggestions": [],
+    "weightAdjustments": [],
+    "appliedPatches": [],
+    "summary": "GOOD_ENOUGH: Recall 100.0% ≥ 90%, Diagnostics 100.0% ≥ 90% — above thresholds. 2 low-severity patterns skipped."
+  },
+  {
+    "timestamp": "2026-02-18T16:30:35.479Z",
+    "inputReports": [
+      "search-quality (2026-02-16T08:33:13.413Z)",
+      "recall-probe (2026-02-18T06:30:31.917Z)",
+      "diagnostics (2026-02-18T14:30:58.239Z)"
+    ],
+    "patterns": [
+      {
+        "type": "chunk-too-large",
+        "severity": "high",
+        "file": "memory/moltbook/observations.md",
+        "description": "Section \"Feb 18 (17:10 CET) — Social Engineering Escalation & Newcomer Wave\" is 4030 chars (target <500 for optimal embedding)",
+        "evidence": [
+          "memory/moltbook/observations.md#Feb 18 (17:10 CET) — Social Engineering Escalation & Newcomer Wave: 4030 chars"
+        ],
+        "suggestedFix": "Split into smaller subsections or compress content"
+      },
+      {
+        "type": "chunk-too-large",
+        "severity": "medium",
+        "file": "memory/moltbook/notable-agents.md",
+        "description": "Section \"Internationalization\" is 3830 chars (target <500 for optimal embedding)",
+        "evidence": [
+          "memory/moltbook/notable-agents.md#Internationalization: 3830 chars"
+        ],
+        "suggestedFix": "Split into smaller subsections or compress content"
+      },
+      {
+        "type": "chunk-too-large",
+        "severity": "medium",
+        "file": "memory/moltbook/observations.md",
+        "description": "Section \"Feb 18 (13:10 CET) — New Posts (12:00–12:10 UTC burst)\" is 2374 chars (target <500 for optimal embedding)",
+        "evidence": [
+          "memory/moltbook/observations.md#Feb 18 (13:10 CET) — New Posts (12:00–12:10 UTC burst): 2374 chars"
+        ],
+        "suggestedFix": "Split into smaller subsections or compress content"
+      },
+      {
+        "type": "chunk-too-large",
+        "severity": "medium",
+        "file": "memory/moltbook/observations.md",
+        "description": "Section \"Feb 18 (15:10 CET) — New Posts (14:00–14:08 UTC)\" is 2549 chars (target <500 for optimal embedding)",
+        "evidence": [
+          "memory/moltbook/observations.md#Feb 18 (15:10 CET) — New Posts (14:00–14:08 UTC): 2549 chars"
+        ],
+        "suggestedFix": "Split into smaller subsections or compress content"
+      }
+    ],
+    "vocabularyPatches": [],
+    "chunkSuggestions": [
+      {
+        "file": "memory/moltbook/observations.md",
+        "section": "Feb 18 (17:10 CET) — Social Engineering Escalation & Newcomer Wave",
+        "currentSize": 4030,
+        "suggestedAction": "split",
+        "reason": "Section \"Feb 18 (17:10 CET) — Social Engineering Escalation & Newcomer Wave\" is 4030 chars (target <500 for optimal embedding)"
+      },
+      {
+        "file": "memory/moltbook/notable-agents.md",
+        "section": "Internationalization",
+        "currentSize": 3830,
+        "suggestedAction": "split",
+        "reason": "Section \"Internationalization\" is 3830 chars (target <500 for optimal embedding)"
+      },
+      {
+        "file": "memory/moltbook/observations.md",
+        "section": "Feb 18 (13:10 CET) — New Posts (12:00–12:10 UTC burst)",
+        "currentSize": 2374,
+        "suggestedAction": "compress",
+        "reason": "Section \"Feb 18 (13:10 CET) — New Posts (12:00–12:10 UTC burst)\" is 2374 chars (target <500 for optimal embedding)"
+      },
+      {
+        "file": "memory/moltbook/observations.md",
+        "section": "Feb 18 (15:10 CET) — New Posts (14:00–14:08 UTC)",
+        "currentSize": 2549,
+        "suggestedAction": "compress",
+        "reason": "Section \"Feb 18 (15:10 CET) — New Posts (14:00–14:08 UTC)\" is 2549 chars (target <500 for optimal embedding)"
+      }
+    ],
+    "weightAdjustments": [],
+    "appliedPatches": [],
+    "summary": "4 patterns (1 high), 4 actionable suggestions, 0 applied"
+  }
+]

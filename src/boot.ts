@@ -14,6 +14,7 @@ import {
   formatScore,
   CATEGORY_EMOJI,
 } from './prioritize';
+import { discover, applyDiscovery, reportDiscovery } from './auto-discover';
 
 const MANIFEST_PATH = '/root/clawd/skills/memory-manager/manifest.json';
 const WORKSPACE = '/root/clawd';
@@ -163,6 +164,24 @@ function generateBoot(): void {
     console.log('📌 QUEUED TASKS: (empty — will auto-generate)');
   }
   
+  // Auto-discovery: detect new/missing files and fix stale summaries
+  try {
+    const discoveryResult = discover();
+    const hasIssues = discoveryResult.orphans.length > 0 || discoveryResult.dangling.length > 0 || discoveryResult.staleSummaries.length > 0;
+    
+    if (hasIssues) {
+      console.log('');
+      console.log('🔍 AUTO-DISCOVERY:');
+      console.log('   ' + reportDiscovery(discoveryResult).split('\n').join('\n   '));
+      
+      // Auto-apply: register orphans, prune dangling, fix summaries
+      const stats = applyDiscovery(discoveryResult);
+      console.log(`   → Applied: +${stats.registered} registered, -${stats.pruned} pruned, ~${stats.fixed} summaries fixed`);
+    }
+  } catch (e) {
+    console.error(`   ⚠️  Auto-discovery failed: ${(e as Error).message}`);
+  }
+
   console.log('');
   console.log('═══════════════════════════════════════════════════════════');
   console.log('   Organization is survival. Execute with intent.');

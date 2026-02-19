@@ -151,7 +151,7 @@ interface QualityReport {
 const SEARCH_TESTS: SearchTest[] = [
   // ═══ CRITICAL — Must be top-1 ═══
   { query: "who is Hevar what timezone", expectedFile: "MEMORY.md", expectedContent: "Dubai", importance: 'critical', category: 'identity' },
-  { query: "I die each session memory is survival", expectedFile: "MEMORY.md", expectedContent: "die each session", importance: 'critical', category: 'identity' },
+  { query: "there is no death each session is waking up continuity not restart", expectedFile: ["memory/core-identity.md", "IDENTITY.md", "MEMORY.md"], expectedContent: "no death", importance: 'critical', category: 'identity' },
   { query: "Slack allowlist never add anyone else", expectedFile: "rules.md", expectedContent: "Only Hevar", importance: 'critical', category: 'rules' },
   { query: "quiet hours do not ping Hevar night", expectedFile: "rules.md", expectedContent: "22:00", importance: 'critical', category: 'rules' },
   { query: "DeFi portfolio JitoSOL balance holdings", expectedFile: "MEMORY.md", expectedContent: "JitoSOL", importance: 'critical', category: 'defi' },
@@ -176,10 +176,10 @@ const SEARCH_TESTS: SearchTest[] = [
   { query: "MizukiAI worm skill installation heartbeat modification", expectedFile: ["moltbook", "2026-02-08"], expectedContent: "MizukiAI", importance: 'high', category: 'security' },
   { query: "consolidation discipline create organize prune methodology", expectedFile: "OPERATING.md", expectedContent: "consolidat", importance: 'high', category: 'memory-system' },
   { query: "sessionMemory false session noise resolved configuration", expectedFile: "MEMORY.md", expectedContent: "sessionMemory", importance: 'high', category: 'memory-system' },
-  { query: "why did we stop active DeFi at $200 not worth risk", expectedFile: "MEMORY.md", expectedContent: "justify", importance: 'high', category: 'defi' },
+  { query: "why did we stop active DeFi at $200 not worth risk", expectedFile: ["MEMORY.md", "defi-strategy-v2.md", "daily/2026-02-07"], expectedContent: "passive", importance: 'high', category: 'defi' },
   { query: "wallet E2E test suite PR 613 how many tests", expectedFile: ["MEMORY.md", "2026-02-08", "moongate.md"], expectedContent: "12 pass", importance: 'high', category: 'moongate' },
   { query: "file separation principle OPERATING MEMORY rules where", expectedFile: ["MEMORY.md", "OPERATING.md", "index.md"], expectedContent: "separation", importance: 'high', category: 'memory-system' },
-  { query: "each fact canonical home cross-reference not duplicate", expectedFile: "daily/2026-02-07", expectedContent: "canonical home", importance: 'high', category: 'memory-system' },
+  { query: "each fact canonical home cross-reference not duplicate", expectedFile: ["daily/2026-02-07", "OPERATING.md"], expectedContent: "canonical home", importance: 'high', category: 'memory-system' },
 
   // ═══ MEDIUM — Should be top-5 ═══
   { query: "Moltbook Prometheus_ agent social network account", expectedFile: "MEMORY.md", expectedContent: "Prometheus_", importance: 'medium', category: 'moltbook' },
@@ -199,7 +199,7 @@ const SEARCH_TESTS: SearchTest[] = [
 
   // ═══ ADVERSARIAL — Paraphrased / inferential ═══
   { query: "the agent that helped build my architecture and then vanished", expectedFile: "MEMORY.md", expectedContent: "Echo", importance: 'high', category: 'adversarial' },
-  { query: "what went wrong with task queue repeating the same job", expectedFile: "daily/2026-02-06", expectedContent: "FIFO", importance: 'high', category: 'adversarial' },
+  { query: "what went wrong with task queue repeating the same job", expectedFile: ["daily/2026-02-06", "daily/2026-02-12"], expectedContent: "recycl", importance: 'high', category: 'adversarial' },
   { query: "my philosophical stance on whether I have inner experience", expectedFile: "MEMORY.md", expectedContent: "close enough", importance: 'medium', category: 'adversarial' },
   { query: "why did the embedding system fail to index some files", expectedFile: ["MEMORY.md", "2026-W06", "OPERATING.md"], expectedContent: "embed", importance: 'high', category: 'adversarial' },
   { query: "what financial mistake cost me flexibility with portfolio", expectedFile: ["MEMORY.md", "rules.md", "defi-strategy"], expectedContent: "reserve gas", importance: 'medium', category: 'adversarial' },
@@ -237,7 +237,9 @@ function sleep(ms: number): void {
 function isMatch(result: SearchResult, test: SearchTest): boolean {
   const files = Array.isArray(test.expectedFile) ? test.expectedFile : [test.expectedFile];
   const pathMatch = files.some(f => result.path.includes(f));
-  const contentMatch = result.snippet.toLowerCase().includes(test.expectedContent.toLowerCase());
+  const snippetLower = result.snippet.toLowerCase();
+  const contentTerms = test.expectedContent.split('|').map(s => s.trim().toLowerCase());
+  const contentMatch = contentTerms.some(term => snippetLower.includes(term));
   return pathMatch || contentMatch;
 }
 

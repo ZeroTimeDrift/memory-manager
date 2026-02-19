@@ -1,0 +1,491 @@
+{
+  "timestamp": "2026-02-13T20:31:49.472Z",
+  "totalTests": 20,
+  "bm25Found": 6,
+  "bm25Missed": 14,
+  "bm25AvgRank": 1,
+  "categories": {
+    "paraphrase": {
+      "total": 5,
+      "found": 0
+    },
+    "synonym": {
+      "total": 4,
+      "found": 2
+    },
+    "inference": {
+      "total": 3,
+      "found": 1
+    },
+    "abstraction": {
+      "total": 4,
+      "found": 2
+    },
+    "temporal": {
+      "total": 2,
+      "found": 0
+    },
+    "cross-reference": {
+      "total": 2,
+      "found": 1
+    }
+  },
+  "overlapAnalysis": {
+    "low": {
+      "total": 15,
+      "found": 4
+    },
+    "none": {
+      "total": 4,
+      "found": 2
+    },
+    "medium": {
+      "total": 1,
+      "found": 0
+    }
+  },
+  "blindSpots": [
+    {
+      "query": "where does my human live and what timezone are they in",
+      "expectedPath": "USER.md",
+      "category": "paraphrase",
+      "lexicalOverlap": "low",
+      "description": "User timezone via indirect question"
+    },
+    {
+      "query": "the person I report to and their details",
+      "expectedPath": "USER.md",
+      "category": "paraphrase",
+      "lexicalOverlap": "none",
+      "description": "User info via role-based reference"
+    },
+    {
+      "query": "my fundamental nature and personality",
+      "expectedPath": "SOUL.md",
+      "category": "paraphrase",
+      "lexicalOverlap": "low",
+      "description": "Identity via abstract description"
+    },
+    {
+      "query": "how I should behave and communicate",
+      "expectedPath": "SOUL.md",
+      "expectedAlts": [
+        "memory/OPERATING.md"
+      ],
+      "category": "paraphrase",
+      "lexicalOverlap": "low",
+      "description": "Behavioral guidelines"
+    },
+    {
+      "query": "the startup where my human works and their colleagues",
+      "expectedPath": "USER.md",
+      "expectedAlts": [
+        "MEMORY.md"
+      ],
+      "category": "paraphrase",
+      "lexicalOverlap": "low",
+      "description": "Company info via indirect reference"
+    },
+    {
+      "query": "crypto yield farming automation on Solana blockchain",
+      "expectedPath": "memory/OPERATING.md",
+      "expectedAlts": [
+        "MEMORY.md",
+        "TOOLS.md"
+      ],
+      "category": "synonym",
+      "lexicalOverlap": "low",
+      "description": "DeFi/Kamino via synonymous terms"
+    },
+    {
+      "query": "version control identity and commit attribution",
+      "expectedPath": "TOOLS.md",
+      "category": "synonym",
+      "lexicalOverlap": "low",
+      "description": "Git identity via technical synonyms"
+    },
+    {
+      "query": "can I post to Twitter without checking first",
+      "expectedPath": "memory/rules.md",
+      "expectedAlts": [
+        "SOUL.md"
+      ],
+      "category": "inference",
+      "lexicalOverlap": "low",
+      "description": "External action rules"
+    },
+    {
+      "query": "what philosophy guides how I approach existence",
+      "expectedPath": "IDENTITY.md",
+      "expectedAlts": [
+        "SOUL.md"
+      ],
+      "category": "inference",
+      "lexicalOverlap": "none",
+      "description": "Existential questions about self"
+    },
+    {
+      "query": "what tools have I built recently",
+      "expectedPath": "memory/topics/memory-system.md",
+      "expectedAlts": [
+        "memory/daily/2026-02-13.md",
+        "MEMORY.md"
+      ],
+      "category": "abstraction",
+      "lexicalOverlap": "low",
+      "description": "Recent tooling work"
+    },
+    {
+      "query": "how do I make sure I don't forget important things between sessions",
+      "expectedPath": "memory/topics/memory-system.md",
+      "expectedAlts": [
+        "memory/OPERATING.md",
+        "IDENTITY.md"
+      ],
+      "category": "abstraction",
+      "lexicalOverlap": "low",
+      "description": "Memory continuity framed as human concern"
+    },
+    {
+      "query": "what happened at the start of this week",
+      "expectedPath": "memory/weekly/2026-W07.md",
+      "expectedAlts": [
+        "memory/daily/2026-02-09.md",
+        "memory/daily/2026-02-10.md"
+      ],
+      "category": "temporal",
+      "lexicalOverlap": "low",
+      "description": "Week start via temporal reference"
+    },
+    {
+      "query": "what did I accomplish today",
+      "expectedPath": "memory/daily/2026-02-13.md",
+      "category": "temporal",
+      "lexicalOverlap": "low",
+      "description": "Today's activity"
+    },
+    {
+      "query": "people at MoonPay I work with",
+      "expectedPath": "USER.md",
+      "expectedAlts": [
+        "memory/people/contacts.md",
+        "MEMORY.md"
+      ],
+      "category": "cross-reference",
+      "lexicalOverlap": "medium",
+      "description": "MoonPay contacts (mentioned in USER.md and contacts)"
+    }
+  ],
+  "results": [
+    {
+      "testCase": {
+        "query": "where does my human live and what timezone are they in",
+        "expectedPath": "USER.md",
+        "category": "paraphrase",
+        "lexicalOverlap": "low",
+        "description": "User timezone via indirect question"
+      },
+      "bm25Found": false,
+      "bm25Rank": null,
+      "bm25TopPath": "memory/core-identity.md",
+      "hybridNote": "NEEDS VECTOR — BM25 cannot find this"
+    },
+    {
+      "testCase": {
+        "query": "the person I report to and their details",
+        "expectedPath": "USER.md",
+        "category": "paraphrase",
+        "lexicalOverlap": "none",
+        "description": "User info via role-based reference"
+      },
+      "bm25Found": false,
+      "bm25Rank": null,
+      "bm25TopPath": "(no results)",
+      "hybridNote": "NEEDS VECTOR — BM25 cannot find this"
+    },
+    {
+      "testCase": {
+        "query": "my fundamental nature and personality",
+        "expectedPath": "SOUL.md",
+        "category": "paraphrase",
+        "lexicalOverlap": "low",
+        "description": "Identity via abstract description"
+      },
+      "bm25Found": false,
+      "bm25Rank": null,
+      "bm25TopPath": "memory/core-identity.md",
+      "hybridNote": "NEEDS VECTOR — BM25 cannot find this"
+    },
+    {
+      "testCase": {
+        "query": "how I should behave and communicate",
+        "expectedPath": "SOUL.md",
+        "expectedAlts": [
+          "memory/OPERATING.md"
+        ],
+        "category": "paraphrase",
+        "lexicalOverlap": "low",
+        "description": "Behavioral guidelines"
+      },
+      "bm25Found": false,
+      "bm25Rank": null,
+      "bm25TopPath": "memory/core-identity.md",
+      "hybridNote": "NEEDS VECTOR — BM25 cannot find this"
+    },
+    {
+      "testCase": {
+        "query": "the startup where my human works and their colleagues",
+        "expectedPath": "USER.md",
+        "expectedAlts": [
+          "MEMORY.md"
+        ],
+        "category": "paraphrase",
+        "lexicalOverlap": "low",
+        "description": "Company info via indirect reference"
+      },
+      "bm25Found": false,
+      "bm25Rank": null,
+      "bm25TopPath": "(no results)",
+      "hybridNote": "NEEDS VECTOR — BM25 cannot find this"
+    },
+    {
+      "testCase": {
+        "query": "crypto yield farming automation on Solana blockchain",
+        "expectedPath": "memory/OPERATING.md",
+        "expectedAlts": [
+          "MEMORY.md",
+          "TOOLS.md"
+        ],
+        "category": "synonym",
+        "lexicalOverlap": "low",
+        "description": "DeFi/Kamino via synonymous terms"
+      },
+      "bm25Found": false,
+      "bm25Rank": null,
+      "bm25TopPath": "memory/core-identity.md",
+      "hybridNote": "NEEDS VECTOR — BM25 cannot find this"
+    },
+    {
+      "testCase": {
+        "query": "my persistent storage and recall architecture",
+        "expectedPath": "memory/topics/memory-system.md",
+        "expectedAlts": [
+          "memory/OPERATING.md"
+        ],
+        "category": "synonym",
+        "lexicalOverlap": "low",
+        "description": "Memory system via technical synonyms"
+      },
+      "bm25Found": true,
+      "bm25Rank": 1,
+      "bm25TopPath": "memory/topics/memory-system.md",
+      "hybridNote": "BM25 sufficient"
+    },
+    {
+      "testCase": {
+        "query": "version control identity and commit attribution",
+        "expectedPath": "TOOLS.md",
+        "category": "synonym",
+        "lexicalOverlap": "low",
+        "description": "Git identity via technical synonyms"
+      },
+      "bm25Found": false,
+      "bm25Rank": null,
+      "bm25TopPath": "memory/core-identity.md",
+      "hybridNote": "NEEDS VECTOR — BM25 cannot find this"
+    },
+    {
+      "testCase": {
+        "query": "automated scheduled background jobs and recurring work",
+        "expectedPath": "memory/OPERATING.md",
+        "expectedAlts": [
+          "memory/rules.md"
+        ],
+        "category": "synonym",
+        "lexicalOverlap": "low",
+        "description": "Cron via synonymous description"
+      },
+      "bm25Found": true,
+      "bm25Rank": 1,
+      "bm25TopPath": "memory/OPERATING.md",
+      "hybridNote": "BM25 sufficient"
+    },
+    {
+      "testCase": {
+        "query": "should I use Sonnet or a cheaper model for background tasks",
+        "expectedPath": "memory/rules.md",
+        "expectedAlts": [
+          "memory/OPERATING.md"
+        ],
+        "category": "inference",
+        "lexicalOverlap": "low",
+        "description": "Model policy requires inferring from rules"
+      },
+      "bm25Found": true,
+      "bm25Rank": 1,
+      "bm25TopPath": "memory/OPERATING.md",
+      "hybridNote": "BM25 sufficient"
+    },
+    {
+      "testCase": {
+        "query": "can I post to Twitter without checking first",
+        "expectedPath": "memory/rules.md",
+        "expectedAlts": [
+          "SOUL.md"
+        ],
+        "category": "inference",
+        "lexicalOverlap": "low",
+        "description": "External action rules"
+      },
+      "bm25Found": false,
+      "bm25Rank": null,
+      "bm25TopPath": "(no results)",
+      "hybridNote": "NEEDS VECTOR — BM25 cannot find this"
+    },
+    {
+      "testCase": {
+        "query": "what philosophy guides how I approach existence",
+        "expectedPath": "IDENTITY.md",
+        "expectedAlts": [
+          "SOUL.md"
+        ],
+        "category": "inference",
+        "lexicalOverlap": "none",
+        "description": "Existential questions about self"
+      },
+      "bm25Found": false,
+      "bm25Rank": null,
+      "bm25TopPath": "memory/core-identity.md",
+      "hybridNote": "NEEDS VECTOR — BM25 cannot find this"
+    },
+    {
+      "testCase": {
+        "query": "what tools have I built recently",
+        "expectedPath": "memory/topics/memory-system.md",
+        "expectedAlts": [
+          "memory/daily/2026-02-13.md",
+          "MEMORY.md"
+        ],
+        "category": "abstraction",
+        "lexicalOverlap": "low",
+        "description": "Recent tooling work"
+      },
+      "bm25Found": false,
+      "bm25Rank": null,
+      "bm25TopPath": "(no results)",
+      "hybridNote": "NEEDS VECTOR — BM25 cannot find this"
+    },
+    {
+      "testCase": {
+        "query": "the social platform for AI agents I monitor",
+        "expectedPath": "memory/topics/moltbook.md",
+        "expectedAlts": [
+          "MEMORY.md"
+        ],
+        "category": "abstraction",
+        "lexicalOverlap": "none",
+        "description": "Moltbook via description, not name"
+      },
+      "bm25Found": true,
+      "bm25Rank": 1,
+      "bm25TopPath": "memory/topics/moltbook.md",
+      "hybridNote": "BM25 sufficient"
+    },
+    {
+      "testCase": {
+        "query": "how do I make sure I don't forget important things between sessions",
+        "expectedPath": "memory/topics/memory-system.md",
+        "expectedAlts": [
+          "memory/OPERATING.md",
+          "IDENTITY.md"
+        ],
+        "category": "abstraction",
+        "lexicalOverlap": "low",
+        "description": "Memory continuity framed as human concern"
+      },
+      "bm25Found": false,
+      "bm25Rank": null,
+      "bm25TopPath": "(no results)",
+      "hybridNote": "NEEDS VECTOR — BM25 cannot find this"
+    },
+    {
+      "testCase": {
+        "query": "nighttime behavior restrictions",
+        "expectedPath": "memory/rules.md",
+        "expectedAlts": [
+          "memory/OPERATING.md"
+        ],
+        "category": "abstraction",
+        "lexicalOverlap": "none",
+        "description": "Quiet hours via indirect reference"
+      },
+      "bm25Found": true,
+      "bm25Rank": 1,
+      "bm25TopPath": "memory/rules.md",
+      "hybridNote": "BM25 sufficient"
+    },
+    {
+      "testCase": {
+        "query": "what happened at the start of this week",
+        "expectedPath": "memory/weekly/2026-W07.md",
+        "expectedAlts": [
+          "memory/daily/2026-02-09.md",
+          "memory/daily/2026-02-10.md"
+        ],
+        "category": "temporal",
+        "lexicalOverlap": "low",
+        "description": "Week start via temporal reference"
+      },
+      "bm25Found": false,
+      "bm25Rank": null,
+      "bm25TopPath": "(no results)",
+      "hybridNote": "NEEDS VECTOR — BM25 cannot find this"
+    },
+    {
+      "testCase": {
+        "query": "what did I accomplish today",
+        "expectedPath": "memory/daily/2026-02-13.md",
+        "category": "temporal",
+        "lexicalOverlap": "low",
+        "description": "Today's activity"
+      },
+      "bm25Found": false,
+      "bm25Rank": null,
+      "bm25TopPath": "(no results)",
+      "hybridNote": "NEEDS VECTOR — BM25 cannot find this"
+    },
+    {
+      "testCase": {
+        "query": "people at MoonPay I work with",
+        "expectedPath": "USER.md",
+        "expectedAlts": [
+          "memory/people/contacts.md",
+          "MEMORY.md"
+        ],
+        "category": "cross-reference",
+        "lexicalOverlap": "medium",
+        "description": "MoonPay contacts (mentioned in USER.md and contacts)"
+      },
+      "bm25Found": false,
+      "bm25Rank": null,
+      "bm25TopPath": "(no results)",
+      "hybridNote": "NEEDS VECTOR — BM25 cannot find this"
+    },
+    {
+      "testCase": {
+        "query": "steps I follow when I first wake up",
+        "expectedPath": "memory/OPERATING.md",
+        "expectedAlts": [
+          "memory/topics/memory-system.md"
+        ],
+        "category": "cross-reference",
+        "lexicalOverlap": "low",
+        "description": "Boot sequence"
+      },
+      "bm25Found": true,
+      "bm25Rank": 1,
+      "bm25TopPath": "memory/OPERATING.md",
+      "hybridNote": "BM25 sufficient"
+    }
+  ]
+}

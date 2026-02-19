@@ -18,6 +18,7 @@ Orchestration layer for context-limited agents. Boot sequencing, task prioritiza
 - `src/temporal.ts` — Temporal query parsing and date-aware search enhancement
 - `src/decay.ts` — Time-based weight decay automation (recency boost, frequency shield, archival flagging)
 - `src/concept-index.ts` — Concept/entity inverted index for fast lookup and relationship discovery
+- `src/memory-graph.ts` — File-to-file relationship graph (entity/xref/temporal/section edges, clusters, context expansion)
 - `src/weekly-digest.ts` — Auto-generate weekly summaries from daily logs
 
 ## Usage
@@ -191,6 +192,50 @@ Auto-generates `memory/weekly/YYYY-WNN.md` from daily logs. Extracts:
 
 Won't overwrite manually-edited weekly files unless `--force` is used.
 Best run Sunday evening or Monday morning.
+
+## Retrieval Learning Loop
+
+```bash
+npx ts-node src/retrieval-learn.ts                # Analyze reports + suggest improvements
+npx ts-node src/retrieval-learn.ts --apply        # Auto-apply safe vocabulary patches
+npx ts-node src/retrieval-learn.ts --dry-run      # Preview what --apply would do
+npx ts-node src/retrieval-learn.ts --history      # Show learning history + trend
+```
+
+Closes the feedback loop between measurement and improvement:
+1. Reads all search quality reports (search-quality, recall-probe, search-diagnostics)
+2. Identifies recurring failure patterns (vocabulary gaps, ranking dilution, chunk issues, wrong-file-ranked)
+3. Generates concrete improvements (vocabulary patches, chunk split suggestions, weight reviews)
+4. Can auto-apply safe improvements (vocabulary enrichment in file Search Context sections)
+
+Pattern severity: **high** (multiple failures on same file), **medium** (2+ issues), **low** (single issue).
+Auto-apply only touches `memory/` files (never root workspace files). Re-indexes after patching.
+
+Learning log saved to `retrieval-learning-log.json` — tracks pattern trends over time.
+
+Run after search-quality, recall-probe, or search-diagnostics to close the measurement→improvement loop.
+
+## Memory Graph
+
+```bash
+npx ts-node src/memory-graph.ts build              # Build/rebuild graph from all memory files
+npx ts-node src/memory-graph.ts neighbors <path>    # Related files for a given file
+npx ts-node src/memory-graph.ts clusters            # Detect topic clusters
+npx ts-node src/memory-graph.ts isolated            # Files with few/no connections
+npx ts-node src/memory-graph.ts context <query>     # Context-aware file expansion for a query
+npx ts-node src/memory-graph.ts stats               # Graph statistics
+npx ts-node src/memory-graph.ts viz                 # ASCII visualization
+```
+
+File-to-file relationship graph. Edges weighted by:
+- **Shared entities** — from concept-index.json (noise concepts filtered, rarity-boosted)
+- **Cross-references** — explicit file mentions in content (hub-penalized)
+- **Temporal proximity** — adjacent daily files, weekly↔daily links
+- **Section overlap** — shared heading patterns
+
+Key feature: **Context expansion** — given a search query, finds initial results then expands via graph neighbors to surface related files that wouldn't appear in keyword search. Used by `context <query>`.
+
+Auto-rebuilt during `session-wrap.ts`. Saved to `memory-graph.json`.
 
 ## Search Quality Scoring
 

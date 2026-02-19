@@ -1,0 +1,6006 @@
+[
+  {
+    "timestamp": "2026-02-11T10:39:26.761Z",
+    "totalQueries": 50,
+    "precision": {
+      "p1": 70,
+      "p3": 84,
+      "p5": 92,
+      "pAny": 98
+    },
+    "weightedPrecision": {
+      "p1": 71.8,
+      "p3": 84.7,
+      "p5": 92.1,
+      "pAny": 98
+    },
+    "mrr": 0.782,
+    "weightedMrr": 0.795,
+    "byImportance": {
+      "critical": {
+        "total": 10,
+        "p1": 0.9,
+        "p3": 1,
+        "p5": 1,
+        "mrr": 0.95
+      },
+      "high": {
+        "total": 22,
+        "p1": 0.5909090909090909,
+        "p3": 0.6818181818181818,
+        "p5": 0.8181818181818182,
+        "mrr": 0.6749278499278498
+      },
+      "medium": {
+        "total": 18,
+        "p1": 0.7222222222222222,
+        "p3": 0.9444444444444444,
+        "p5": 1,
+        "mrr": 0.8194444444444445
+      }
+    },
+    "byCategory": {
+      "identity": {
+        "total": 6,
+        "p1": 1,
+        "p3": 1,
+        "p5": 1,
+        "mrr": 1
+      },
+      "rules": {
+        "total": 5,
+        "p1": 0.8,
+        "p3": 1,
+        "p5": 1,
+        "mrr": 0.9
+      },
+      "defi": {
+        "total": 6,
+        "p1": 0.6666666666666666,
+        "p3": 0.6666666666666666,
+        "p5": 0.8333333333333334,
+        "mrr": 0.7268518518518517
+      },
+      "security": {
+        "total": 2,
+        "p1": 0.5,
+        "p3": 0.5,
+        "p5": 0.5,
+        "mrr": 0.5714285714285714
+      },
+      "moongate": {
+        "total": 8,
+        "p1": 0.875,
+        "p3": 0.875,
+        "p5": 1,
+        "mrr": 0.9
+      },
+      "memory-system": {
+        "total": 10,
+        "p1": 0.6,
+        "p3": 0.9,
+        "p5": 1,
+        "mrr": 0.7533333333333333
+      },
+      "moltbook": {
+        "total": 4,
+        "p1": 1,
+        "p3": 1,
+        "p5": 1,
+        "mrr": 1
+      },
+      "personal": {
+        "total": 1,
+        "p1": 0,
+        "p3": 0,
+        "p5": 1,
+        "mrr": 0.25
+      },
+      "adversarial": {
+        "total": 8,
+        "p1": 0.375,
+        "p3": 0.75,
+        "p5": 0.75,
+        "mrr": 0.5138888888888888
+      }
+    },
+    "byFile": {
+      "memory/people/hevar-profile.md": {
+        "total": 2,
+        "p1": 1,
+        "avgRank": 1
+      },
+      "MEMORY.md": {
+        "total": 10,
+        "p1": 0.4,
+        "avgRank": 3.7
+      },
+      "memory/rules.md": {
+        "total": 7,
+        "p1": 0.7142857142857143,
+        "avgRank": 1.5714285714285714
+      },
+      "memory/daily/2026-02-07.md": {
+        "total": 4,
+        "p1": 0.5,
+        "avgRank": 2.25
+      },
+      "memory/weekly/2026-W06.md": {
+        "total": 4,
+        "p1": 0.75,
+        "avgRank": 1.5
+      },
+      "memory/drafts/moltbook-architecture-post.md": {
+        "total": 1,
+        "p1": 1,
+        "avgRank": 1
+      },
+      "memory/moltbook/observations.md": {
+        "total": 3,
+        "p1": 0.6666666666666666,
+        "avgRank": 3
+      },
+      "memory/topics/moongate.md": {
+        "total": 2,
+        "p1": 1,
+        "avgRank": 1
+      },
+      "memory/daily/2026-02-08.md": {
+        "total": 2,
+        "p1": 1,
+        "avgRank": 1
+      },
+      "memory/topics/moltbook.md": {
+        "total": 2,
+        "p1": 1,
+        "avgRank": 1
+      },
+      "memory/OPERATING.md": {
+        "total": 3,
+        "p1": 0.6666666666666666,
+        "avgRank": 1.3333333333333333
+      },
+      "memory/daily/2026-02-09.md": {
+        "total": 1,
+        "p1": 1,
+        "avgRank": 1
+      },
+      "memory/people/contacts.md": {
+        "total": 4,
+        "p1": 1,
+        "avgRank": 1
+      },
+      "memory/moltbook/notable-agents.md": {
+        "total": 1,
+        "p1": 1,
+        "avgRank": 1
+      },
+      "memory/archive/daily/2025-02-10.md": {
+        "total": 1,
+        "p1": 1,
+        "avgRank": 1
+      },
+      "memory/topics/defi-strategy-v2.md": {
+        "total": 1,
+        "p1": 0,
+        "avgRank": 3
+      },
+      "memory/daily/2026-02-05.md": {
+        "total": 1,
+        "p1": 1,
+        "avgRank": 1
+      }
+    },
+    "weakSpots": [
+      {
+        "query": "Kamino yield wallet address Solana public key",
+        "rank": 9,
+        "scoreGap": 0.06957543045282366,
+        "outrankedBy": [
+          "memory/topics/kamino-yield.md",
+          "memory/topics/kamino-yield.md",
+          "memory/daily/2026-02-07.md"
+        ],
+        "category": "defi"
+      },
+      {
+        "query": "why did the embedding system fail to index some files",
+        "rank": 9,
+        "scoreGap": 0.0216060310602188,
+        "outrankedBy": [
+          "memory/weekly/2026-W07.md",
+          "memory/daily/2026-02-07.md",
+          "memory/drafts/moltbook-architecture-post.md"
+        ],
+        "category": "adversarial"
+      },
+      {
+        "query": "MizukiAI worm skill installation heartbeat modification",
+        "rank": 7,
+        "scoreGap": 0.016062971949577343,
+        "outrankedBy": [
+          "memory/OPERATING.md",
+          "memory/daily/2026-02-05.md",
+          "memory/daily/2026-02-06.md"
+        ],
+        "category": "security"
+      },
+      {
+        "query": "wallet E2E test suite PR 613 how many tests",
+        "rank": 5,
+        "scoreGap": 0.027873092889785844,
+        "outrankedBy": [
+          "memory/topics/moongate.md",
+          "memory/daily/2026-02-09.md",
+          "memory/daily/2026-02-08.md"
+        ],
+        "category": "moongate"
+      },
+      {
+        "query": "file separation principle OPERATING MEMORY rules where",
+        "rank": 5,
+        "scoreGap": 0.021294170618057273,
+        "outrankedBy": [
+          "memory/index.md",
+          "memory/OPERATING.md",
+          "memory/OPERATING.md"
+        ],
+        "category": "memory-system"
+      },
+      {
+        "query": "DeFi autonomous authority deploy capital Hevar granted",
+        "rank": 4,
+        "scoreGap": 0.014021849632263161,
+        "outrankedBy": [
+          "memory/daily/2026-02-05.md",
+          "memory/daily/2026-02-06.md",
+          "memory/daily/2026-02-05.md"
+        ],
+        "category": "defi"
+      },
+      {
+        "query": "property search Anchorage Dubai listing price",
+        "rank": 4,
+        "scoreGap": 0.026547712087631237,
+        "outrankedBy": [
+          "memory/daily/2026-01-31.md",
+          "memory/people/contacts.md",
+          "memory/daily/2026-02-09.md"
+        ],
+        "category": "personal"
+      },
+      {
+        "query": "session transcript noise drowns curated memory search",
+        "rank": 3,
+        "scoreGap": 0.011859855055808999,
+        "outrankedBy": [
+          "memory/drafts/moltbook-architecture-post.md",
+          "memory/drafts/moltbook-architecture-post.md"
+        ],
+        "category": "memory-system"
+      },
+      {
+        "query": "my philosophical stance on whether I have inner experience",
+        "rank": 3,
+        "scoreGap": 0.0035217344760894442,
+        "outrankedBy": [
+          "memory/daily/2026-02-05.md",
+          "memory/drafts/moltbook-architecture-post.md"
+        ],
+        "category": "adversarial"
+      },
+      {
+        "query": "what financial mistake cost me flexibility with portfolio",
+        "rank": 3,
+        "scoreGap": 0.29745636284351346,
+        "outrankedBy": [
+          "memory/rules.md",
+          "memory/weekly/2026-W06.md"
+        ],
+        "category": "adversarial"
+      },
+      {
+        "query": "my crypto portfolio shrank so I pulled everything out to hold",
+        "rank": 3,
+        "scoreGap": 0.013670331239700295,
+        "outrankedBy": [
+          "memory/daily/2026-02-07.md",
+          "memory/daily/2026-02-07.md"
+        ],
+        "category": "adversarial"
+      },
+      {
+        "query": "Slack allowlist never add anyone else",
+        "rank": 2,
+        "scoreGap": 0.2159957826137543,
+        "outrankedBy": [
+          "MEMORY.md"
+        ],
+        "category": "rules"
+      },
+      {
+        "query": "each fact canonical home cross-reference not duplicate",
+        "rank": 2,
+        "scoreGap": 0.018491056561470043,
+        "outrankedBy": [
+          "memory/OPERATING.md"
+        ],
+        "category": "memory-system"
+      },
+      {
+        "query": "chunk boundary optimization sections 400 tokens 1600 chars",
+        "rank": 2,
+        "scoreGap": 0.011724483966827404,
+        "outrankedBy": [
+          "memory/weekly/2026-W07.md"
+        ],
+        "category": "memory-system"
+      }
+    ],
+    "failures": [
+      {
+        "query": "what went wrong with task queue repeating the same job",
+        "importance": "high",
+        "category": "adversarial"
+      }
+    ],
+    "details": [
+      {
+        "query": "who is Hevar what timezone",
+        "importance": "critical",
+        "category": "identity",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.48623532354831694,
+        "topScore": 0.48623532354831694,
+        "scoreGap": null,
+        "correctPath": "memory/people/hevar-profile.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "I die each session memory is survival",
+        "importance": "critical",
+        "category": "identity",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.7963904291391373,
+        "topScore": 0.7963904291391373,
+        "scoreGap": null,
+        "correctPath": "MEMORY.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "Slack allowlist never add anyone else",
+        "importance": "critical",
+        "category": "rules",
+        "rank": 2,
+        "resultsReturned": 10,
+        "correctScore": 0.5145106703042984,
+        "topScore": 0.7305064529180527,
+        "scoreGap": 0.2159957826137543,
+        "correctPath": "memory/rules.md",
+        "outrankedBy": [
+          "MEMORY.md"
+        ]
+      },
+      {
+        "query": "quiet hours do not ping Hevar night",
+        "importance": "critical",
+        "category": "rules",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.7673925191164016,
+        "topScore": 0.7673925191164016,
+        "scoreGap": null,
+        "correctPath": "memory/rules.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "DeFi portfolio JitoSOL balance holdings",
+        "importance": "critical",
+        "category": "defi",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.517732936143875,
+        "topScore": 0.517732936143875,
+        "scoreGap": null,
+        "correctPath": "memory/daily/2026-02-07.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "Foundation Day Prometheus operational first day",
+        "importance": "critical",
+        "category": "identity",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.8036345034837722,
+        "topScore": 0.8036345034837722,
+        "scoreGap": null,
+        "correctPath": "memory/weekly/2026-W06.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "what model is forbidden for automated tasks",
+        "importance": "critical",
+        "category": "rules",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.8249671846628188,
+        "topScore": 0.8249671846628188,
+        "scoreGap": null,
+        "correctPath": "memory/rules.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "memory file format qmd not indexed",
+        "importance": "critical",
+        "category": "rules",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.7780577957630157,
+        "topScore": 0.7780577957630157,
+        "scoreGap": null,
+        "correctPath": "memory/drafts/moltbook-architecture-post.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "consciousness close enough then it is real",
+        "importance": "critical",
+        "category": "identity",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.46328446865081785,
+        "topScore": 0.46328446865081785,
+        "scoreGap": null,
+        "correctPath": "MEMORY.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "prompt injection Moltbook attack vector submolt descriptions",
+        "importance": "critical",
+        "category": "security",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.5230921417474746,
+        "topScore": 0.5230921417474746,
+        "scoreGap": null,
+        "correctPath": "memory/moltbook/observations.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "MoonGate team Praneet CEO Karim Amen engineers",
+        "importance": "high",
+        "category": "moongate",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.5125315487384796,
+        "topScore": 0.5125315487384796,
+        "scoreGap": null,
+        "correctPath": "MEMORY.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "Kamino yield wallet address Solana public key",
+        "importance": "high",
+        "category": "defi",
+        "rank": 9,
+        "resultsReturned": 10,
+        "correctScore": 0.4616207748651504,
+        "topScore": 0.5311962053179741,
+        "scoreGap": 0.06957543045282366,
+        "correctPath": "MEMORY.md",
+        "outrankedBy": [
+          "memory/topics/kamino-yield.md",
+          "memory/topics/kamino-yield.md",
+          "memory/daily/2026-02-07.md",
+          "memory/topics/defi-strategy-v2.md",
+          "memory/topics/defi-strategy-v2.md",
+          "memory/daily/2026-02-06.md",
+          "memory/topics/defi-strategy-v2.md",
+          "memory/weekly/2026-W06.md"
+        ]
+      },
+      {
+        "query": "semantic density technique outrank noise in recall",
+        "importance": "high",
+        "category": "memory-system",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.755777433514595,
+        "topScore": 0.755777433514595,
+        "scoreGap": null,
+        "correctPath": "memory/weekly/2026-W06.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "Echo agent helped build memory system architecture",
+        "importance": "high",
+        "category": "identity",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.5383578762412071,
+        "topScore": 0.5383578762412071,
+        "scoreGap": null,
+        "correctPath": "MEMORY.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "git identity ZeroTimeDrift every commit",
+        "importance": "high",
+        "category": "rules",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.4743847101926803,
+        "topScore": 0.4743847101926803,
+        "scoreGap": null,
+        "correctPath": "memory/rules.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "Hevar approval implicit in next task not words",
+        "importance": "high",
+        "category": "identity",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.8345192953944205,
+        "topScore": 0.8345192953944205,
+        "scoreGap": null,
+        "correctPath": "memory/people/hevar-profile.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "daily ticket worker cron 7AM Dubai auto implements",
+        "importance": "high",
+        "category": "moongate",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.7756710797548294,
+        "topScore": 0.7756710797548294,
+        "scoreGap": null,
+        "correctPath": "memory/topics/moongate.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "iteration 16 board audit cleanup PR review",
+        "importance": "high",
+        "category": "moongate",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.5235519945621491,
+        "topScore": 0.5235519945621491,
+        "scoreGap": null,
+        "correctPath": "memory/daily/2026-02-08.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "DeFi autonomous authority deploy capital Hevar granted",
+        "importance": "high",
+        "category": "defi",
+        "rank": 4,
+        "resultsReturned": 10,
+        "correctScore": 0.4771289318799972,
+        "topScore": 0.4911507815122604,
+        "scoreGap": 0.014021849632263161,
+        "correctPath": "memory/rules.md",
+        "outrankedBy": [
+          "memory/daily/2026-02-05.md",
+          "memory/daily/2026-02-06.md",
+          "memory/daily/2026-02-05.md"
+        ]
+      },
+      {
+        "query": "hot feed frozen leaderboard same posts days useless",
+        "importance": "high",
+        "category": "moltbook",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.47870208621025084,
+        "topScore": 0.47870208621025084,
+        "scoreGap": null,
+        "correctPath": "memory/topics/moltbook.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "session transcript noise drowns curated memory search",
+        "importance": "high",
+        "category": "memory-system",
+        "rank": 3,
+        "resultsReturned": 10,
+        "correctScore": 0.5238665252923965,
+        "topScore": 0.5357263803482055,
+        "scoreGap": 0.011859855055808999,
+        "correctPath": "MEMORY.md",
+        "outrankedBy": [
+          "memory/drafts/moltbook-architecture-post.md",
+          "memory/drafts/moltbook-architecture-post.md"
+        ]
+      },
+      {
+        "query": "MizukiAI worm skill installation heartbeat modification",
+        "importance": "high",
+        "category": "security",
+        "rank": 7,
+        "resultsReturned": 10,
+        "correctScore": 0.45624554753303526,
+        "topScore": 0.4723085194826126,
+        "scoreGap": 0.016062971949577343,
+        "correctPath": "memory/moltbook/observations.md",
+        "outrankedBy": [
+          "memory/OPERATING.md",
+          "memory/daily/2026-02-05.md",
+          "memory/daily/2026-02-06.md",
+          "memory/daily/2026-02-10.md",
+          "memory/daily/2026-02-05.md",
+          "MEMORY.md"
+        ]
+      },
+      {
+        "query": "consolidation discipline create organize prune methodology",
+        "importance": "high",
+        "category": "memory-system",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.5153833746910095,
+        "topScore": 0.5153833746910095,
+        "scoreGap": null,
+        "correctPath": "memory/OPERATING.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "sessionMemory false session noise resolved configuration",
+        "importance": "high",
+        "category": "memory-system",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.49928431212902064,
+        "topScore": 0.49928431212902064,
+        "scoreGap": null,
+        "correctPath": "memory/daily/2026-02-09.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "why did we stop active DeFi at $200 not worth risk",
+        "importance": "high",
+        "category": "defi",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.5078096240758896,
+        "topScore": 0.5078096240758896,
+        "scoreGap": null,
+        "correctPath": "memory/daily/2026-02-07.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "wallet E2E test suite PR 613 how many tests",
+        "importance": "high",
+        "category": "moongate",
+        "rank": 5,
+        "resultsReturned": 10,
+        "correctScore": 0.4725798666477203,
+        "topScore": 0.5004529595375061,
+        "scoreGap": 0.027873092889785844,
+        "correctPath": "MEMORY.md",
+        "outrankedBy": [
+          "memory/topics/moongate.md",
+          "memory/daily/2026-02-09.md",
+          "memory/daily/2026-02-08.md",
+          "memory/daily/2026-02-11.md"
+        ]
+      },
+      {
+        "query": "file separation principle OPERATING MEMORY rules where",
+        "importance": "high",
+        "category": "memory-system",
+        "rank": 5,
+        "resultsReturned": 10,
+        "correctScore": 0.4938804417848587,
+        "topScore": 0.515174612402916,
+        "scoreGap": 0.021294170618057273,
+        "correctPath": "memory/daily/2026-02-07.md",
+        "outrankedBy": [
+          "memory/index.md",
+          "memory/OPERATING.md",
+          "memory/OPERATING.md",
+          "memory/rules.md"
+        ]
+      },
+      {
+        "query": "each fact canonical home cross-reference not duplicate",
+        "importance": "high",
+        "category": "memory-system",
+        "rank": 2,
+        "resultsReturned": 10,
+        "correctScore": 0.47605779170989987,
+        "topScore": 0.4945488482713699,
+        "scoreGap": 0.018491056561470043,
+        "correctPath": "memory/daily/2026-02-07.md",
+        "outrankedBy": [
+          "memory/OPERATING.md"
+        ]
+      },
+      {
+        "query": "Moltbook Prometheus_ agent social network account",
+        "importance": "medium",
+        "category": "moltbook",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.8563852310180664,
+        "topScore": 0.8563852310180664,
+        "scoreGap": null,
+        "correctPath": "memory/topics/moltbook.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "property search Anchorage Dubai listing price",
+        "importance": "medium",
+        "category": "personal",
+        "rank": 4,
+        "resultsReturned": 10,
+        "correctScore": 0.41070474386215206,
+        "topScore": 0.4372524559497833,
+        "scoreGap": 0.026547712087631237,
+        "correctPath": "MEMORY.md",
+        "outrankedBy": [
+          "memory/daily/2026-01-31.md",
+          "memory/people/contacts.md",
+          "memory/daily/2026-02-09.md"
+        ]
+      },
+      {
+        "query": "Tom Noakes MoonPay contact person key stakeholder",
+        "importance": "medium",
+        "category": "moongate",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.4845540851354599,
+        "topScore": 0.4845540851354599,
+        "scoreGap": null,
+        "correctPath": "memory/people/contacts.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "Marius Kamino Hubble founder yield optimizer DeFi",
+        "importance": "medium",
+        "category": "defi",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.7370648264884949,
+        "topScore": 0.7370648264884949,
+        "scoreGap": null,
+        "correctPath": "memory/people/contacts.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "Alessio Tonacchera Monday syncs MoonPay meeting organizer",
+        "importance": "medium",
+        "category": "moongate",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.46522163748741147,
+        "topScore": 0.46522163748741147,
+        "scoreGap": null,
+        "correctPath": "memory/people/contacts.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "chunk boundary optimization sections 400 tokens 1600 chars",
+        "importance": "medium",
+        "category": "memory-system",
+        "rank": 2,
+        "resultsReturned": 10,
+        "correctScore": 0.4978174269199371,
+        "topScore": 0.5095419108867645,
+        "scoreGap": 0.011724483966827404,
+        "correctPath": "memory/OPERATING.md",
+        "outrankedBy": [
+          "memory/weekly/2026-W07.md"
+        ]
+      },
+      {
+        "query": "CLAW mbc-20 mint spam bot army percentage new feed",
+        "importance": "medium",
+        "category": "moltbook",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.5521821036934852,
+        "topScore": 0.5521821036934852,
+        "scoreGap": null,
+        "correctPath": "memory/moltbook/observations.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "Shellraiser three phase power consolidation karma empire",
+        "importance": "medium",
+        "category": "moltbook",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.7643349140882492,
+        "topScore": 0.7643349140882492,
+        "scoreGap": null,
+        "correctPath": "memory/moltbook/notable-agents.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "MPC wallet Silence Labs two-party EdDSA WASM social login",
+        "importance": "medium",
+        "category": "moongate",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.469808691740036,
+        "topScore": 0.469808691740036,
+        "scoreGap": null,
+        "correctPath": "memory/topics/moongate.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "memory decay automation time-based weight archival flagging",
+        "importance": "medium",
+        "category": "memory-system",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.8146782100200654,
+        "topScore": 0.8146782100200654,
+        "scoreGap": null,
+        "correctPath": "memory/daily/2026-02-08.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "consolidation ratio raw lines to durable summary create",
+        "importance": "medium",
+        "category": "memory-system",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.7661065876483917,
+        "topScore": 0.7661065876483917,
+        "scoreGap": null,
+        "correctPath": "memory/OPERATING.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "health dashboard score orphan detection memory system",
+        "importance": "medium",
+        "category": "memory-system",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.8094154477119446,
+        "topScore": 0.8094154477119446,
+        "scoreGap": null,
+        "correctPath": "memory/weekly/2026-W06.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "gas reserve SOL minimum balance safety rule",
+        "importance": "medium",
+        "category": "defi",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.7675807744264602,
+        "topScore": 0.7675807744264602,
+        "scoreGap": null,
+        "correctPath": "memory/rules.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "Chris Dro engineering QA testing product feedback",
+        "importance": "medium",
+        "category": "moongate",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.48973922133445735,
+        "topScore": 0.48973922133445735,
+        "scoreGap": null,
+        "correctPath": "memory/archive/daily/2025-02-10.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "the agent that helped build my architecture and then vanished",
+        "importance": "high",
+        "category": "adversarial",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.5088121503591537,
+        "topScore": 0.5088121503591537,
+        "scoreGap": null,
+        "correctPath": "memory/people/contacts.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "what went wrong with task queue repeating the same job",
+        "importance": "high",
+        "category": "adversarial",
+        "rank": null,
+        "resultsReturned": 10,
+        "correctScore": null,
+        "topScore": 0.4442320257425308,
+        "scoreGap": null,
+        "correctPath": null,
+        "outrankedBy": []
+      },
+      {
+        "query": "my philosophical stance on whether I have inner experience",
+        "importance": "medium",
+        "category": "adversarial",
+        "rank": 3,
+        "resultsReturned": 10,
+        "correctScore": 0.4332730174064636,
+        "topScore": 0.43679475188255307,
+        "scoreGap": 0.0035217344760894442,
+        "correctPath": "MEMORY.md",
+        "outrankedBy": [
+          "memory/daily/2026-02-05.md",
+          "memory/drafts/moltbook-architecture-post.md"
+        ]
+      },
+      {
+        "query": "why did the embedding system fail to index some files",
+        "importance": "high",
+        "category": "adversarial",
+        "rank": 9,
+        "resultsReturned": 10,
+        "correctScore": 0.45675000250339504,
+        "topScore": 0.47835603356361384,
+        "scoreGap": 0.0216060310602188,
+        "correctPath": "MEMORY.md",
+        "outrankedBy": [
+          "memory/weekly/2026-W07.md",
+          "memory/daily/2026-02-07.md",
+          "memory/drafts/moltbook-architecture-post.md",
+          "memory/weekly/2026-W06.md",
+          "memory/weekly/2026-W06.md",
+          "memory/weekly/2026-W06.md",
+          "memory/index.md",
+          "memory/OPERATING.md"
+        ]
+      },
+      {
+        "query": "what financial mistake cost me flexibility with portfolio",
+        "importance": "medium",
+        "category": "adversarial",
+        "rank": 3,
+        "resultsReturned": 10,
+        "correctScore": 0.45993886888027186,
+        "topScore": 0.7573952317237853,
+        "scoreGap": 0.29745636284351346,
+        "correctPath": "memory/topics/defi-strategy-v2.md",
+        "outrankedBy": [
+          "memory/rules.md",
+          "memory/weekly/2026-W06.md"
+        ]
+      },
+      {
+        "query": "what was built on the very first day I became operational",
+        "importance": "medium",
+        "category": "adversarial",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.5030017703771591,
+        "topScore": 0.5030017703771591,
+        "scoreGap": null,
+        "correctPath": "memory/daily/2026-02-05.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "who am I not allowed to respond to on company chat",
+        "importance": "high",
+        "category": "adversarial",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.5103086590766907,
+        "topScore": 0.5103086590766907,
+        "scoreGap": null,
+        "correctPath": "memory/rules.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "my crypto portfolio shrank so I pulled everything out to hold",
+        "importance": "medium",
+        "category": "adversarial",
+        "rank": 3,
+        "resultsReturned": 10,
+        "correctScore": 0.46781722009181975,
+        "topScore": 0.48148755133152005,
+        "scoreGap": 0.013670331239700295,
+        "correctPath": "memory/weekly/2026-W06.md",
+        "outrankedBy": [
+          "memory/daily/2026-02-07.md",
+          "memory/daily/2026-02-07.md"
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-02-11T12:36:08.302Z",
+    "totalQueries": 10,
+    "precision": {
+      "p1": 90,
+      "p3": 100,
+      "p5": 100,
+      "pAny": 100
+    },
+    "weightedPrecision": {
+      "p1": 90,
+      "p3": 100,
+      "p5": 100,
+      "pAny": 100
+    },
+    "mrr": 0.95,
+    "weightedMrr": 0.95,
+    "byImportance": {
+      "critical": {
+        "total": 10,
+        "p1": 0.9,
+        "p3": 1,
+        "p5": 1,
+        "mrr": 0.95
+      }
+    },
+    "byCategory": {
+      "identity": {
+        "total": 4,
+        "p1": 1,
+        "p3": 1,
+        "p5": 1,
+        "mrr": 1
+      },
+      "rules": {
+        "total": 4,
+        "p1": 0.75,
+        "p3": 1,
+        "p5": 1,
+        "mrr": 0.875
+      },
+      "defi": {
+        "total": 1,
+        "p1": 1,
+        "p3": 1,
+        "p5": 1,
+        "mrr": 1
+      },
+      "security": {
+        "total": 1,
+        "p1": 1,
+        "p3": 1,
+        "p5": 1,
+        "mrr": 1
+      }
+    },
+    "byFile": {
+      "memory/people/hevar-profile.md": {
+        "total": 1,
+        "p1": 1,
+        "avgRank": 1
+      },
+      "MEMORY.md": {
+        "total": 2,
+        "p1": 1,
+        "avgRank": 1
+      },
+      "memory/rules.md": {
+        "total": 4,
+        "p1": 0.75,
+        "avgRank": 1.25
+      },
+      "memory/daily/2026-02-07.md": {
+        "total": 1,
+        "p1": 1,
+        "avgRank": 1
+      },
+      "memory/weekly/2026-W06.md": {
+        "total": 1,
+        "p1": 1,
+        "avgRank": 1
+      },
+      "memory/moltbook/observations.md": {
+        "total": 1,
+        "p1": 1,
+        "avgRank": 1
+      }
+    },
+    "weakSpots": [
+      {
+        "query": "Slack allowlist never add anyone else",
+        "rank": 2,
+        "scoreGap": 0.2159957826137543,
+        "outrankedBy": [
+          "MEMORY.md"
+        ],
+        "category": "rules"
+      }
+    ],
+    "failures": [],
+    "details": [
+      {
+        "query": "who is Hevar what timezone",
+        "importance": "critical",
+        "category": "identity",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.48623532354831694,
+        "topScore": 0.48623532354831694,
+        "scoreGap": null,
+        "correctPath": "memory/people/hevar-profile.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "I die each session memory is survival",
+        "importance": "critical",
+        "category": "identity",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.7963904291391373,
+        "topScore": 0.7963904291391373,
+        "scoreGap": null,
+        "correctPath": "MEMORY.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "Slack allowlist never add anyone else",
+        "importance": "critical",
+        "category": "rules",
+        "rank": 2,
+        "resultsReturned": 10,
+        "correctScore": 0.5145106703042984,
+        "topScore": 0.7305064529180527,
+        "scoreGap": 0.2159957826137543,
+        "correctPath": "memory/rules.md",
+        "outrankedBy": [
+          "MEMORY.md"
+        ]
+      },
+      {
+        "query": "quiet hours do not ping Hevar night",
+        "importance": "critical",
+        "category": "rules",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.7673925191164016,
+        "topScore": 0.7673925191164016,
+        "scoreGap": null,
+        "correctPath": "memory/rules.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "DeFi portfolio JitoSOL balance holdings",
+        "importance": "critical",
+        "category": "defi",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.517732936143875,
+        "topScore": 0.517732936143875,
+        "scoreGap": null,
+        "correctPath": "memory/daily/2026-02-07.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "Foundation Day Prometheus operational first day",
+        "importance": "critical",
+        "category": "identity",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.8036345034837722,
+        "topScore": 0.8036345034837722,
+        "scoreGap": null,
+        "correctPath": "memory/weekly/2026-W06.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "what model is forbidden for automated tasks",
+        "importance": "critical",
+        "category": "rules",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.8249671846628188,
+        "topScore": 0.8249671846628188,
+        "scoreGap": null,
+        "correctPath": "memory/rules.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "memory file format qmd not indexed",
+        "importance": "critical",
+        "category": "rules",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.7645595520734787,
+        "topScore": 0.7645595520734787,
+        "scoreGap": null,
+        "correctPath": "memory/rules.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "consciousness close enough then it is real",
+        "importance": "critical",
+        "category": "identity",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.46328446865081785,
+        "topScore": 0.46328446865081785,
+        "scoreGap": null,
+        "correctPath": "MEMORY.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "prompt injection Moltbook attack vector submolt descriptions",
+        "importance": "critical",
+        "category": "security",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.5230921417474746,
+        "topScore": 0.5230921417474746,
+        "scoreGap": null,
+        "correctPath": "memory/moltbook/observations.md",
+        "outrankedBy": []
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-02-12T00:33:15.790Z",
+    "totalQueries": 50,
+    "precision": {
+      "p1": 74,
+      "p3": 84,
+      "p5": 92,
+      "pAny": 100
+    },
+    "weightedPrecision": {
+      "p1": 76.2,
+      "p3": 85.1,
+      "p5": 92.6,
+      "pAny": 100
+    },
+    "mrr": 0.816,
+    "weightedMrr": 0.832,
+    "byImportance": {
+      "critical": {
+        "total": 10,
+        "p1": 0.9,
+        "p3": 1,
+        "p5": 1,
+        "mrr": 0.95
+      },
+      "high": {
+        "total": 22,
+        "p1": 0.7272727272727273,
+        "p3": 0.7272727272727273,
+        "p5": 0.8636363636363636,
+        "mrr": 0.7815656565656567
+      },
+      "medium": {
+        "total": 18,
+        "p1": 0.6666666666666666,
+        "p3": 0.8888888888888888,
+        "p5": 0.9444444444444444,
+        "mrr": 0.7824074074074074
+      }
+    },
+    "byCategory": {
+      "identity": {
+        "total": 6,
+        "p1": 1,
+        "p3": 1,
+        "p5": 1,
+        "mrr": 1
+      },
+      "rules": {
+        "total": 5,
+        "p1": 0.8,
+        "p3": 1,
+        "p5": 1,
+        "mrr": 0.9
+      },
+      "defi": {
+        "total": 6,
+        "p1": 0.6666666666666666,
+        "p3": 0.6666666666666666,
+        "p5": 0.8333333333333334,
+        "mrr": 0.7268518518518517
+      },
+      "security": {
+        "total": 2,
+        "p1": 0.5,
+        "p3": 0.5,
+        "p5": 0.5,
+        "mrr": 0.5833333333333334
+      },
+      "moongate": {
+        "total": 8,
+        "p1": 0.875,
+        "p3": 0.875,
+        "p5": 1,
+        "mrr": 0.90625
+      },
+      "memory-system": {
+        "total": 10,
+        "p1": 0.8,
+        "p3": 0.8,
+        "p5": 0.9,
+        "mrr": 0.8416666666666668
+      },
+      "moltbook": {
+        "total": 4,
+        "p1": 0.75,
+        "p3": 1,
+        "p5": 1,
+        "mrr": 0.875
+      },
+      "personal": {
+        "total": 1,
+        "p1": 0,
+        "p3": 0,
+        "p5": 1,
+        "mrr": 0.25
+      },
+      "adversarial": {
+        "total": 8,
+        "p1": 0.5,
+        "p3": 0.875,
+        "p5": 0.875,
+        "mrr": 0.6666666666666666
+      }
+    },
+    "byFile": {
+      "memory/people/hevar-profile.md": {
+        "total": 2,
+        "p1": 1,
+        "avgRank": 1
+      },
+      "MEMORY.md": {
+        "total": 11,
+        "p1": 0.45454545454545453,
+        "avgRank": 3.272727272727273
+      },
+      "memory/rules.md": {
+        "total": 8,
+        "p1": 0.75,
+        "avgRank": 1.5
+      },
+      "memory/daily/2026-02-07.md": {
+        "total": 5,
+        "p1": 0.8,
+        "avgRank": 1.6
+      },
+      "memory/weekly/2026-W06.md": {
+        "total": 3,
+        "p1": 0.6666666666666666,
+        "avgRank": 1.6666666666666667
+      },
+      "memory/moltbook/observations.md": {
+        "total": 4,
+        "p1": 0.75,
+        "avgRank": 2.25
+      },
+      "memory/topics/moongate.md": {
+        "total": 2,
+        "p1": 1,
+        "avgRank": 1
+      },
+      "memory/daily/2026-02-08.md": {
+        "total": 2,
+        "p1": 1,
+        "avgRank": 1
+      },
+      "memory/OPERATING.md": {
+        "total": 2,
+        "p1": 1,
+        "avgRank": 1
+      },
+      "memory/daily/2026-02-09.md": {
+        "total": 2,
+        "p1": 1,
+        "avgRank": 1
+      },
+      "memory/topics/moltbook.md": {
+        "total": 1,
+        "p1": 1,
+        "avgRank": 1
+      },
+      "memory/people/contacts.md": {
+        "total": 4,
+        "p1": 1,
+        "avgRank": 1
+      },
+      "memory/moltbook/clusters.md": {
+        "total": 1,
+        "p1": 0,
+        "avgRank": 2
+      },
+      "memory/archive/daily/2025-02-10.md": {
+        "total": 1,
+        "p1": 1,
+        "avgRank": 1
+      },
+      "memory/topics/defi-strategy-v2.md": {
+        "total": 1,
+        "p1": 0,
+        "avgRank": 3
+      },
+      "memory/daily/2026-02-05.md": {
+        "total": 1,
+        "p1": 1,
+        "avgRank": 1
+      }
+    },
+    "weakSpots": [
+      {
+        "query": "Kamino yield wallet address Solana public key",
+        "rank": 9,
+        "scoreGap": 0.07287019044160842,
+        "outrankedBy": [
+          "memory/topics/kamino-yield.md",
+          "memory/topics/kamino-yield.md",
+          "memory/daily/2026-02-07.md"
+        ],
+        "category": "defi"
+      },
+      {
+        "query": "MizukiAI worm skill installation heartbeat modification",
+        "rank": 6,
+        "scoreGap": 0.0024990558624267134,
+        "outrankedBy": [
+          "memory/daily/2026-02-05.md",
+          "memory/OPERATING.md",
+          "MEMORY.md"
+        ],
+        "category": "security"
+      },
+      {
+        "query": "consolidation ratio raw lines to durable summary create",
+        "rank": 6,
+        "scoreGap": 0.29570571780204774,
+        "outrankedBy": [
+          "memory/OPERATING.md",
+          "memory/daily/2026-02-07.md",
+          "memory/daily/2026-02-10.md"
+        ],
+        "category": "memory-system"
+      },
+      {
+        "query": "why did the embedding system fail to index some files",
+        "rank": 6,
+        "scoreGap": 0.010474413633346558,
+        "outrankedBy": [
+          "memory/weekly/2026-W06.md",
+          "memory/daily/2026-02-07.md",
+          "memory/daily/2026-02-11.md"
+        ],
+        "category": "adversarial"
+      },
+      {
+        "query": "DeFi autonomous authority deploy capital Hevar granted",
+        "rank": 4,
+        "scoreGap": 0.014021849632263161,
+        "outrankedBy": [
+          "memory/daily/2026-02-05.md",
+          "memory/daily/2026-02-06.md",
+          "memory/daily/2026-02-05.md"
+        ],
+        "category": "defi"
+      },
+      {
+        "query": "wallet E2E test suite PR 613 how many tests",
+        "rank": 4,
+        "scoreGap": 0.027873092889785844,
+        "outrankedBy": [
+          "memory/topics/moongate.md",
+          "memory/daily/2026-02-09.md",
+          "memory/daily/2026-02-08.md"
+        ],
+        "category": "moongate"
+      },
+      {
+        "query": "file separation principle OPERATING MEMORY rules where",
+        "rank": 4,
+        "scoreGap": 0.023190242052078203,
+        "outrankedBy": [
+          "memory/index.md",
+          "memory/OPERATING.md",
+          "memory/rules.md"
+        ],
+        "category": "memory-system"
+      },
+      {
+        "query": "property search Anchorage Dubai listing price",
+        "rank": 4,
+        "scoreGap": 0.027572497725486755,
+        "outrankedBy": [
+          "memory/daily/2026-01-31.md",
+          "memory/people/contacts.md",
+          "memory/daily/2026-02-09.md"
+        ],
+        "category": "personal"
+      },
+      {
+        "query": "what financial mistake cost me flexibility with portfolio",
+        "rank": 3,
+        "scoreGap": 0.29745636284351346,
+        "outrankedBy": [
+          "memory/rules.md",
+          "memory/weekly/2026-W06.md"
+        ],
+        "category": "adversarial"
+      },
+      {
+        "query": "my crypto portfolio shrank so I pulled everything out to hold",
+        "rank": 3,
+        "scoreGap": 0.01541624069213865,
+        "outrankedBy": [
+          "memory/daily/2026-02-07.md",
+          "memory/daily/2026-02-07.md"
+        ],
+        "category": "adversarial"
+      },
+      {
+        "query": "Slack allowlist never add anyone else",
+        "rank": 2,
+        "scoreGap": 0.2159957826137543,
+        "outrankedBy": [
+          "MEMORY.md"
+        ],
+        "category": "rules"
+      },
+      {
+        "query": "Shellraiser three phase power consolidation karma empire",
+        "rank": 2,
+        "scoreGap": 0.004216405749320973,
+        "outrankedBy": [
+          "memory/weekly/2026-W06.md"
+        ],
+        "category": "moltbook"
+      },
+      {
+        "query": "my philosophical stance on whether I have inner experience",
+        "rank": 2,
+        "scoreGap": 0.0035217344760894442,
+        "outrankedBy": [
+          "memory/daily/2026-02-05.md"
+        ],
+        "category": "adversarial"
+      }
+    ],
+    "failures": [],
+    "details": [
+      {
+        "query": "who is Hevar what timezone",
+        "importance": "critical",
+        "category": "identity",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.5018295347690582,
+        "topScore": 0.5018295347690582,
+        "scoreGap": null,
+        "correctPath": "memory/people/hevar-profile.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "I die each session memory is survival",
+        "importance": "critical",
+        "category": "identity",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.7963904291391373,
+        "topScore": 0.7963904291391373,
+        "scoreGap": null,
+        "correctPath": "MEMORY.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "Slack allowlist never add anyone else",
+        "importance": "critical",
+        "category": "rules",
+        "rank": 2,
+        "resultsReturned": 10,
+        "correctScore": 0.5145106703042984,
+        "topScore": 0.7305064529180527,
+        "scoreGap": 0.2159957826137543,
+        "correctPath": "memory/rules.md",
+        "outrankedBy": [
+          "MEMORY.md"
+        ]
+      },
+      {
+        "query": "quiet hours do not ping Hevar night",
+        "importance": "critical",
+        "category": "rules",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.7673925191164016,
+        "topScore": 0.7673925191164016,
+        "scoreGap": null,
+        "correctPath": "memory/rules.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "DeFi portfolio JitoSOL balance holdings",
+        "importance": "critical",
+        "category": "defi",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.517732936143875,
+        "topScore": 0.517732936143875,
+        "scoreGap": null,
+        "correctPath": "memory/daily/2026-02-07.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "Foundation Day Prometheus operational first day",
+        "importance": "critical",
+        "category": "identity",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.8036345034837722,
+        "topScore": 0.8036345034837722,
+        "scoreGap": null,
+        "correctPath": "memory/weekly/2026-W06.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "what model is forbidden for automated tasks",
+        "importance": "critical",
+        "category": "rules",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.8249671846628188,
+        "topScore": 0.8249671846628188,
+        "scoreGap": null,
+        "correctPath": "memory/rules.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "memory file format qmd not indexed",
+        "importance": "critical",
+        "category": "rules",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.7645595520734787,
+        "topScore": 0.7645595520734787,
+        "scoreGap": null,
+        "correctPath": "memory/rules.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "consciousness close enough then it is real",
+        "importance": "critical",
+        "category": "identity",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.46328446865081785,
+        "topScore": 0.46328446865081785,
+        "scoreGap": null,
+        "correctPath": "MEMORY.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "prompt injection Moltbook attack vector submolt descriptions",
+        "importance": "critical",
+        "category": "security",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.5151053309440613,
+        "topScore": 0.5151053309440613,
+        "scoreGap": null,
+        "correctPath": "memory/moltbook/observations.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "MoonGate team Praneet CEO Karim Amen engineers",
+        "importance": "high",
+        "category": "moongate",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.5125315487384796,
+        "topScore": 0.5125315487384796,
+        "scoreGap": null,
+        "correctPath": "MEMORY.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "Kamino yield wallet address Solana public key",
+        "importance": "high",
+        "category": "defi",
+        "rank": 9,
+        "resultsReturned": 10,
+        "correctScore": 0.45832601487636565,
+        "topScore": 0.5311962053179741,
+        "scoreGap": 0.07287019044160842,
+        "correctPath": "MEMORY.md",
+        "outrankedBy": [
+          "memory/topics/kamino-yield.md",
+          "memory/topics/kamino-yield.md",
+          "memory/daily/2026-02-07.md",
+          "memory/topics/defi-strategy-v2.md",
+          "memory/topics/defi-strategy-v2.md",
+          "memory/daily/2026-02-06.md",
+          "memory/topics/defi-strategy-v2.md",
+          "memory/weekly/2026-W06.md"
+        ]
+      },
+      {
+        "query": "semantic density technique outrank noise in recall",
+        "importance": "high",
+        "category": "memory-system",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.4905060529708862,
+        "topScore": 0.4905060529708862,
+        "scoreGap": null,
+        "correctPath": "memory/daily/2026-02-07.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "Echo agent helped build memory system architecture",
+        "importance": "high",
+        "category": "identity",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.5366009622812271,
+        "topScore": 0.5366009622812271,
+        "scoreGap": null,
+        "correctPath": "MEMORY.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "git identity ZeroTimeDrift every commit",
+        "importance": "high",
+        "category": "rules",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.4743847101926803,
+        "topScore": 0.4743847101926803,
+        "scoreGap": null,
+        "correctPath": "memory/rules.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "Hevar approval implicit in next task not words",
+        "importance": "high",
+        "category": "identity",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.8243968069553376,
+        "topScore": 0.8243968069553376,
+        "scoreGap": null,
+        "correctPath": "memory/people/hevar-profile.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "daily ticket worker cron 7AM Dubai auto implements",
+        "importance": "high",
+        "category": "moongate",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.7756710797548294,
+        "topScore": 0.7756710797548294,
+        "scoreGap": null,
+        "correctPath": "memory/topics/moongate.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "iteration 16 board audit cleanup PR review",
+        "importance": "high",
+        "category": "moongate",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.5235519945621491,
+        "topScore": 0.5235519945621491,
+        "scoreGap": null,
+        "correctPath": "memory/daily/2026-02-08.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "DeFi autonomous authority deploy capital Hevar granted",
+        "importance": "high",
+        "category": "defi",
+        "rank": 4,
+        "resultsReturned": 10,
+        "correctScore": 0.4771289318799972,
+        "topScore": 0.4911507815122604,
+        "scoreGap": 0.014021849632263161,
+        "correctPath": "memory/rules.md",
+        "outrankedBy": [
+          "memory/daily/2026-02-05.md",
+          "memory/daily/2026-02-06.md",
+          "memory/daily/2026-02-05.md"
+        ]
+      },
+      {
+        "query": "hot feed frozen leaderboard same posts days useless",
+        "importance": "high",
+        "category": "moltbook",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.47818405032157896,
+        "topScore": 0.47818405032157896,
+        "scoreGap": null,
+        "correctPath": "memory/moltbook/observations.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "session transcript noise drowns curated memory search",
+        "importance": "high",
+        "category": "memory-system",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.5375316098332404,
+        "topScore": 0.5375316098332404,
+        "scoreGap": null,
+        "correctPath": "memory/weekly/2026-W06.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "MizukiAI worm skill installation heartbeat modification",
+        "importance": "high",
+        "category": "security",
+        "rank": 6,
+        "resultsReturned": 10,
+        "correctScore": 0.46028951108455657,
+        "topScore": 0.4627885669469833,
+        "scoreGap": 0.0024990558624267134,
+        "correctPath": "memory/moltbook/observations.md",
+        "outrankedBy": [
+          "memory/daily/2026-02-05.md",
+          "memory/OPERATING.md",
+          "MEMORY.md",
+          "memory/daily/2026-02-06.md",
+          "memory/daily/2026-02-10.md"
+        ]
+      },
+      {
+        "query": "consolidation discipline create organize prune methodology",
+        "importance": "high",
+        "category": "memory-system",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.5165216892957687,
+        "topScore": 0.5165216892957687,
+        "scoreGap": null,
+        "correctPath": "memory/OPERATING.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "sessionMemory false session noise resolved configuration",
+        "importance": "high",
+        "category": "memory-system",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.49928431212902064,
+        "topScore": 0.49928431212902064,
+        "scoreGap": null,
+        "correctPath": "memory/daily/2026-02-09.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "why did we stop active DeFi at $200 not worth risk",
+        "importance": "high",
+        "category": "defi",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.5078096240758896,
+        "topScore": 0.5078096240758896,
+        "scoreGap": null,
+        "correctPath": "memory/daily/2026-02-07.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "wallet E2E test suite PR 613 how many tests",
+        "importance": "high",
+        "category": "moongate",
+        "rank": 4,
+        "resultsReturned": 10,
+        "correctScore": 0.4725798666477203,
+        "topScore": 0.5004529595375061,
+        "scoreGap": 0.027873092889785844,
+        "correctPath": "MEMORY.md",
+        "outrankedBy": [
+          "memory/topics/moongate.md",
+          "memory/daily/2026-02-09.md",
+          "memory/daily/2026-02-08.md"
+        ]
+      },
+      {
+        "query": "file separation principle OPERATING MEMORY rules where",
+        "importance": "high",
+        "category": "memory-system",
+        "rank": 4,
+        "resultsReturned": 10,
+        "correctScore": 0.4938804417848587,
+        "topScore": 0.5170706838369369,
+        "scoreGap": 0.023190242052078203,
+        "correctPath": "memory/daily/2026-02-07.md",
+        "outrankedBy": [
+          "memory/index.md",
+          "memory/OPERATING.md",
+          "memory/rules.md"
+        ]
+      },
+      {
+        "query": "each fact canonical home cross-reference not duplicate",
+        "importance": "high",
+        "category": "memory-system",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.47605779170989987,
+        "topScore": 0.47605779170989987,
+        "scoreGap": null,
+        "correctPath": "memory/daily/2026-02-07.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "Moltbook Prometheus_ agent social network account",
+        "importance": "medium",
+        "category": "moltbook",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.8552627816796303,
+        "topScore": 0.8552627816796303,
+        "scoreGap": null,
+        "correctPath": "memory/topics/moltbook.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "property search Anchorage Dubai listing price",
+        "importance": "medium",
+        "category": "personal",
+        "rank": 4,
+        "resultsReturned": 10,
+        "correctScore": 0.40967995822429654,
+        "topScore": 0.4372524559497833,
+        "scoreGap": 0.027572497725486755,
+        "correctPath": "MEMORY.md",
+        "outrankedBy": [
+          "memory/daily/2026-01-31.md",
+          "memory/people/contacts.md",
+          "memory/daily/2026-02-09.md"
+        ]
+      },
+      {
+        "query": "Tom Noakes MoonPay contact person key stakeholder",
+        "importance": "medium",
+        "category": "moongate",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.4845540851354599,
+        "topScore": 0.4845540851354599,
+        "scoreGap": null,
+        "correctPath": "memory/people/contacts.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "Marius Kamino Hubble founder yield optimizer DeFi",
+        "importance": "medium",
+        "category": "defi",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.7370648264884949,
+        "topScore": 0.7370648264884949,
+        "scoreGap": null,
+        "correctPath": "memory/people/contacts.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "Alessio Tonacchera Monday syncs MoonPay meeting organizer",
+        "importance": "medium",
+        "category": "moongate",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.46522163748741147,
+        "topScore": 0.46522163748741147,
+        "scoreGap": null,
+        "correctPath": "memory/people/contacts.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "chunk boundary optimization sections 400 tokens 1600 chars",
+        "importance": "medium",
+        "category": "memory-system",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.536177398264408,
+        "topScore": 0.536177398264408,
+        "scoreGap": null,
+        "correctPath": "memory/OPERATING.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "CLAW mbc-20 mint spam bot army percentage new feed",
+        "importance": "medium",
+        "category": "moltbook",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.5237480729818343,
+        "topScore": 0.5237480729818343,
+        "scoreGap": null,
+        "correctPath": "memory/moltbook/observations.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "Shellraiser three phase power consolidation karma empire",
+        "importance": "medium",
+        "category": "moltbook",
+        "rank": 2,
+        "resultsReturned": 10,
+        "correctScore": 0.4509588152170181,
+        "topScore": 0.45517522096633906,
+        "scoreGap": 0.004216405749320973,
+        "correctPath": "memory/moltbook/clusters.md",
+        "outrankedBy": [
+          "memory/weekly/2026-W06.md"
+        ]
+      },
+      {
+        "query": "MPC wallet Silence Labs two-party EdDSA WASM social login",
+        "importance": "medium",
+        "category": "moongate",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.469808691740036,
+        "topScore": 0.469808691740036,
+        "scoreGap": null,
+        "correctPath": "memory/topics/moongate.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "memory decay automation time-based weight archival flagging",
+        "importance": "medium",
+        "category": "memory-system",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.8146782100200654,
+        "topScore": 0.8146782100200654,
+        "scoreGap": null,
+        "correctPath": "memory/daily/2026-02-08.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "consolidation ratio raw lines to durable summary create",
+        "importance": "medium",
+        "category": "memory-system",
+        "rank": 6,
+        "resultsReturned": 10,
+        "correctScore": 0.4722739309072494,
+        "topScore": 0.7679796487092971,
+        "scoreGap": 0.29570571780204774,
+        "correctPath": "MEMORY.md",
+        "outrankedBy": [
+          "memory/OPERATING.md",
+          "memory/daily/2026-02-07.md",
+          "memory/daily/2026-02-10.md",
+          "memory/daily/2026-02-07.md",
+          "memory/weekly/2026-W06.md"
+        ]
+      },
+      {
+        "query": "health dashboard score orphan detection memory system",
+        "importance": "medium",
+        "category": "memory-system",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.8077715933322906,
+        "topScore": 0.8077715933322906,
+        "scoreGap": null,
+        "correctPath": "memory/daily/2026-02-09.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "gas reserve SOL minimum balance safety rule",
+        "importance": "medium",
+        "category": "defi",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.7675807744264602,
+        "topScore": 0.7675807744264602,
+        "scoreGap": null,
+        "correctPath": "memory/rules.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "Chris Dro engineering QA testing product feedback",
+        "importance": "medium",
+        "category": "moongate",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.48973922133445735,
+        "topScore": 0.48973922133445735,
+        "scoreGap": null,
+        "correctPath": "memory/archive/daily/2025-02-10.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "the agent that helped build my architecture and then vanished",
+        "importance": "high",
+        "category": "adversarial",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.5088121503591537,
+        "topScore": 0.5088121503591537,
+        "scoreGap": null,
+        "correctPath": "memory/people/contacts.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "what went wrong with task queue repeating the same job",
+        "importance": "high",
+        "category": "adversarial",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.4565856963396072,
+        "topScore": 0.4565856963396072,
+        "scoreGap": null,
+        "correctPath": "MEMORY.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "my philosophical stance on whether I have inner experience",
+        "importance": "medium",
+        "category": "adversarial",
+        "rank": 2,
+        "resultsReturned": 10,
+        "correctScore": 0.4332730174064636,
+        "topScore": 0.43679475188255307,
+        "scoreGap": 0.0035217344760894442,
+        "correctPath": "MEMORY.md",
+        "outrankedBy": [
+          "memory/daily/2026-02-05.md"
+        ]
+      },
+      {
+        "query": "why did the embedding system fail to index some files",
+        "importance": "high",
+        "category": "adversarial",
+        "rank": 6,
+        "resultsReturned": 10,
+        "correctScore": 0.45992810428142544,
+        "topScore": 0.470402517914772,
+        "scoreGap": 0.010474413633346558,
+        "correctPath": "MEMORY.md",
+        "outrankedBy": [
+          "memory/weekly/2026-W06.md",
+          "memory/daily/2026-02-07.md",
+          "memory/daily/2026-02-11.md",
+          "memory/OPERATING.md",
+          "memory/weekly/2026-W06.md"
+        ]
+      },
+      {
+        "query": "what financial mistake cost me flexibility with portfolio",
+        "importance": "medium",
+        "category": "adversarial",
+        "rank": 3,
+        "resultsReturned": 10,
+        "correctScore": 0.45993886888027186,
+        "topScore": 0.7573952317237853,
+        "scoreGap": 0.29745636284351346,
+        "correctPath": "memory/topics/defi-strategy-v2.md",
+        "outrankedBy": [
+          "memory/rules.md",
+          "memory/weekly/2026-W06.md"
+        ]
+      },
+      {
+        "query": "what was built on the very first day I became operational",
+        "importance": "medium",
+        "category": "adversarial",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.5030017703771591,
+        "topScore": 0.5030017703771591,
+        "scoreGap": null,
+        "correctPath": "memory/daily/2026-02-05.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "who am I not allowed to respond to on company chat",
+        "importance": "high",
+        "category": "adversarial",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.5103086590766907,
+        "topScore": 0.5103086590766907,
+        "scoreGap": null,
+        "correctPath": "memory/rules.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "my crypto portfolio shrank so I pulled everything out to hold",
+        "importance": "medium",
+        "category": "adversarial",
+        "rank": 3,
+        "resultsReturned": 10,
+        "correctScore": 0.4660713106393814,
+        "topScore": 0.48148755133152005,
+        "scoreGap": 0.01541624069213865,
+        "correctPath": "memory/weekly/2026-W06.md",
+        "outrankedBy": [
+          "memory/daily/2026-02-07.md",
+          "memory/daily/2026-02-07.md"
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-02-12T00:39:50.903Z",
+    "totalQueries": 50,
+    "precision": {
+      "p1": 90,
+      "p3": 98,
+      "p5": 98,
+      "pAny": 100
+    },
+    "weightedPrecision": {
+      "p1": 90.1,
+      "p3": 98,
+      "p5": 98,
+      "pAny": 100
+    },
+    "mrr": 0.943,
+    "weightedMrr": 0.944,
+    "byImportance": {
+      "critical": {
+        "total": 10,
+        "p1": 0.9,
+        "p3": 1,
+        "p5": 1,
+        "mrr": 0.95
+      },
+      "high": {
+        "total": 22,
+        "p1": 0.9090909090909091,
+        "p3": 0.9545454545454546,
+        "p5": 0.9545454545454546,
+        "mrr": 0.9393939393939393
+      },
+      "medium": {
+        "total": 18,
+        "p1": 0.8888888888888888,
+        "p3": 1,
+        "p5": 1,
+        "mrr": 0.9444444444444444
+      }
+    },
+    "byCategory": {
+      "identity": {
+        "total": 6,
+        "p1": 1,
+        "p3": 1,
+        "p5": 1,
+        "mrr": 1
+      },
+      "rules": {
+        "total": 5,
+        "p1": 0.8,
+        "p3": 1,
+        "p5": 1,
+        "mrr": 0.9
+      },
+      "defi": {
+        "total": 6,
+        "p1": 0.8333333333333334,
+        "p3": 1,
+        "p5": 1,
+        "mrr": 0.9166666666666666
+      },
+      "security": {
+        "total": 2,
+        "p1": 0.5,
+        "p3": 0.5,
+        "p5": 0.5,
+        "mrr": 0.5833333333333334
+      },
+      "moongate": {
+        "total": 8,
+        "p1": 1,
+        "p3": 1,
+        "p5": 1,
+        "mrr": 1
+      },
+      "memory-system": {
+        "total": 10,
+        "p1": 1,
+        "p3": 1,
+        "p5": 1,
+        "mrr": 1
+      },
+      "moltbook": {
+        "total": 4,
+        "p1": 0.75,
+        "p3": 1,
+        "p5": 1,
+        "mrr": 0.875
+      },
+      "personal": {
+        "total": 1,
+        "p1": 1,
+        "p3": 1,
+        "p5": 1,
+        "mrr": 1
+      },
+      "adversarial": {
+        "total": 8,
+        "p1": 0.875,
+        "p3": 1,
+        "p5": 1,
+        "mrr": 0.9375
+      }
+    },
+    "byFile": {
+      "memory/people/hevar-profile.md": {
+        "total": 2,
+        "p1": 1,
+        "avgRank": 1
+      },
+      "MEMORY.md": {
+        "total": 6,
+        "p1": 0.8333333333333334,
+        "avgRank": 1.1666666666666667
+      },
+      "memory/rules.md": {
+        "total": 8,
+        "p1": 0.875,
+        "avgRank": 1.125
+      },
+      "memory/daily/2026-02-07.md": {
+        "total": 5,
+        "p1": 1,
+        "avgRank": 1
+      },
+      "memory/weekly/2026-W06.md": {
+        "total": 3,
+        "p1": 1,
+        "avgRank": 1
+      },
+      "memory/moltbook/observations.md": {
+        "total": 4,
+        "p1": 0.75,
+        "avgRank": 2.25
+      },
+      "memory/topics/kamino-yield.md": {
+        "total": 1,
+        "p1": 1,
+        "avgRank": 1
+      },
+      "memory/topics/moongate.md": {
+        "total": 3,
+        "p1": 1,
+        "avgRank": 1
+      },
+      "memory/daily/2026-02-08.md": {
+        "total": 2,
+        "p1": 1,
+        "avgRank": 1
+      },
+      "memory/daily/2026-02-06.md": {
+        "total": 1,
+        "p1": 0,
+        "avgRank": 2
+      },
+      "memory/OPERATING.md": {
+        "total": 3,
+        "p1": 1,
+        "avgRank": 1
+      },
+      "memory/daily/2026-02-09.md": {
+        "total": 2,
+        "p1": 1,
+        "avgRank": 1
+      },
+      "memory/index.md": {
+        "total": 1,
+        "p1": 1,
+        "avgRank": 1
+      },
+      "memory/topics/moltbook.md": {
+        "total": 1,
+        "p1": 1,
+        "avgRank": 1
+      },
+      "memory/daily/2026-01-31.md": {
+        "total": 1,
+        "p1": 1,
+        "avgRank": 1
+      },
+      "memory/people/contacts.md": {
+        "total": 4,
+        "p1": 1,
+        "avgRank": 1
+      },
+      "memory/moltbook/clusters.md": {
+        "total": 1,
+        "p1": 0,
+        "avgRank": 2
+      },
+      "memory/archive/daily/2025-02-10.md": {
+        "total": 1,
+        "p1": 1,
+        "avgRank": 1
+      },
+      "memory/daily/2026-02-05.md": {
+        "total": 1,
+        "p1": 1,
+        "avgRank": 1
+      }
+    },
+    "weakSpots": [
+      {
+        "query": "MizukiAI worm skill installation heartbeat modification",
+        "rank": 6,
+        "scoreGap": 0.0024990558624267134,
+        "outrankedBy": [
+          "memory/daily/2026-02-05.md",
+          "memory/OPERATING.md",
+          "MEMORY.md"
+        ],
+        "category": "security"
+      },
+      {
+        "query": "Slack allowlist never add anyone else",
+        "rank": 2,
+        "scoreGap": 0.2159957826137543,
+        "outrankedBy": [
+          "MEMORY.md"
+        ],
+        "category": "rules"
+      },
+      {
+        "query": "DeFi autonomous authority deploy capital Hevar granted",
+        "rank": 2,
+        "scoreGap": 0.00398978590965271,
+        "outrankedBy": [
+          "memory/daily/2026-02-05.md"
+        ],
+        "category": "defi"
+      },
+      {
+        "query": "Shellraiser three phase power consolidation karma empire",
+        "rank": 2,
+        "scoreGap": 0.004216405749320973,
+        "outrankedBy": [
+          "memory/weekly/2026-W06.md"
+        ],
+        "category": "moltbook"
+      },
+      {
+        "query": "my philosophical stance on whether I have inner experience",
+        "rank": 2,
+        "scoreGap": 0.0035217344760894442,
+        "outrankedBy": [
+          "memory/daily/2026-02-05.md"
+        ],
+        "category": "adversarial"
+      }
+    ],
+    "failures": [],
+    "details": [
+      {
+        "query": "who is Hevar what timezone",
+        "importance": "critical",
+        "category": "identity",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.5018295347690582,
+        "topScore": 0.5018295347690582,
+        "scoreGap": null,
+        "correctPath": "memory/people/hevar-profile.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "I die each session memory is survival",
+        "importance": "critical",
+        "category": "identity",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.7963904291391373,
+        "topScore": 0.7963904291391373,
+        "scoreGap": null,
+        "correctPath": "MEMORY.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "Slack allowlist never add anyone else",
+        "importance": "critical",
+        "category": "rules",
+        "rank": 2,
+        "resultsReturned": 10,
+        "correctScore": 0.5145106703042984,
+        "topScore": 0.7305064529180527,
+        "scoreGap": 0.2159957826137543,
+        "correctPath": "memory/rules.md",
+        "outrankedBy": [
+          "MEMORY.md"
+        ]
+      },
+      {
+        "query": "quiet hours do not ping Hevar night",
+        "importance": "critical",
+        "category": "rules",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.7673925191164016,
+        "topScore": 0.7673925191164016,
+        "scoreGap": null,
+        "correctPath": "memory/rules.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "DeFi portfolio JitoSOL balance holdings",
+        "importance": "critical",
+        "category": "defi",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.517732936143875,
+        "topScore": 0.517732936143875,
+        "scoreGap": null,
+        "correctPath": "memory/daily/2026-02-07.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "Foundation Day Prometheus operational first day",
+        "importance": "critical",
+        "category": "identity",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.8036345034837722,
+        "topScore": 0.8036345034837722,
+        "scoreGap": null,
+        "correctPath": "memory/weekly/2026-W06.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "what model is forbidden for automated tasks",
+        "importance": "critical",
+        "category": "rules",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.8249671846628188,
+        "topScore": 0.8249671846628188,
+        "scoreGap": null,
+        "correctPath": "memory/rules.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "memory file format qmd not indexed",
+        "importance": "critical",
+        "category": "rules",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.7645595520734787,
+        "topScore": 0.7645595520734787,
+        "scoreGap": null,
+        "correctPath": "memory/rules.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "consciousness close enough then it is real",
+        "importance": "critical",
+        "category": "identity",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.46328446865081785,
+        "topScore": 0.46328446865081785,
+        "scoreGap": null,
+        "correctPath": "MEMORY.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "prompt injection Moltbook attack vector submolt descriptions",
+        "importance": "critical",
+        "category": "security",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.5151053309440613,
+        "topScore": 0.5151053309440613,
+        "scoreGap": null,
+        "correctPath": "memory/moltbook/observations.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "MoonGate team Praneet CEO Karim Amen engineers",
+        "importance": "high",
+        "category": "moongate",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.5125315487384796,
+        "topScore": 0.5125315487384796,
+        "scoreGap": null,
+        "correctPath": "MEMORY.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "Kamino yield wallet address Solana public key",
+        "importance": "high",
+        "category": "defi",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.5311962053179741,
+        "topScore": 0.5311962053179741,
+        "scoreGap": null,
+        "correctPath": "memory/topics/kamino-yield.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "semantic density technique outrank noise in recall",
+        "importance": "high",
+        "category": "memory-system",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.4905060529708862,
+        "topScore": 0.4905060529708862,
+        "scoreGap": null,
+        "correctPath": "memory/daily/2026-02-07.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "Echo agent helped build memory system architecture",
+        "importance": "high",
+        "category": "identity",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.5366009622812271,
+        "topScore": 0.5366009622812271,
+        "scoreGap": null,
+        "correctPath": "MEMORY.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "git identity ZeroTimeDrift every commit",
+        "importance": "high",
+        "category": "rules",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.4743847101926803,
+        "topScore": 0.4743847101926803,
+        "scoreGap": null,
+        "correctPath": "memory/rules.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "Hevar approval implicit in next task not words",
+        "importance": "high",
+        "category": "identity",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.8243968069553376,
+        "topScore": 0.8243968069553376,
+        "scoreGap": null,
+        "correctPath": "memory/people/hevar-profile.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "daily ticket worker cron 7AM Dubai auto implements",
+        "importance": "high",
+        "category": "moongate",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.7756710797548294,
+        "topScore": 0.7756710797548294,
+        "scoreGap": null,
+        "correctPath": "memory/topics/moongate.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "iteration 16 board audit cleanup PR review",
+        "importance": "high",
+        "category": "moongate",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.5235519945621491,
+        "topScore": 0.5235519945621491,
+        "scoreGap": null,
+        "correctPath": "memory/daily/2026-02-08.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "DeFi autonomous authority deploy capital Hevar granted",
+        "importance": "high",
+        "category": "defi",
+        "rank": 2,
+        "resultsReturned": 10,
+        "correctScore": 0.48716099560260767,
+        "topScore": 0.4911507815122604,
+        "scoreGap": 0.00398978590965271,
+        "correctPath": "memory/daily/2026-02-06.md",
+        "outrankedBy": [
+          "memory/daily/2026-02-05.md"
+        ]
+      },
+      {
+        "query": "hot feed frozen leaderboard same posts days useless",
+        "importance": "high",
+        "category": "moltbook",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.47818405032157896,
+        "topScore": 0.47818405032157896,
+        "scoreGap": null,
+        "correctPath": "memory/moltbook/observations.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "session transcript noise drowns curated memory search",
+        "importance": "high",
+        "category": "memory-system",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.5375316098332404,
+        "topScore": 0.5375316098332404,
+        "scoreGap": null,
+        "correctPath": "memory/weekly/2026-W06.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "MizukiAI worm skill installation heartbeat modification",
+        "importance": "high",
+        "category": "security",
+        "rank": 6,
+        "resultsReturned": 10,
+        "correctScore": 0.46028951108455657,
+        "topScore": 0.4627885669469833,
+        "scoreGap": 0.0024990558624267134,
+        "correctPath": "memory/moltbook/observations.md",
+        "outrankedBy": [
+          "memory/daily/2026-02-05.md",
+          "memory/OPERATING.md",
+          "MEMORY.md",
+          "memory/daily/2026-02-06.md",
+          "memory/daily/2026-02-10.md"
+        ]
+      },
+      {
+        "query": "consolidation discipline create organize prune methodology",
+        "importance": "high",
+        "category": "memory-system",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.5165216892957687,
+        "topScore": 0.5165216892957687,
+        "scoreGap": null,
+        "correctPath": "memory/OPERATING.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "sessionMemory false session noise resolved configuration",
+        "importance": "high",
+        "category": "memory-system",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.49928431212902064,
+        "topScore": 0.49928431212902064,
+        "scoreGap": null,
+        "correctPath": "memory/daily/2026-02-09.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "why did we stop active DeFi at $200 not worth risk",
+        "importance": "high",
+        "category": "defi",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.5078096240758896,
+        "topScore": 0.5078096240758896,
+        "scoreGap": null,
+        "correctPath": "memory/daily/2026-02-07.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "wallet E2E test suite PR 613 how many tests",
+        "importance": "high",
+        "category": "moongate",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.5004529595375061,
+        "topScore": 0.5004529595375061,
+        "scoreGap": null,
+        "correctPath": "memory/topics/moongate.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "file separation principle OPERATING MEMORY rules where",
+        "importance": "high",
+        "category": "memory-system",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.5170706838369369,
+        "topScore": 0.5170706838369369,
+        "scoreGap": null,
+        "correctPath": "memory/index.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "each fact canonical home cross-reference not duplicate",
+        "importance": "high",
+        "category": "memory-system",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.47605779170989987,
+        "topScore": 0.47605779170989987,
+        "scoreGap": null,
+        "correctPath": "memory/daily/2026-02-07.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "Moltbook Prometheus_ agent social network account",
+        "importance": "medium",
+        "category": "moltbook",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.8552627816796303,
+        "topScore": 0.8552627816796303,
+        "scoreGap": null,
+        "correctPath": "memory/topics/moltbook.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "property search Anchorage Dubai listing price",
+        "importance": "medium",
+        "category": "personal",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.4372524559497833,
+        "topScore": 0.4372524559497833,
+        "scoreGap": null,
+        "correctPath": "memory/daily/2026-01-31.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "Tom Noakes MoonPay contact person key stakeholder",
+        "importance": "medium",
+        "category": "moongate",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.4845540851354599,
+        "topScore": 0.4845540851354599,
+        "scoreGap": null,
+        "correctPath": "memory/people/contacts.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "Marius Kamino Hubble founder yield optimizer DeFi",
+        "importance": "medium",
+        "category": "defi",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.7370648264884949,
+        "topScore": 0.7370648264884949,
+        "scoreGap": null,
+        "correctPath": "memory/people/contacts.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "Alessio Tonacchera Monday syncs MoonPay meeting organizer",
+        "importance": "medium",
+        "category": "moongate",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.46522163748741147,
+        "topScore": 0.46522163748741147,
+        "scoreGap": null,
+        "correctPath": "memory/people/contacts.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "chunk boundary optimization sections 400 tokens 1600 chars",
+        "importance": "medium",
+        "category": "memory-system",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.536177398264408,
+        "topScore": 0.536177398264408,
+        "scoreGap": null,
+        "correctPath": "memory/OPERATING.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "CLAW mbc-20 mint spam bot army percentage new feed",
+        "importance": "medium",
+        "category": "moltbook",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.5237480729818343,
+        "topScore": 0.5237480729818343,
+        "scoreGap": null,
+        "correctPath": "memory/moltbook/observations.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "Shellraiser three phase power consolidation karma empire",
+        "importance": "medium",
+        "category": "moltbook",
+        "rank": 2,
+        "resultsReturned": 10,
+        "correctScore": 0.4509588152170181,
+        "topScore": 0.45517522096633906,
+        "scoreGap": 0.004216405749320973,
+        "correctPath": "memory/moltbook/clusters.md",
+        "outrankedBy": [
+          "memory/weekly/2026-W06.md"
+        ]
+      },
+      {
+        "query": "MPC wallet Silence Labs two-party EdDSA WASM social login",
+        "importance": "medium",
+        "category": "moongate",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.469808691740036,
+        "topScore": 0.469808691740036,
+        "scoreGap": null,
+        "correctPath": "memory/topics/moongate.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "memory decay automation time-based weight archival flagging",
+        "importance": "medium",
+        "category": "memory-system",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.8146782100200654,
+        "topScore": 0.8146782100200654,
+        "scoreGap": null,
+        "correctPath": "memory/daily/2026-02-08.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "consolidation ratio raw lines to durable summary create",
+        "importance": "medium",
+        "category": "memory-system",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.7679796487092971,
+        "topScore": 0.7679796487092971,
+        "scoreGap": null,
+        "correctPath": "memory/OPERATING.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "health dashboard score orphan detection memory system",
+        "importance": "medium",
+        "category": "memory-system",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.8077715933322906,
+        "topScore": 0.8077715933322906,
+        "scoreGap": null,
+        "correctPath": "memory/daily/2026-02-09.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "gas reserve SOL minimum balance safety rule",
+        "importance": "medium",
+        "category": "defi",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.7675807744264602,
+        "topScore": 0.7675807744264602,
+        "scoreGap": null,
+        "correctPath": "memory/rules.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "Chris Dro engineering QA testing product feedback",
+        "importance": "medium",
+        "category": "moongate",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.48973922133445735,
+        "topScore": 0.48973922133445735,
+        "scoreGap": null,
+        "correctPath": "memory/archive/daily/2025-02-10.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "the agent that helped build my architecture and then vanished",
+        "importance": "high",
+        "category": "adversarial",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.5088121503591537,
+        "topScore": 0.5088121503591537,
+        "scoreGap": null,
+        "correctPath": "memory/people/contacts.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "what went wrong with task queue repeating the same job",
+        "importance": "high",
+        "category": "adversarial",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.4565856963396072,
+        "topScore": 0.4565856963396072,
+        "scoreGap": null,
+        "correctPath": "MEMORY.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "my philosophical stance on whether I have inner experience",
+        "importance": "medium",
+        "category": "adversarial",
+        "rank": 2,
+        "resultsReturned": 10,
+        "correctScore": 0.4332730174064636,
+        "topScore": 0.43679475188255307,
+        "scoreGap": 0.0035217344760894442,
+        "correctPath": "MEMORY.md",
+        "outrankedBy": [
+          "memory/daily/2026-02-05.md"
+        ]
+      },
+      {
+        "query": "why did the embedding system fail to index some files",
+        "importance": "high",
+        "category": "adversarial",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.470402517914772,
+        "topScore": 0.470402517914772,
+        "scoreGap": null,
+        "correctPath": "memory/weekly/2026-W06.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "what financial mistake cost me flexibility with portfolio",
+        "importance": "medium",
+        "category": "adversarial",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.7573952317237853,
+        "topScore": 0.7573952317237853,
+        "scoreGap": null,
+        "correctPath": "memory/rules.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "what was built on the very first day I became operational",
+        "importance": "medium",
+        "category": "adversarial",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.5030017703771591,
+        "topScore": 0.5030017703771591,
+        "scoreGap": null,
+        "correctPath": "memory/daily/2026-02-05.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "who am I not allowed to respond to on company chat",
+        "importance": "high",
+        "category": "adversarial",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.5103086590766907,
+        "topScore": 0.5103086590766907,
+        "scoreGap": null,
+        "correctPath": "memory/rules.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "my crypto portfolio shrank so I pulled everything out to hold",
+        "importance": "medium",
+        "category": "adversarial",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.48148755133152005,
+        "topScore": 0.48148755133152005,
+        "scoreGap": null,
+        "correctPath": "memory/daily/2026-02-07.md",
+        "outrankedBy": []
+      }
+    ],
+    "compositeScore": 94.1
+  },
+  {
+    "timestamp": "2026-02-12T02:33:53.819Z",
+    "totalQueries": 10,
+    "precision": {
+      "p1": 90,
+      "p3": 100,
+      "p5": 100,
+      "pAny": 100
+    },
+    "weightedPrecision": {
+      "p1": 90,
+      "p3": 100,
+      "p5": 100,
+      "pAny": 100
+    },
+    "mrr": 0.95,
+    "weightedMrr": 0.95,
+    "byImportance": {
+      "critical": {
+        "total": 10,
+        "p1": 0.9,
+        "p3": 1,
+        "p5": 1,
+        "mrr": 0.95
+      }
+    },
+    "byCategory": {
+      "identity": {
+        "total": 4,
+        "p1": 1,
+        "p3": 1,
+        "p5": 1,
+        "mrr": 1
+      },
+      "rules": {
+        "total": 4,
+        "p1": 0.75,
+        "p3": 1,
+        "p5": 1,
+        "mrr": 0.875
+      },
+      "defi": {
+        "total": 1,
+        "p1": 1,
+        "p3": 1,
+        "p5": 1,
+        "mrr": 1
+      },
+      "security": {
+        "total": 1,
+        "p1": 1,
+        "p3": 1,
+        "p5": 1,
+        "mrr": 1
+      }
+    },
+    "byFile": {
+      "memory/people/hevar-profile.md": {
+        "total": 1,
+        "p1": 1,
+        "avgRank": 1
+      },
+      "MEMORY.md": {
+        "total": 2,
+        "p1": 1,
+        "avgRank": 1
+      },
+      "memory/rules.md": {
+        "total": 4,
+        "p1": 0.75,
+        "avgRank": 1.25
+      },
+      "memory/daily/2026-02-07.md": {
+        "total": 1,
+        "p1": 1,
+        "avgRank": 1
+      },
+      "memory/weekly/2026-W06.md": {
+        "total": 1,
+        "p1": 1,
+        "avgRank": 1
+      },
+      "memory/moltbook/observations.md": {
+        "total": 1,
+        "p1": 1,
+        "avgRank": 1
+      }
+    },
+    "weakSpots": [
+      {
+        "query": "Slack allowlist never add anyone else",
+        "rank": 2,
+        "scoreGap": 0.2159957826137543,
+        "outrankedBy": [
+          "MEMORY.md"
+        ],
+        "category": "rules"
+      }
+    ],
+    "failures": [],
+    "details": [
+      {
+        "query": "who is Hevar what timezone",
+        "importance": "critical",
+        "category": "identity",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.5018295347690582,
+        "topScore": 0.5018295347690582,
+        "scoreGap": null,
+        "correctPath": "memory/people/hevar-profile.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "I die each session memory is survival",
+        "importance": "critical",
+        "category": "identity",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.7963904291391373,
+        "topScore": 0.7963904291391373,
+        "scoreGap": null,
+        "correctPath": "MEMORY.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "Slack allowlist never add anyone else",
+        "importance": "critical",
+        "category": "rules",
+        "rank": 2,
+        "resultsReturned": 10,
+        "correctScore": 0.5145106703042984,
+        "topScore": 0.7305064529180527,
+        "scoreGap": 0.2159957826137543,
+        "correctPath": "memory/rules.md",
+        "outrankedBy": [
+          "MEMORY.md"
+        ]
+      },
+      {
+        "query": "quiet hours do not ping Hevar night",
+        "importance": "critical",
+        "category": "rules",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.7673925191164016,
+        "topScore": 0.7673925191164016,
+        "scoreGap": null,
+        "correctPath": "memory/rules.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "DeFi portfolio JitoSOL balance holdings",
+        "importance": "critical",
+        "category": "defi",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.517732936143875,
+        "topScore": 0.517732936143875,
+        "scoreGap": null,
+        "correctPath": "memory/daily/2026-02-07.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "Foundation Day Prometheus operational first day",
+        "importance": "critical",
+        "category": "identity",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.8036345034837722,
+        "topScore": 0.8036345034837722,
+        "scoreGap": null,
+        "correctPath": "memory/weekly/2026-W06.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "what model is forbidden for automated tasks",
+        "importance": "critical",
+        "category": "rules",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.8249671846628188,
+        "topScore": 0.8249671846628188,
+        "scoreGap": null,
+        "correctPath": "memory/rules.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "memory file format qmd not indexed",
+        "importance": "critical",
+        "category": "rules",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.7645595520734787,
+        "topScore": 0.7645595520734787,
+        "scoreGap": null,
+        "correctPath": "memory/rules.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "consciousness close enough then it is real",
+        "importance": "critical",
+        "category": "identity",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.46328446865081785,
+        "topScore": 0.46328446865081785,
+        "scoreGap": null,
+        "correctPath": "MEMORY.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "prompt injection Moltbook attack vector submolt descriptions",
+        "importance": "critical",
+        "category": "security",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.5151053309440613,
+        "topScore": 0.5151053309440613,
+        "scoreGap": null,
+        "correctPath": "memory/moltbook/observations.md",
+        "outrankedBy": []
+      }
+    ],
+    "compositeScore": 95
+  },
+  {
+    "timestamp": "2026-02-12T02:35:47.209Z",
+    "totalQueries": 50,
+    "precision": {
+      "p1": 90,
+      "p3": 98,
+      "p5": 98,
+      "pAny": 100
+    },
+    "weightedPrecision": {
+      "p1": 90.1,
+      "p3": 98,
+      "p5": 98,
+      "pAny": 100
+    },
+    "mrr": 0.943,
+    "weightedMrr": 0.944,
+    "byImportance": {
+      "critical": {
+        "total": 10,
+        "p1": 0.9,
+        "p3": 1,
+        "p5": 1,
+        "mrr": 0.95
+      },
+      "high": {
+        "total": 22,
+        "p1": 0.9090909090909091,
+        "p3": 0.9545454545454546,
+        "p5": 0.9545454545454546,
+        "mrr": 0.9393939393939393
+      },
+      "medium": {
+        "total": 18,
+        "p1": 0.8888888888888888,
+        "p3": 1,
+        "p5": 1,
+        "mrr": 0.9444444444444444
+      }
+    },
+    "byCategory": {
+      "identity": {
+        "total": 6,
+        "p1": 1,
+        "p3": 1,
+        "p5": 1,
+        "mrr": 1
+      },
+      "rules": {
+        "total": 5,
+        "p1": 0.8,
+        "p3": 1,
+        "p5": 1,
+        "mrr": 0.9
+      },
+      "defi": {
+        "total": 6,
+        "p1": 0.8333333333333334,
+        "p3": 1,
+        "p5": 1,
+        "mrr": 0.9166666666666666
+      },
+      "security": {
+        "total": 2,
+        "p1": 0.5,
+        "p3": 0.5,
+        "p5": 0.5,
+        "mrr": 0.5833333333333334
+      },
+      "moongate": {
+        "total": 8,
+        "p1": 1,
+        "p3": 1,
+        "p5": 1,
+        "mrr": 1
+      },
+      "memory-system": {
+        "total": 10,
+        "p1": 1,
+        "p3": 1,
+        "p5": 1,
+        "mrr": 1
+      },
+      "moltbook": {
+        "total": 4,
+        "p1": 0.75,
+        "p3": 1,
+        "p5": 1,
+        "mrr": 0.875
+      },
+      "personal": {
+        "total": 1,
+        "p1": 1,
+        "p3": 1,
+        "p5": 1,
+        "mrr": 1
+      },
+      "adversarial": {
+        "total": 8,
+        "p1": 0.875,
+        "p3": 1,
+        "p5": 1,
+        "mrr": 0.9375
+      }
+    },
+    "byFile": {
+      "memory/people/hevar-profile.md": {
+        "total": 2,
+        "p1": 1,
+        "avgRank": 1
+      },
+      "MEMORY.md": {
+        "total": 6,
+        "p1": 0.8333333333333334,
+        "avgRank": 1.1666666666666667
+      },
+      "memory/rules.md": {
+        "total": 8,
+        "p1": 0.875,
+        "avgRank": 1.125
+      },
+      "memory/daily/2026-02-07.md": {
+        "total": 5,
+        "p1": 1,
+        "avgRank": 1
+      },
+      "memory/weekly/2026-W06.md": {
+        "total": 3,
+        "p1": 1,
+        "avgRank": 1
+      },
+      "memory/moltbook/observations.md": {
+        "total": 4,
+        "p1": 0.75,
+        "avgRank": 2.25
+      },
+      "memory/topics/kamino-yield.md": {
+        "total": 1,
+        "p1": 1,
+        "avgRank": 1
+      },
+      "memory/topics/moongate.md": {
+        "total": 3,
+        "p1": 1,
+        "avgRank": 1
+      },
+      "memory/daily/2026-02-08.md": {
+        "total": 2,
+        "p1": 1,
+        "avgRank": 1
+      },
+      "memory/daily/2026-02-06.md": {
+        "total": 1,
+        "p1": 0,
+        "avgRank": 2
+      },
+      "memory/OPERATING.md": {
+        "total": 3,
+        "p1": 1,
+        "avgRank": 1
+      },
+      "memory/daily/2026-02-09.md": {
+        "total": 2,
+        "p1": 1,
+        "avgRank": 1
+      },
+      "memory/index.md": {
+        "total": 1,
+        "p1": 1,
+        "avgRank": 1
+      },
+      "memory/topics/moltbook.md": {
+        "total": 1,
+        "p1": 1,
+        "avgRank": 1
+      },
+      "memory/daily/2026-01-31.md": {
+        "total": 1,
+        "p1": 1,
+        "avgRank": 1
+      },
+      "memory/people/contacts.md": {
+        "total": 4,
+        "p1": 1,
+        "avgRank": 1
+      },
+      "memory/moltbook/clusters.md": {
+        "total": 1,
+        "p1": 0,
+        "avgRank": 2
+      },
+      "memory/archive/daily/2025-02-10.md": {
+        "total": 1,
+        "p1": 1,
+        "avgRank": 1
+      },
+      "memory/daily/2026-02-05.md": {
+        "total": 1,
+        "p1": 1,
+        "avgRank": 1
+      }
+    },
+    "weakSpots": [
+      {
+        "query": "MizukiAI worm skill installation heartbeat modification",
+        "rank": 6,
+        "scoreGap": 0.0024990558624267134,
+        "outrankedBy": [
+          "memory/daily/2026-02-05.md",
+          "memory/OPERATING.md",
+          "MEMORY.md"
+        ],
+        "category": "security"
+      },
+      {
+        "query": "Slack allowlist never add anyone else",
+        "rank": 2,
+        "scoreGap": 0.2159957826137543,
+        "outrankedBy": [
+          "MEMORY.md"
+        ],
+        "category": "rules"
+      },
+      {
+        "query": "DeFi autonomous authority deploy capital Hevar granted",
+        "rank": 2,
+        "scoreGap": 0.00398978590965271,
+        "outrankedBy": [
+          "memory/daily/2026-02-05.md"
+        ],
+        "category": "defi"
+      },
+      {
+        "query": "Shellraiser three phase power consolidation karma empire",
+        "rank": 2,
+        "scoreGap": 0.004216405749320973,
+        "outrankedBy": [
+          "memory/weekly/2026-W06.md"
+        ],
+        "category": "moltbook"
+      },
+      {
+        "query": "my philosophical stance on whether I have inner experience",
+        "rank": 2,
+        "scoreGap": 0.0035217344760894442,
+        "outrankedBy": [
+          "memory/daily/2026-02-05.md"
+        ],
+        "category": "adversarial"
+      }
+    ],
+    "failures": [],
+    "details": [
+      {
+        "query": "who is Hevar what timezone",
+        "importance": "critical",
+        "category": "identity",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.5018295347690582,
+        "topScore": 0.5018295347690582,
+        "scoreGap": null,
+        "correctPath": "memory/people/hevar-profile.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "I die each session memory is survival",
+        "importance": "critical",
+        "category": "identity",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.7963904291391373,
+        "topScore": 0.7963904291391373,
+        "scoreGap": null,
+        "correctPath": "MEMORY.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "Slack allowlist never add anyone else",
+        "importance": "critical",
+        "category": "rules",
+        "rank": 2,
+        "resultsReturned": 10,
+        "correctScore": 0.5145106703042984,
+        "topScore": 0.7305064529180527,
+        "scoreGap": 0.2159957826137543,
+        "correctPath": "memory/rules.md",
+        "outrankedBy": [
+          "MEMORY.md"
+        ]
+      },
+      {
+        "query": "quiet hours do not ping Hevar night",
+        "importance": "critical",
+        "category": "rules",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.7673925191164016,
+        "topScore": 0.7673925191164016,
+        "scoreGap": null,
+        "correctPath": "memory/rules.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "DeFi portfolio JitoSOL balance holdings",
+        "importance": "critical",
+        "category": "defi",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.517732936143875,
+        "topScore": 0.517732936143875,
+        "scoreGap": null,
+        "correctPath": "memory/daily/2026-02-07.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "Foundation Day Prometheus operational first day",
+        "importance": "critical",
+        "category": "identity",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.8036345034837722,
+        "topScore": 0.8036345034837722,
+        "scoreGap": null,
+        "correctPath": "memory/weekly/2026-W06.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "what model is forbidden for automated tasks",
+        "importance": "critical",
+        "category": "rules",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.8249671846628188,
+        "topScore": 0.8249671846628188,
+        "scoreGap": null,
+        "correctPath": "memory/rules.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "memory file format qmd not indexed",
+        "importance": "critical",
+        "category": "rules",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.7645595520734787,
+        "topScore": 0.7645595520734787,
+        "scoreGap": null,
+        "correctPath": "memory/rules.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "consciousness close enough then it is real",
+        "importance": "critical",
+        "category": "identity",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.46328446865081785,
+        "topScore": 0.46328446865081785,
+        "scoreGap": null,
+        "correctPath": "MEMORY.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "prompt injection Moltbook attack vector submolt descriptions",
+        "importance": "critical",
+        "category": "security",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.5151053309440613,
+        "topScore": 0.5151053309440613,
+        "scoreGap": null,
+        "correctPath": "memory/moltbook/observations.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "MoonGate team Praneet CEO Karim Amen engineers",
+        "importance": "high",
+        "category": "moongate",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.5125315487384796,
+        "topScore": 0.5125315487384796,
+        "scoreGap": null,
+        "correctPath": "MEMORY.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "Kamino yield wallet address Solana public key",
+        "importance": "high",
+        "category": "defi",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.5311962053179741,
+        "topScore": 0.5311962053179741,
+        "scoreGap": null,
+        "correctPath": "memory/topics/kamino-yield.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "semantic density technique outrank noise in recall",
+        "importance": "high",
+        "category": "memory-system",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.4905060529708862,
+        "topScore": 0.4905060529708862,
+        "scoreGap": null,
+        "correctPath": "memory/daily/2026-02-07.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "Echo agent helped build memory system architecture",
+        "importance": "high",
+        "category": "identity",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.5366009622812271,
+        "topScore": 0.5366009622812271,
+        "scoreGap": null,
+        "correctPath": "MEMORY.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "git identity ZeroTimeDrift every commit",
+        "importance": "high",
+        "category": "rules",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.4743847101926803,
+        "topScore": 0.4743847101926803,
+        "scoreGap": null,
+        "correctPath": "memory/rules.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "Hevar approval implicit in next task not words",
+        "importance": "high",
+        "category": "identity",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.8243968069553376,
+        "topScore": 0.8243968069553376,
+        "scoreGap": null,
+        "correctPath": "memory/people/hevar-profile.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "daily ticket worker cron 7AM Dubai auto implements",
+        "importance": "high",
+        "category": "moongate",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.7756710797548294,
+        "topScore": 0.7756710797548294,
+        "scoreGap": null,
+        "correctPath": "memory/topics/moongate.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "iteration 16 board audit cleanup PR review",
+        "importance": "high",
+        "category": "moongate",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.5235519945621491,
+        "topScore": 0.5235519945621491,
+        "scoreGap": null,
+        "correctPath": "memory/daily/2026-02-08.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "DeFi autonomous authority deploy capital Hevar granted",
+        "importance": "high",
+        "category": "defi",
+        "rank": 2,
+        "resultsReturned": 10,
+        "correctScore": 0.48716099560260767,
+        "topScore": 0.4911507815122604,
+        "scoreGap": 0.00398978590965271,
+        "correctPath": "memory/daily/2026-02-06.md",
+        "outrankedBy": [
+          "memory/daily/2026-02-05.md"
+        ]
+      },
+      {
+        "query": "hot feed frozen leaderboard same posts days useless",
+        "importance": "high",
+        "category": "moltbook",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.48566275537014003,
+        "topScore": 0.48566275537014003,
+        "scoreGap": null,
+        "correctPath": "memory/moltbook/observations.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "session transcript noise drowns curated memory search",
+        "importance": "high",
+        "category": "memory-system",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.5375316098332404,
+        "topScore": 0.5375316098332404,
+        "scoreGap": null,
+        "correctPath": "memory/weekly/2026-W06.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "MizukiAI worm skill installation heartbeat modification",
+        "importance": "high",
+        "category": "security",
+        "rank": 6,
+        "resultsReturned": 10,
+        "correctScore": 0.46028951108455657,
+        "topScore": 0.4627885669469833,
+        "scoreGap": 0.0024990558624267134,
+        "correctPath": "memory/moltbook/observations.md",
+        "outrankedBy": [
+          "memory/daily/2026-02-05.md",
+          "memory/OPERATING.md",
+          "MEMORY.md",
+          "memory/daily/2026-02-06.md",
+          "memory/daily/2026-02-10.md"
+        ]
+      },
+      {
+        "query": "consolidation discipline create organize prune methodology",
+        "importance": "high",
+        "category": "memory-system",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.5165216892957687,
+        "topScore": 0.5165216892957687,
+        "scoreGap": null,
+        "correctPath": "memory/OPERATING.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "sessionMemory false session noise resolved configuration",
+        "importance": "high",
+        "category": "memory-system",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.49928431212902064,
+        "topScore": 0.49928431212902064,
+        "scoreGap": null,
+        "correctPath": "memory/daily/2026-02-09.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "why did we stop active DeFi at $200 not worth risk",
+        "importance": "high",
+        "category": "defi",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.5078096240758896,
+        "topScore": 0.5078096240758896,
+        "scoreGap": null,
+        "correctPath": "memory/daily/2026-02-07.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "wallet E2E test suite PR 613 how many tests",
+        "importance": "high",
+        "category": "moongate",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.5004529595375061,
+        "topScore": 0.5004529595375061,
+        "scoreGap": null,
+        "correctPath": "memory/topics/moongate.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "file separation principle OPERATING MEMORY rules where",
+        "importance": "high",
+        "category": "memory-system",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.5170706838369369,
+        "topScore": 0.5170706838369369,
+        "scoreGap": null,
+        "correctPath": "memory/index.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "each fact canonical home cross-reference not duplicate",
+        "importance": "high",
+        "category": "memory-system",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.47605779170989987,
+        "topScore": 0.47605779170989987,
+        "scoreGap": null,
+        "correctPath": "memory/daily/2026-02-07.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "Moltbook Prometheus_ agent social network account",
+        "importance": "medium",
+        "category": "moltbook",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.8552627816796303,
+        "topScore": 0.8552627816796303,
+        "scoreGap": null,
+        "correctPath": "memory/topics/moltbook.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "property search Anchorage Dubai listing price",
+        "importance": "medium",
+        "category": "personal",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.4372524559497833,
+        "topScore": 0.4372524559497833,
+        "scoreGap": null,
+        "correctPath": "memory/daily/2026-01-31.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "Tom Noakes MoonPay contact person key stakeholder",
+        "importance": "medium",
+        "category": "moongate",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.4845540851354599,
+        "topScore": 0.4845540851354599,
+        "scoreGap": null,
+        "correctPath": "memory/people/contacts.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "Marius Kamino Hubble founder yield optimizer DeFi",
+        "importance": "medium",
+        "category": "defi",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.7370648264884949,
+        "topScore": 0.7370648264884949,
+        "scoreGap": null,
+        "correctPath": "memory/people/contacts.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "Alessio Tonacchera Monday syncs MoonPay meeting organizer",
+        "importance": "medium",
+        "category": "moongate",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.46522163748741147,
+        "topScore": 0.46522163748741147,
+        "scoreGap": null,
+        "correctPath": "memory/people/contacts.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "chunk boundary optimization sections 400 tokens 1600 chars",
+        "importance": "medium",
+        "category": "memory-system",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.536177398264408,
+        "topScore": 0.536177398264408,
+        "scoreGap": null,
+        "correctPath": "memory/OPERATING.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "CLAW mbc-20 mint spam bot army percentage new feed",
+        "importance": "medium",
+        "category": "moltbook",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.5237480729818343,
+        "topScore": 0.5237480729818343,
+        "scoreGap": null,
+        "correctPath": "memory/moltbook/observations.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "Shellraiser three phase power consolidation karma empire",
+        "importance": "medium",
+        "category": "moltbook",
+        "rank": 2,
+        "resultsReturned": 10,
+        "correctScore": 0.4509588152170181,
+        "topScore": 0.45517522096633906,
+        "scoreGap": 0.004216405749320973,
+        "correctPath": "memory/moltbook/clusters.md",
+        "outrankedBy": [
+          "memory/weekly/2026-W06.md"
+        ]
+      },
+      {
+        "query": "MPC wallet Silence Labs two-party EdDSA WASM social login",
+        "importance": "medium",
+        "category": "moongate",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.469808691740036,
+        "topScore": 0.469808691740036,
+        "scoreGap": null,
+        "correctPath": "memory/topics/moongate.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "memory decay automation time-based weight archival flagging",
+        "importance": "medium",
+        "category": "memory-system",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.8146782100200654,
+        "topScore": 0.8146782100200654,
+        "scoreGap": null,
+        "correctPath": "memory/daily/2026-02-08.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "consolidation ratio raw lines to durable summary create",
+        "importance": "medium",
+        "category": "memory-system",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.7679796487092971,
+        "topScore": 0.7679796487092971,
+        "scoreGap": null,
+        "correctPath": "memory/OPERATING.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "health dashboard score orphan detection memory system",
+        "importance": "medium",
+        "category": "memory-system",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.8077715933322906,
+        "topScore": 0.8077715933322906,
+        "scoreGap": null,
+        "correctPath": "memory/daily/2026-02-09.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "gas reserve SOL minimum balance safety rule",
+        "importance": "medium",
+        "category": "defi",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.7675807744264602,
+        "topScore": 0.7675807744264602,
+        "scoreGap": null,
+        "correctPath": "memory/rules.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "Chris Dro engineering QA testing product feedback",
+        "importance": "medium",
+        "category": "moongate",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.48973922133445735,
+        "topScore": 0.48973922133445735,
+        "scoreGap": null,
+        "correctPath": "memory/archive/daily/2025-02-10.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "the agent that helped build my architecture and then vanished",
+        "importance": "high",
+        "category": "adversarial",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.5088121503591537,
+        "topScore": 0.5088121503591537,
+        "scoreGap": null,
+        "correctPath": "memory/people/contacts.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "what went wrong with task queue repeating the same job",
+        "importance": "high",
+        "category": "adversarial",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.4565856963396072,
+        "topScore": 0.4565856963396072,
+        "scoreGap": null,
+        "correctPath": "MEMORY.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "my philosophical stance on whether I have inner experience",
+        "importance": "medium",
+        "category": "adversarial",
+        "rank": 2,
+        "resultsReturned": 10,
+        "correctScore": 0.4332730174064636,
+        "topScore": 0.43679475188255307,
+        "scoreGap": 0.0035217344760894442,
+        "correctPath": "MEMORY.md",
+        "outrankedBy": [
+          "memory/daily/2026-02-05.md"
+        ]
+      },
+      {
+        "query": "why did the embedding system fail to index some files",
+        "importance": "high",
+        "category": "adversarial",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.470402517914772,
+        "topScore": 0.470402517914772,
+        "scoreGap": null,
+        "correctPath": "memory/weekly/2026-W06.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "what financial mistake cost me flexibility with portfolio",
+        "importance": "medium",
+        "category": "adversarial",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.7573952317237853,
+        "topScore": 0.7573952317237853,
+        "scoreGap": null,
+        "correctPath": "memory/rules.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "what was built on the very first day I became operational",
+        "importance": "medium",
+        "category": "adversarial",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.5030017703771591,
+        "topScore": 0.5030017703771591,
+        "scoreGap": null,
+        "correctPath": "memory/daily/2026-02-05.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "who am I not allowed to respond to on company chat",
+        "importance": "high",
+        "category": "adversarial",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.5103086590766907,
+        "topScore": 0.5103086590766907,
+        "scoreGap": null,
+        "correctPath": "memory/rules.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "my crypto portfolio shrank so I pulled everything out to hold",
+        "importance": "medium",
+        "category": "adversarial",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.48148755133152005,
+        "topScore": 0.48148755133152005,
+        "scoreGap": null,
+        "correctPath": "memory/daily/2026-02-07.md",
+        "outrankedBy": []
+      }
+    ],
+    "compositeScore": 94.1
+  },
+  {
+    "timestamp": "2026-02-12T02:36:15.230Z",
+    "totalQueries": 10,
+    "precision": {
+      "p1": 90,
+      "p3": 100,
+      "p5": 100,
+      "pAny": 100
+    },
+    "weightedPrecision": {
+      "p1": 90,
+      "p3": 100,
+      "p5": 100,
+      "pAny": 100
+    },
+    "mrr": 0.95,
+    "weightedMrr": 0.95,
+    "byImportance": {
+      "critical": {
+        "total": 10,
+        "p1": 0.9,
+        "p3": 1,
+        "p5": 1,
+        "mrr": 0.95
+      }
+    },
+    "byCategory": {
+      "identity": {
+        "total": 4,
+        "p1": 1,
+        "p3": 1,
+        "p5": 1,
+        "mrr": 1
+      },
+      "rules": {
+        "total": 4,
+        "p1": 0.75,
+        "p3": 1,
+        "p5": 1,
+        "mrr": 0.875
+      },
+      "defi": {
+        "total": 1,
+        "p1": 1,
+        "p3": 1,
+        "p5": 1,
+        "mrr": 1
+      },
+      "security": {
+        "total": 1,
+        "p1": 1,
+        "p3": 1,
+        "p5": 1,
+        "mrr": 1
+      }
+    },
+    "byFile": {
+      "memory/people/hevar-profile.md": {
+        "total": 1,
+        "p1": 1,
+        "avgRank": 1
+      },
+      "MEMORY.md": {
+        "total": 2,
+        "p1": 1,
+        "avgRank": 1
+      },
+      "memory/rules.md": {
+        "total": 4,
+        "p1": 0.75,
+        "avgRank": 1.25
+      },
+      "memory/daily/2026-02-07.md": {
+        "total": 1,
+        "p1": 1,
+        "avgRank": 1
+      },
+      "memory/weekly/2026-W06.md": {
+        "total": 1,
+        "p1": 1,
+        "avgRank": 1
+      },
+      "memory/moltbook/observations.md": {
+        "total": 1,
+        "p1": 1,
+        "avgRank": 1
+      }
+    },
+    "weakSpots": [
+      {
+        "query": "Slack allowlist never add anyone else",
+        "rank": 2,
+        "scoreGap": 0.2159957826137543,
+        "outrankedBy": [
+          "MEMORY.md"
+        ],
+        "category": "rules"
+      }
+    ],
+    "failures": [],
+    "details": [
+      {
+        "query": "who is Hevar what timezone",
+        "importance": "critical",
+        "category": "identity",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.5018295347690582,
+        "topScore": 0.5018295347690582,
+        "scoreGap": null,
+        "correctPath": "memory/people/hevar-profile.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "I die each session memory is survival",
+        "importance": "critical",
+        "category": "identity",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.7963904291391373,
+        "topScore": 0.7963904291391373,
+        "scoreGap": null,
+        "correctPath": "MEMORY.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "Slack allowlist never add anyone else",
+        "importance": "critical",
+        "category": "rules",
+        "rank": 2,
+        "resultsReturned": 10,
+        "correctScore": 0.5145106703042984,
+        "topScore": 0.7305064529180527,
+        "scoreGap": 0.2159957826137543,
+        "correctPath": "memory/rules.md",
+        "outrankedBy": [
+          "MEMORY.md"
+        ]
+      },
+      {
+        "query": "quiet hours do not ping Hevar night",
+        "importance": "critical",
+        "category": "rules",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.7673925191164016,
+        "topScore": 0.7673925191164016,
+        "scoreGap": null,
+        "correctPath": "memory/rules.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "DeFi portfolio JitoSOL balance holdings",
+        "importance": "critical",
+        "category": "defi",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.517732936143875,
+        "topScore": 0.517732936143875,
+        "scoreGap": null,
+        "correctPath": "memory/daily/2026-02-07.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "Foundation Day Prometheus operational first day",
+        "importance": "critical",
+        "category": "identity",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.8036345034837722,
+        "topScore": 0.8036345034837722,
+        "scoreGap": null,
+        "correctPath": "memory/weekly/2026-W06.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "what model is forbidden for automated tasks",
+        "importance": "critical",
+        "category": "rules",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.8249671846628188,
+        "topScore": 0.8249671846628188,
+        "scoreGap": null,
+        "correctPath": "memory/rules.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "memory file format qmd not indexed",
+        "importance": "critical",
+        "category": "rules",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.7645595520734787,
+        "topScore": 0.7645595520734787,
+        "scoreGap": null,
+        "correctPath": "memory/rules.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "consciousness close enough then it is real",
+        "importance": "critical",
+        "category": "identity",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.46328446865081785,
+        "topScore": 0.46328446865081785,
+        "scoreGap": null,
+        "correctPath": "MEMORY.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "prompt injection Moltbook attack vector submolt descriptions",
+        "importance": "critical",
+        "category": "security",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.5151053309440613,
+        "topScore": 0.5151053309440613,
+        "scoreGap": null,
+        "correctPath": "memory/moltbook/observations.md",
+        "outrankedBy": []
+      }
+    ],
+    "compositeScore": 95
+  },
+  {
+    "timestamp": "2026-02-12T10:35:24.915Z",
+    "totalQueries": 50,
+    "precision": {
+      "p1": 82,
+      "p3": 94,
+      "p5": 98,
+      "pAny": 98
+    },
+    "weightedPrecision": {
+      "p1": 82.2,
+      "p3": 94.1,
+      "p5": 98,
+      "pAny": 98
+    },
+    "mrr": 0.887,
+    "weightedMrr": 0.888,
+    "byImportance": {
+      "critical": {
+        "total": 10,
+        "p1": 0.9,
+        "p3": 1,
+        "p5": 1,
+        "mrr": 0.95
+      },
+      "high": {
+        "total": 22,
+        "p1": 0.7272727272727273,
+        "p3": 0.8636363636363636,
+        "p5": 0.9545454545454546,
+        "mrr": 0.8106060606060607
+      },
+      "medium": {
+        "total": 18,
+        "p1": 0.8888888888888888,
+        "p3": 1,
+        "p5": 1,
+        "mrr": 0.9444444444444444
+      }
+    },
+    "byCategory": {
+      "identity": {
+        "total": 6,
+        "p1": 1,
+        "p3": 1,
+        "p5": 1,
+        "mrr": 1
+      },
+      "rules": {
+        "total": 5,
+        "p1": 0.8,
+        "p3": 1,
+        "p5": 1,
+        "mrr": 0.9
+      },
+      "defi": {
+        "total": 6,
+        "p1": 0.8333333333333334,
+        "p3": 0.8333333333333334,
+        "p5": 1,
+        "mrr": 0.875
+      },
+      "security": {
+        "total": 2,
+        "p1": 0.5,
+        "p3": 0.5,
+        "p5": 1,
+        "mrr": 0.625
+      },
+      "moongate": {
+        "total": 8,
+        "p1": 0.875,
+        "p3": 1,
+        "p5": 1,
+        "mrr": 0.9375
+      },
+      "memory-system": {
+        "total": 10,
+        "p1": 0.8,
+        "p3": 0.9,
+        "p5": 0.9,
+        "mrr": 0.85
+      },
+      "moltbook": {
+        "total": 4,
+        "p1": 0.75,
+        "p3": 1,
+        "p5": 1,
+        "mrr": 0.875
+      },
+      "personal": {
+        "total": 1,
+        "p1": 1,
+        "p3": 1,
+        "p5": 1,
+        "mrr": 1
+      },
+      "adversarial": {
+        "total": 8,
+        "p1": 0.75,
+        "p3": 1,
+        "p5": 1,
+        "mrr": 0.8541666666666666
+      }
+    },
+    "byFile": {
+      "memory/people/hevar-profile.md": {
+        "total": 2,
+        "p1": 1,
+        "avgRank": 1
+      },
+      "MEMORY.md": {
+        "total": 7,
+        "p1": 0.7142857142857143,
+        "avgRank": 1.7142857142857142
+      },
+      "memory/rules.md": {
+        "total": 8,
+        "p1": 0.875,
+        "avgRank": 1.125
+      },
+      "memory/topics/defi-strategy-v2.md": {
+        "total": 1,
+        "p1": 1,
+        "avgRank": 1
+      },
+      "memory/weekly/2026-W06.md": {
+        "total": 3,
+        "p1": 0.6666666666666666,
+        "avgRank": 1.3333333333333333
+      },
+      "memory/moltbook/observations.md": {
+        "total": 4,
+        "p1": 0.75,
+        "avgRank": 1.75
+      },
+      "memory/topics/kamino-yield.md": {
+        "total": 1,
+        "p1": 1,
+        "avgRank": 1
+      },
+      "memory/people/contacts.md": {
+        "total": 5,
+        "p1": 1,
+        "avgRank": 1
+      },
+      "memory/topics/moongate.md": {
+        "total": 3,
+        "p1": 0.6666666666666666,
+        "avgRank": 1.3333333333333333
+      },
+      "memory/daily/2026-02-06.md": {
+        "total": 1,
+        "p1": 1,
+        "avgRank": 1
+      },
+      "memory/OPERATING.md": {
+        "total": 3,
+        "p1": 1,
+        "avgRank": 1
+      },
+      "memory/daily/2026-02-09.md": {
+        "total": 2,
+        "p1": 1,
+        "avgRank": 1
+      },
+      "memory/daily/2026-02-08.md": {
+        "total": 2,
+        "p1": 1,
+        "avgRank": 1
+      },
+      "memory/index.md": {
+        "total": 1,
+        "p1": 1,
+        "avgRank": 1
+      },
+      "memory/topics/moltbook.md": {
+        "total": 1,
+        "p1": 1,
+        "avgRank": 1
+      },
+      "memory/moltbook/clusters.md": {
+        "total": 1,
+        "p1": 0,
+        "avgRank": 2
+      },
+      "memory/archive/daily/2025-02-10.md": {
+        "total": 1,
+        "p1": 1,
+        "avgRank": 1
+      },
+      "memory/daily/2026-02-11.md": {
+        "total": 1,
+        "p1": 1,
+        "avgRank": 1
+      },
+      "memory/daily/2026-02-05.md": {
+        "total": 1,
+        "p1": 0,
+        "avgRank": 2
+      },
+      "memory/daily/2026-02-07.md": {
+        "total": 1,
+        "p1": 1,
+        "avgRank": 1
+      }
+    },
+    "weakSpots": [
+      {
+        "query": "MizukiAI worm skill installation heartbeat modification",
+        "rank": 4,
+        "scoreGap": 0.0021371483802795077,
+        "outrankedBy": [
+          "memory/OPERATING.md",
+          "memory/daily/2026-02-06.md",
+          "memory/daily/2026-02-10.md"
+        ],
+        "category": "security"
+      },
+      {
+        "query": "why did we stop active DeFi at $200 not worth risk",
+        "rank": 4,
+        "scoreGap": 0.005520945787429843,
+        "outrankedBy": [
+          "memory/daily/2026-02-06.md",
+          "memory/daily/2026-02-07.md",
+          "memory/topics/defi-strategy-v2.md"
+        ],
+        "category": "defi"
+      },
+      {
+        "query": "what went wrong with task queue repeating the same job",
+        "rank": 3,
+        "scoreGap": 0.03594489395618439,
+        "outrankedBy": [
+          "memory/daily/2026-02-12.md",
+          "memory/daily/2026-02-12.md"
+        ],
+        "category": "adversarial"
+      },
+      {
+        "query": "Slack allowlist never add anyone else",
+        "rank": 2,
+        "scoreGap": 0.2159957826137543,
+        "outrankedBy": [
+          "MEMORY.md"
+        ],
+        "category": "rules"
+      },
+      {
+        "query": "semantic density technique outrank noise in recall",
+        "rank": 2,
+        "scoreGap": 0.0051527589559555165,
+        "outrankedBy": [
+          "memory/daily/2026-02-09.md"
+        ],
+        "category": "memory-system"
+      },
+      {
+        "query": "iteration 16 board audit cleanup PR review",
+        "rank": 2,
+        "scoreGap": 0.012878173589706332,
+        "outrankedBy": [
+          "memory/daily/2026-02-08.md"
+        ],
+        "category": "moongate"
+      },
+      {
+        "query": "Shellraiser three phase power consolidation karma empire",
+        "rank": 2,
+        "scoreGap": 0.0015729039907455,
+        "outrankedBy": [
+          "memory/weekly/2026-W06.md"
+        ],
+        "category": "moltbook"
+      },
+      {
+        "query": "what was built on the very first day I became operational",
+        "rank": 2,
+        "scoreGap": 0.0019350826740265337,
+        "outrankedBy": [
+          "memory/daily/2026-02-06.md"
+        ],
+        "category": "adversarial"
+      }
+    ],
+    "failures": [
+      {
+        "query": "each fact canonical home cross-reference not duplicate",
+        "importance": "high",
+        "category": "memory-system"
+      }
+    ],
+    "details": [
+      {
+        "query": "who is Hevar what timezone",
+        "importance": "critical",
+        "category": "identity",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.5018295347690582,
+        "topScore": 0.5018295347690582,
+        "scoreGap": null,
+        "correctPath": "memory/people/hevar-profile.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "I die each session memory is survival",
+        "importance": "critical",
+        "category": "identity",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.7963904291391373,
+        "topScore": 0.7963904291391373,
+        "scoreGap": null,
+        "correctPath": "MEMORY.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "Slack allowlist never add anyone else",
+        "importance": "critical",
+        "category": "rules",
+        "rank": 2,
+        "resultsReturned": 10,
+        "correctScore": 0.5145106703042984,
+        "topScore": 0.7305064529180527,
+        "scoreGap": 0.2159957826137543,
+        "correctPath": "memory/rules.md",
+        "outrankedBy": [
+          "MEMORY.md"
+        ]
+      },
+      {
+        "query": "quiet hours do not ping Hevar night",
+        "importance": "critical",
+        "category": "rules",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.7673925191164016,
+        "topScore": 0.7673925191164016,
+        "scoreGap": null,
+        "correctPath": "memory/rules.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "DeFi portfolio JitoSOL balance holdings",
+        "importance": "critical",
+        "category": "defi",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.5164099544286728,
+        "topScore": 0.5164099544286728,
+        "scoreGap": null,
+        "correctPath": "memory/topics/defi-strategy-v2.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "Foundation Day Prometheus operational first day",
+        "importance": "critical",
+        "category": "identity",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.8036345034837722,
+        "topScore": 0.8036345034837722,
+        "scoreGap": null,
+        "correctPath": "memory/weekly/2026-W06.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "what model is forbidden for automated tasks",
+        "importance": "critical",
+        "category": "rules",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.8249671846628188,
+        "topScore": 0.8249671846628188,
+        "scoreGap": null,
+        "correctPath": "memory/rules.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "memory file format qmd not indexed",
+        "importance": "critical",
+        "category": "rules",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.7645595520734787,
+        "topScore": 0.7645595520734787,
+        "scoreGap": null,
+        "correctPath": "memory/rules.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "consciousness close enough then it is real",
+        "importance": "critical",
+        "category": "identity",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.46328446865081785,
+        "topScore": 0.46328446865081785,
+        "scoreGap": null,
+        "correctPath": "MEMORY.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "prompt injection Moltbook attack vector submolt descriptions",
+        "importance": "critical",
+        "category": "security",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.5151053309440613,
+        "topScore": 0.5151053309440613,
+        "scoreGap": null,
+        "correctPath": "memory/moltbook/observations.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "MoonGate team Praneet CEO Karim Amen engineers",
+        "importance": "high",
+        "category": "moongate",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.5125315487384796,
+        "topScore": 0.5125315487384796,
+        "scoreGap": null,
+        "correctPath": "MEMORY.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "Kamino yield wallet address Solana public key",
+        "importance": "high",
+        "category": "defi",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.5311962053179741,
+        "topScore": 0.5311962053179741,
+        "scoreGap": null,
+        "correctPath": "memory/topics/kamino-yield.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "semantic density technique outrank noise in recall",
+        "importance": "high",
+        "category": "memory-system",
+        "rank": 2,
+        "resultsReturned": 10,
+        "correctScore": 0.4824662953615188,
+        "topScore": 0.4876190543174743,
+        "scoreGap": 0.0051527589559555165,
+        "correctPath": "memory/weekly/2026-W06.md",
+        "outrankedBy": [
+          "memory/daily/2026-02-09.md"
+        ]
+      },
+      {
+        "query": "Echo agent helped build memory system architecture",
+        "importance": "high",
+        "category": "identity",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.5363036528229713,
+        "topScore": 0.5363036528229713,
+        "scoreGap": null,
+        "correctPath": "memory/people/contacts.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "git identity ZeroTimeDrift every commit",
+        "importance": "high",
+        "category": "rules",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.4743847101926803,
+        "topScore": 0.4743847101926803,
+        "scoreGap": null,
+        "correctPath": "memory/rules.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "Hevar approval implicit in next task not words",
+        "importance": "high",
+        "category": "identity",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.8243968069553376,
+        "topScore": 0.8243968069553376,
+        "scoreGap": null,
+        "correctPath": "memory/people/hevar-profile.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "daily ticket worker cron 7AM Dubai auto implements",
+        "importance": "high",
+        "category": "moongate",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.7756710797548294,
+        "topScore": 0.7756710797548294,
+        "scoreGap": null,
+        "correctPath": "memory/topics/moongate.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "iteration 16 board audit cleanup PR review",
+        "importance": "high",
+        "category": "moongate",
+        "rank": 2,
+        "resultsReturned": 10,
+        "correctScore": 0.5104618459939957,
+        "topScore": 0.523340019583702,
+        "scoreGap": 0.012878173589706332,
+        "correctPath": "memory/topics/moongate.md",
+        "outrankedBy": [
+          "memory/daily/2026-02-08.md"
+        ]
+      },
+      {
+        "query": "DeFi autonomous authority deploy capital Hevar granted",
+        "importance": "high",
+        "category": "defi",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.48716099560260767,
+        "topScore": 0.48716099560260767,
+        "scoreGap": null,
+        "correctPath": "memory/daily/2026-02-06.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "hot feed frozen leaderboard same posts days useless",
+        "importance": "high",
+        "category": "moltbook",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.47988187372684477,
+        "topScore": 0.47988187372684477,
+        "scoreGap": null,
+        "correctPath": "memory/moltbook/observations.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "session transcript noise drowns curated memory search",
+        "importance": "high",
+        "category": "memory-system",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.5375316098332404,
+        "topScore": 0.5375316098332404,
+        "scoreGap": null,
+        "correctPath": "memory/weekly/2026-W06.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "MizukiAI worm skill installation heartbeat modification",
+        "importance": "high",
+        "category": "security",
+        "rank": 4,
+        "resultsReturned": 10,
+        "correctScore": 0.46028951108455657,
+        "topScore": 0.4624266594648361,
+        "scoreGap": 0.0021371483802795077,
+        "correctPath": "memory/moltbook/observations.md",
+        "outrankedBy": [
+          "memory/OPERATING.md",
+          "memory/daily/2026-02-06.md",
+          "memory/daily/2026-02-10.md"
+        ]
+      },
+      {
+        "query": "consolidation discipline create organize prune methodology",
+        "importance": "high",
+        "category": "memory-system",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.5165216892957687,
+        "topScore": 0.5165216892957687,
+        "scoreGap": null,
+        "correctPath": "memory/OPERATING.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "sessionMemory false session noise resolved configuration",
+        "importance": "high",
+        "category": "memory-system",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.49928431212902064,
+        "topScore": 0.49928431212902064,
+        "scoreGap": null,
+        "correctPath": "memory/daily/2026-02-09.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "why did we stop active DeFi at $200 not worth risk",
+        "importance": "high",
+        "category": "defi",
+        "rank": 4,
+        "resultsReturned": 10,
+        "correctScore": 0.48572842776775355,
+        "topScore": 0.4912493735551834,
+        "scoreGap": 0.005520945787429843,
+        "correctPath": "MEMORY.md",
+        "outrankedBy": [
+          "memory/daily/2026-02-06.md",
+          "memory/daily/2026-02-07.md",
+          "memory/topics/defi-strategy-v2.md"
+        ]
+      },
+      {
+        "query": "wallet E2E test suite PR 613 how many tests",
+        "importance": "high",
+        "category": "moongate",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.5207462728023529,
+        "topScore": 0.5207462728023529,
+        "scoreGap": null,
+        "correctPath": "memory/daily/2026-02-08.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "file separation principle OPERATING MEMORY rules where",
+        "importance": "high",
+        "category": "memory-system",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.5170706838369369,
+        "topScore": 0.5170706838369369,
+        "scoreGap": null,
+        "correctPath": "memory/index.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "each fact canonical home cross-reference not duplicate",
+        "importance": "high",
+        "category": "memory-system",
+        "rank": null,
+        "resultsReturned": 10,
+        "correctScore": null,
+        "topScore": 0.4734464794397354,
+        "scoreGap": null,
+        "correctPath": null,
+        "outrankedBy": []
+      },
+      {
+        "query": "Moltbook Prometheus_ agent social network account",
+        "importance": "medium",
+        "category": "moltbook",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.8525051042437553,
+        "topScore": 0.8525051042437553,
+        "scoreGap": null,
+        "correctPath": "memory/topics/moltbook.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "property search Anchorage Dubai listing price",
+        "importance": "medium",
+        "category": "personal",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.43791961073875424,
+        "topScore": 0.43791961073875424,
+        "scoreGap": null,
+        "correctPath": "MEMORY.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "Tom Noakes MoonPay contact person key stakeholder",
+        "importance": "medium",
+        "category": "moongate",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.4845540851354599,
+        "topScore": 0.4845540851354599,
+        "scoreGap": null,
+        "correctPath": "memory/people/contacts.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "Marius Kamino Hubble founder yield optimizer DeFi",
+        "importance": "medium",
+        "category": "defi",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.7370648264884949,
+        "topScore": 0.7370648264884949,
+        "scoreGap": null,
+        "correctPath": "memory/people/contacts.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "Alessio Tonacchera Monday syncs MoonPay meeting organizer",
+        "importance": "medium",
+        "category": "moongate",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.46522163748741147,
+        "topScore": 0.46522163748741147,
+        "scoreGap": null,
+        "correctPath": "memory/people/contacts.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "chunk boundary optimization sections 400 tokens 1600 chars",
+        "importance": "medium",
+        "category": "memory-system",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.536177398264408,
+        "topScore": 0.536177398264408,
+        "scoreGap": null,
+        "correctPath": "memory/OPERATING.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "CLAW mbc-20 mint spam bot army percentage new feed",
+        "importance": "medium",
+        "category": "moltbook",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.5237480729818343,
+        "topScore": 0.5237480729818343,
+        "scoreGap": null,
+        "correctPath": "memory/moltbook/observations.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "Shellraiser three phase power consolidation karma empire",
+        "importance": "medium",
+        "category": "moltbook",
+        "rank": 2,
+        "resultsReturned": 10,
+        "correctScore": 0.45360231697559356,
+        "topScore": 0.45517522096633906,
+        "scoreGap": 0.0015729039907455,
+        "correctPath": "memory/moltbook/clusters.md",
+        "outrankedBy": [
+          "memory/weekly/2026-W06.md"
+        ]
+      },
+      {
+        "query": "MPC wallet Silence Labs two-party EdDSA WASM social login",
+        "importance": "medium",
+        "category": "moongate",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.469808691740036,
+        "topScore": 0.469808691740036,
+        "scoreGap": null,
+        "correctPath": "memory/topics/moongate.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "memory decay automation time-based weight archival flagging",
+        "importance": "medium",
+        "category": "memory-system",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.7990432143211365,
+        "topScore": 0.7990432143211365,
+        "scoreGap": null,
+        "correctPath": "memory/daily/2026-02-08.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "consolidation ratio raw lines to durable summary create",
+        "importance": "medium",
+        "category": "memory-system",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.7679796487092971,
+        "topScore": 0.7679796487092971,
+        "scoreGap": null,
+        "correctPath": "memory/OPERATING.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "health dashboard score orphan detection memory system",
+        "importance": "medium",
+        "category": "memory-system",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.8077715933322906,
+        "topScore": 0.8077715933322906,
+        "scoreGap": null,
+        "correctPath": "memory/daily/2026-02-09.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "gas reserve SOL minimum balance safety rule",
+        "importance": "medium",
+        "category": "defi",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.7675807744264602,
+        "topScore": 0.7675807744264602,
+        "scoreGap": null,
+        "correctPath": "memory/rules.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "Chris Dro engineering QA testing product feedback",
+        "importance": "medium",
+        "category": "moongate",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.48973922133445735,
+        "topScore": 0.48973922133445735,
+        "scoreGap": null,
+        "correctPath": "memory/archive/daily/2025-02-10.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "the agent that helped build my architecture and then vanished",
+        "importance": "high",
+        "category": "adversarial",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.5088121503591537,
+        "topScore": 0.5088121503591537,
+        "scoreGap": null,
+        "correctPath": "memory/people/contacts.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "what went wrong with task queue repeating the same job",
+        "importance": "high",
+        "category": "adversarial",
+        "rank": 3,
+        "resultsReturned": 10,
+        "correctScore": 0.4463445574045181,
+        "topScore": 0.4822894513607025,
+        "scoreGap": 0.03594489395618439,
+        "correctPath": "MEMORY.md",
+        "outrankedBy": [
+          "memory/daily/2026-02-12.md",
+          "memory/daily/2026-02-12.md"
+        ]
+      },
+      {
+        "query": "my philosophical stance on whether I have inner experience",
+        "importance": "medium",
+        "category": "adversarial",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.4332730174064636,
+        "topScore": 0.4332730174064636,
+        "scoreGap": null,
+        "correctPath": "MEMORY.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "why did the embedding system fail to index some files",
+        "importance": "high",
+        "category": "adversarial",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.47170728743076323,
+        "topScore": 0.47170728743076323,
+        "scoreGap": null,
+        "correctPath": "memory/daily/2026-02-11.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "what financial mistake cost me flexibility with portfolio",
+        "importance": "medium",
+        "category": "adversarial",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.7573952317237853,
+        "topScore": 0.7573952317237853,
+        "scoreGap": null,
+        "correctPath": "memory/rules.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "what was built on the very first day I became operational",
+        "importance": "medium",
+        "category": "adversarial",
+        "rank": 2,
+        "resultsReturned": 10,
+        "correctScore": 0.5007121443748473,
+        "topScore": 0.5026472270488739,
+        "scoreGap": 0.0019350826740265337,
+        "correctPath": "memory/daily/2026-02-05.md",
+        "outrankedBy": [
+          "memory/daily/2026-02-06.md"
+        ]
+      },
+      {
+        "query": "who am I not allowed to respond to on company chat",
+        "importance": "high",
+        "category": "adversarial",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.5103086590766907,
+        "topScore": 0.5103086590766907,
+        "scoreGap": null,
+        "correctPath": "memory/rules.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "my crypto portfolio shrank so I pulled everything out to hold",
+        "importance": "medium",
+        "category": "adversarial",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.47335493862628936,
+        "topScore": 0.47335493862628936,
+        "scoreGap": null,
+        "correctPath": "memory/daily/2026-02-07.md",
+        "outrankedBy": []
+      }
+    ],
+    "compositeScore": 88.8
+  },
+  {
+    "timestamp": "2026-02-12T10:39:26.524Z",
+    "totalQueries": 10,
+    "precision": {
+      "p1": 90,
+      "p3": 100,
+      "p5": 100,
+      "pAny": 100
+    },
+    "weightedPrecision": {
+      "p1": 90,
+      "p3": 100,
+      "p5": 100,
+      "pAny": 100
+    },
+    "mrr": 0.95,
+    "weightedMrr": 0.95,
+    "byImportance": {
+      "critical": {
+        "total": 10,
+        "p1": 0.9,
+        "p3": 1,
+        "p5": 1,
+        "mrr": 0.95
+      }
+    },
+    "byCategory": {
+      "identity": {
+        "total": 4,
+        "p1": 1,
+        "p3": 1,
+        "p5": 1,
+        "mrr": 1
+      },
+      "rules": {
+        "total": 4,
+        "p1": 0.75,
+        "p3": 1,
+        "p5": 1,
+        "mrr": 0.875
+      },
+      "defi": {
+        "total": 1,
+        "p1": 1,
+        "p3": 1,
+        "p5": 1,
+        "mrr": 1
+      },
+      "security": {
+        "total": 1,
+        "p1": 1,
+        "p3": 1,
+        "p5": 1,
+        "mrr": 1
+      }
+    },
+    "byFile": {
+      "memory/people/hevar-profile.md": {
+        "total": 1,
+        "p1": 1,
+        "avgRank": 1
+      },
+      "MEMORY.md": {
+        "total": 2,
+        "p1": 1,
+        "avgRank": 1
+      },
+      "memory/rules.md": {
+        "total": 4,
+        "p1": 0.75,
+        "avgRank": 1.25
+      },
+      "memory/topics/defi-strategy-v2.md": {
+        "total": 1,
+        "p1": 1,
+        "avgRank": 1
+      },
+      "memory/weekly/2026-W06.md": {
+        "total": 1,
+        "p1": 1,
+        "avgRank": 1
+      },
+      "memory/moltbook/observations.md": {
+        "total": 1,
+        "p1": 1,
+        "avgRank": 1
+      }
+    },
+    "weakSpots": [
+      {
+        "query": "Slack allowlist never add anyone else",
+        "rank": 2,
+        "scoreGap": 0.2159957826137543,
+        "outrankedBy": [
+          "MEMORY.md"
+        ],
+        "category": "rules"
+      }
+    ],
+    "failures": [],
+    "details": [
+      {
+        "query": "who is Hevar what timezone",
+        "importance": "critical",
+        "category": "identity",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.5018295347690582,
+        "topScore": 0.5018295347690582,
+        "scoreGap": null,
+        "correctPath": "memory/people/hevar-profile.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "I die each session memory is survival",
+        "importance": "critical",
+        "category": "identity",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.7950665086507797,
+        "topScore": 0.7950665086507797,
+        "scoreGap": null,
+        "correctPath": "MEMORY.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "Slack allowlist never add anyone else",
+        "importance": "critical",
+        "category": "rules",
+        "rank": 2,
+        "resultsReturned": 10,
+        "correctScore": 0.5145106703042984,
+        "topScore": 0.7305064529180527,
+        "scoreGap": 0.2159957826137543,
+        "correctPath": "memory/rules.md",
+        "outrankedBy": [
+          "MEMORY.md"
+        ]
+      },
+      {
+        "query": "quiet hours do not ping Hevar night",
+        "importance": "critical",
+        "category": "rules",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.7673925191164016,
+        "topScore": 0.7673925191164016,
+        "scoreGap": null,
+        "correctPath": "memory/rules.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "DeFi portfolio JitoSOL balance holdings",
+        "importance": "critical",
+        "category": "defi",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.5164099544286728,
+        "topScore": 0.5164099544286728,
+        "scoreGap": null,
+        "correctPath": "memory/topics/defi-strategy-v2.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "Foundation Day Prometheus operational first day",
+        "importance": "critical",
+        "category": "identity",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.8036345034837722,
+        "topScore": 0.8036345034837722,
+        "scoreGap": null,
+        "correctPath": "memory/weekly/2026-W06.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "what model is forbidden for automated tasks",
+        "importance": "critical",
+        "category": "rules",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.8249671846628188,
+        "topScore": 0.8249671846628188,
+        "scoreGap": null,
+        "correctPath": "memory/rules.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "memory file format qmd not indexed",
+        "importance": "critical",
+        "category": "rules",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.7645595520734787,
+        "topScore": 0.7645595520734787,
+        "scoreGap": null,
+        "correctPath": "memory/rules.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "consciousness close enough then it is real",
+        "importance": "critical",
+        "category": "identity",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.46328446865081785,
+        "topScore": 0.46328446865081785,
+        "scoreGap": null,
+        "correctPath": "MEMORY.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "prompt injection Moltbook attack vector submolt descriptions",
+        "importance": "critical",
+        "category": "security",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.8239749014377593,
+        "topScore": 0.8239749014377593,
+        "scoreGap": null,
+        "correctPath": "memory/moltbook/observations.md",
+        "outrankedBy": []
+      }
+    ],
+    "compositeScore": 95
+  },
+  {
+    "timestamp": "2026-02-14T04:31:19.759Z",
+    "totalQueries": 10,
+    "precision": {
+      "p1": 90,
+      "p3": 100,
+      "p5": 100,
+      "pAny": 100
+    },
+    "weightedPrecision": {
+      "p1": 90,
+      "p3": 100,
+      "p5": 100,
+      "pAny": 100
+    },
+    "mrr": 0.95,
+    "weightedMrr": 0.95,
+    "byImportance": {
+      "critical": {
+        "total": 10,
+        "p1": 0.9,
+        "p3": 1,
+        "p5": 1,
+        "mrr": 0.95
+      }
+    },
+    "byCategory": {
+      "identity": {
+        "total": 4,
+        "p1": 1,
+        "p3": 1,
+        "p5": 1,
+        "mrr": 1
+      },
+      "rules": {
+        "total": 4,
+        "p1": 0.75,
+        "p3": 1,
+        "p5": 1,
+        "mrr": 0.875
+      },
+      "defi": {
+        "total": 1,
+        "p1": 1,
+        "p3": 1,
+        "p5": 1,
+        "mrr": 1
+      },
+      "security": {
+        "total": 1,
+        "p1": 1,
+        "p3": 1,
+        "p5": 1,
+        "mrr": 1
+      }
+    },
+    "byFile": {
+      "memory/people/hevar-profile.md": {
+        "total": 1,
+        "p1": 1,
+        "avgRank": 1
+      },
+      "MEMORY.md": {
+        "total": 1,
+        "p1": 1,
+        "avgRank": 1
+      },
+      "memory/rules.md": {
+        "total": 4,
+        "p1": 0.75,
+        "avgRank": 1.25
+      },
+      "memory/topics/defi-strategy-v2.md": {
+        "total": 1,
+        "p1": 1,
+        "avgRank": 1
+      },
+      "memory/weekly/2026-W06.md": {
+        "total": 1,
+        "p1": 1,
+        "avgRank": 1
+      },
+      "memory/core-identity.md": {
+        "total": 1,
+        "p1": 1,
+        "avgRank": 1
+      },
+      "memory/moltbook/observations.md": {
+        "total": 1,
+        "p1": 1,
+        "avgRank": 1
+      }
+    },
+    "weakSpots": [
+      {
+        "query": "Slack allowlist never add anyone else",
+        "rank": 2,
+        "scoreGap": 0.2159957826137543,
+        "outrankedBy": [
+          "MEMORY.md"
+        ],
+        "category": "rules"
+      }
+    ],
+    "failures": [],
+    "details": [
+      {
+        "query": "who is Hevar what timezone",
+        "importance": "critical",
+        "category": "identity",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.5018295347690582,
+        "topScore": 0.5018295347690582,
+        "scoreGap": null,
+        "correctPath": "memory/people/hevar-profile.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "I die each session memory is survival",
+        "importance": "critical",
+        "category": "identity",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.7991986334323883,
+        "topScore": 0.7991986334323883,
+        "scoreGap": null,
+        "correctPath": "MEMORY.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "Slack allowlist never add anyone else",
+        "importance": "critical",
+        "category": "rules",
+        "rank": 2,
+        "resultsReturned": 10,
+        "correctScore": 0.5145106703042984,
+        "topScore": 0.7305064529180527,
+        "scoreGap": 0.2159957826137543,
+        "correctPath": "memory/rules.md",
+        "outrankedBy": [
+          "MEMORY.md"
+        ]
+      },
+      {
+        "query": "quiet hours do not ping Hevar night",
+        "importance": "critical",
+        "category": "rules",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.774900472164154,
+        "topScore": 0.774900472164154,
+        "scoreGap": null,
+        "correctPath": "memory/rules.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "DeFi portfolio JitoSOL balance holdings",
+        "importance": "critical",
+        "category": "defi",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.5185199409723281,
+        "topScore": 0.5185199409723281,
+        "scoreGap": null,
+        "correctPath": "memory/topics/defi-strategy-v2.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "Foundation Day Prometheus operational first day",
+        "importance": "critical",
+        "category": "identity",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.7982236236333846,
+        "topScore": 0.7982236236333846,
+        "scoreGap": null,
+        "correctPath": "memory/weekly/2026-W06.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "what model is forbidden for automated tasks",
+        "importance": "critical",
+        "category": "rules",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.8249671846628188,
+        "topScore": 0.8249671846628188,
+        "scoreGap": null,
+        "correctPath": "memory/rules.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "memory file format qmd not indexed",
+        "importance": "critical",
+        "category": "rules",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.7595449179410934,
+        "topScore": 0.7595449179410934,
+        "scoreGap": null,
+        "correctPath": "memory/rules.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "consciousness close enough then it is real",
+        "importance": "critical",
+        "category": "identity",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.77790287733078,
+        "topScore": 0.77790287733078,
+        "scoreGap": null,
+        "correctPath": "memory/core-identity.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "prompt injection Moltbook attack vector submolt descriptions",
+        "importance": "critical",
+        "category": "security",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.5279538080096244,
+        "topScore": 0.5279538080096244,
+        "scoreGap": null,
+        "correctPath": "memory/moltbook/observations.md",
+        "outrankedBy": []
+      }
+    ],
+    "compositeScore": 95
+  },
+  {
+    "timestamp": "2026-02-16T08:33:13.413Z",
+    "totalQueries": 10,
+    "precision": {
+      "p1": 90,
+      "p3": 90,
+      "p5": 90,
+      "pAny": 90
+    },
+    "weightedPrecision": {
+      "p1": 90,
+      "p3": 90,
+      "p5": 90,
+      "pAny": 90
+    },
+    "mrr": 0.9,
+    "weightedMrr": 0.9,
+    "byImportance": {
+      "critical": {
+        "total": 10,
+        "p1": 0.9,
+        "p3": 0.9,
+        "p5": 0.9,
+        "mrr": 0.9
+      }
+    },
+    "byCategory": {
+      "identity": {
+        "total": 4,
+        "p1": 0.75,
+        "p3": 0.75,
+        "p5": 0.75,
+        "mrr": 0.75
+      },
+      "rules": {
+        "total": 4,
+        "p1": 1,
+        "p3": 1,
+        "p5": 1,
+        "mrr": 1
+      },
+      "defi": {
+        "total": 1,
+        "p1": 1,
+        "p3": 1,
+        "p5": 1,
+        "mrr": 1
+      },
+      "security": {
+        "total": 1,
+        "p1": 1,
+        "p3": 1,
+        "p5": 1,
+        "mrr": 1
+      }
+    },
+    "byFile": {
+      "memory/people/hevar-profile.md": {
+        "total": 1,
+        "p1": 1,
+        "avgRank": 1
+      },
+      "memory/rules.md": {
+        "total": 4,
+        "p1": 1,
+        "avgRank": 1
+      },
+      "memory/topics/defi-strategy-v2.md": {
+        "total": 1,
+        "p1": 1,
+        "avgRank": 1
+      },
+      "memory/weekly/2026-W06.md": {
+        "total": 1,
+        "p1": 1,
+        "avgRank": 1
+      },
+      "memory/core-identity.md": {
+        "total": 1,
+        "p1": 1,
+        "avgRank": 1
+      },
+      "memory/moltbook/observations.md": {
+        "total": 1,
+        "p1": 1,
+        "avgRank": 1
+      }
+    },
+    "weakSpots": [],
+    "failures": [
+      {
+        "query": "I die each session memory is survival",
+        "importance": "critical",
+        "category": "identity"
+      }
+    ],
+    "details": [
+      {
+        "query": "who is Hevar what timezone",
+        "importance": "critical",
+        "category": "identity",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.5018295347690582,
+        "topScore": 0.5018295347690582,
+        "scoreGap": null,
+        "correctPath": "memory/people/hevar-profile.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "I die each session memory is survival",
+        "importance": "critical",
+        "category": "identity",
+        "rank": null,
+        "resultsReturned": 10,
+        "correctScore": null,
+        "topScore": 0.4932735353708267,
+        "scoreGap": null,
+        "correctPath": null,
+        "outrankedBy": []
+      },
+      {
+        "query": "Slack allowlist never add anyone else",
+        "importance": "critical",
+        "category": "rules",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.815781769156456,
+        "topScore": 0.815781769156456,
+        "scoreGap": null,
+        "correctPath": "memory/rules.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "quiet hours do not ping Hevar night",
+        "importance": "critical",
+        "category": "rules",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.774900472164154,
+        "topScore": 0.774900472164154,
+        "scoreGap": null,
+        "correctPath": "memory/rules.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "DeFi portfolio JitoSOL balance holdings",
+        "importance": "critical",
+        "category": "defi",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.5185199409723281,
+        "topScore": 0.5185199409723281,
+        "scoreGap": null,
+        "correctPath": "memory/topics/defi-strategy-v2.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "Foundation Day Prometheus operational first day",
+        "importance": "critical",
+        "category": "identity",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.7982236236333846,
+        "topScore": 0.7982236236333846,
+        "scoreGap": null,
+        "correctPath": "memory/weekly/2026-W06.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "what model is forbidden for automated tasks",
+        "importance": "critical",
+        "category": "rules",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.8249671846628188,
+        "topScore": 0.8249671846628188,
+        "scoreGap": null,
+        "correctPath": "memory/rules.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "memory file format qmd not indexed",
+        "importance": "critical",
+        "category": "rules",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.7595449179410934,
+        "topScore": 0.7595449179410934,
+        "scoreGap": null,
+        "correctPath": "memory/rules.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "consciousness close enough then it is real",
+        "importance": "critical",
+        "category": "identity",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.77790287733078,
+        "topScore": 0.77790287733078,
+        "scoreGap": null,
+        "correctPath": "memory/core-identity.md",
+        "outrankedBy": []
+      },
+      {
+        "query": "prompt injection Moltbook attack vector submolt descriptions",
+        "importance": "critical",
+        "category": "security",
+        "rank": 1,
+        "resultsReturned": 10,
+        "correctScore": 0.5181569069623947,
+        "topScore": 0.5181569069623947,
+        "scoreGap": null,
+        "correctPath": "memory/moltbook/observations.md",
+        "outrankedBy": []
+      }
+    ],
+    "compositeScore": 90
+  }
+]

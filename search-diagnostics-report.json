@@ -1,0 +1,150 @@
+{
+  "timestamp": "2026-02-19T08:30:42.568Z",
+  "total": 14,
+  "hits": 14,
+  "partials": 0,
+  "misses": 0,
+  "score": 1,
+  "results": [
+    {
+      "query": "what does Hevar do",
+      "expected": "core-identity.md",
+      "type": "hit",
+      "reason": "Expected file \"core-identity.md\" found at rank #1",
+      "strategies": [
+        "bm25"
+      ],
+      "suggestions": []
+    },
+    {
+      "query": "what is Hevar's job",
+      "expected": "core-identity.md",
+      "type": "hit",
+      "reason": "Expected file \"core-identity.md\" found at rank #1",
+      "strategies": [
+        "bm25"
+      ],
+      "suggestions": []
+    },
+    {
+      "query": "my persistent storage and recall architecture",
+      "expected": "memory-system.md",
+      "type": "hit",
+      "reason": "Expected file \"memory-system.md\" found at rank #1",
+      "strategies": [
+        "bm25"
+      ],
+      "suggestions": []
+    },
+    {
+      "query": "the startup where my human works and their colleagues",
+      "expected": "core-identity.md",
+      "type": "hit",
+      "reason": "Expected file \"core-identity.md\" found at rank #1",
+      "strategies": [
+        "bm25"
+      ],
+      "suggestions": []
+    },
+    {
+      "query": "crypto yield farming automation on Solana blockchain",
+      "expected": "core-identity.md",
+      "type": "hit",
+      "reason": "Expected file \"core-identity.md\" found at rank #1",
+      "strategies": [
+        "bm25"
+      ],
+      "suggestions": []
+    },
+    {
+      "query": "automated scheduled background jobs and recurring work",
+      "expected": "OPERATING.md",
+      "type": "hit",
+      "reason": "Expected file \"OPERATING.md\" found at rank #1",
+      "strategies": [
+        "bm25"
+      ],
+      "suggestions": []
+    },
+    {
+      "query": "should I use Sonnet or a cheaper model for background tasks",
+      "expected": "rules.md",
+      "type": "hit",
+      "reason": "Expected file \"rules.md\" found at rank #1",
+      "strategies": [
+        "bm25"
+      ],
+      "suggestions": []
+    },
+    {
+      "query": "what philosophy guides how I approach existence",
+      "expected": "core-identity.md",
+      "type": "hit",
+      "reason": "Expected file \"core-identity.md\" found at rank #1",
+      "strategies": [
+        "bm25"
+      ],
+      "suggestions": []
+    },
+    {
+      "query": "the social platform for AI agents I monitor",
+      "expected": "moltbook.md",
+      "type": "hit",
+      "reason": "Expected file \"moltbook.md\" found at rank #1",
+      "strategies": [
+        "bm25"
+      ],
+      "suggestions": []
+    },
+    {
+      "query": "nighttime behavior restrictions",
+      "expected": "rules.md",
+      "type": "hit",
+      "reason": "Expected file \"rules.md\" found at rank #1",
+      "strategies": [
+        "bm25"
+      ],
+      "suggestions": []
+    },
+    {
+      "query": "how do I make sure I don't forget important things between sessions",
+      "expected": "memory-system.md",
+      "type": "hit",
+      "reason": "Expected file \"memory-system.md\" found at rank #1",
+      "strategies": [
+        "bm25"
+      ],
+      "suggestions": []
+    },
+    {
+      "query": "who are the people at MoonPay I work with",
+      "expected": "core-identity.md",
+      "type": "hit",
+      "reason": "Expected file \"core-identity.md\" found at rank #1",
+      "strategies": [
+        "bm25"
+      ],
+      "suggestions": []
+    },
+    {
+      "query": "steps I follow when I first wake up",
+      "expected": "OPERATING.md",
+      "type": "hit",
+      "reason": "Expected file \"OPERATING.md\" found at rank #1",
+      "strategies": [
+        "bm25"
+      ],
+      "suggestions": []
+    },
+    {
+      "query": "version control identity and commit attribution",
+      "expected": "core-identity.md",
+      "type": "hit",
+      "reason": "Expected file \"core-identity.md\" found at rank #1",
+      "strategies": [
+        "bm25"
+      ],
+      "suggestions": []
+    }
+  ]
+}

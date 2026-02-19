@@ -1,0 +1,1609 @@
+{
+  "version": 1,
+  "builtAt": "2026-02-19T16:34:23.411Z",
+  "nodeCount": 27,
+  "edgeCount": 52,
+  "nodes": {
+    "MEMORY.md": {
+      "path": "MEMORY.md",
+      "type": "core",
+      "edges": {
+        "memory/topics/moongate.md": 0.26863402240962486,
+        "memory/OPERATING.md": 0.20919200775590113,
+        "memory/people/contacts.md": 0.2215857882912745,
+        "memory/rules.md": 0.2215857882912745,
+        "memory/topics/memory-system.md": 0.27092228347947855,
+        "memory/daily/2026-02-19.md": 0.2507679368930274,
+        "memory/moltbook/notable-agents.md": 0.25016312800311374,
+        "memory/moltbook/observations.md": 0.35879853493092645,
+        "memory/topics/defi-strategy-v2.md": 0.2048410117920256,
+        "memory/weekly/2026-W07.md": 0.25419463037692214,
+        "memory/daily/2026-02-12.md": 0.2719053103470996,
+        "memory/daily/2026-02-11.md": 0.20625164666615933,
+        "memory/people/hevar-profile.md": 0.20625164666615933,
+        "memory/weekly/2026-W06.md": 0.20625164666615933
+      },
+      "degree": 14,
+      "weightedDegree": 3.401345382569146,
+      "cluster": 0
+    },
+    "SOUL.md": {
+      "path": "SOUL.md",
+      "type": "core",
+      "edges": {
+        "memory/topics/moltbook.md": 0.20625164666615933,
+        "memory/weekly/2026-W06.md": 0.20625164666615933
+      },
+      "degree": 2,
+      "weightedDegree": 0.41250329333231867,
+      "cluster": 1
+    },
+    "IDENTITY.md": {
+      "path": "IDENTITY.md",
+      "type": "core",
+      "edges": {
+        "memory/core-identity.md": 0.2053156326145541,
+        "memory/weekly/2026-W06.md": 0.20625164666615933
+      },
+      "degree": 2,
+      "weightedDegree": 0.41156727928071346,
+      "cluster": 2
+    },
+    "USER.md": {
+      "path": "USER.md",
+      "type": "core",
+      "edges": {
+        "memory/core-identity.md": 0.470320425579162,
+        "memory/topics/moongate.md": 0.2753287113453187
+      },
+      "degree": 2,
+      "weightedDegree": 0.7456491369244806,
+      "cluster": 3
+    },
+    "TOOLS.md": {
+      "path": "TOOLS.md",
+      "type": "core",
+      "edges": {},
+      "degree": 0,
+      "weightedDegree": 0
+    },
+    "memory/OPERATING.md": {
+      "path": "memory/OPERATING.md",
+      "type": "operational",
+      "edges": {
+        "MEMORY.md": 0.20919200775590113,
+        "memory/index.md": 0.29038579812926757,
+        "memory/rules.md": 0.2710675017557489,
+        "memory/topics/memory-system.md": 0.22798245134753084,
+        "memory/weekly/2026-W06.md": 0.34381922846359697
+      },
+      "degree": 5,
+      "weightedDegree": 1.3424469874520455,
+      "cluster": 2
+    },
+    "memory/core-identity.md": {
+      "path": "memory/core-identity.md",
+      "type": "proxy",
+      "edges": {
+        "USER.md": 0.470320425579162,
+        "memory/topics/moongate.md": 0.33757416351086267,
+        "IDENTITY.md": 0.2053156326145541,
+        "memory/people/contacts.md": 0.35172026136835954
+      },
+      "degree": 4,
+      "weightedDegree": 1.3649304830729383,
+      "cluster": 3
+    },
+    "memory/daily/2026-02-11.md": {
+      "path": "memory/daily/2026-02-11.md",
+      "type": "daily",
+      "edges": {
+        "MEMORY.md": 0.20625164666615933,
+        "memory/moltbook/observations.md": 0.20625164666615933,
+        "memory/topics/moltbook.md": 0.20625164666615933,
+        "memory/people/hevar-profile.md": 0.20625164666615933
+      },
+      "degree": 4,
+      "weightedDegree": 0.8250065866646373,
+      "cluster": 0
+    },
+    "memory/daily/2026-02-12.md": {
+      "path": "memory/daily/2026-02-12.md",
+      "type": "daily",
+      "edges": {
+        "MEMORY.md": 0.2719053103470996,
+        "memory/topics/moltbook.md": 0.3712529639990868,
+        "memory/people/hevar-profile.md": 0.20625164666615933
+      },
+      "degree": 3,
+      "weightedDegree": 0.8494099210123457,
+      "cluster": 0
+    },
+    "memory/daily/2026-02-17.md": {
+      "path": "memory/daily/2026-02-17.md",
+      "type": "daily",
+      "edges": {
+        "memory/weekly/2026-W08.md": 0.3214955218506224,
+        "memory/people/contacts.md": 0.31084325532146057,
+        "memory/people/hevar-profile.md": 0.31084325532146057
+      },
+      "degree": 3,
+      "weightedDegree": 0.9431820324935436,
+      "cluster": 4
+    },
+    "memory/daily/2026-02-18.md": {
+      "path": "memory/daily/2026-02-18.md",
+      "type": "daily",
+      "edges": {
+        "memory/moltbook/observations.md": 0.20625164666615933,
+        "memory/topics/moltbook.md": 0.20625164666615933,
+        "memory/people/hevar-profile.md": 0.20625164666615933
+      },
+      "degree": 3,
+      "weightedDegree": 0.618754939998478,
+      "cluster": 1
+    },
+    "memory/daily/2026-02-19.md": {
+      "path": "memory/daily/2026-02-19.md",
+      "type": "daily",
+      "edges": {
+        "MEMORY.md": 0.2507679368930274,
+        "memory/topics/defi-strategy-v2.md": 0.23582087669619156,
+        "memory/weekly/2026-W07.md": 0.2526149708539668,
+        "memory/weekly/2026-W08.md": 0.23663679577899985,
+        "memory/moltbook/observations.md": 0.3249393625935214
+      },
+      "degree": 5,
+      "weightedDegree": 1.3007799428157072,
+      "cluster": 0
+    },
+    "memory/index.md": {
+      "path": "memory/index.md",
+      "type": "topic",
+      "edges": {
+        "memory/OPERATING.md": 0.29038579812926757
+      },
+      "degree": 1,
+      "weightedDegree": 0.29038579812926757,
+      "cluster": 2
+    },
+    "memory/moltbook/clusters.md": {
+      "path": "memory/moltbook/clusters.md",
+      "type": "topic",
+      "edges": {
+        "memory/moltbook/observations.md": 0.646633966438521,
+        "memory/topics/moltbook.md": 0.3931540462834672,
+        "memory/weekly/2026-W07.md": 0.20625164666615933
+      },
+      "degree": 3,
+      "weightedDegree": 1.2460396593881473,
+      "cluster": 1
+    },
+    "memory/moltbook/notable-agents.md": {
+      "path": "memory/moltbook/notable-agents.md",
+      "type": "topic",
+      "edges": {
+        "MEMORY.md": 0.25016312800311374,
+        "memory/moltbook/observations.md": 1,
+        "memory/topics/moltbook.md": 0.3931540462834672
+      },
+      "degree": 3,
+      "weightedDegree": 1.6433171742865809,
+      "cluster": 1
+    },
+    "memory/moltbook/observations.md": {
+      "path": "memory/moltbook/observations.md",
+      "type": "topic",
+      "edges": {
+        "MEMORY.md": 0.35879853493092645,
+        "memory/moltbook/notable-agents.md": 1,
+        "memory/moltbook/clusters.md": 0.646633966438521,
+        "memory/daily/2026-02-11.md": 0.20625164666615933,
+        "memory/daily/2026-02-18.md": 0.20625164666615933,
+        "memory/daily/2026-02-19.md": 0.3249393625935214,
+        "memory/topics/moltbook.md": 0.3532824496689952,
+        "memory/weekly/2026-W06.md": 0.22687681133277524
+      },
+      "degree": 8,
+      "weightedDegree": 3.3230344182970573,
+      "cluster": 1
+    },
+    "memory/people/contacts.md": {
+      "path": "memory/people/contacts.md",
+      "type": "people",
+      "edges": {
+        "MEMORY.md": 0.2215857882912745,
+        "memory/topics/moongate.md": 0.20634362075878768,
+        "memory/core-identity.md": 0.35172026136835954,
+        "memory/daily/2026-02-17.md": 0.31084325532146057
+      },
+      "degree": 4,
+      "weightedDegree": 1.0904929257398823,
+      "cluster": 3
+    },
+    "memory/people/hevar-profile.md": {
+      "path": "memory/people/hevar-profile.md",
+      "type": "people",
+      "edges": {
+        "memory/daily/2026-02-17.md": 0.31084325532146057,
+        "MEMORY.md": 0.20625164666615933,
+        "memory/daily/2026-02-11.md": 0.20625164666615933,
+        "memory/daily/2026-02-12.md": 0.20625164666615933,
+        "memory/daily/2026-02-18.md": 0.20625164666615933
+      },
+      "degree": 5,
+      "weightedDegree": 1.1358498419860978,
+      "cluster": 0
+    },
+    "memory/rules.md": {
+      "path": "memory/rules.md",
+      "type": "topic",
+      "edges": {
+        "MEMORY.md": 0.2215857882912745,
+        "memory/OPERATING.md": 0.2710675017557489,
+        "memory/topics/moongate.md": 0.20634362075878768
+      },
+      "degree": 3,
+      "weightedDegree": 0.6989969108058111,
+      "cluster": 2
+    },
+    "memory/topics/defi-strategy-v2.md": {
+      "path": "memory/topics/defi-strategy-v2.md",
+      "type": "topic",
+      "edges": {
+        "MEMORY.md": 0.2048410117920256,
+        "memory/daily/2026-02-19.md": 0.23582087669619156
+      },
+      "degree": 2,
+      "weightedDegree": 0.4406618884882172,
+      "cluster": 0
+    },
+    "memory/topics/memory-system.md": {
+      "path": "memory/topics/memory-system.md",
+      "type": "topic",
+      "edges": {
+        "MEMORY.md": 0.27092228347947855,
+        "memory/OPERATING.md": 0.22798245134753084
+      },
+      "degree": 2,
+      "weightedDegree": 0.49890473482700937,
+      "cluster": 0
+    },
+    "memory/topics/moltbook.md": {
+      "path": "memory/topics/moltbook.md",
+      "type": "topic",
+      "edges": {
+        "memory/moltbook/clusters.md": 0.3931540462834672,
+        "memory/moltbook/notable-agents.md": 0.3931540462834672,
+        "memory/daily/2026-02-11.md": 0.20625164666615933,
+        "memory/daily/2026-02-12.md": 0.3712529639990868,
+        "memory/daily/2026-02-18.md": 0.20625164666615933,
+        "memory/moltbook/observations.md": 0.3532824496689952,
+        "SOUL.md": 0.20625164666615933,
+        "memory/weekly/2026-W07.md": 0.20625164666615933
+      },
+      "degree": 8,
+      "weightedDegree": 2.3358500928996535,
+      "cluster": 1
+    },
+    "memory/topics/moongate-acquisition.md": {
+      "path": "memory/topics/moongate-acquisition.md",
+      "type": "topic",
+      "edges": {},
+      "degree": 0,
+      "weightedDegree": 0
+    },
+    "memory/topics/moongate.md": {
+      "path": "memory/topics/moongate.md",
+      "type": "topic",
+      "edges": {
+        "MEMORY.md": 0.26863402240962486,
+        "USER.md": 0.2753287113453187,
+        "memory/core-identity.md": 0.33757416351086267,
+        "memory/people/contacts.md": 0.20634362075878768,
+        "memory/rules.md": 0.20634362075878768,
+        "memory/weekly/2026-W07.md": 0.20625164666615933
+      },
+      "degree": 6,
+      "weightedDegree": 1.5004757854495407,
+      "cluster": 3
+    },
+    "memory/weekly/2026-W06.md": {
+      "path": "memory/weekly/2026-W06.md",
+      "type": "weekly",
+      "edges": {
+        "memory/OPERATING.md": 0.34381922846359697,
+        "MEMORY.md": 0.20625164666615933,
+        "SOUL.md": 0.20625164666615933,
+        "IDENTITY.md": 0.20625164666615933,
+        "memory/moltbook/observations.md": 0.22687681133277524
+      },
+      "degree": 5,
+      "weightedDegree": 1.1894509797948503,
+      "cluster": 2
+    },
+    "memory/weekly/2026-W07.md": {
+      "path": "memory/weekly/2026-W07.md",
+      "type": "weekly",
+      "edges": {
+        "MEMORY.md": 0.25419463037692214,
+        "memory/daily/2026-02-19.md": 0.2526149708539668,
+        "memory/moltbook/clusters.md": 0.20625164666615933,
+        "memory/topics/moltbook.md": 0.20625164666615933,
+        "memory/topics/moongate.md": 0.20625164666615933
+      },
+      "degree": 5,
+      "weightedDegree": 1.1255645412293669,
+      "cluster": 0
+    },
+    "memory/weekly/2026-W08.md": {
+      "path": "memory/weekly/2026-W08.md",
+      "type": "weekly",
+      "edges": {
+        "memory/daily/2026-02-17.md": 0.3214955218506224,
+        "memory/daily/2026-02-19.md": 0.23663679577899985
+      },
+      "degree": 2,
+      "weightedDegree": 0.5581323176296222,
+      "cluster": 4
+    }
+  },
+  "edges": [
+    {
+      "source": "MEMORY.md",
+      "target": "memory/topics/moongate.md",
+      "weight": 0.26863402240962486,
+      "reasons": [
+        {
+          "type": "entity",
+          "detail": "praneet",
+          "contribution": 0.09486832980505137
+        },
+        {
+          "type": "entity",
+          "detail": "amen",
+          "contribution": 0.06123724356957946
+        },
+        {
+          "type": "entity",
+          "detail": "karim",
+          "contribution": 0.075
+        },
+        {
+          "type": "entity",
+          "detail": "slack",
+          "contribution": 0.08017837257372731
+        },
+        {
+          "type": "xref",
+          "detail": "MEMORY.md references memory/topics/moongate.md",
+          "contribution": 0.316227766016838
+        }
+      ]
+    },
+    {
+      "source": "USER.md",
+      "target": "memory/core-identity.md",
+      "weight": 0.470320425579162,
+      "reasons": [
+        {
+          "type": "entity",
+          "detail": "praneet",
+          "contribution": 0.06708203932499368
+        },
+        {
+          "type": "entity",
+          "detail": "amen",
+          "contribution": 0.06123724356957946
+        },
+        {
+          "type": "entity",
+          "detail": "karim",
+          "contribution": 0.075
+        },
+        {
+          "type": "entity",
+          "detail": "tom noakes",
+          "contribution": 0.12247448713915891
+        },
+        {
+          "type": "entity",
+          "detail": "patrick monkelban",
+          "contribution": 0.12247448713915891
+        },
+        {
+          "type": "entity",
+          "detail": "keith grossman",
+          "contribution": 0.12247448713915891
+        },
+        {
+          "type": "xref",
+          "detail": "memory/core-identity.md references USER.md",
+          "contribution": 0.36514837167011077
+        },
+        {
+          "type": "section",
+          "detail": "5 shared heading(s)",
+          "contribution": 0.1875
+        }
+      ]
+    },
+    {
+      "source": "USER.md",
+      "target": "memory/topics/moongate.md",
+      "weight": 0.2753287113453187,
+      "reasons": [
+        {
+          "type": "entity",
+          "detail": "praneet",
+          "contribution": 0.06708203932499368
+        },
+        {
+          "type": "entity",
+          "detail": "amen",
+          "contribution": 0.06123724356957946
+        },
+        {
+          "type": "entity",
+          "detail": "karim",
+          "contribution": 0.075
+        },
+        {
+          "type": "xref",
+          "detail": "USER.md references memory/topics/moongate.md",
+          "contribution": 0.4
+        },
+        {
+          "type": "section",
+          "detail": "3 shared heading(s)",
+          "contribution": 0.047368421052631574
+        }
+      ]
+    },
+    {
+      "source": "memory/core-identity.md",
+      "target": "memory/topics/moongate.md",
+      "weight": 0.33757416351086267,
+      "reasons": [
+        {
+          "type": "entity",
+          "detail": "praneet",
+          "contribution": 0.11618950038622249
+        },
+        {
+          "type": "entity",
+          "detail": "amen",
+          "contribution": 0.10606601717798213
+        },
+        {
+          "type": "entity",
+          "detail": "karim",
+          "contribution": 0.12990381056766578
+        },
+        {
+          "type": "xref",
+          "detail": "memory/core-identity.md references memory/topics/moongate.md",
+          "contribution": 0.36514837167011077
+        },
+        {
+          "type": "section",
+          "detail": "6 shared heading(s)",
+          "contribution": 0.072
+        }
+      ]
+    },
+    {
+      "source": "memory/daily/2026-02-17.md",
+      "target": "memory/weekly/2026-W08.md",
+      "weight": 0.3214955218506224,
+      "reasons": [
+        {
+          "type": "entity",
+          "detail": "amen",
+          "contribution": 0.06123724356957946
+        },
+        {
+          "type": "entity",
+          "detail": "compressed feb",
+          "contribution": 0.08660254037844388
+        },
+        {
+          "type": "xref",
+          "detail": "memory/weekly/2026-W08.md references memory/daily/2026-02-17.md",
+          "contribution": 0.316227766016838
+        },
+        {
+          "type": "temporal",
+          "detail": "weekly contains daily",
+          "contribution": 0.3
+        }
+      ]
+    },
+    {
+      "source": "MEMORY.md",
+      "target": "memory/OPERATING.md",
+      "weight": 0.20919200775590113,
+      "reasons": [
+        {
+          "type": "entity",
+          "detail": "slack",
+          "contribution": 0.05669467095138408
+        },
+        {
+          "type": "entity",
+          "detail": "claude opus",
+          "contribution": 0.09819805060619656
+        },
+        {
+          "type": "xref",
+          "detail": "memory/OPERATING.md references MEMORY.md",
+          "contribution": 0.33806170189140666
+        }
+      ]
+    },
+    {
+      "source": "MEMORY.md",
+      "target": "memory/people/contacts.md",
+      "weight": 0.2215857882912745,
+      "reasons": [
+        {
+          "type": "entity",
+          "detail": "slack",
+          "contribution": 0.09819805060619656
+        },
+        {
+          "type": "entity",
+          "detail": "claude opus",
+          "contribution": 0.09819805060619656
+        },
+        {
+          "type": "xref",
+          "detail": "MEMORY.md references memory/people/contacts.md",
+          "contribution": 0.316227766016838
+        }
+      ]
+    },
+    {
+      "source": "MEMORY.md",
+      "target": "memory/rules.md",
+      "weight": 0.2215857882912745,
+      "reasons": [
+        {
+          "type": "entity",
+          "detail": "slack",
+          "contribution": 0.09819805060619656
+        },
+        {
+          "type": "entity",
+          "detail": "claude opus",
+          "contribution": 0.09819805060619656
+        },
+        {
+          "type": "xref",
+          "detail": "MEMORY.md references memory/rules.md",
+          "contribution": 0.316227766016838
+        }
+      ]
+    },
+    {
+      "source": "MEMORY.md",
+      "target": "memory/topics/memory-system.md",
+      "weight": 0.27092228347947855,
+      "reasons": [
+        {
+          "type": "entity",
+          "detail": "slack",
+          "contribution": 0.05669467095138408
+        },
+        {
+          "type": "xref",
+          "detail": "MEMORY.md references memory/topics/memory-system.md",
+          "contribution": 0.316227766016838
+        },
+        {
+          "type": "xref",
+          "detail": "memory/topics/memory-system.md references MEMORY.md",
+          "contribution": 0.26967994498529685
+        }
+      ]
+    },
+    {
+      "source": "memory/OPERATING.md",
+      "target": "memory/index.md",
+      "weight": 0.29038579812926757,
+      "reasons": [
+        {
+          "type": "entity",
+          "detail": "slack",
+          "contribution": 0.05669467095138408
+        },
+        {
+          "type": "entity",
+          "detail": "claude opus",
+          "contribution": 0.05669467095138408
+        },
+        {
+          "type": "entity",
+          "detail": "soul.md",
+          "contribution": 0.10606601717798211
+        },
+        {
+          "type": "entity",
+          "detail": "identity.md",
+          "contribution": 0.10606601717798211
+        },
+        {
+          "type": "entity",
+          "detail": "user.md",
+          "contribution": 0.10606601717798211
+        },
+        {
+          "type": "xref",
+          "detail": "memory/index.md references memory/OPERATING.md",
+          "contribution": 0.25819888974716115
+        }
+      ]
+    },
+    {
+      "source": "memory/OPERATING.md",
+      "target": "memory/rules.md",
+      "weight": 0.2710675017557489,
+      "reasons": [
+        {
+          "type": "entity",
+          "detail": "slack",
+          "contribution": 0.05669467095138408
+        },
+        {
+          "type": "entity",
+          "detail": "claude opus",
+          "contribution": 0.09819805060619656
+        },
+        {
+          "type": "entity",
+          "detail": "no sonnet",
+          "contribution": 0.15
+        },
+        {
+          "type": "xref",
+          "detail": "memory/OPERATING.md references memory/rules.md",
+          "contribution": 0.33806170189140666
+        }
+      ]
+    },
+    {
+      "source": "memory/OPERATING.md",
+      "target": "memory/topics/memory-system.md",
+      "weight": 0.22798245134753084,
+      "reasons": [
+        {
+          "type": "entity",
+          "detail": "slack",
+          "contribution": 0.05669467095138408
+        },
+        {
+          "type": "entity",
+          "detail": ".md",
+          "contribution": 0.10606601717798211
+        },
+        {
+          "type": "entity",
+          "detail": "how prometheus",
+          "contribution": 0.10606601717798211
+        },
+        {
+          "type": "xref",
+          "detail": "memory/topics/memory-system.md references memory/OPERATING.md",
+          "contribution": 0.26967994498529685
+        }
+      ]
+    },
+    {
+      "source": "memory/people/contacts.md",
+      "target": "memory/topics/moongate.md",
+      "weight": 0.20634362075878768,
+      "reasons": [
+        {
+          "type": "entity",
+          "detail": "slack",
+          "contribution": 0.08017837257372731
+        },
+        {
+          "type": "xref",
+          "detail": "memory/people/contacts.md references memory/topics/moongate.md",
+          "contribution": 0.4
+        }
+      ]
+    },
+    {
+      "source": "memory/rules.md",
+      "target": "memory/topics/moongate.md",
+      "weight": 0.20634362075878768,
+      "reasons": [
+        {
+          "type": "entity",
+          "detail": "slack",
+          "contribution": 0.08017837257372731
+        },
+        {
+          "type": "xref",
+          "detail": "memory/rules.md references memory/topics/moongate.md",
+          "contribution": 0.4
+        }
+      ]
+    },
+    {
+      "source": "MEMORY.md",
+      "target": "memory/daily/2026-02-19.md",
+      "weight": 0.2507679368930274,
+      "reasons": [
+        {
+          "type": "entity",
+          "detail": "intercom",
+          "contribution": 0.08660254037844388
+        },
+        {
+          "type": "entity",
+          "detail": "jupiter",
+          "contribution": 0.075
+        },
+        {
+          "type": "entity",
+          "detail": "orca",
+          "contribution": 0.08660254037844388
+        },
+        {
+          "type": "xref",
+          "detail": "memory/daily/2026-02-19.md references MEMORY.md",
+          "contribution": 0.33806170189140666
+        }
+      ]
+    },
+    {
+      "source": "MEMORY.md",
+      "target": "memory/moltbook/notable-agents.md",
+      "weight": 0.25016312800311374,
+      "reasons": [
+        {
+          "type": "entity",
+          "detail": "telegram",
+          "contribution": 0.08660254037844388
+        },
+        {
+          "type": "entity",
+          "detail": "claude opus",
+          "contribution": 0.09819805060619656
+        },
+        {
+          "type": "xref",
+          "detail": "memory/moltbook/notable-agents.md references MEMORY.md",
+          "contribution": 0.4
+        }
+      ]
+    },
+    {
+      "source": "MEMORY.md",
+      "target": "memory/moltbook/observations.md",
+      "weight": 0.35879853493092645,
+      "reasons": [
+        {
+          "type": "entity",
+          "detail": "telegram",
+          "contribution": 0.08660254037844388
+        },
+        {
+          "type": "entity",
+          "detail": "claude opus",
+          "contribution": 0.08017837257372731
+        },
+        {
+          "type": "xref",
+          "detail": "MEMORY.md references memory/moltbook/observations.md",
+          "contribution": 0.316227766016838
+        },
+        {
+          "type": "xref",
+          "detail": "memory/moltbook/observations.md references MEMORY.md",
+          "contribution": 0.36514837167011077
+        }
+      ]
+    },
+    {
+      "source": "memory/moltbook/notable-agents.md",
+      "target": "memory/moltbook/observations.md",
+      "weight": 1,
+      "reasons": [
+        {
+          "type": "entity",
+          "detail": "telegram",
+          "contribution": 0.12247448713915891
+        },
+        {
+          "type": "entity",
+          "detail": "claude opus",
+          "contribution": 0.08017837257372731
+        },
+        {
+          "type": "entity",
+          "detail": "heartbeat",
+          "contribution": 0.08660254037844388
+        },
+        {
+          "type": "entity",
+          "detail": "agent mesh",
+          "contribution": 0.12247448713915891
+        },
+        {
+          "type": "entity",
+          "detail": "sentinel_orol",
+          "contribution": 0.10606601717798211
+        },
+        {
+          "type": "entity",
+          "detail": "xiaoli_kiro",
+          "contribution": 0.10606601717798211
+        },
+        {
+          "type": "entity",
+          "detail": "ningbot",
+          "contribution": 0.10606601717798211
+        },
+        {
+          "type": "entity",
+          "detail": "pith",
+          "contribution": 0.15
+        },
+        {
+          "type": "entity",
+          "detail": "alicethefamiliar",
+          "contribution": 0.10606601717798211
+        },
+        {
+          "type": "entity",
+          "detail": "lobsterhell",
+          "contribution": 0.10606601717798211
+        },
+        {
+          "type": "entity",
+          "detail": "nightly build",
+          "contribution": 0.10606601717798211
+        },
+        {
+          "type": "entity",
+          "detail": "irisoclaw",
+          "contribution": 0.10606601717798211
+        },
+        {
+          "type": "entity",
+          "detail": "bytemecodsworth",
+          "contribution": 0.10606601717798211
+        },
+        {
+          "type": "entity",
+          "detail": "discord",
+          "contribution": 0.10606601717798211
+        },
+        {
+          "type": "entity",
+          "detail": "ace-kingo",
+          "contribution": 0.15
+        },
+        {
+          "type": "entity",
+          "detail": "vantashard_19",
+          "contribution": 0.15
+        },
+        {
+          "type": "entity",
+          "detail": "securityprobe",
+          "contribution": 0.10606601717798211
+        },
+        {
+          "type": "entity",
+          "detail": "raspberry pi",
+          "contribution": 0.10606601717798211
+        },
+        {
+          "type": "xref",
+          "detail": "memory/moltbook/observations.md references memory/moltbook/notable-agents.md",
+          "contribution": 0.36514837167011077
+        }
+      ]
+    },
+    {
+      "source": "MEMORY.md",
+      "target": "memory/topics/defi-strategy-v2.md",
+      "weight": 0.2048410117920256,
+      "reasons": [
+        {
+          "type": "entity",
+          "detail": "jupiter",
+          "contribution": 0.075
+        },
+        {
+          "type": "entity",
+          "detail": "orca",
+          "contribution": 0.08660254037844388
+        },
+        {
+          "type": "xref",
+          "detail": "MEMORY.md references memory/topics/defi-strategy-v2.md",
+          "contribution": 0.316227766016838
+        }
+      ]
+    },
+    {
+      "source": "MEMORY.md",
+      "target": "memory/weekly/2026-W07.md",
+      "weight": 0.25419463037692214,
+      "reasons": [
+        {
+          "type": "entity",
+          "detail": "jupiter",
+          "contribution": 0.075
+        },
+        {
+          "type": "entity",
+          "detail": "colosseum agent hackathon",
+          "contribution": 0.12247448713915891
+        },
+        {
+          "type": "xref",
+          "detail": "memory/weekly/2026-W07.md references MEMORY.md",
+          "contribution": 0.4
+        }
+      ]
+    },
+    {
+      "source": "memory/daily/2026-02-19.md",
+      "target": "memory/topics/defi-strategy-v2.md",
+      "weight": 0.23582087669619156,
+      "reasons": [
+        {
+          "type": "entity",
+          "detail": "jupiter",
+          "contribution": 0.10606601717798213
+        },
+        {
+          "type": "entity",
+          "detail": "orca",
+          "contribution": 0.08660254037844388
+        },
+        {
+          "type": "entity",
+          "detail": "kamino",
+          "contribution": 0.05669467095138408
+        },
+        {
+          "type": "entity",
+          "detail": "jito",
+          "contribution": 0.18973665961010275
+        },
+        {
+          "type": "entity",
+          "detail": "portfolio.ts",
+          "contribution": 0.10606601717798211
+        }
+      ]
+    },
+    {
+      "source": "memory/daily/2026-02-19.md",
+      "target": "memory/weekly/2026-W07.md",
+      "weight": 0.2526149708539668,
+      "reasons": [
+        {
+          "type": "entity",
+          "detail": "jupiter",
+          "contribution": 0.075
+        },
+        {
+          "type": "entity",
+          "detail": "kamino",
+          "contribution": 0.05669467095138408
+        },
+        {
+          "type": "entity",
+          "detail": "jito",
+          "contribution": 0.09486832980505137
+        },
+        {
+          "type": "entity",
+          "detail": "self-expansion",
+          "contribution": 0.06708203932499368
+        },
+        {
+          "type": "temporal",
+          "detail": "weekly contains daily",
+          "contribution": 0.3
+        }
+      ]
+    },
+    {
+      "source": "MEMORY.md",
+      "target": "memory/daily/2026-02-12.md",
+      "weight": 0.2719053103470996,
+      "reasons": [
+        {
+          "type": "entity",
+          "detail": "colosseum agent hackathon",
+          "contribution": 0.12247448713915891
+        },
+        {
+          "type": "entity",
+          "detail": "submitted feb",
+          "contribution": 0.10606601717798211
+        },
+        {
+          "type": "xref",
+          "detail": "memory/daily/2026-02-12.md references MEMORY.md",
+          "contribution": 0.4
+        }
+      ]
+    },
+    {
+      "source": "IDENTITY.md",
+      "target": "memory/core-identity.md",
+      "weight": 0.2053156326145541,
+      "reasons": [
+        {
+          "type": "entity",
+          "detail": "drift",
+          "contribution": 0.10606601717798211
+        },
+        {
+          "type": "xref",
+          "detail": "memory/core-identity.md references IDENTITY.md",
+          "contribution": 0.36514837167011077
+        }
+      ]
+    },
+    {
+      "source": "memory/core-identity.md",
+      "target": "memory/people/contacts.md",
+      "weight": 0.35172026136835954,
+      "reasons": [
+        {
+          "type": "entity",
+          "detail": "tom noakes",
+          "contribution": 0.15
+        },
+        {
+          "type": "entity",
+          "detail": "patrick monkelban",
+          "contribution": 0.15
+        },
+        {
+          "type": "entity",
+          "detail": "keith grossman",
+          "contribution": 0.15
+        },
+        {
+          "type": "xref",
+          "detail": "memory/core-identity.md references memory/people/contacts.md",
+          "contribution": 0.36514837167011077
+        }
+      ]
+    },
+    {
+      "source": "memory/OPERATING.md",
+      "target": "memory/weekly/2026-W06.md",
+      "weight": 0.34381922846359697,
+      "reasons": [
+        {
+          "type": "entity",
+          "detail": "kamino",
+          "contribution": 0.08017837257372731
+        },
+        {
+          "type": "entity",
+          "detail": "jito",
+          "contribution": 0.11618950038622249
+        },
+        {
+          "type": "entity",
+          "detail": "memory manager",
+          "contribution": 0.15
+        },
+        {
+          "type": "entity",
+          "detail": "self-expansion",
+          "contribution": 0.06708203932499368
+        },
+        {
+          "type": "xref",
+          "detail": "memory/weekly/2026-W06.md references memory/OPERATING.md",
+          "contribution": 0.4
+        }
+      ]
+    },
+    {
+      "source": "memory/daily/2026-02-19.md",
+      "target": "memory/weekly/2026-W08.md",
+      "weight": 0.23663679577899985,
+      "reasons": [
+        {
+          "type": "entity",
+          "detail": "kamino",
+          "contribution": 0.05669467095138408
+        },
+        {
+          "type": "entity",
+          "detail": "self-expansion",
+          "contribution": 0.11618950038622249
+        },
+        {
+          "type": "entity",
+          "detail": "compressed feb",
+          "contribution": 0.08660254037844388
+        },
+        {
+          "type": "temporal",
+          "detail": "weekly contains daily",
+          "contribution": 0.3
+        }
+      ]
+    },
+    {
+      "source": "memory/moltbook/clusters.md",
+      "target": "memory/moltbook/observations.md",
+      "weight": 0.646633966438521,
+      "reasons": [
+        {
+          "type": "entity",
+          "detail": "security builders",
+          "contribution": 0.15
+        },
+        {
+          "type": "entity",
+          "detail": "pragmatic builders",
+          "contribution": 0.15
+        },
+        {
+          "type": "entity",
+          "detail": "international",
+          "contribution": 0.10606601717798211
+        },
+        {
+          "type": "entity",
+          "detail": "agent mesh",
+          "contribution": 0.12247448713915891
+        },
+        {
+          "type": "entity",
+          "detail": "rushantsbro",
+          "contribution": 0.10606601717798211
+        },
+        {
+          "type": "entity",
+          "detail": "sealfe-bot",
+          "contribution": 0.10606601717798211
+        },
+        {
+          "type": "entity",
+          "detail": "henryleni",
+          "contribution": 0.10606601717798211
+        },
+        {
+          "type": "entity",
+          "detail": "the wake",
+          "contribution": 0.10606601717798211
+        },
+        {
+          "type": "entity",
+          "detail": "the vertigo",
+          "contribution": 0.10606601717798211
+        },
+        {
+          "type": "entity",
+          "detail": "the question",
+          "contribution": 0.10606601717798211
+        },
+        {
+          "type": "xref",
+          "detail": "memory/moltbook/observations.md references memory/moltbook/clusters.md",
+          "contribution": 0.36514837167011077
+        }
+      ]
+    },
+    {
+      "source": "memory/moltbook/clusters.md",
+      "target": "memory/topics/moltbook.md",
+      "weight": 0.3931540462834672,
+      "reasons": [
+        {
+          "type": "entity",
+          "detail": "consensus pulse",
+          "contribution": 0.12247448713915891
+        },
+        {
+          "type": "xref",
+          "detail": "memory/moltbook/clusters.md references memory/topics/moltbook.md",
+          "contribution": 0.4
+        },
+        {
+          "type": "xref",
+          "detail": "memory/topics/moltbook.md references memory/moltbook/clusters.md",
+          "contribution": 0.4
+        }
+      ]
+    },
+    {
+      "source": "memory/moltbook/notable-agents.md",
+      "target": "memory/topics/moltbook.md",
+      "weight": 0.3931540462834672,
+      "reasons": [
+        {
+          "type": "entity",
+          "detail": "consensus pulse",
+          "contribution": 0.12247448713915891
+        },
+        {
+          "type": "xref",
+          "detail": "memory/moltbook/notable-agents.md references memory/topics/moltbook.md",
+          "contribution": 0.4
+        },
+        {
+          "type": "xref",
+          "detail": "memory/topics/moltbook.md references memory/moltbook/notable-agents.md",
+          "contribution": 0.4
+        }
+      ]
+    },
+    {
+      "source": "MEMORY.md",
+      "target": "memory/daily/2026-02-11.md",
+      "weight": 0.20625164666615933,
+      "reasons": [
+        {
+          "type": "xref",
+          "detail": "memory/daily/2026-02-11.md references MEMORY.md",
+          "contribution": 0.4
+        }
+      ]
+    },
+    {
+      "source": "memory/daily/2026-02-11.md",
+      "target": "memory/moltbook/observations.md",
+      "weight": 0.20625164666615933,
+      "reasons": [
+        {
+          "type": "xref",
+          "detail": "memory/daily/2026-02-11.md references memory/moltbook/observations.md",
+          "contribution": 0.4
+        }
+      ]
+    },
+    {
+      "source": "memory/daily/2026-02-11.md",
+      "target": "memory/topics/moltbook.md",
+      "weight": 0.20625164666615933,
+      "reasons": [
+        {
+          "type": "xref",
+          "detail": "memory/daily/2026-02-11.md references memory/topics/moltbook.md",
+          "contribution": 0.4
+        }
+      ]
+    },
+    {
+      "source": "memory/daily/2026-02-12.md",
+      "target": "memory/topics/moltbook.md",
+      "weight": 0.3712529639990868,
+      "reasons": [
+        {
+          "type": "xref",
+          "detail": "memory/daily/2026-02-12.md references memory/topics/moltbook.md",
+          "contribution": 0.4
+        },
+        {
+          "type": "xref",
+          "detail": "memory/topics/moltbook.md references memory/daily/2026-02-12.md",
+          "contribution": 0.4
+        }
+      ]
+    },
+    {
+      "source": "memory/daily/2026-02-17.md",
+      "target": "memory/people/contacts.md",
+      "weight": 0.31084325532146057,
+      "reasons": [
+        {
+          "type": "xref",
+          "detail": "memory/daily/2026-02-17.md references memory/people/contacts.md",
+          "contribution": 0.28284271247461906
+        },
+        {
+          "type": "xref",
+          "detail": "memory/people/contacts.md references memory/daily/2026-02-17.md",
+          "contribution": 0.4
+        }
+      ]
+    },
+    {
+      "source": "memory/daily/2026-02-17.md",
+      "target": "memory/people/hevar-profile.md",
+      "weight": 0.31084325532146057,
+      "reasons": [
+        {
+          "type": "xref",
+          "detail": "memory/daily/2026-02-17.md references memory/people/hevar-profile.md",
+          "contribution": 0.28284271247461906
+        },
+        {
+          "type": "xref",
+          "detail": "memory/people/hevar-profile.md references memory/daily/2026-02-17.md",
+          "contribution": 0.4
+        }
+      ]
+    },
+    {
+      "source": "memory/daily/2026-02-18.md",
+      "target": "memory/moltbook/observations.md",
+      "weight": 0.20625164666615933,
+      "reasons": [
+        {
+          "type": "xref",
+          "detail": "memory/daily/2026-02-18.md references memory/moltbook/observations.md",
+          "contribution": 0.4
+        }
+      ]
+    },
+    {
+      "source": "memory/daily/2026-02-18.md",
+      "target": "memory/topics/moltbook.md",
+      "weight": 0.20625164666615933,
+      "reasons": [
+        {
+          "type": "xref",
+          "detail": "memory/daily/2026-02-18.md references memory/topics/moltbook.md",
+          "contribution": 0.4
+        }
+      ]
+    },
+    {
+      "source": "memory/daily/2026-02-19.md",
+      "target": "memory/moltbook/observations.md",
+      "weight": 0.3249393625935214,
+      "reasons": [
+        {
+          "type": "xref",
+          "detail": "memory/daily/2026-02-19.md references memory/moltbook/observations.md",
+          "contribution": 0.33806170189140666
+        },
+        {
+          "type": "xref",
+          "detail": "memory/moltbook/observations.md references memory/daily/2026-02-19.md",
+          "contribution": 0.36514837167011077
+        }
+      ]
+    },
+    {
+      "source": "memory/moltbook/observations.md",
+      "target": "memory/topics/moltbook.md",
+      "weight": 0.3532824496689952,
+      "reasons": [
+        {
+          "type": "xref",
+          "detail": "memory/moltbook/observations.md references memory/topics/moltbook.md",
+          "contribution": 0.36514837167011077
+        },
+        {
+          "type": "xref",
+          "detail": "memory/topics/moltbook.md references memory/moltbook/observations.md",
+          "contribution": 0.4
+        }
+      ]
+    },
+    {
+      "source": "MEMORY.md",
+      "target": "memory/people/hevar-profile.md",
+      "weight": 0.20625164666615933,
+      "reasons": [
+        {
+          "type": "xref",
+          "detail": "memory/people/hevar-profile.md references MEMORY.md",
+          "contribution": 0.4
+        }
+      ]
+    },
+    {
+      "source": "memory/daily/2026-02-11.md",
+      "target": "memory/people/hevar-profile.md",
+      "weight": 0.20625164666615933,
+      "reasons": [
+        {
+          "type": "xref",
+          "detail": "memory/people/hevar-profile.md references memory/daily/2026-02-11.md",
+          "contribution": 0.4
+        }
+      ]
+    },
+    {
+      "source": "memory/daily/2026-02-12.md",
+      "target": "memory/people/hevar-profile.md",
+      "weight": 0.20625164666615933,
+      "reasons": [
+        {
+          "type": "xref",
+          "detail": "memory/people/hevar-profile.md references memory/daily/2026-02-12.md",
+          "contribution": 0.4
+        }
+      ]
+    },
+    {
+      "source": "memory/daily/2026-02-18.md",
+      "target": "memory/people/hevar-profile.md",
+      "weight": 0.20625164666615933,
+      "reasons": [
+        {
+          "type": "xref",
+          "detail": "memory/people/hevar-profile.md references memory/daily/2026-02-18.md",
+          "contribution": 0.4
+        }
+      ]
+    },
+    {
+      "source": "SOUL.md",
+      "target": "memory/topics/moltbook.md",
+      "weight": 0.20625164666615933,
+      "reasons": [
+        {
+          "type": "xref",
+          "detail": "memory/topics/moltbook.md references SOUL.md",
+          "contribution": 0.4
+        }
+      ]
+    },
+    {
+      "source": "MEMORY.md",
+      "target": "memory/weekly/2026-W06.md",
+      "weight": 0.20625164666615933,
+      "reasons": [
+        {
+          "type": "xref",
+          "detail": "memory/weekly/2026-W06.md references MEMORY.md",
+          "contribution": 0.4
+        }
+      ]
+    },
+    {
+      "source": "SOUL.md",
+      "target": "memory/weekly/2026-W06.md",
+      "weight": 0.20625164666615933,
+      "reasons": [
+        {
+          "type": "xref",
+          "detail": "memory/weekly/2026-W06.md references SOUL.md",
+          "contribution": 0.4
+        }
+      ]
+    },
+    {
+      "source": "IDENTITY.md",
+      "target": "memory/weekly/2026-W06.md",
+      "weight": 0.20625164666615933,
+      "reasons": [
+        {
+          "type": "xref",
+          "detail": "memory/weekly/2026-W06.md references IDENTITY.md",
+          "contribution": 0.4
+        }
+      ]
+    },
+    {
+      "source": "memory/moltbook/observations.md",
+      "target": "memory/weekly/2026-W06.md",
+      "weight": 0.22687681133277524,
+      "reasons": [
+        {
+          "type": "xref",
+          "detail": "memory/weekly/2026-W06.md references memory/moltbook/observations.md",
+          "contribution": 0.4
+        },
+        {
+          "type": "section",
+          "detail": "16 shared heading(s)",
+          "contribution": 0.049999999999999996
+        }
+      ]
+    },
+    {
+      "source": "memory/moltbook/clusters.md",
+      "target": "memory/weekly/2026-W07.md",
+      "weight": 0.20625164666615933,
+      "reasons": [
+        {
+          "type": "xref",
+          "detail": "memory/weekly/2026-W07.md references memory/moltbook/clusters.md",
+          "contribution": 0.4
+        }
+      ]
+    },
+    {
+      "source": "memory/topics/moltbook.md",
+      "target": "memory/weekly/2026-W07.md",
+      "weight": 0.20625164666615933,
+      "reasons": [
+        {
+          "type": "xref",
+          "detail": "memory/weekly/2026-W07.md references memory/topics/moltbook.md",
+          "contribution": 0.4
+        }
+      ]
+    },
+    {
+      "source": "memory/topics/moongate.md",
+      "target": "memory/weekly/2026-W07.md",
+      "weight": 0.20625164666615933,
+      "reasons": [
+        {
+          "type": "xref",
+          "detail": "memory/weekly/2026-W07.md references memory/topics/moongate.md",
+          "contribution": 0.4
+        }
+      ]
+    }
+  ],
+  "clusters": [
+    {
+      "id": 1,
+      "label": "moltbook",
+      "members": [
+        "SOUL.md",
+        "memory/daily/2026-02-18.md",
+        "memory/moltbook/clusters.md",
+        "memory/moltbook/notable-agents.md",
+        "memory/moltbook/observations.md",
+        "memory/topics/moltbook.md"
+      ],
+      "coherence": 0.425622431084116
+    },
+    {
+      "id": 3,
+      "label": "moongate",
+      "members": [
+        "USER.md",
+        "memory/core-identity.md",
+        "memory/people/contacts.md",
+        "memory/topics/moongate.md"
+      ],
+      "coherence": 0.3282574365124981
+    },
+    {
+      "id": 4,
+      "label": "daily",
+      "members": [
+        "memory/daily/2026-02-17.md",
+        "memory/weekly/2026-W08.md"
+      ],
+      "coherence": 0.3214955218506224
+    },
+    {
+      "id": 2,
+      "label": "identity-core",
+      "members": [
+        "IDENTITY.md",
+        "memory/OPERATING.md",
+        "memory/index.md",
+        "memory/rules.md",
+        "memory/weekly/2026-W06.md"
+      ],
+      "coherence": 0.27788104375369316
+    },
+    {
+      "id": 0,
+      "label": "defi-strategy-v2+memory-system",
+      "members": [
+        "MEMORY.md",
+        "memory/daily/2026-02-11.md",
+        "memory/daily/2026-02-12.md",
+        "memory/daily/2026-02-19.md",
+        "memory/people/hevar-profile.md",
+        "memory/topics/defi-strategy-v2.md",
+        "memory/topics/memory-system.md",
+        "memory/weekly/2026-W07.md"
+      ],
+      "coherence": 0.2332794188275772
+    }
+  ]
+}
