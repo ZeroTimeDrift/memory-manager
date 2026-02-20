@@ -186,11 +186,18 @@ function resolveRef(sourceFile: string, lineNum: number, rawTarget: string, refT
   // 2. Relative to source file's directory
   // 3. Inside memory/ prefix
   
-  const candidates = [
+  const candidates: string[] = [];
+
+  // Handle absolute paths directly
+  if (path.isAbsolute(rawTarget)) {
+    candidates.push(rawTarget);
+  }
+
+  candidates.push(
     path.join(WORKSPACE, rawTarget),
     path.join(WORKSPACE, path.dirname(sourceFile), rawTarget),
     path.join(MEMORY_DIR, rawTarget),
-  ];
+  );
   
   // Also handle "memory/..." prefixed refs from workspace root
   if (rawTarget.startsWith('memory/')) {
